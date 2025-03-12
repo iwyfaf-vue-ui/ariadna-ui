@@ -1,0 +1,63 @@
+{
+  "name": "@example/vue2-example-library",
+  "description": "Example",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./dist"
+  },
+  "browser": {
+    "./styles.css": "./dist/style.css"
+  },
+  "types": "dist/lib.d.js",
+  "main": "dist/lib.js",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "",
+    "",
+    ""
+  ],
+  "license": "ISC",
+  "author": {
+    "name": "iWatchYouFromAfar",
+    "email": "tommy.riley@yandex.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --out-dir dist",
+    "preview": "vite preview",
+    "pushnpm": "./publish.sh"
+  },
+  "dependencies": {
+    "vue": "^2.7.14"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.45",
+    "vite-plugin-vue2": "^2.0.2",
+    "prettier": "^2.7.1",
+    "rollup": "^2.79.1",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "sass": "^1.56.1",
+    "stylelint": "^14.15.0",
+    "stylelint-config-css-modules": "^4.1.0",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-recommended-scss": "^8.0.0",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard-scss": "^6.1.0",
+    "typescript": "^4.8.4",
+    "vite": "^2.9.15",
+    "vite-plugin-dts": "^2.1.0",
+    "vue": "^2.7.14",
+    "vue-tsc": "^0.40.13"
+  }
+}
