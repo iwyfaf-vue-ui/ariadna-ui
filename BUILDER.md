@@ -26,6 +26,12 @@ it is created.
 npm i npm-check-updates -g
 ```
 
+Install the dependencies:
+
+```shell
+npm i
+```
+
 ## Create library
 To create a new library just do:
 
