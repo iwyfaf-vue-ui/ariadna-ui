@@ -1,17 +1,33 @@
 {
-  "name": "nuxt-app",
+  "name": "ariadna-ui-playground-nuxt",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
+    "build": "nuxt build ./src/app",
+    "dev": "nuxt dev ./src/app",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "preview": "nuxt preview ./src/app",
+    "postinstall": "nuxt prepare",
+    "generate:icons": "fantasticon --normalize"
   },
   "dependencies": {
+    "@iwyfaf-vue-ui/ariadna-ui": "file:../../libraries/ariadna-ui",
     "nuxt": "^3.16.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/html-validator": "^2.1.0",
+    "fantasticon": "^3.0.0",
+    "prettier": "^3.5.3",
+    "reset-css": "^5.0.2",
+    "sass": "^1.85.1",
+    "stylelint": "^16.15.0",
+    "stylelint-config-css-modules": "^4.4.0",
+    "stylelint-config-recess-order": "^6.0.0",
+    "stylelint-config-recommended-scss": "^14.1.0",
+    "stylelint-config-recommended-vue": "^1.6.0",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "typescript": "^5.8.2"
   }
 }
