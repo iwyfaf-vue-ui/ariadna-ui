@@ -67,7 +67,7 @@ const updatePackage = () => {
       return [
         `./${fileName}`,
         {
-          module: `${file.path}/${fileName}.esm.js`.replace('src', './dist'),
+          import: `${file.path}/${fileName}.esm.js`.replace('src', './dist'),
           types: `${file.path}/${file.name}`.replace('src', './dist'),
         },
       ];
