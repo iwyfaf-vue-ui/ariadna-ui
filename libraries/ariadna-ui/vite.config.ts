@@ -54,7 +54,7 @@ export default defineConfig(({ mode }) => {
           { src: 'src/types/component.d.ts', dest: '' },
           ...Object.entries(fileNames).map(([key, value]) => ({
             src: `src/${value.path}/${value.name}.types.ts`,
-            dest: path.dirname(value.path.replace(`/${value.path}`, '')),
+            dest: value.path,
           })),
           ...Object.entries(fileNames)
             .map(([key, value]) => {
@@ -63,7 +63,7 @@ export default defineConfig(({ mode }) => {
               if (fs.existsSync(typesDir)) {
                 return {
                   src: typesDir,
-                  dest: path.dirname(value.path.replace(`/${value.path}`, '')),
+                  dest: value.path,
                 };
               }
 
@@ -91,9 +91,10 @@ export default defineConfig(({ mode }) => {
           ([_, value]) => `./src/${value.path}/${value.name}.${value.ext}`,
         ),
         formats: ['es'],
-        fileName: (format, entryName) => {
-          return fileNames[entryName as keyof typeof fileNames].path + '.esm.js';
-        },
+        fileName: (format, entryName) =>
+          `${fileNames[entryName as keyof typeof fileNames].path}/${
+            fileNames[entryName as keyof typeof fileNames].name
+          }.esm.js`,
       },
       rollupOptions: {
         external: ['vue', 'fs'],
