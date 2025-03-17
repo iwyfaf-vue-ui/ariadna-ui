@@ -1,12 +1,9 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "0.0.0",
-  "type": "module",
-  "files": [
-    "dist"
-  ],
-  "license": "ISC",
+  "version": "1.0.0",
+  "private": true,
+  "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
     "email": "tommy.riley@yandex.ru"
@@ -15,6 +12,10 @@
     "type": "git",
     "url": "git@github.com:iwyfaf-vue-ui/ariadna-ui.git"
   },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
@@ -23,6 +24,7 @@
     "build": "npm run update-package && vite build --out-dir dist",
     "build-dev": "npm run update-package && vite build --out-dir dist --mode development",
     "preview": "vite preview",
+    "pre-release": "npm run build && changelogen --release --prerelease beta",
     "update-package": "node packageGenerator/update-package.js"
   },
   "dependencies": {
@@ -32,6 +34,7 @@
     "@types/node": "^22.13.10",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/tsconfig": "^0.7.0",
+    "changelogen": "^0.6.1",
     "prettier": "^3.5.3",
     "rollup": "^4.35.0",
     "rollup-plugin-clear": "^2.0.7",
