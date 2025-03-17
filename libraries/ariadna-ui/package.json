@@ -23,7 +23,7 @@
     "build": "npm run update-package && vite build --out-dir dist",
     "build-dev": "npm run update-package && vite build --out-dir dist --mode development",
     "preview": "vite preview",
-    "pre-release": "npm run build && changelogen --release --prerelease beta --no-tag",
+    "pre-release": "npm run build && changelogen --release --prerelease beta --no-tag --push",
     "update-package": "node packageGenerator/update-package.js"
   },
   "dependencies": {
