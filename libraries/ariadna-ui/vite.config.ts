@@ -2,11 +2,18 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 import * as path from 'path';
+import * as fs from 'fs';
 import scanFiles from './packageGenerator/scan-files';
+
+enum ETypes {
+  VUE = 'vue',
+  TS = 'ts',
+}
 
 type TFileNode = {
   path: string;
   name: string;
+  ext: ETypes;
 };
 
 type TFileTree = {
@@ -19,12 +26,17 @@ const dynamicFileNames = Object.fromEntries(
   Object.entries({ ...utilities }).map(([_, value]) => {
     const file = value[0];
     const fileName = file.name.split('.')[0];
-    const isVue = value.some((file) => file.name.includes('.vue'));
+    const isVue = value.some((file) => file.name.endsWith('.vue'));
+    const isTS = value.some((file) => file.name.endsWith('.ts'));
 
-    return [
-      fileName,
-      { path: `${file.path}/${fileName}`.replace('src/', ''), ext: isVue ? 'vue' : 'ts' },
-    ];
+    let ext: ETypes;
+    if (isVue) {
+      ext = ETypes.VUE;
+    } else if (isTS) {
+      ext = ETypes.TS;
+    }
+
+    return [fileName, { path: file.path.replace('src/', ''), name: fileName, ext: ext }];
   }),
 );
 
@@ -41,9 +53,23 @@ export default defineConfig(({ mode }) => {
         targets: [
           { src: 'src/types/component.d.ts', dest: '' },
           ...Object.entries(fileNames).map(([key, value]) => ({
-            src: value.ext === 'vue' ? `src/${value.path}.d.ts` : `src/${value.path}.types.ts`,
+            src: `src/${value.path}/${value.name}.types.ts`,
             dest: path.dirname(value.path.replace(`/${value.path}`, '')),
           })),
+          ...Object.entries(fileNames)
+            .map(([key, value]) => {
+              const typesDir = `src/${value.path}/types`;
+
+              if (fs.existsSync(typesDir)) {
+                return {
+                  src: typesDir,
+                  dest: path.dirname(value.path.replace(`/${value.path}`, '')),
+                };
+              }
+
+              return null;
+            })
+            .filter(Boolean),
         ],
       }),
     ],
@@ -61,7 +87,9 @@ export default defineConfig(({ mode }) => {
     build: {
       cssCodeSplit: false,
       lib: {
-        entry: Object.entries(fileNames).map(([_, value]) => `./src/${value.path}.${value.ext}`),
+        entry: Object.entries(fileNames).map(
+          ([_, value]) => `./src/${value.path}/${value.name}.${value.ext}`,
+        ),
         formats: ['es'],
         fileName: (format, entryName) => {
           return fileNames[entryName as keyof typeof fileNames].path + '.esm.js';
