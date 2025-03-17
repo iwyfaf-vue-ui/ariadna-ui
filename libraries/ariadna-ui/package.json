@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.0.0",
+  "version": "1.0.1-beta.0",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -51,6 +51,17 @@
     "vue": "^3.2.29",
     "vue-tsc": "^2.2.8"
   },
-  "exports": {},
-  "typesVersions": {}
+  "exports": {
+    "./ThemeBuilder": {
+      "import": "./dist/lib/utilities/builders/ThemeBuilder/ThemeBuilder.esm.js",
+      "types": "./dist/lib/utilities/builders/ThemeBuilder/ThemeBuilder.types.ts"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "ThemeBuilder": [
+        "./dist/lib/utilities/builders/ThemeBuilder/ThemeBuilder.types.ts"
+      ]
+    }
+  }
 }
