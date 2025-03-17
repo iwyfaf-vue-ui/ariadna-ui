@@ -68,7 +68,7 @@ export default defineConfig(({ mode }) => {
         },
       },
       rollupOptions: {
-        external: ['vue'],
+        external: ['vue', 'fs'],
         output: {
           globals: {
             vue: 'Vue',
