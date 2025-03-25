@@ -1,0 +1,21 @@
+@use 'reset-css/reset.css';
+@use './themes/asana/asana' as theme;
+@use './grid';
+@use './root';
+
+:root {
+  text-size-adjust: none; /* Disables automatic text resizing */
+
+  @include theme.grid-settings;
+  @include theme.fonts-size;
+  @include theme.fonts-weight;
+  @include theme.fonts-height;
+  @include theme.indents-padding;
+  @include theme.indents-margin;
+  @include theme.radius-default;
+  @include theme.transition-default;
+}
+
+* {
+  box-sizing: border-box;
+}

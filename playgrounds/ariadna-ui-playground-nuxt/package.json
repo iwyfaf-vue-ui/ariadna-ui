@@ -8,10 +8,12 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview ./src/app",
     "postinstall": "nuxt prepare",
+    "theme": "node ./src/app/theme.config.js",
     "generate:icons": "fantasticon --normalize"
   },
   "dependencies": {
     "@iwyfaf-vue-ui/ariadna-ui": "file:../../libraries/ariadna-ui",
+    "@nuxtjs/color-mode": "^3.5.2",
     "nuxt": "^3.16.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"

@@ -34,7 +34,28 @@ export default defineNuxtConfig({
       ],
     ],
   },
-  css: ['reset-css/reset.css'],
+  css: ['@/assets/scss/app.scss'],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `
+            @use "assets/scss/themes/asana/asana" as *;
+          `,
+        },
+      },
+    },
+  },
+  modules: [
+    [
+      '@nuxtjs/color-mode',
+      {
+        storage: 'cookie',
+        storageKey: 'preference-theme',
+        dataValue: 'theme',
+      },
+    ],
+  ],
   build: {
     transpile: ['@iwyfaf-vue-ui/ariadna-ui'],
   },
