@@ -1,0 +1,159 @@
+/**
+ * @description Represents custom breakpoints settings for responsive design.
+ * This type allows defining breakpoints for various device sizes, including
+ * small (sm), medium (md), large (lg), extra large (xl), very extra large (xxl),
+ * and custom breakpoints. Each breakpoint is optional and can be configured
+ * with a specific width.
+ */
+export type TCustomSettingsBreakpoints = {
+  /**
+   * Breakpoints custom settings.
+   *
+   * @description A collection of breakpoints for different device sizes.
+   * Each breakpoint is optional and can be configured with a specific width.
+   *
+   * @example
+   * ```typescript
+   * breakPoints: {
+   *   sm: {
+   *     width: '576px',
+   *   },
+   *   md: {
+   *     width: '768px',
+   *   },
+   *   lg: {
+   *     width: '992px',
+   *   },
+   *   xl: {
+   *     width: '1200px',
+   *   },
+   *   xxl: {
+   *     width: '1600px',
+   *   },
+   *   custom: {
+   *     width: '2000px',
+   *   },
+   * },
+   * ```
+   *
+   * @default
+   * ```
+   * breakPoints: {
+   *   sm: {
+   *     width: '576px',
+   *   },
+   *   md: {
+   *     width: '768px',
+   *   },
+   *   lg: {
+   *     width: '992px',
+   *   },
+   *   xl: {
+   *     width: '1200px',
+   *   },
+   *   xxl: {
+   *     width: '1400px',
+   *   },
+   * },
+   * ```
+   */
+  breakPoints: {
+    /**
+     * @description Optional breakpoint for small devices.
+     *
+     * @example
+     * ```typescript
+     * breakPoints: {
+     *   sm: {
+     *     width: '576px',
+     *   },
+     * }
+     * ```
+     */
+    sm?: {
+      width: string;
+    };
+
+    /**
+     * @description Optional breakpoint for medium devices.
+     *
+     * @example
+     * ```typescript
+     * breakPoints: {
+     *   md: {
+     *     width: '768px',
+     *   },
+     * }
+     * ```
+     */
+    md?: {
+      width: string;
+    };
+
+    /**
+     * @description Optional breakpoint for large devices.
+     *
+     * @example
+     * ```typescript
+     * breakPoints: {
+     *   lg: {
+     *     width: '992px',
+     *   },
+     * }
+     * ```
+     */
+    lg?: {
+      width: string;
+    };
+
+    /**
+     * @description Optional breakpoint for extra large devices.
+     *
+     * @example
+     * ```typescript
+     * breakPoints: {
+     *   xl: {
+     *     width: '1200px',
+     *   },
+     * }
+     * ```
+     */
+    xl?: {
+      width: string;
+    };
+
+    /**
+     * @description Optional breakpoint for very extra large devices.
+     *
+     * @example
+     * ```typescript
+     * breakPoints: {
+     *   xxl: {
+     *     width: '1600px',
+     *   },
+     * }
+     * ```
+     */
+    xxl?: {
+      width: string;
+    };
+
+    /**
+     * @description Custom breakpoint.
+     *
+     * @example
+     * ```typescript
+     * breakPoints: {
+     *   custom: {
+     *     width: '2000px',
+     *   },
+     * }
+     * ```
+     */
+    [key: string]:
+      | {
+          width: string;
+        }
+      | undefined;
+  };
+};
