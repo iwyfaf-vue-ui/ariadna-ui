@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.0.1-beta.15
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.0.1-beta.12...v1.0.1-beta.15)
+
+### 🏡 Chore
+
+- **release:** V1.0.1-beta.13 ([7afee1f](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/7afee1f))
+- **release:** V1.0.1-beta.14 ([28ac270](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/28ac270))
+
+### ❤️ Contributors
+
+- IWatchYouFromAfar <skip1209@yahoo.com>
+
 ## v1.0.1-beta.14
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.0.1-beta.12...v1.0.1-beta.14)
