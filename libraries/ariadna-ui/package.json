@@ -19,13 +19,12 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
-    "dev": "vite",
+    "update-package": "node packageGenerator/update-package.js",
     "build": "npm run update-package && vite build --out-dir dist",
     "build-dev": "npm run update-package && vite build --out-dir dist --mode development",
-    "preview": "vite preview",
-    "update-package": "node packageGenerator/update-package.js",
-    "test:watch": "vitest --dom",
     "test": "vitest --dom --watch=false",
+    "test:watch": "vitest --dom",
+    "release": "npm run build && changelogen --release --push --publish",
     "pre-release": "npm run build && changelogen --release --prerelease beta --no-tag --push --publish --publishTag beta"
   },
   "dependencies": {
