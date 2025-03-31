@@ -95,22 +95,30 @@ const componentClasses = computed(() => {
   }
 
   &__subgroup {
-    @include theme.grid(12);
+    @include theme.grid(2, 4, 6, 8, 12);
 
-    padding: 16px;
     text-align: center;
 
     &-title {
       @include theme.text-style-helper(h3);
 
-      grid-column: span 12;
+      grid-column: 1 / -1;
     }
   }
 
   &__utility {
     grid-column: span 4;
+    overflow: hidden;
     border: 1px solid var(--color-border-default);
     border-radius: 8px;
+
+    @include theme.md {
+      grid-column: span 3;
+    }
+
+    @include theme.xl {
+      grid-column: span 4;
+    }
 
     &-title {
       @include theme.text-style-helper(t1);

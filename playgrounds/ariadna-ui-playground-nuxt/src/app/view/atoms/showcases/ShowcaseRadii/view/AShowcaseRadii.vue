@@ -63,11 +63,19 @@ const componentClasses = computed(() => {
   }
 
   &__card {
+    grid-column: 1 / -1;
     padding: 16px;
-    margin-bottom: 16px;
     background: var(--color-background-default-medium);
     border: 1px solid var(--color-border-default);
     border-radius: 8px;
+
+    @include theme.md {
+      grid-column: span 2;
+    }
+
+    @include theme.lg {
+      grid-column: span --count;
+    }
 
     &-title {
       @include theme.text-style-helper(h3);

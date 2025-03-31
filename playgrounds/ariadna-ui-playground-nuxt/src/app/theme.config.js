@@ -5,7 +5,7 @@ import indents from './theme/asana/utilities/indents.js';
 import radius from './theme/asana/utilities/radius.js';
 import transition from './theme/asana/utilities/transition.js';
 
-ThemeBuilder(
+new ThemeBuilder(
   {
     projectName: 'Ariadna UI Playground',
     destination: './src/app/assets/scss/themes/asana/',
@@ -43,13 +43,14 @@ ThemeBuilder(
     },
     themes: themes,
     utilities: {
-      fonts,
-      indents,
+      font: fonts,
+      indent: indents,
       radius,
       transition,
     },
     helpers: {
       textStyle: true,
+      columnOffset: true,
     },
   },
-);
+).buildAll();

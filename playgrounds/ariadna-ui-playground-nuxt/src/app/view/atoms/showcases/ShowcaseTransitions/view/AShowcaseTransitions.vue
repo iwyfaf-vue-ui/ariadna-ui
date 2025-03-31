@@ -84,14 +84,15 @@ onBeforeUnmount(() => {
   }
 
   &__container {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
+    @include theme.grid(2, 4, 6, 8, 12);
+
     background: var(--color-background-default-medium);
     border: 1px solid var(--color-border-default);
   }
 
   &__group {
+    @include theme.column-offset('1/ 3', '2/ 4', '3 / 5', '3 / 7', '5 / 9');
+
     h3 {
       padding: 8px;
       text-align: center;

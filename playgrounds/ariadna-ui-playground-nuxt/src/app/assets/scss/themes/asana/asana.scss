@@ -1,3 +1,4 @@
+@use "sass:string";
 $break-sm: 640px;
 $break-md: 768px;
 $break-lg: 1024px;
@@ -82,7 +83,7 @@ padding-right: var(--fields);
       top: 0;
       right: 0;
       left: 0;
-      height: calc(100% - 30px);
+      height: calc(100% - 0px);
       pointer-events: none;
       border: solid transparent;
       border-width: 0 calc(var(--fields) - var(--gap) / 2);
@@ -110,7 +111,7 @@ padding-right: var(--fields);
       top: 0;
       left: 0;
       width: 100%;
-      height: calc(100% - 20px);
+      height: calc(100% - 0px);
       background-image:
           linear-gradient(to left,  var(--padding-color) 0, var(--padding-color) var(--fields)),
           linear-gradient(to left, var(--padding-color) 0, var(--padding-color) var(--fields));
@@ -386,59 +387,59 @@ grid-template-columns: repeat($columns-xl, 1fr);
 --color-shadow-default-large: rgb(0 0 0 / 24%);
   }
 }
-@mixin fonts-size() {
+@mixin font-size() {
   & {
-    --fonts-size-h1: 48px;
---fonts-size-h2: 36px;
---fonts-size-h3: 24px;
---fonts-size-h4: 20px;
---fonts-size-h5: 16px;
---fonts-size-t1: 20px;
---fonts-size-t2: 16px;
---fonts-size-t3: 14px;
---fonts-size-t4: 12px;
+    --font-size-h1: 48px;
+--font-size-h2: 36px;
+--font-size-h3: 24px;
+--font-size-h4: 20px;
+--font-size-h5: 16px;
+--font-size-t1: 20px;
+--font-size-t2: 16px;
+--font-size-t3: 14px;
+--font-size-t4: 12px;
   }
 }
-@mixin fonts-weight() {
+@mixin font-weight() {
   & {
-    --fonts-weight-h1: 600;
---fonts-weight-h2: 600;
---fonts-weight-h3: 600;
---fonts-weight-h4: 600;
---fonts-weight-h5: 600;
---fonts-weight-t1: 400;
---fonts-weight-t2: 400;
---fonts-weight-t3: 400;
---fonts-weight-t4: 400;
+    --font-weight-h1: 600;
+--font-weight-h2: 600;
+--font-weight-h3: 600;
+--font-weight-h4: 600;
+--font-weight-h5: 600;
+--font-weight-t1: 400;
+--font-weight-t2: 400;
+--font-weight-t3: 400;
+--font-weight-t4: 400;
   }
 }
-@mixin fonts-height() {
+@mixin font-height() {
   & {
-    --fonts-height-h1: 56px;
---fonts-height-h2: 40px;
---fonts-height-h3: 24px;
---fonts-height-h4: 28px;
---fonts-height-h5: 20px;
---fonts-height-t1: 28px;
---fonts-height-t2: 24px;
---fonts-height-t3: 22px;
---fonts-height-t4: 18px;
+    --font-height-h1: 56px;
+--font-height-h2: 40px;
+--font-height-h3: 24px;
+--font-height-h4: 28px;
+--font-height-h5: 20px;
+--font-height-t1: 28px;
+--font-height-t2: 24px;
+--font-height-t3: 22px;
+--font-height-t4: 18px;
   }
 }
-@mixin indents-padding() {
+@mixin indent-padding() {
   & {
-    --indents-padding-small: 4px;
---indents-padding-medium: 8px;
---indents-padding-large: 12px;
---indents-padding-xlarge: 16px;
+    --indent-padding-small: 4px;
+--indent-padding-medium: 8px;
+--indent-padding-large: 12px;
+--indent-padding-xlarge: 16px;
   }
 }
-@mixin indents-margin() {
+@mixin indent-margin() {
   & {
-    --indents-margin-small: 4px;
---indents-margin-medium: 8px;
---indents-margin-large: 12px;
---indents-margin-xlarge: 16px;
+    --indent-margin-small: 4px;
+--indent-margin-medium: 8px;
+--indent-margin-large: 12px;
+--indent-margin-xlarge: 16px;
   }
 }
 @mixin radius-default() {
@@ -459,7 +460,30 @@ grid-template-columns: repeat($columns-xl, 1fr);
   }
 }
 @mixin text-style-helper($name) {
-font-size: var(--fonts-size-#{$name});
-font-weight: var(--fonts-weight-#{$name});
-line-height: var(--fonts-height-#{$name});
+font-size: var(--font-size-#{$name});
+font-weight: var(--font-weight-#{$name});
+line-height: var(--font-height-#{$name});
+}
+@mixin column-offset($offset, $offset-sm:null, $offset-md:null, $offset-lg:null, $offset-xl:null ) {
+grid-column: string.unquote($offset);
+@if $offset-sm {
+@include sm() {
+grid-column: string.unquote($offset-sm);
+}
+}
+@if $offset-md {
+@include md() {
+grid-column: string.unquote($offset-md);
+}
+}
+@if $offset-lg {
+@include lg() {
+grid-column: string.unquote($offset-lg);
+}
+}
+@if $offset-xl {
+@include xl() {
+grid-column: string.unquote($offset-xl);
+}
+}
 }

@@ -297,95 +297,95 @@ CSS переменные темы `theme-dark`:
 ## Utilities
 Набор утилитарных CSS переменных.
 
-### Fonts
-Объект `fonts` содержит следующие миксины:
+### Font
+Объект `font` содержит следующие миксины:
 
-#### Fonts Size
+#### Font Size
 ```
-@include fonts-size;
-```
-
-CSS переменные миксина `fonts-size`:
-
-```
---fonts-size-h1: 48px;
---fonts-size-h2: 36px;
---fonts-size-h3: 24px;
---fonts-size-h4: 20px;
---fonts-size-h5: 16px;
---fonts-size-t1: 20px;
---fonts-size-t2: 16px;
---fonts-size-t3: 14px;
---fonts-size-t4: 12px;
-
-```
-#### Fonts Weight
-```
-@include fonts-weight;
+@include font-size;
 ```
 
-CSS переменные миксина `fonts-weight`:
+CSS переменные миксина `font-size`:
 
 ```
---fonts-weight-h1: 600;
---fonts-weight-h2: 600;
---fonts-weight-h3: 600;
---fonts-weight-h4: 600;
---fonts-weight-h5: 600;
---fonts-weight-t1: 400;
---fonts-weight-t2: 400;
---fonts-weight-t3: 400;
---fonts-weight-t4: 400;
+--font-size-h1: 48px;
+--font-size-h2: 36px;
+--font-size-h3: 24px;
+--font-size-h4: 20px;
+--font-size-h5: 16px;
+--font-size-t1: 20px;
+--font-size-t2: 16px;
+--font-size-t3: 14px;
+--font-size-t4: 12px;
 
 ```
-#### Fonts Height
+#### Font Weight
 ```
-@include fonts-height;
-```
-
-CSS переменные миксина `fonts-height`:
-
-```
---fonts-height-h1: 56px;
---fonts-height-h2: 40px;
---fonts-height-h3: 24px;
---fonts-height-h4: 28px;
---fonts-height-h5: 20px;
---fonts-height-t1: 28px;
---fonts-height-t2: 24px;
---fonts-height-t3: 22px;
---fonts-height-t4: 18px;
-
-```
-### Indents
-Объект `indents` содержит следующие миксины:
-
-#### Indents Padding
-```
-@include indents-padding;
+@include font-weight;
 ```
 
-CSS переменные миксина `indents-padding`:
+CSS переменные миксина `font-weight`:
 
 ```
---indents-padding-small: 4px;
---indents-padding-medium: 8px;
---indents-padding-large: 12px;
---indents-padding-xlarge: 16px;
+--font-weight-h1: 600;
+--font-weight-h2: 600;
+--font-weight-h3: 600;
+--font-weight-h4: 600;
+--font-weight-h5: 600;
+--font-weight-t1: 400;
+--font-weight-t2: 400;
+--font-weight-t3: 400;
+--font-weight-t4: 400;
 
 ```
-#### Indents Margin
+#### Font Height
 ```
-@include indents-margin;
+@include font-height;
 ```
 
-CSS переменные миксина `indents-margin`:
+CSS переменные миксина `font-height`:
 
 ```
---indents-margin-small: 4px;
---indents-margin-medium: 8px;
---indents-margin-large: 12px;
---indents-margin-xlarge: 16px;
+--font-height-h1: 56px;
+--font-height-h2: 40px;
+--font-height-h3: 24px;
+--font-height-h4: 28px;
+--font-height-h5: 20px;
+--font-height-t1: 28px;
+--font-height-t2: 24px;
+--font-height-t3: 22px;
+--font-height-t4: 18px;
+
+```
+### Indent
+Объект `indent` содержит следующие миксины:
+
+#### Indent Padding
+```
+@include indent-padding;
+```
+
+CSS переменные миксина `indent-padding`:
+
+```
+--indent-padding-small: 4px;
+--indent-padding-medium: 8px;
+--indent-padding-large: 12px;
+--indent-padding-xlarge: 16px;
+
+```
+#### Indent Margin
+```
+@include indent-margin;
+```
+
+CSS переменные миксина `indent-margin`:
+
+```
+--indent-margin-small: 4px;
+--indent-margin-medium: 8px;
+--indent-margin-large: 12px;
+--indent-margin-xlarge: 16px;
 
 ```
 ### Radius
