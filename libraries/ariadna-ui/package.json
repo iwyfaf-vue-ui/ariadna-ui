@@ -25,7 +25,7 @@
     "test": "vitest --dom --watch=false",
     "test:watch": "vitest --dom",
     "release": "npm run build && changelogen --release --push --publish",
-    "pre-release": "npm run build && changelogen --release --prerelease beta --no-tag --push --publish --publishTag beta"
+    "pre-release": "npm run build && changelogen --release --prerelease beta --no-tag --push --publish --publishTag beta gh release create <tag> --prerelease"
   },
   "dependencies": {
     "vue": "^3.5.13"
