@@ -1,0 +1,26 @@
+{
+  "name": "ariadna-ui-docs",
+  "version": "1.0.0",
+  "description": "Ariadna UI docs.",
+  "scripts": {
+    "docs:dev": "vitepress dev src",
+    "docs:build": "vitepress build src",
+    "docs:preview": "vitepress preview src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "sass": "^1.86.0",
+    "stylelint": "^16.17.0",
+    "stylelint-config-recess-order": "^6.0.0",
+    "stylelint-config-recommended-scss": "^14.1.0",
+    "stylelint-config-recommended-vue": "^1.6.0",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "typescript": "^5.8.2",
+    "vue": "^3.5.13"
+  },
+  "dependencies": {
+    "@iwyfaf-vue-ui/ariadna-ui": "^1.0.1-beta.14"
+  }
+}

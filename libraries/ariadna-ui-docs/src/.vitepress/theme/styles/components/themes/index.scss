@@ -1,0 +1,10 @@
+@use './white.theme' as white;
+@use './charcoal.theme' as dark;
+
+html {
+  @include white.white-theme;
+}
+
+html.dark {
+  @include dark.charcoal-theme;
+}

@@ -1,0 +1,58 @@
+@use 'container';
+@use 'text-link';
+@use 'item-grid';
+@use 'card-link';
+
+/* reassignment rules for default VitePress theme */
+@media (width >= 960px) {
+  .Layout {
+    // .Layout .VPNavBar
+    .VPNavBar {
+      // .Layout .VPNavBar .container > .title
+      & .container > .title {
+        width: var(--vp-sidebar-width);
+        padding-left: 32px;
+      }
+
+      // .Layout .VPNavBar.has-sidebar
+      &.has-sidebar {
+        // .Layout .VPNavBar.has-sidebar .curtain
+        & .curtain {
+          width: calc(100% - var(--vp-sidebar-width));
+        }
+
+        // .Layout .VPNavBar.has-sidebar .content
+        & .content {
+          width: calc(100% - var(--vp-sidebar-width));
+          padding-right: 32px;
+          padding-left: var(--vp-sidebar-width);
+          margin-left: 0;
+        }
+
+        & .divider {
+          padding-right: 32px;
+          padding-left: var(--vp-sidebar-width);
+          margin-left: 0;
+        }
+      }
+    }
+
+    // .Layout .VPSidebar
+    .VPSidebar {
+      width: var(--vp-sidebar-width);
+      padding-left: 32px;
+    }
+
+    // .Layout .VPContent.has-sidebar
+    .VPContent.has-sidebar {
+      padding-right: 32px;
+      padding-left: var(--vp-sidebar-width);
+      margin-left: 0;
+    }
+
+    // .Layout .VPDoc.has-aside .content-container
+    .VPDoc.has-aside .content-container {
+      max-width: 100%;
+    }
+  }
+}
