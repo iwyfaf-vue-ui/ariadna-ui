@@ -45,7 +45,7 @@ const updatePackage = () => {
   //   ['composables', 'test-data', 'core', 'shared', 'directive'],
   // );
 
-  const utilities = scanFiles('./src/lib/utilities', ['.test.ts'], ['core', 'types']);
+  const utilities = scanFiles('./src/lib/utilities', ['.test.ts'], ['core', 'types', 'tests']);
 
   const typesVersions = Object.fromEntries(
     Object.entries({ ...utilities }).map(([_, value]) => {

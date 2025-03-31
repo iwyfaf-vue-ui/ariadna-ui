@@ -20,7 +20,11 @@ type TFileTree = {
   [key: string]: TFileNode[];
 };
 
-const utilities: TFileTree = scanFiles('./src/lib/utilities', ['.test.ts'], ['core', 'types']);
+const utilities: TFileTree = scanFiles(
+  './src/lib/utilities',
+  ['.test.ts'],
+  ['core', 'types', 'tests'],
+);
 
 const dynamicFileNames = Object.fromEntries(
   Object.entries({ ...utilities }).map(([_, value]) => {
