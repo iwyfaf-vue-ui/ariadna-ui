@@ -23,8 +23,10 @@
     "build": "npm run update-package && vite build --out-dir dist",
     "build-dev": "npm run update-package && vite build --out-dir dist --mode development",
     "preview": "vite preview",
-    "pre-release": "npm run build && changelogen --release --prerelease beta --no-tag --push --publish --publishTag beta",
-    "update-package": "node packageGenerator/update-package.js"
+    "update-package": "node packageGenerator/update-package.js",
+    "test:watch": "vitest --dom",
+    "test": "vitest --dom --watch=false",
+    "pre-release": "npm run build && changelogen --release --prerelease beta --no-tag --push --publish --publishTag beta"
   },
   "dependencies": {
     "vue": "^3.5.13"
@@ -34,6 +36,7 @@
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/tsconfig": "^0.7.0",
     "changelogen": "^0.6.1",
+    "happy-dom": "^17.4.4",
     "prettier": "^3.5.3",
     "rollup": "^4.35.0",
     "rollup-plugin-clear": "^2.0.7",
@@ -48,19 +51,20 @@
     "typescript": "^5.8.2",
     "vite": "^6.2.1",
     "vite-plugin-static-copy": "^2.3.0",
+    "vitest": "^3.1.1",
     "vue": "^3.2.29",
     "vue-tsc": "^2.2.8"
   },
   "exports": {
     "./ThemeBuilder": {
-      "import": "./dist/lib/utilities/builders/ThemeBuilder/ThemeBuilder.esm.js",
-      "types": "./dist/lib/utilities/builders/ThemeBuilder/ThemeBuilder.types.ts"
+      "import": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.esm.js",
+      "types": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.types.ts"
     }
   },
   "typesVersions": {
     "*": {
       "ThemeBuilder": [
-        "./dist/lib/utilities/builders/ThemeBuilder/ThemeBuilder.types.ts"
+        "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.types.ts"
       ]
     }
   }
