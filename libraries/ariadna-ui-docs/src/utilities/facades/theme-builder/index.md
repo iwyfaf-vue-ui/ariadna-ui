@@ -1474,7 +1474,7 @@ new ThemeBuilder(
   * `font-size` - размер шрифта;
   * `font-weight` - жирность шрифта;
   * `font-height` - высота строки (line-height);
-  * `indent` - отступы;
+  * `indent` - отступы.
 
 Вы можете:
 
