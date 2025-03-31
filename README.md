@@ -6,7 +6,7 @@ UI library for Vue 3
 * **TypeScript** - All components are written using TypeScript and have `.d.ts` file with typing.
 * **Unit Tests** - All library elements are covered by unit tests.
 
-## Документация
+## Documentation
 
 * [Working with Vue Library Builder](BUILDER.md)
 * [Ariadna UI Documentation](DOC.md)
