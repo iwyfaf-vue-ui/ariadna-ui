@@ -1,6 +1,36 @@
 # Changelog
 
 
+## v1.1.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.0.1-beta.12...v1.1.0)
+
+### 🚀 Enhancements
+
+- Add deploy-production workflow ([5de98b2](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/5de98b2))
+- Add ThemeBuilder ([75baf32](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/75baf32))
+
+### 📖 Documentation
+
+- Add ThemeBuilder docs ([a05e593](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/a05e593))
+- Update lib version ([81e3f22](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/81e3f22))
+- Install vitepress ([0d0e2fb](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/0d0e2fb))
+
+### 🏡 Chore
+
+- **release:** V1.0.1-beta.13 ([7afee1f](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/7afee1f))
+- **release:** V1.0.1-beta.14 ([28ac270](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/28ac270))
+- **release:** V1.0.1-beta.15 ([5a7feea](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/5a7feea))
+- **release:** V1.0.1-beta.16 ([8e028d2](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/8e028d2))
+- **release:** V1.0.1-beta.17 ([0498a20](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/0498a20))
+- **release:** V1.0.1-beta.18 ([d533855](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/d533855))
+- **release:** V1.0.1-beta.19 ([dc9d433](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/dc9d433))
+- **release:** V1.0.1-beta.20 ([5c7286c](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/5c7286c))
+
+### ❤️ Contributors
+
+- IWatchYouFromAfar <skip1209@yahoo.com>
+
 ## v1.0.1-beta.20
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.0.1-beta.12...v1.0.1-beta.20)
