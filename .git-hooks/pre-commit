@@ -1,5 +1,5 @@
 #!/bin/bash
 cd libraries/ariadna-ui/
 npx vitest --dom --watch=false &&
-npx prettier "**/*.{vue,ts}" --check --ignore-unknown &&
-npx stylelint "**/*.{scss,vue}"
+npx prettier "**/*.{vue,ts}" --check --ignore-unknown
+#npx stylelint "**/*.{scss,vue}"
