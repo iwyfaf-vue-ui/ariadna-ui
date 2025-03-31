@@ -21,6 +21,6 @@
     "vue": "^3.5.13"
   },
   "dependencies": {
-    "@iwyfaf-vue-ui/ariadna-ui": "^1.0.1-beta.14"
+    "@iwyfaf-vue-ui/ariadna-ui": "^1.0.1-beta.20"
   }
 }
