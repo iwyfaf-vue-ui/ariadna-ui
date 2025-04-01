@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v1.1.2-beta.1
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.1.1...v1.1.2-beta.1)
+
+### 🚀 Enhancements
+
+- Add Capitalize library element ([917146e](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/917146e))
+- Add Capitalize library element playground ([b372851](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/b372851))
+- Add TSC linting before build library ([48c5828](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/48c5828))
+
+### 🏡 Chore
+
+- **release:** V1.1.2-beta.0 ([17aa5fb](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/17aa5fb))
+
+### ❤️ Contributors
+
+- IWatchYouFromAfar <skip1209@yahoo.com>
+
 ## v1.1.2-beta.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.1.1...v1.1.2-beta.0)
