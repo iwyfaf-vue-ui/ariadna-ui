@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.1.2-beta.1",
+  "version": "1.2.0",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -24,7 +24,8 @@
     "build-dev": "npm run update-package && vue-tsc -b && vite build --out-dir dist --mode development",
     "test": "vitest --dom --watch=false",
     "test:watch": "vitest --dom",
-    "release": "npm run build && changelogen --release --push --publish",
+    "release": "npm run build && changelogen --release --push --publish --no-github",
+    "release-notes": "changelogen gh release",
     "pre-release": "npm run build && changelogen --release --no-github --no-tag --prerelease beta --push --publish --publishTag beta"
   },
   "dependencies": {
