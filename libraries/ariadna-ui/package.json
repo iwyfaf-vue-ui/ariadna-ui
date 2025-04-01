@@ -58,12 +58,19 @@
     "./ThemeBuilder": {
       "import": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.esm.js",
       "types": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.types.ts"
+    },
+    "./Capitalize": {
+      "import": "./dist/lib/utilities/helpers/Capitalize/Capitalize.esm.js",
+      "types": "./dist/lib/utilities/helpers/Capitalize/Capitalize.types.ts"
     }
   },
   "typesVersions": {
     "*": {
       "ThemeBuilder": [
         "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.types.ts"
+      ],
+      "Capitalize": [
+        "./dist/lib/utilities/helpers/Capitalize/Capitalize.types.ts"
       ]
     }
   }
