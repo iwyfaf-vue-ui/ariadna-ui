@@ -11,8 +11,12 @@ export default class ThemeBuilder {
   private filePlacer: FilePlacer;
 
   constructor(options: TBuilderOptions, settings: TCustomSettings | {} = {}) {
-    this.builder = new Builder(settings, defaultSettings);
-    this.builderDocumentation = new BuilderDocumentation(settings, defaultSettings, options);
+    this.builder = new Builder(settings as TCustomSettings, defaultSettings);
+    this.builderDocumentation = new BuilderDocumentation(
+      settings as TCustomSettings,
+      defaultSettings,
+      options,
+    );
     this.filePlacer = new FilePlacer(options.projectName, options.destination, options.themeName);
   }
 

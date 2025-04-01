@@ -213,10 +213,8 @@ import type { TCustomSettingsHelpers } from './custom-settings-helpers.type';
  *   },
  * ```
  */
-export type TCustomSettings =
-  | (TCustomSettingsBreakpoints &
-      TCustomSettingsGrid &
-      TCustomSettingsTheme &
-      TCustomSettingsUtilities &
-      TCustomSettingsHelpers)
-  | {};
+export type TCustomSettings = TCustomSettingsBreakpoints &
+  TCustomSettingsGrid &
+  TCustomSettingsTheme &
+  TCustomSettingsUtilities &
+  TCustomSettingsHelpers;

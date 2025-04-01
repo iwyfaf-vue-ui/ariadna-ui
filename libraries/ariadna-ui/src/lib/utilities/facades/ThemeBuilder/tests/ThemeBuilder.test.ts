@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import type { TBuilderOptions } from '../types/builder-options/builder-options.type.ts';
-import ThemeBuilder from '../ThemeBuilder.ts';
+import ThemeBuilder from '../ThemeBuilder';
 
 describe('ThemeBuilder.ts: Basic initialize', () => {
   let options: TBuilderOptions;

@@ -10,7 +10,7 @@ import { PatternMarkdownCodeTag } from '../../patterns/markdown/pattern.markdown
 import { PatternMarkdownTableCell } from '../../patterns/markdown/pattern.markdown.tableCell';
 import { PatternMarkdownTableRow } from '../../patterns/markdown/pattern.markdown.tableRow';
 import { PatternMarkdownTableWrapper } from '../../patterns/markdown/pattern.markdown.tableWrapper';
-import capitalizeHelper from '../../../../../../../shared/helpers/string/capitalize.helper';
+import capitalize from '../../../../../helpers/Capitalize/Capitalize';
 
 /**
  * @description The `BuilderDocumentationConstructor` class is responsible for generating
@@ -187,7 +187,7 @@ export default class BuilderDocumentationConstructor extends BuilderConstructor 
 
       for (const themeName in themes) {
         const themeProperties = this.flattenObj(themes[themeName]);
-        tmp = capitalizeHelper(themeName);
+        tmp = capitalize(themeName);
 
         const h2 = new PatternMarkdownCommonResolver(PatternMarkdownHeader(3), tmp);
         result += h2.render();
@@ -247,7 +247,7 @@ export default class BuilderDocumentationConstructor extends BuilderConstructor 
     for (const groupName in utilities) {
       if (!utilities.hasOwnProperty(groupName)) continue;
 
-      tmp = capitalizeHelper(groupName);
+      tmp = capitalize(groupName);
       const h2 = new PatternMarkdownCommonResolver(PatternMarkdownHeader(3), tmp);
       result += h2.render();
 
@@ -266,8 +266,8 @@ export default class BuilderDocumentationConstructor extends BuilderConstructor 
 
         tmp =
           groupName === subGroupName
-            ? capitalizeHelper(groupName)
-            : `${capitalizeHelper(groupName)} ${capitalizeHelper(subGroupName)}`;
+            ? capitalize(groupName)
+            : `${capitalize(groupName)} ${capitalize(subGroupName)}`;
         const h2 = new PatternMarkdownCommonResolver(PatternMarkdownHeader(4), tmp);
         result += h2.render();
         result += '\n';

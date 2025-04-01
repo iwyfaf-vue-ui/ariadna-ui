@@ -20,8 +20,8 @@
   },
   "scripts": {
     "update-package": "node packageGenerator/update-package.js",
-    "build": "npm run update-package && vite build --out-dir dist",
-    "build-dev": "npm run update-package && vite build --out-dir dist --mode development",
+    "build": "npm run update-package && vue-tsc -b && vite build --out-dir dist",
+    "build-dev": "npm run update-package && vue-tsc -b && vite build --out-dir dist --mode development",
     "test": "vitest --dom --watch=false",
     "test:watch": "vitest --dom",
     "release": "npm run build && changelogen --release --push --publish",

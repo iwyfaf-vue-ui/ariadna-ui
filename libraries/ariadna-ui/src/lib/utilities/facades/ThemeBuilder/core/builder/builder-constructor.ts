@@ -3,7 +3,7 @@ import type { TDefaultSettings } from '../../types/builder-default-settings/defa
 import type { TCustomSettings } from '../../types/builder-custom-settings/custom-settings.type';
 import { PatternBreakpoints } from '../patterns/pattern.breakpoints';
 import PatternMixin from '../patterns/pattern.mixin';
-import PatternMixinNested from '../patterns/pattern.mixin-nested.ts';
+import PatternMixinNested from '../patterns/pattern.mixin-nested';
 import PatternGrid from '../patterns/pattern.grid';
 import { PatternIncludeNested } from '../patterns/pattern.include';
 import PatternStyles from '../patterns/pattern.styles';
