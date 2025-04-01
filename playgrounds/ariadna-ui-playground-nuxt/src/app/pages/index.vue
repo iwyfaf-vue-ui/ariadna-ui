@@ -22,6 +22,12 @@
       <nuxt-link href="/transitions">Transitions</nuxt-link>
     </li>
   </ul>
+
+  <ul>
+    <li>
+      <nuxt-link href="/utilities/helpers/capitalize">Capitalize</nuxt-link>
+    </li>
+  </ul>
 </template>
 
 <script setup lang="ts">
