@@ -9,6 +9,10 @@ const sidebarUtilitiesHelpers: DefaultTheme.SidebarItem = {
       text: 'Capitalize',
       link: '/utilities/helpers/capitalize/',
     },
+    {
+      text: 'CamelToKebab',
+      link: '/utilities/helpers/camel-to-kebab/',
+    },
   ],
 };
 
