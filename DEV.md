@@ -160,14 +160,17 @@ update the `package.json` file, and you can test the element you are developing 
 Once the element is written, and you are sure that the Unit-tests have worked, you can publish a beta version of the
 package with a new element.
 
+Push your branch to a remote repository:
+
+```shell
+git push --set-upstream origin capitalize-create
+```
+
 Run the command:
 
 ```shell
 npm run pre-release
 ```
-
-Эта команда опубликует новую версию пакета с тегом `beta`. После этого вы сможете протестировать пакет в своем проекте
-и написать документацию. Для этого установите пакет одним из удобных для вас способов:
 
 This command will publish a new version of the package with the `beta` tag. After that, you can test the package in 
 your project and write documentation. To do this, install the package using one of the ways that is convenient for you:
@@ -182,11 +185,15 @@ npm i @iwyfaf-vue-ui/ariadna-ui@1.0.0-beta.1
 
 ### Publishing the production version
 
-Протестировав beta-версию пакета и написав документацию, вы можете публиковать production-версию. Для этого сделайте
-`merge` своей ветки в ветку `master`:
-
 After testing the beta version of the package and writing the documentation, you can publish the production version. 
-To do this, `merge` your branch into the `master` branch:
+To do this, `commit` and then `merge` your branch into the `master` branch:
+
+```shell
+git add libraries/ariadna-ui/
+git add libraries/ariadna-ui-docs/
+git add playgrounds/ariadna-ui-playground-nuxt/
+git commit -m 'feat: add capitilize helper'
+```
 
 ```shell
 git merge master
