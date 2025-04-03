@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v1.3.1
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.3.0...v1.3.1)
+
+### 💅 Refactors
+
+- Delete shared camelot-to-kebab helper ([d1baa39](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/d1baa39))
+- Rename CamelotToKebab case helper to ToKebab ([5332f68](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/5332f68))
+
+### 📖 Documentation
+
+- Update library version ([08072ed](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/08072ed))
+- Update DEV.md ([8f2fbca](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/8f2fbca))
+
+### ❤️ Contributors
+
+- IWatchYouFromAfar <skip1209@yahoo.com>
+
 ## v1.3.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.2.1...v1.3.0)

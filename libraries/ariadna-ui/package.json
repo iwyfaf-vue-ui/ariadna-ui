@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -60,13 +60,13 @@
       "import": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.esm.js",
       "types": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.types.ts"
     },
-    "./CamelToKebab": {
-      "import": "./dist/lib/utilities/helpers/CamelToKebab/CamelToKebab.esm.js",
-      "types": "./dist/lib/utilities/helpers/CamelToKebab/CamelToKebab.types.ts"
-    },
     "./Capitalize": {
       "import": "./dist/lib/utilities/helpers/Capitalize/Capitalize.esm.js",
       "types": "./dist/lib/utilities/helpers/Capitalize/Capitalize.types.ts"
+    },
+    "./ToKebab": {
+      "import": "./dist/lib/utilities/helpers/ToKebab/ToKebab.esm.js",
+      "types": "./dist/lib/utilities/helpers/ToKebab/ToKebab.types.ts"
     }
   },
   "typesVersions": {
@@ -74,11 +74,11 @@
       "ThemeBuilder": [
         "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.types.ts"
       ],
-      "CamelToKebab": [
-        "./dist/lib/utilities/helpers/CamelToKebab/CamelToKebab.types.ts"
-      ],
       "Capitalize": [
         "./dist/lib/utilities/helpers/Capitalize/Capitalize.types.ts"
+      ],
+      "ToKebab": [
+        "./dist/lib/utilities/helpers/ToKebab/ToKebab.types.ts"
       ]
     }
   }
