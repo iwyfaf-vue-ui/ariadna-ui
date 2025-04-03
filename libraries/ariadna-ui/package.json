@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.2.1",
+  "version": "1.2.2-beta.0",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -60,6 +60,10 @@
       "import": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.esm.js",
       "types": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.types.ts"
     },
+    "./CamelToKebab": {
+      "import": "./dist/lib/utilities/helpers/CamelToKebab/CamelToKebab.esm.js",
+      "types": "./dist/lib/utilities/helpers/CamelToKebab/CamelToKebab.types.ts"
+    },
     "./Capitalize": {
       "import": "./dist/lib/utilities/helpers/Capitalize/Capitalize.esm.js",
       "types": "./dist/lib/utilities/helpers/Capitalize/Capitalize.types.ts"
@@ -69,6 +73,9 @@
     "*": {
       "ThemeBuilder": [
         "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.types.ts"
+      ],
+      "CamelToKebab": [
+        "./dist/lib/utilities/helpers/CamelToKebab/CamelToKebab.types.ts"
       ],
       "Capitalize": [
         "./dist/lib/utilities/helpers/Capitalize/Capitalize.types.ts"
