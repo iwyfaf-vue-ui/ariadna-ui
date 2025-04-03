@@ -14,14 +14,14 @@
  *
  * @example
  * // Basic usage
- * camelToKebab('camelCase'); // returns 'camel-case'
- * camelToKebab('PascalCase'); // returns 'pascal-case'
+ * toKebab('camelCase'); // returns 'camel-case'
+ * toKebab('PascalCase'); // returns 'pascal-case'
  *
  * @example
  * // With acronyms
- * camelToKebab('XMLHttpRequest'); // returns 'xml-http-request'
- * camelToKebab('HTMLElement'); // returns 'html-element'
+ * toKebab('XMLHttpRequest'); // returns 'xml-http-request'
+ * toKebab('HTMLElement'); // returns 'html-element'
  */
-declare function camelToKebab(string: string): string;
+declare function toKebab(string: string): string;
 
-export default camelToKebab;
+export default toKebab;

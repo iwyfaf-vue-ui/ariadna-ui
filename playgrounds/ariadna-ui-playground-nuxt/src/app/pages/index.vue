@@ -28,7 +28,7 @@
       <nuxt-link href="/utilities/helpers/capitalize">Capitalize</nuxt-link>
     </li>
     <li>
-      <nuxt-link href="/utilities/helpers/camel-to-kebab">Camel to Kebab</nuxt-link>
+      <nuxt-link href="/utilities/helpers/to-kebab">To Kebab</nuxt-link>
     </li>
   </ul>
 </template>

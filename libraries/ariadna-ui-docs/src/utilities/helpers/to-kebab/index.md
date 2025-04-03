@@ -2,15 +2,15 @@
 layout: doc
 ---
 
-# CamelToKebab
+# ToKebab
 
-CamelToKebab - это функция, которая преобразует строку `camelCase` или `PascalCase` в строку `kebab-case`.
+ToKebab - это функция, которая преобразует строку `camelCase` или `PascalCase` в строку `kebab-case`.
 
 Вес <Badge type="info">~ 0.20 kB gzipped.</Badge>
 
 ## Описание
 
-Функция `camelToKebab` принимает первым параметром аргумент `string` и возвращает его же, но в стиле `kebab-case`.
+Функция `toKebab` принимает первым параметром аргумент `string` и возвращает его же, но в стиле `kebab-case`.
 
 ## Установка
 
@@ -21,11 +21,11 @@ CamelToKebab - это функция, которая преобразует ст
 Подключив функцию к проекту, вызываем ее и передаем требуемые аргументы:
 
 ```typescript
-import camelToKebab from '@iwyfaf-vue-ui/ariadna-ui/CamelToKebab';
+import toKebab from '@iwyfaf-vue-ui/ariadna-ui/ToKebab';
 
-camelToKebab('camelCase');
-camelToKebab('XMLHttpRequest'); 
-camelToKebab('already-kebab-case'); 
+toKebab('camelCase');
+toKebab('XMLHttpRequest');
+toKebab('already-kebab-case'); 
 ```
 
 ### Аргументы

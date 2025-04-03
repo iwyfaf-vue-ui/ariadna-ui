@@ -1,4 +1,4 @@
-export default function camelToKebab(string: string): string {
+export default function toKebab(string: string): string {
   return (
     string
       // Handle both camelCase and PascalCase while preserving acronyms
