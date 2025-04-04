@@ -1,6 +1,70 @@
 # Changelog
 
 
+## v1.3.2-beta.3
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.3.1...v1.3.2-beta.3)
+
+### 💅 Refactors
+
+- Rename CamelotToKebab import to ToKebab ([fbb20a0](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/fbb20a0))
+
+### 📖 Documentation
+
+- Update DEV.md ([7024bf8](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/7024bf8))
+
+### ❤️ Contributors
+
+- IWatchYouFromAfar <skip1209@yahoo.com>
+
+## v1.3.2-beta.2
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.3.1...v1.3.2-beta.2)
+
+### 💅 Refactors
+
+- Rename CamelotToKebab import to ToKebab ([fbb20a0](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/fbb20a0))
+
+### 📖 Documentation
+
+- Update DEV.md ([7024bf8](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/7024bf8))
+
+### ❤️ Contributors
+
+- IWatchYouFromAfar <skip1209@yahoo.com>
+
+## v1.3.2-beta.1
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.3.1...v1.3.2-beta.1)
+
+### 💅 Refactors
+
+- Rename CamelotToKebab import to ToKebab ([fbb20a0](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/fbb20a0))
+
+### 📖 Documentation
+
+- Update DEV.md ([7024bf8](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/7024bf8))
+
+### ❤️ Contributors
+
+- IWatchYouFromAfar <skip1209@yahoo.com>
+
+## v1.3.2-beta.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.3.1...v1.3.2-beta.0)
+
+### 💅 Refactors
+
+- Rename CamelotToKebab import to ToKebab ([fbb20a0](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/fbb20a0))
+
+### 📖 Documentation
+
+- Update DEV.md ([7024bf8](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/7024bf8))
+
+### ❤️ Contributors
+
+- IWatchYouFromAfar <skip1209@yahoo.com>
+
 ## v1.3.1
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.3.0...v1.3.1)

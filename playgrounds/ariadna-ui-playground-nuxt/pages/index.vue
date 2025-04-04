@@ -23,6 +23,14 @@
     </li>
   </ul>
 
+  <h2>Components</h2>
+  <ul>
+    <li>
+      <nuxt-link href="/components/buttons/button">Button</nuxt-link>
+    </li>
+  </ul>
+
+  <h2>Utilities</h2>
   <ul>
     <li>
       <nuxt-link href="/utilities/helpers/capitalize">Capitalize</nuxt-link>
