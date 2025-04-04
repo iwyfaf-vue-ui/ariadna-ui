@@ -192,7 +192,7 @@ To do this, `commit` and then `merge` your branch into the `master` branch:
 git add libraries/ariadna-ui/
 git add libraries/ariadna-ui-docs/
 git add playgrounds/ariadna-ui-playground-nuxt/
-git commit -m 'feat: add capitilize helper'
+git commit -m 'feat: add capitalize helper'
 ```
 
 ```shell
