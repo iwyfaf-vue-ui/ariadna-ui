@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.3.2-beta.3",
+  "version": "1.3.2-beta.4",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -53,19 +53,19 @@
   },
   "exports": {
     "./Button": {
-      "import": "./dist/lib/components/buttons/Button/Button.esm.js",
+      "module": "./dist/lib/components/buttons/Button/Button.esm.js",
       "types": "./dist/lib/components/buttons/Button/Button.d.ts"
     },
     "./ThemeBuilder": {
-      "import": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.esm.js",
+      "module": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.esm.js",
       "types": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.d.ts"
     },
     "./Capitalize": {
-      "import": "./dist/lib/utilities/helpers/Capitalize/Capitalize.esm.js",
+      "module": "./dist/lib/utilities/helpers/Capitalize/Capitalize.esm.js",
       "types": "./dist/lib/utilities/helpers/Capitalize/Capitalize.d.ts"
     },
     "./ToKebab": {
-      "import": "./dist/lib/utilities/helpers/ToKebab/ToKebab.esm.js",
+      "module": "./dist/lib/utilities/helpers/ToKebab/ToKebab.esm.js",
       "types": "./dist/lib/utilities/helpers/ToKebab/ToKebab.d.ts"
     }
   },
