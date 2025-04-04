@@ -6,7 +6,7 @@
 </template>
 
 <script setup lang="ts">
-import toKebab from '@iwyfaf-vue-ui/ariadna-ui/CamelToKebab';
+import toKebab from '@iwyfaf-vue-ui/ariadna-ui/ToKebab';
 
 definePageMeta({
   layout: 'default',
