@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.3.2-beta.13",
+  "version": "1.3.2-beta.14",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -15,6 +15,7 @@
   "files": [
     "dist"
   ],
+  "types": "types/index.ts",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
