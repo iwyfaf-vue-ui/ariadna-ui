@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import * as path from 'node:path';
+
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   $development: {
@@ -46,16 +48,11 @@ export default defineNuxtConfig({
       },
     },
   },
-  modules: [
-    [
-      '@nuxtjs/color-mode',
-      {
-        storage: 'cookie',
-        storageKey: 'preference-theme',
-        dataValue: 'theme',
-      },
-    ],
-  ],
+  modules: [],
+  alias: {
+    // Fix only for local development, to resolve Cannot read properties of null (reading 'ce')
+    vue: path.resolve(__dirname, 'node_modules/vue'),
+  },
   build: {
     transpile: ['@iwyfaf-vue-ui/ariadna-ui'],
   },

@@ -8,7 +8,7 @@ import transition from './theme/asana/utilities/transition.js';
 new ThemeBuilder(
   {
     projectName: 'Ariadna UI Playground',
-    destination: './src/app/assets/scss/themes/asana/',
+    destination: './assets/scss/themes/asana/',
     themeName: 'asana',
   },
   {

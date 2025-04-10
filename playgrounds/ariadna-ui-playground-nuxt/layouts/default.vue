@@ -1,11 +1,5 @@
 <template>
-  <label for="theme">Выберите тему</label>
-  <select v-model="colorMode.preference" id="theme">
-    <option value="light">Light</option>
-    <option value="dark">Dark</option>
-  </select>
-
-  <button type="button" @click="goBack">Go Back</button>
+  <Button @click="goBack"> Назад </Button>
 
   <div class="container">
     <slot />
@@ -13,8 +7,9 @@
 </template>
 
 <script setup lang="ts">
+import Button from '@iwyfaf-vue-ui/ariadna-ui/Button';
+
 const router = useRouter();
-const colorMode = useColorMode();
 
 const goBack = () => {
   router.go(-1);

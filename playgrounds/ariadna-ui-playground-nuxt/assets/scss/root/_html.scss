@@ -4,6 +4,8 @@ html {
   @include theme.theme-light;
 }
 
-html[data-theme='dark'] {
-  @include theme.theme-dark;
+@media (prefers-color-scheme: dark) {
+  html {
+    @include theme.theme-dark;
+  }
 }
