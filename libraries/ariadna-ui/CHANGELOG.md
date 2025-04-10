@@ -1,6 +1,41 @@
 # Changelog
 
 
+## v1.3.2-beta.20
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.3.1...v1.3.2-beta.20)
+
+### 💅 Refactors
+
+- Rename CamelotToKebab import to ToKebab ([fbb20a0](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/fbb20a0))
+
+### 📖 Documentation
+
+- Update DEV.md ([7024bf8](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/7024bf8))
+
+### 🏡 Chore
+
+- **release:** V1.3.2-beta.3 ([8362a0f](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/8362a0f))
+- **release:** V1.3.2-beta.4 ([2d21167](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/2d21167))
+- **release:** V1.3.2-beta.6 ([17f4ba3](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/17f4ba3))
+- **release:** V1.3.2-beta.7 ([edb3248](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/edb3248))
+- **release:** V1.3.2-beta.8 ([fa9f013](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/fa9f013))
+- **release:** V1.3.2-beta.9 ([db3976f](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/db3976f))
+- **release:** V1.3.2-beta.10 ([506f485](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/506f485))
+- **release:** V1.3.2-beta.11 ([67dd23d](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/67dd23d))
+- **release:** V1.3.2-beta.12 ([00d6bc6](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/00d6bc6))
+- **release:** V1.3.2-beta.13 ([4df4b51](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/4df4b51))
+- **release:** V1.3.2-beta.14 ([7020e2c](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/7020e2c))
+- **release:** V1.3.2-beta.15 ([25ebeff](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/25ebeff))
+- **release:** V1.3.2-beta.16 ([c89e6aa](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/c89e6aa))
+- **release:** V1.3.2-beta.17 ([7c5f3a4](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/7c5f3a4))
+- **release:** V1.3.2-beta.18 ([3d3cf27](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/3d3cf27))
+- **release:** V1.3.2-beta.19 ([e04b1be](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/e04b1be))
+
+### ❤️ Contributors
+
+- IWatchYouFromAfar <skip1209@yahoo.com>
+
 ## v1.3.2-beta.19
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.3.1...v1.3.2-beta.19)
