@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress';
 import { config as root, searchLocale as searchLocaleRu } from './config/ru/config';
 import { config as en, searchLocale as searchLocaleEn } from './config/en/config';
+import VitePluginVitepressDemo from 'vite-plugin-vitepress-demo';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -51,5 +52,6 @@ export default defineConfig({
     ssr: {
       noExternal: ['@iwyfaf-vue-ui/ariadna-ui'],
     },
+    plugins: [VitePluginVitepressDemo()],
   },
 });

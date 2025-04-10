@@ -1,0 +1,9 @@
+@use '../themes/asana/asana' as theme;
+
+html {
+  @include theme.theme-light;
+}
+
+html.dark {
+  @include theme.theme-dark;
+}

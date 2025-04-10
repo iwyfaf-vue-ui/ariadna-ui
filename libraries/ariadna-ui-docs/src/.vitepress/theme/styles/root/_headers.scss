@@ -1,0 +1,21 @@
+@use '../themes/asana/asana' as theme;
+
+h1 {
+  @include theme.text-style-helper(h1);
+}
+
+h2 {
+  @include theme.text-style-helper(h2);
+}
+
+h3 {
+  @include theme.text-style-helper(h3);
+}
+
+h4 {
+  @include theme.text-style-helper(h4);
+}
+
+h5 {
+  @include theme.text-style-helper(h5);
+}
