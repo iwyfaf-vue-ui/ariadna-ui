@@ -13,7 +13,6 @@ Go to the library directory and specify the local path to the file `.gitconfig`:
 ```shell
 cd libraries/ariadna-ui
 git config --local include.path ../.gitconfig
-cp 
 ```
 
 Create an `.env` file:
@@ -59,6 +58,7 @@ rules for creating new library elements:
 3. The structure of the library element directories must be strictly observed;
 4. Each function of the library element must be covered by at least 3-4 Unit-tests.;
 5. Each library element should have a well-described file with the types.
+6. Each library element should have Unit tests for each entity (core, composables, directives, etc.).
 
 ### Writing a Software Requirements Specification
 
@@ -91,7 +91,9 @@ rules for creating new library elements:
          * Composition API + `<script setup>`;
          * Prop typing via `defineProps<T>()`;
          * Slots typing via `defineSlots<T>()`;
-         * Emits typing via `defineEmits<T>()`.
+         * Emits typing via `defineEmits<T>()`;
+         * The reactive logic should be implemented in the composables directory;
+         * Non-active logic should be implemented in the core directory.
    3. Directives:
       1. Mandatory Requirements:
          * Argument typing (`binding: DirectiveBinding<T>`);
@@ -101,7 +103,7 @@ rules for creating new library elements:
         * Return `ref` / `reactive` with explicit typing.
 4. Documentation:
    1. Each library element must contain:
-      * Description in JSDoc format in `types.ts` files.
+      * Description in JSDoc format in `d.ts` files.
    2. Each library element should have its own documentation on [ui.iwyfaf.ru](https://ui.iwyfaf.ru) and should contain:
       * Usage examples;
       * Description of `props`, `slots`, `emits` and `expose` (Vue 3);
@@ -131,7 +133,7 @@ the register!
 │   │   │   ├── tests                            # The directory with Unit-tests of the element
 │   │   │   ├── types                            # A directory with a breakdown of element types
 │   │   │   ├── Example.ts / Example.vue         # The main (entry) file of the element (ts or vue)
-│   │   │   ├── Example.types.ts                 # The main file with the element types
+│   │   │   ├── Example.d.ts                     # The main file with the element types
 ```
 
 ### Preparing to create new library elements
@@ -149,7 +151,7 @@ lib/utilities/helpers/Example/
 lib/utilities/helpers/Example/tests/Example.test.ts
 lib/utilities/helpers/Example/types/
 lib/utilities/helpers/Example/Example.ts
-lib/utilities/helpers/Example/Example.types.ts
+lib/utilities/helpers/Example/Example.d.ts
 ```
 
 Next, we begin to develop the element. During the development process, we use the `npm run build-dev` command. It will 
