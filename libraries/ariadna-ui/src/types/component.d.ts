@@ -1,6 +1,4 @@
-import { VNodeProps, AllowedComponentProps, ComponentCustomProps } from 'vue';
-
-declare type PublicProps = VNodeProps & AllowedComponentProps & ComponentCustomProps;
+import { PublicProps } from 'vue';
 
 export class ClassComponent<Props, Slots, Emits, Element> {
   $props: Props & PublicProps;
@@ -12,3 +10,5 @@ export class ClassComponent<Props, Slots, Emits, Element> {
 export type GlobalComponentConstructor<T> = {
   new (): T;
 };
+
+export type TSharedPropsModifier = 'primary' | 'secondary' | 'quaternary' | 'tertiary' | string;

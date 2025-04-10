@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 import * as path from 'path';
 import * as fs from 'fs';
-import scanFiles from './packageGenerator/scan-files';
+import scanFiles from './packageGenerator/scan-files.js';
 
 enum ETypes {
   VUE = 'vue',
@@ -20,14 +20,20 @@ type TFileTree = {
   [key: string]: TFileNode[];
 };
 
+const components: TFileTree = scanFiles(
+  './src/lib/components',
+  ['.test.ts'],
+  ['core', 'types', 'tests', 'composables', 'prompts'],
+);
+
 const utilities: TFileTree = scanFiles(
   './src/lib/utilities',
   ['.test.ts'],
-  ['core', 'types', 'tests'],
+  ['core', 'types', 'tests', 'prompts'],
 );
 
 const dynamicFileNames = Object.fromEntries(
-  Object.entries({ ...utilities }).map(([_, value]) => {
+  Object.entries({ ...components, ...utilities }).map(([_, value]) => {
     const file = value[0];
     const fileName = file.name.split('.')[0];
     const isVue = value.some((file) => file.name.endsWith('.vue'));
@@ -55,9 +61,9 @@ export default defineConfig(({ mode }) => {
       vue({}),
       viteStaticCopy({
         targets: [
-          { src: 'src/types/component.d.ts', dest: '' },
+          { src: 'src/types/component.d.ts', dest: 'types/' },
           ...Object.entries(fileNames).map(([key, value]) => ({
-            src: `src/${value.path}/${value.name}.types.ts`,
+            src: `src/${value.path}/${value.name}.d.ts`,
             dest: value.path,
           })),
           ...Object.entries(fileNames)

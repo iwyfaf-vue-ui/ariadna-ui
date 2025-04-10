@@ -27,12 +27,12 @@ const updatePackage = () => {
     fs.readFileSync(path.resolve('./package.json'), { encoding: 'utf-8' }),
   );
 
-  // const components = scanFiles(
-  //   './src/lib/components',
-  //   ['.test.ts', '.types.ts'],
-  //   ['composables', 'test-data', 'components', 'core', 'shared', 'directive'],
-  // );
-  //
+  const components = scanFiles(
+    './src/lib/components',
+    ['.test.ts'],
+    ['core', 'types', 'tests', 'components', 'composables', 'directive', 'prompts'],
+  );
+
   // const composables = scanFiles(
   //   './src/lib/composables',
   //   ['.test.ts', '.d.ts'],
@@ -45,10 +45,14 @@ const updatePackage = () => {
   //   ['composables', 'test-data', 'core', 'shared', 'directive'],
   // );
 
-  const utilities = scanFiles('./src/lib/utilities', ['.test.ts'], ['core', 'types', 'tests']);
+  const utilities = scanFiles(
+    './src/lib/utilities',
+    ['.test.ts'],
+    ['core', 'types', 'tests', 'prompts'],
+  );
 
   const typesVersions = Object.fromEntries(
-    Object.entries({ ...utilities }).map(([_, value]) => {
+    Object.entries({ ...components, ...utilities }).map(([_, value]) => {
       const file = value.find(
         (file) => file.name.includes('.d.ts') || file.name.includes('.types.ts'),
       );
@@ -58,7 +62,7 @@ const updatePackage = () => {
   );
 
   const exports = Object.fromEntries(
-    Object.entries({ ...utilities }).map(([_, value]) => {
+    Object.entries({ ...components, ...utilities }).map(([_, value]) => {
       const file = value.find(
         (file) => file.name.includes('.d.ts') || file.name.includes('.types.ts'),
       );
@@ -67,7 +71,7 @@ const updatePackage = () => {
       return [
         `./${fileName}`,
         {
-          import: `${file.path}/${fileName}.esm.js`.replace('src', './dist'),
+          module: `${file.path}/${fileName}.esm.js`.replace('src', './dist'),
           types: `${file.path}/${file.name}`.replace('src', './dist'),
         },
       ];
