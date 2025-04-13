@@ -53,19 +53,23 @@
   },
   "exports": {
     "./Button": {
-      "module": "./dist/lib/components/buttons/Button/Button.esm.js",
+      "import": "./dist/lib/components/buttons/Button/Button.esm.js",
       "types": "./dist/lib/components/buttons/Button/Button.d.ts"
     },
+    "./Badge": {
+      "import": "./dist/lib/components/indicators/Badge/Badge.esm.js",
+      "types": "./dist/lib/components/indicators/Badge/Badge.d.ts"
+    },
     "./ThemeBuilder": {
-      "module": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.esm.js",
+      "import": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.esm.js",
       "types": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.d.ts"
     },
     "./Capitalize": {
-      "module": "./dist/lib/utilities/helpers/Capitalize/Capitalize.esm.js",
+      "import": "./dist/lib/utilities/helpers/Capitalize/Capitalize.esm.js",
       "types": "./dist/lib/utilities/helpers/Capitalize/Capitalize.d.ts"
     },
     "./ToKebab": {
-      "module": "./dist/lib/utilities/helpers/ToKebab/ToKebab.esm.js",
+      "import": "./dist/lib/utilities/helpers/ToKebab/ToKebab.esm.js",
       "types": "./dist/lib/utilities/helpers/ToKebab/ToKebab.d.ts"
     }
   },
@@ -73,6 +77,9 @@
     "*": {
       "Button": [
         "./dist/lib/components/buttons/Button/Button.d.ts"
+      ],
+      "Badge": [
+        "./dist/lib/components/indicators/Badge/Badge.d.ts"
       ],
       "ThemeBuilder": [
         "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.d.ts"
