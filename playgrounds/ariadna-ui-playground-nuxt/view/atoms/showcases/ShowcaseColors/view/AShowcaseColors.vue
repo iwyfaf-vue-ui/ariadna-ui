@@ -97,7 +97,9 @@ const componentClasses = computed(() => {
   &__subgroup {
     @include theme.grid(2, 4, 6, 8, 12);
 
-    text-align: center;
+    & {
+      text-align: center;
+    }
 
     &-title {
       @include theme.text-style-helper(h3);

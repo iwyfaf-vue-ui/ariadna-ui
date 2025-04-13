@@ -5,11 +5,11 @@
     Push me
     <template #loading> Zzz... </template>
   </Button>
-  <Button modifier="danger" textual rounded>
-    Push me
-    <template #icon> © </template>
-    <template #loading> Zzz... </template>
-  </Button>
+  <Button modifier="primary"> Primary </Button>
+  <Button modifier="secondary"> Secondary </Button>
+  <Button modifier="success"> Success </Button>
+  <Button modifier="warning"> Warning </Button>
+  <Button modifier="danger"> Danger </Button>
 </template>
 
 <script setup lang="ts">

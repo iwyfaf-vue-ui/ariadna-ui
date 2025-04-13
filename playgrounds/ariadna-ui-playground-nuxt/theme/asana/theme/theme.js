@@ -7,36 +7,37 @@ const themes = {
           foreground: '#fff',
           disabled: '#afabac',
           weak: '#6d6e6f',
+          contrast: '#f5f4f3',
         },
         primary: {
           default: '#3f6ac4',
           hover: '#4464bb',
-          strong: '#fff',
+          strong: '#000',
         },
         secondary: {
           default: '#6e66b1',
           hover: '#5e57a0',
-          strong: '#fff',
+          strong: '#000',
         },
         success: {
           default: '#0d7f56',
           hover: '#12714d',
-          strong: '#fff',
+          strong: '#000',
         },
         warning: {
           default: '#986516',
           hover: '#805411',
-          strong: '#1e1f21',
+          strong: '#000',
         },
         danger: {
           default: '#c92f54',
           hover: '#a42b45',
-          strong: '#fff',
+          strong: '#000',
         },
         selected: {
           default: '#3f6ac4',
           hover: '#4464bb',
-          strong: '#fff',
+          strong: '#000',
         },
       },
       icon: {
@@ -117,6 +118,7 @@ const themes = {
           weak: '#fff',
           medium: '#f9f8f8',
           strong: '#f5f3f3',
+          contrast: '#2a2b2d',
           hover: 'rgb(55 23 23 / 3%);',
           active: 'rgb(55 23 23 / 5%)',
         },
@@ -183,6 +185,7 @@ const themes = {
           foreground: '#f5f4f3',
           disabled: '#6a696a',
           weak: '#a2a0a2',
+          contrast: '#1e1f21',
         },
         primary: {
           default: '#689af3',
@@ -202,7 +205,7 @@ const themes = {
         warning: {
           default: '#f1bd6c',
           hover: '#f6c682',
-          strong: '#1e1f21',
+          strong: '#fff',
         },
         danger: {
           default: '#eb7586',
@@ -293,6 +296,7 @@ const themes = {
           weak: '#1e1f21',
           medium: '#252628',
           strong: '#2a2b2d',
+          contrast: '#f5f3f3',
           hover: 'rgb(255 255 255 / 6%)',
           active: 'rgb(255 255 255 / 11%)',
         },
