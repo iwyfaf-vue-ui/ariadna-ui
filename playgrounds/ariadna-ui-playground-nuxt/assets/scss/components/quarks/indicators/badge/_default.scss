@@ -6,7 +6,7 @@ $badge: '.ar-badge';
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: var(--radius-default-small);
 
   // .ar-badge--theme
   &--theme {
@@ -20,6 +20,7 @@ $badge: '.ar-badge';
 
     min-width: 1.25rem;
     height: 1.25rem;
+    padding: 2px 6px;
   }
 
   // .ar-badge--medium
@@ -28,6 +29,7 @@ $badge: '.ar-badge';
 
     min-width: 1.5rem;
     height: 1.5rem;
+    padding: 2px 6px;
   }
 
   // .ar-badge--large
@@ -36,6 +38,7 @@ $badge: '.ar-badge';
 
     min-width: 1.75rem;
     height: 1.75rem;
+    padding: 2px 6px;
   }
 
   // .ar-badge--primary
@@ -81,6 +84,11 @@ $badge: '.ar-badge';
       color: var(--color-text-danger-strong);
       background: var(--color-background-danger-strong);
     }
+  }
+
+  // .ar-badge--rounded
+  &--rounded {
+    border-radius: 50%;
   }
 
   // .ar-badge--floating
