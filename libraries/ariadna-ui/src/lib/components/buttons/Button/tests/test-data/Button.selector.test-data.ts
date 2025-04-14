@@ -1,5 +1,6 @@
 import { DataSelector } from '@/shared/tests/DataSelector';
-import type { TButtonProps } from '@/lib/components/buttons/Button/Button';
+import type { TButtonProps } from '../../Button';
+import { EButtonPropsDefault } from '../../types/Button.enums';
 
 export class ButtonSelectorTestData extends DataSelector {
   public readonly className: string = '';
@@ -27,7 +28,7 @@ export class ButtonSelectorTestData extends DataSelector {
   public cssClassProp: TButtonProps['cssClass'] = 'newCssClass';
   public modifierProp: TButtonProps['modifier'] = 'primary';
 
-  constructor(className: string = 'ar-button') {
+  constructor(className: string = EButtonPropsDefault.CSS_CLASS) {
     super();
 
     this.className = className;
