@@ -1,6 +1,60 @@
 # Changelog
 
 
+## v1.4.1-beta.1
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.4.0...v1.4.1-beta.1)
+
+### 🚀 Enhancements
+
+- Add Badge to package.json ([6b28dd3](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/6b28dd3))
+
+### 🩹 Fixes
+
+- Change module to import in package.json generator ([4b3df1f](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/4b3df1f))
+
+### 💅 Refactors
+
+- Add --no-commit for pre-release ([94c520f](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/94c520f))
+- Update button typse & tests ([df0f1b6](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/df0f1b6))
+
+### 📖 Documentation
+
+- Update library version ([b18e3b6](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/b18e3b6))
+- Update DEV.md ([b310ea6](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/b310ea6))
+- Update Button docs ([a0dc49e](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/a0dc49e))
+
+### ❤️ Contributors
+
+- IWatchYouFromAfar <skip1209@yahoo.com>
+
+## v1.4.1-beta.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.4.0...v1.4.1-beta.0)
+
+### 🚀 Enhancements
+
+- Add Badge to package.json ([6b28dd3](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/6b28dd3))
+
+### 🩹 Fixes
+
+- Change module to import in package.json generator ([4b3df1f](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/4b3df1f))
+
+### 💅 Refactors
+
+- Add --no-commit for pre-release ([94c520f](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/94c520f))
+- Update button typse & tests ([df0f1b6](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/df0f1b6))
+
+### 📖 Documentation
+
+- Update library version ([b18e3b6](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/b18e3b6))
+- Update DEV.md ([b310ea6](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/b310ea6))
+- Update Button docs ([a0dc49e](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/a0dc49e))
+
+### ❤️ Contributors
+
+- IWatchYouFromAfar <skip1209@yahoo.com>
+
 ## v1.4.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.3.1...v1.4.0)
