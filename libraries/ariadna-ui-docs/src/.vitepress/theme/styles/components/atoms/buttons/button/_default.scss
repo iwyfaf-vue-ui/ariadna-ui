@@ -8,7 +8,6 @@ $button: '.ar-button';
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -124,7 +123,7 @@ $button: '.ar-button';
   &--primary {
     // .ar-button--primary.ar-button--theme
     &#{$button}--theme {
-      color: var(--color-text-default);
+      color: var(--color-text-default-foreground);
       background: var(--color-background-primary);
       border-color: var(--color-border-primary);
 
