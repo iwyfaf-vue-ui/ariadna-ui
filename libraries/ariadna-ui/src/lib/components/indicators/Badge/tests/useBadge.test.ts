@@ -53,9 +53,9 @@ describe('useBadge.ts: componentClasses computed.', () => {
   });
 
   it('Should handle undefined props gracefully.', () => {
-    const props = { cssClass: 'btn' } as TBadgeProps;
+    const props = { cssClass: 'badge' } as TBadgeProps;
     const { componentClasses } = useBadge(props);
 
-    expect(componentClasses.value).toContain('btn');
+    expect(componentClasses.value).toContain('badge');
   });
 });

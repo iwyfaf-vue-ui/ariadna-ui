@@ -12,6 +12,10 @@ describe('Button.vue: Basic render.', () => {
     props: {},
   });
 
+  it('Should mount without errors.', () => {
+    expect(wrapper.exists()).toBe(true);
+  });
+
   it('Should render a button element.', () => {
     expect(wrapper.find(defaultMock.rootEl).element.tagName).toEqual('BUTTON');
     expect(wrapper.find(defaultMock.rootEl).attributes('type')).toEqual('button');
@@ -20,6 +24,7 @@ describe('Button.vue: Basic render.', () => {
   it('Should have the default CSS class with predefined modifiers.', () => {
     expect(wrapper.classes()).toContain(EButtonPropsDefault.CSS_CLASS);
     expect(wrapper.classes()).toContain(defaultMock.themeModifier);
+    expect(wrapper.classes()).toContain(defaultMock.sizeMediumModifier);
     expect(wrapper.classes()).toContain(defaultMock.iconPositionLeftModifier);
   });
 

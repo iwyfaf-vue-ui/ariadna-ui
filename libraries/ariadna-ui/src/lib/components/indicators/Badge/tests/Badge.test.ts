@@ -14,6 +14,10 @@ describe('Badge.vue: Basic render.', () => {
     props: {},
   });
 
+  it('Should mount without errors.', () => {
+    expect(wrapper.exists()).toBe(true);
+  });
+
   it('Should render a span element.', () => {
     expect(wrapper.find(defaultMock.rootEl).exists()).toBe(true);
     expect(wrapper.find(defaultMock.rootEl).element.tagName).toEqual('SPAN');
@@ -28,6 +32,7 @@ describe('Badge.vue: Basic render.', () => {
   it('Should have the default CSS class with predefined modifiers.', () => {
     expect(wrapper.classes()).toContain(EBadgePropsDefault.CSS_CLASS);
     expect(wrapper.classes()).toContain(defaultMock.themeModifier);
+    expect(wrapper.classes()).toContain(defaultMock.sizeMediumModifier);
   });
 });
 
