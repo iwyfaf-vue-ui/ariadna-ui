@@ -129,8 +129,9 @@ the register!
 │   │   ├── Example                              # The directory with the name of the element
 │   │   │   ├── components                       # The directory with the components of the element (Vue 3)
 │   │   │   ├── composables                      # Directory with a breakdown of the element's reactive functionality (Vue 3)
-│   │   │   ├── directives                       # The directory where the functionality of the element is included in the Vue directive (Vue 3)
 │   │   │   ├── core                             # A directory with a breakdown of the main functionality of the element
+│   │   │   ├── directives                       # The directory where the functionality of the element is included in the Vue directive (Vue 3)
+│   │   │   ├── prompts                          # A directory with technical specifications for creating an element
 │   │   │   ├── tests                            # The directory with Unit-tests of the element
 │   │   │   ├── types                            # A directory with a breakdown of element types
 │   │   │   ├── Example.ts / Example.vue         # The main (entry) file of the element (ts or vue)
