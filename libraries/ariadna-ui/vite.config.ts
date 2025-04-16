@@ -23,7 +23,7 @@ type TFileTree = {
 const components: TFileTree = scanFiles(
   './src/lib/components',
   ['.test.ts'],
-  ['core', 'types', 'tests', 'composables', 'prompts'],
+  ['components', 'composables', 'core', 'directive', 'prompts', 'tests', 'types'],
 );
 
 const utilities: TFileTree = scanFiles(
