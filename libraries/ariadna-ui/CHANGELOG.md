@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.6.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.5.0...v1.6.0)
+
+### 🚀 Enhancements
+
+- Add Spinner component ([ad01aef](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/ad01aef))
+
+### 📖 Documentation
+
+- Update library version ([63e997c](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/63e997c))
+
+### ❤️ Contributors
+
+- IWatchYouFromAfar <skip1209@yahoo.com>
+
 ## v1.5.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.4.0...v1.5.0)
