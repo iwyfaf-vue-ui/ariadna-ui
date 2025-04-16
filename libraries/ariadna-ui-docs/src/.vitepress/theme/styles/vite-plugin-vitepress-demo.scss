@@ -1,0 +1,8 @@
+// Fix for vite-plugin-vitepress-demo
+
+html.dark {
+  .code-box {
+    --code-icon-color: rgb(255 255 255 / 55%) !important;
+    --code-icon-color-hover: rgb(255 255 255 / 85%) !important;
+  }
+}
