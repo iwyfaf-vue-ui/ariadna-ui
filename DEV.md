@@ -127,6 +127,7 @@ the register!
 ├── utilities                                    # Directory of groups of elements
 │   ├── helpers                                  # Group of elements
 │   │   ├── Example                              # The directory with the name of the element
+│   │   │   ├── components                       # The directory with the components of the element (Vue 3)
 │   │   │   ├── composables                      # Directory with a breakdown of the element's reactive functionality (Vue 3)
 │   │   │   ├── directives                       # The directory where the functionality of the element is included in the Vue directive (Vue 3)
 │   │   │   ├── core                             # A directory with a breakdown of the main functionality of the element
