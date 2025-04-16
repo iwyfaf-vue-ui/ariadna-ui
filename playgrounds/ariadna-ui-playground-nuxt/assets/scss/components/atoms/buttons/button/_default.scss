@@ -116,7 +116,7 @@ $button: '.ar-button';
   // .ar-button--disabled
   &--disabled {
     pointer-events: none;
-    opacity: 0.4;
+    opacity: 0.7;
   }
 
   // .ar-button--primary
@@ -135,7 +135,7 @@ $button: '.ar-button';
 
       // .ar-button--primary.ar-button--theme:active
       &:active {
-        border-color: var(--color-border-primary);
+        border-color: var(--color-border-primary-a);
       }
     }
   }
@@ -156,7 +156,7 @@ $button: '.ar-button';
 
       // .ar-button--secondary.ar-button--theme:active
       &:active {
-        border-color: var(--color-border-secondary-active);
+        border-color: var(--color-border-secondary);
       }
     }
   }
@@ -177,7 +177,7 @@ $button: '.ar-button';
 
       // .ar-button--success.ar-button--theme:active
       &:active {
-        border-color: var(--color-border-success-active);
+        border-color: var(--color-border-success);
       }
     }
   }
@@ -219,7 +219,7 @@ $button: '.ar-button';
 
       // .ar-button--danger.ar-button--theme:active
       &:active {
-        border-color: var(--color-border-danger-active);
+        border-color: var(--color-border-danger);
       }
     }
   }

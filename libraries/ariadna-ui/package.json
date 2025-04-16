@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.5.0",
+  "version": "1.5.1-beta.1",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -60,6 +60,10 @@
       "import": "./dist/lib/components/indicators/Badge/Badge.esm.js",
       "types": "./dist/lib/components/indicators/Badge/Badge.d.ts"
     },
+    "./Spinner": {
+      "import": "./dist/lib/components/indicators/Spinner/Spinner.esm.js",
+      "types": "./dist/lib/components/indicators/Spinner/Spinner.d.ts"
+    },
     "./ThemeBuilder": {
       "import": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.esm.js",
       "types": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.d.ts"
@@ -80,6 +84,9 @@
       ],
       "Badge": [
         "./dist/lib/components/indicators/Badge/Badge.d.ts"
+      ],
+      "Spinner": [
+        "./dist/lib/components/indicators/Spinner/Spinner.d.ts"
       ],
       "ThemeBuilder": [
         "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.d.ts"

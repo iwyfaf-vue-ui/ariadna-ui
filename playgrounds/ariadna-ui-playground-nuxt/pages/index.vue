@@ -31,6 +31,9 @@
     <li>
       <nuxt-link href="/components/indicators/badge">Badge</nuxt-link>
     </li>
+    <li>
+      <nuxt-link href="/components/indicators/spinner">Spinner</nuxt-link>
+    </li>
   </ul>
 
   <h2>Utilities</h2>
