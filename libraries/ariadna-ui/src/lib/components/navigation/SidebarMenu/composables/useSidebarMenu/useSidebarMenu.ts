@@ -25,9 +25,8 @@ export default function useSidebarMenu(
     const theme = `${base}--theme`;
 
     const collapsedModifier = collapsed.value ? `${base}--collapsed` : undefined;
-    const modifier = props.modifier ? `${base}--${props.modifier}` : undefined;
 
-    return [base, collapsedModifier, theme, modifier].filter(Boolean).join(' ');
+    return [base, collapsedModifier, theme].filter(Boolean).join(' ');
   });
 
   provide(SidebarMenuProviderKey, {
