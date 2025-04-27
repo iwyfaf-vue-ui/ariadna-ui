@@ -1,7 +1,7 @@
-import { SpinnerSelectorTestData } from './test-data/Spinner.selector.test-data';
 import { describe, expect, it } from 'vitest';
 import { mount } from '@vue/test-utils';
 import Spinner from '../../Spinner/Spinner.vue';
+import { SpinnerSelectorTestData } from './test-data/Spinner.selector.test-data';
 import { ESpinnerPropsDefault } from '../types/Spinner.enums';
 
 const defaultMock = new SpinnerSelectorTestData();
@@ -63,15 +63,14 @@ describe('Spinner.vue: Props.', () => {
   });
 
   it('cssClass: Should apply custom root class and generate BEM child classes.', () => {
+    const _defaultMock = new SpinnerSelectorTestData(defaultMock.cssClassProp);
     const wrapper = mount(Spinner, {
       props: {
         cssClass: defaultMock.cssClassProp,
       },
     });
 
-    expect(wrapper.find(`.${defaultMock.cssClassProp}`).classes()).toContain(
-      defaultMock.cssClassProp,
-    );
+    expect(wrapper.find(defaultMock.getSelectorWithDot(_defaultMock.rootEl)).exists()).toBe(true);
   });
 
   it('modifier: Should apply modifier class.', async () => {

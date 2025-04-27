@@ -1,7 +1,10 @@
 import { describe, expect, it } from 'vitest';
-import type { TSpinnerProps } from '../Spinner';
-import { ESpinnerPropsDefault } from '../types/Spinner.enums';
 import useSpinner from '../composables/useSpinner/useSpinner';
+import { ESpinnerPropsDefault } from '../types/Spinner.enums';
+import { SpinnerSelectorTestData } from './test-data/Spinner.selector.test-data';
+import type { TSpinnerProps } from '../Spinner';
+
+const defaultMock = new SpinnerSelectorTestData();
 
 const mockProps: TSpinnerProps = {
   size: 'medium',
@@ -27,13 +30,17 @@ describe('useSpinner.ts: componentClasses computed.', () => {
   it('Should include modifier class when provided.', () => {
     const { componentClasses } = useSpinner(mockProps);
 
-    expect(componentClasses.value).toContain(`${ESpinnerPropsDefault.CSS_CLASS}--primary`);
+    expect(componentClasses.value).toContain(
+      defaultMock.getSelectorWithoutDot(defaultMock.primaryModifier),
+    );
   });
 
   it('Should include size class modifier when provided.', () => {
     const { componentClasses } = useSpinner(mockProps);
 
-    expect(componentClasses.value).toContain(`${ESpinnerPropsDefault.CSS_CLASS}--medium`);
+    expect(componentClasses.value).toContain(
+      defaultMock.getSelectorWithoutDot(defaultMock.sizeMediumModifier),
+    );
   });
 
   it('Should handle undefined props gracefully.', () => {
