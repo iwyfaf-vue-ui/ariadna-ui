@@ -103,6 +103,8 @@ describe('Badge.vue: Props.', () => {
   });
 
   it('cssClass: Should apply custom root class and generate BEM child classes.', () => {
+    const _defaultMock = new BadgeSelectorTestData(defaultMock.cssClassProp);
+
     const wrapper = mount(Badge, {
       slots: {
         default: 'Test Badge',
@@ -112,9 +114,7 @@ describe('Badge.vue: Props.', () => {
       },
     });
 
-    expect(wrapper.find(`.${defaultMock.cssClassProp}`).classes()).toContain(
-      defaultMock.cssClassProp,
-    );
+    expect(wrapper.find(defaultMock.getSelectorWithDot(_defaultMock.rootEl)).exists()).toBe(true);
   });
 
   it('modifier: Should apply modifier class.', async () => {

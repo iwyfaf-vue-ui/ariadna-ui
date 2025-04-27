@@ -2,6 +2,9 @@ import { describe, expect, it } from 'vitest';
 import type { TBadgeProps } from '../Badge';
 import useBadge from '../composables/useBadge/useBadge';
 import { EBadgePropsDefault } from '../types/Badge.enums';
+import { BadgeSelectorTestData } from './test-data/Badge.selector.test-data';
+
+const defaultMock = new BadgeSelectorTestData();
 
 const mockProps: TBadgeProps = {
   size: 'medium',
@@ -29,27 +32,35 @@ describe('useBadge.ts: componentClasses computed.', () => {
   it('Should include modifier class when provided.', () => {
     const { componentClasses } = useBadge(mockProps);
 
-    expect(componentClasses.value).toContain(`${EBadgePropsDefault.CSS_CLASS}--primary`);
+    expect(componentClasses.value).toContain(
+      defaultMock.getSelectorWithoutDot(defaultMock.primaryModifier),
+    );
   });
 
   it('Should include size class modifier when provided.', () => {
     const { componentClasses } = useBadge(mockProps);
 
-    expect(componentClasses.value).toContain(`${EBadgePropsDefault.CSS_CLASS}--medium`);
+    expect(componentClasses.value).toContain(
+      defaultMock.getSelectorWithoutDot(defaultMock.sizeMediumModifier),
+    );
   });
 
   it('Should include rounded class modifier when provided.', () => {
     const props = { ...mockProps, rounded: true };
     const { componentClasses } = useBadge(props);
 
-    expect(componentClasses.value).toContain(`${EBadgePropsDefault.CSS_CLASS}--rounded`);
+    expect(componentClasses.value).toContain(
+      defaultMock.getSelectorWithoutDot(defaultMock.roundedModifier),
+    );
   });
 
   it('Should include floating class modifier when provided.', () => {
     const props = { ...mockProps, floating: true };
     const { componentClasses } = useBadge(props);
 
-    expect(componentClasses.value).toContain(`${EBadgePropsDefault.CSS_CLASS}--floating`);
+    expect(componentClasses.value).toContain(
+      defaultMock.getSelectorWithoutDot(defaultMock.floatingModifier),
+    );
   });
 
   it('Should handle undefined props gracefully.', () => {
