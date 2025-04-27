@@ -4,6 +4,7 @@ import type {
   GlobalComponentConstructor,
 } from '../../../../types/component';
 import type { VNode } from 'vue';
+import type { ESpinnerPropsDefault } from './types/Spinner.enums';
 
 export type TSpinnerPropsSize = 'small' | 'medium' | 'large';
 
@@ -23,7 +24,7 @@ export type TSpinnerProps = {
   /**
    * @description Redefines the CSS class of the root element and its descendants.
    * @example css-class="example"
-   * @default 'ar-button'
+   * @default {@link ESpinnerPropsDefault.CSS_CLASS}
    */
   cssClass?: string;
 
