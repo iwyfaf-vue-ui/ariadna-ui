@@ -4,6 +4,7 @@ import type {
   GlobalComponentConstructor,
 } from '../../../../types/component';
 import type { VNode } from 'vue';
+import type { EButtonPropsDefault } from './types/Button.enums';
 
 export type TButtonPropsTag = 'button' | 'span' | 'a';
 export type TButtonPropsType = 'button' | 'submit' | 'reset';
@@ -97,7 +98,7 @@ export type TButtonProps = {
   /**
    * @description Redefines the CSS class of the root element and its descendants.
    * @example css-class="example"
-   * @default 'ar-button'
+   * @default {@link EButtonPropsDefault.CSS_CLASS}
    */
   cssClass?: string;
 
