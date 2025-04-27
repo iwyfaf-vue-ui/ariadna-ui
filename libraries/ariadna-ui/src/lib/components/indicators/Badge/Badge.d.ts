@@ -4,6 +4,7 @@ import type {
   GlobalComponentConstructor,
 } from '../../../../types/component';
 import type { VNode } from 'vue';
+import type { EBadgePropsDefault } from './types/Badge.enums';
 
 export type TBadgePropsSize = 'small' | 'medium' | 'large';
 
@@ -37,7 +38,7 @@ export type TBadgeProps = {
   /**
    * @description Redefines the CSS class of the root element and its descendants.
    * @example css-class="example"
-   * @default 'ar-button'
+   * @default {@link EBadgePropsDefault.CSS_CLASS}
    */
   cssClass?: string;
 
