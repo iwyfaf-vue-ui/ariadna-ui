@@ -1,6 +1,33 @@
 # Changelog
 
 
+## v1.7.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.6.0...v1.7.0)
+
+### 🚀 Enhancements
+
+- Add SidebarMenu component ([3fa31d5](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/3fa31d5))
+
+### 🩹 Fixes
+
+- Remove modifier class ([5e3d944](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/5e3d944))
+
+### 📖 Documentation
+
+- Update library version ([8b940a7](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/8b940a7))
+- Fix vite-plugin-vitepress-demo css ([39dbeaf](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/39dbeaf))
+- Update DEV.md ([c9c5408](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/c9c5408))
+- Update DEV.md ([e9f7478](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/e9f7478))
+
+### 📦 Build
+
+- Update components ignoreDirs ([02dbee6](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/02dbee6))
+
+### ❤️ Contributors
+
+- IWatchYouFromAfar <skip1209@yahoo.com>
+
 ## v1.6.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.5.0...v1.6.0)
