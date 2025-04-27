@@ -2,6 +2,9 @@ import { describe, it, expect, vi } from 'vitest';
 import type { TButtonEmits, TButtonProps } from '../Button';
 import useButton from '../composables/useButton/useButton';
 import { EButtonPropsDefault } from '../types/Button.enums';
+import { ButtonSelectorTestData } from './test-data/Button.selector.test-data';
+
+const defaultMock = new ButtonSelectorTestData();
 
 const mockProps: TButtonProps = {
   iconPosition: 'left',
@@ -81,21 +84,27 @@ describe('useButton.ts: componentClasses computed.', () => {
     const { emits } = createMockEmits();
     const { componentClasses } = useButton(mockProps, emits);
 
-    expect(componentClasses.value).toContain(`${EButtonPropsDefault.CSS_CLASS}--primary`);
+    expect(componentClasses.value).toContain(
+      defaultMock.getSelectorWithoutDot(defaultMock.primaryModifier),
+    );
   });
 
   it('Should include size class modifier when provided.', () => {
     const { emits } = createMockEmits();
     const { componentClasses } = useButton(mockProps, emits);
 
-    expect(componentClasses.value).toContain(`${EButtonPropsDefault.CSS_CLASS}--medium`);
+    expect(componentClasses.value).toContain(
+      defaultMock.getSelectorWithoutDot(defaultMock.sizeMediumModifier),
+    );
   });
 
   it('Should include icon position class modifier when provided.', () => {
     const { emits } = createMockEmits();
     const { componentClasses } = useButton(mockProps, emits);
 
-    expect(componentClasses.value).toContain(`${EButtonPropsDefault.CSS_CLASS}--icon-left`);
+    expect(componentClasses.value).toContain(
+      defaultMock.getSelectorWithoutDot(defaultMock.iconPositionLeftModifier),
+    );
   });
 
   it('Should include rounded class modifier when provided.', () => {
@@ -103,7 +112,9 @@ describe('useButton.ts: componentClasses computed.', () => {
     const props = { ...mockProps, rounded: true };
     const { componentClasses } = useButton(props, emits);
 
-    expect(componentClasses.value).toContain(`${EButtonPropsDefault.CSS_CLASS}--rounded`);
+    expect(componentClasses.value).toContain(
+      defaultMock.getSelectorWithoutDot(defaultMock.roundedModifier),
+    );
   });
 
   it('Should include textual class modifier when provided.', () => {
@@ -111,7 +122,9 @@ describe('useButton.ts: componentClasses computed.', () => {
     const props = { ...mockProps, textual: true };
     const { componentClasses } = useButton(props, emits);
 
-    expect(componentClasses.value).toContain(`${EButtonPropsDefault.CSS_CLASS}--textual`);
+    expect(componentClasses.value).toContain(
+      defaultMock.getSelectorWithoutDot(defaultMock.textualModifier),
+    );
   });
 
   it('Should include outlined class modifier when provided.', () => {
@@ -119,7 +132,9 @@ describe('useButton.ts: componentClasses computed.', () => {
     const props = { ...mockProps, outlined: true };
     const { componentClasses } = useButton(props, emits);
 
-    expect(componentClasses.value).toContain(`${EButtonPropsDefault.CSS_CLASS}--outlined`);
+    expect(componentClasses.value).toContain(
+      defaultMock.getSelectorWithoutDot(defaultMock.outlinedModifier),
+    );
   });
 
   it('Should include selected class when selected is true.', () => {
@@ -127,7 +142,9 @@ describe('useButton.ts: componentClasses computed.', () => {
     const props = { ...mockProps, selected: true };
     const { componentClasses } = useButton(props, emits);
 
-    expect(componentClasses.value).toContain(`${EButtonPropsDefault.CSS_CLASS}--selected`);
+    expect(componentClasses.value).toContain(
+      defaultMock.getSelectorWithoutDot(defaultMock.selectedModifier),
+    );
   });
 
   it('Should include disabled class when disabled is true.', () => {
@@ -135,7 +152,9 @@ describe('useButton.ts: componentClasses computed.', () => {
     const props = { ...mockProps, disabled: true };
     const { componentClasses } = useButton(props, emits);
 
-    expect(componentClasses.value).toContain(`${EButtonPropsDefault.CSS_CLASS}--disabled`);
+    expect(componentClasses.value).toContain(
+      defaultMock.getSelectorWithoutDot(defaultMock.disabledModifier),
+    );
   });
 
   it('Should include loading class when loading.', () => {
@@ -143,7 +162,9 @@ describe('useButton.ts: componentClasses computed.', () => {
     const props = { ...mockProps, loading: true };
     const { componentClasses } = useButton(props, emits);
 
-    expect(componentClasses.value).toContain(`${EButtonPropsDefault.CSS_CLASS}--loading`);
+    expect(componentClasses.value).toContain(
+      defaultMock.getSelectorWithoutDot(defaultMock.loadingModifier),
+    );
   });
 
   it('Should handle undefined props gracefully.', () => {

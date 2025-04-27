@@ -265,6 +265,7 @@ describe('Button.vue: Props.', () => {
   });
 
   it('cssClass: Should apply custom root class and generate BEM child classes.', () => {
+    const _defaultMock = new ButtonSelectorTestData(defaultMock.cssClassProp);
     const wrapper = mount(Button, {
       props: {
         cssClass: defaultMock.cssClassProp,
@@ -277,12 +278,14 @@ describe('Button.vue: Props.', () => {
       },
     });
 
-    expect(wrapper.find(`.${defaultMock.cssClassProp}`).classes()).toContain(
-      defaultMock.cssClassProp,
+    expect(wrapper.find(defaultMock.getSelectorWithDot(_defaultMock.rootEl)).exists()).toBe(true);
+    expect(wrapper.find(defaultMock.getSelectorWithDot(_defaultMock.groupEl)).exists()).toBe(true);
+    expect(wrapper.find(defaultMock.getSelectorWithDot(_defaultMock.groupIconEl)).exists()).toBe(
+      true,
     );
-    expect(wrapper.find(`.${defaultMock.cssClassProp}__group`).exists()).toBeTruthy();
-    expect(wrapper.find(`.${defaultMock.cssClassProp}__icon`).exists()).toBeTruthy();
-    expect(wrapper.find(`.${defaultMock.cssClassProp}__loading`).exists()).toBeTruthy();
+    expect(wrapper.find(defaultMock.getSelectorWithDot(_defaultMock.loadingEl)).exists()).toBe(
+      true,
+    );
   });
 
   it('modifier: Should apply modifier class.', async () => {
