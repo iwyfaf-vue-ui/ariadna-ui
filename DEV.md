@@ -132,6 +132,7 @@ the register!
 │   │   │   ├── core                             # A directory with a breakdown of the main functionality of the element
 │   │   │   ├── directives                       # The directory where the functionality of the element is included in the Vue directive (Vue 3)
 │   │   │   ├── prompts                          # A directory with technical specifications for creating an element
+│   │   │   ├── providers                        # The directory with providers
 │   │   │   ├── tests                            # The directory with Unit-tests of the element
 │   │   │   ├── types                            # A directory with a breakdown of element types
 │   │   │   ├── Example.ts / Example.vue         # The main (entry) file of the element (ts or vue)
@@ -217,6 +218,8 @@ After that, update the library version in the documentation to the latest, save 
 `release notes` with command:
 
 ```shell
+git add libraries/ariadna-ui-docs/
+git commit -m 'docs: update library version'
 npm run release-notes
 ```
 
