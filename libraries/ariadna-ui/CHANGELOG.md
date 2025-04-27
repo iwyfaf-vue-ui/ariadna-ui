@@ -1,6 +1,29 @@
 # Changelog
 
 
+## v1.7.1
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.7.0...v1.7.1)
+
+### 💅 Refactors
+
+- Update Button cssClass props docs ([c10acc4](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/c10acc4))
+- Update Badge cssClass props docs ([80cb04e](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/80cb04e))
+- Update Spinner cssClass props docs ([8cb9555](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/8cb9555))
+- Change Button selector for tests ([3bae251](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/3bae251))
+- Change Badge  selector for tests ([9b76698](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/9b76698))
+- Change Spinner selector for tests ([e2bc7f5](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/e2bc7f5))
+
+### 📖 Documentation
+
+- Update library version ([e4855e4](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/e4855e4))
+- Update DEV.md ([f6433ee](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/f6433ee))
+- Update SidebarMenu docs ([278aba3](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/278aba3))
+
+### ❤️ Contributors
+
+- IWatchYouFromAfar <skip1209@yahoo.com>
+
 ## v1.7.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.6.0...v1.7.0)
