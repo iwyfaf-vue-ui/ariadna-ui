@@ -106,7 +106,7 @@ slot [default](#default).
 
 ### Поддержка клавиатуры
 
-<!--@include: ../../../shared/accessibility/no-keyboard-support.md-->
+<!--@include: ../../../shared/accessibility/no-keyboard-elements.md-->
 
 ## Стилизация
 

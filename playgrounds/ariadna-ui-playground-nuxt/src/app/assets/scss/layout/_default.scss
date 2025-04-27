@@ -1,0 +1,62 @@
+@use '../themes/asana/asana' as theme;
+
+.app-root {
+  --sidebar-width: 240px;
+  --sidebar-header-height: 0px;
+  --sidebar-footer-height: 70px;
+  --header-height: 50px;
+
+  // .app-root__main
+  &__main {
+    position: relative;
+    top: var(--header-height);
+    display: flex;
+    min-height: 100vh;
+
+    // .app-root__main-content
+    &-content {
+      width: 100%;
+      padding: var(--indent-padding-xlarge);
+      margin-left: 0;
+      overflow: auto;
+      transition: margin-left 0.3s ease;
+
+      @include theme.md {
+        margin-left: var(--sidebar-width);
+      }
+
+      // .sidebar-off .app-root__main-content
+      .sidebar-off & {
+        margin-left: 0;
+      }
+
+      // .app-root__main-content--overlay
+      &--overlay {
+        position: fixed;
+        inset: var(--header-height) 0 0;
+        z-index: 9999;
+        margin-left: var(--sidebar-width);
+        overflow: hidden;
+        background-color: rgb(0 0 0 / 40%);
+        opacity: 1;
+        transition:
+          margin-left 0.3s ease,
+          background-color 0.2s ease;
+
+        @include theme.md {
+          z-index: -1;
+          overflow: auto;
+          background-color: unset;
+        }
+
+        // .sidebar-off .app-root__main-content--overlay
+        .sidebar-off & {
+          z-index: -1;
+          margin-left: 0;
+          overflow: auto;
+          background-color: unset;
+        }
+      }
+    }
+  }
+}

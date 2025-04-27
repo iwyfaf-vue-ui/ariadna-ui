@@ -1,0 +1,33 @@
+<template>
+  <div style="display: flex; height: 50vh">
+    <SidebarMenu :data="data" css-class="ar-sidebar-menu-custom" />
+  </div>
+</template>
+
+<script setup lang="ts">
+import { ref } from 'vue';
+
+import SidebarMenu from '@iwyfaf-vue-ui/ariadna-ui/SidebarMenu';
+import type { TSidebarMenuItem } from '@iwyfaf-vue-ui/ariadna-ui/SidebarMenu';
+
+const data = ref<Array<TSidebarMenuItem>>([
+  {
+    title: 'Item 1',
+    href: '#',
+  },
+  {
+    title: 'Item 2',
+    href: '#',
+    children: [
+      {
+        title: 'Item 1',
+        href: '#',
+      },
+      {
+        title: 'Item 2',
+        href: '#',
+      },
+    ],
+  },
+]);
+</script>

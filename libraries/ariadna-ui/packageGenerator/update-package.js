@@ -30,7 +30,7 @@ const updatePackage = () => {
   const components = scanFiles(
     './src/lib/components',
     ['.test.ts'],
-    ['components', 'composables', 'core', 'directive', 'prompts', 'tests', 'types'],
+    ['components', 'composables', 'core', 'directive', 'prompts', 'providers', 'tests', 'types'],
   );
 
   // const composables = scanFiles(

@@ -1,14 +1,14 @@
 import ThemeBuilder from '@iwyfaf-vue-ui/ariadna-ui/ThemeBuilder';
-import themes from './theme/asana/theme/theme.js';
-import fonts from './theme/asana/utilities/fonts.js';
-import indents from './theme/asana/utilities/indents.js';
-import radius from './theme/asana/utilities/radius.js';
-import transition from './theme/asana/utilities/transition.js';
+import themes from './src/app/theme/asana/theme/theme.js';
+import fonts from './src/app/theme/asana/utilities/fonts.js';
+import indents from './src/app/theme/asana/utilities/indents.js';
+import radius from './src/app/theme/asana/utilities/radius.js';
+import transition from './src/app/theme/asana/utilities/transition.js';
 
 new ThemeBuilder(
   {
     projectName: 'Ariadna UI Playground',
-    destination: './assets/scss/themes/asana/',
+    destination: './src/app/assets/scss/themes/asana/',
     themeName: 'asana',
   },
   {

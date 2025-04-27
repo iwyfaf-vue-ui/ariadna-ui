@@ -1,0 +1,20 @@
+@use '../themes/asana/asana' as theme;
+
+body {
+  @include theme.text-style-helper(t2);
+
+  position: relative;
+  min-width: 320px;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-text-default);
+  background: var(--color-background-default-weak);
+}
+
+.sidebar-on {
+  overflow: hidden;
+
+  @include theme.md {
+    overflow: auto;
+  }
+}

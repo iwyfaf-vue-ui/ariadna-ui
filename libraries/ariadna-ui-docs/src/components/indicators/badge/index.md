@@ -123,7 +123,7 @@ import Badge from '@iwyfaf-vue-ui/ariadna-ui/Badge';
 
 ### Поддержка клавиатуры
 
-<!--@include: ../../../shared/accessibility/no-keyboard-support.md-->
+<!--@include: ../../../shared/accessibility/no-keyboard-elements.md-->
 
 ## Стилизация
 
