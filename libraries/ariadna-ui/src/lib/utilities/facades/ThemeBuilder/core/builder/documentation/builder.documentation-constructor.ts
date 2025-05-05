@@ -13,10 +13,10 @@ import { PatternMarkdownTableWrapper } from '../../patterns/markdown/pattern.mar
 import capitalize from '../../../../../helpers/Capitalize/Capitalize';
 
 /**
- * @description The `BuilderDocumentationConstructor` class is responsible for generating
- * documentation for a UI-Kit project. It extends the `BuilderConstructor` class and provides
- * methods to build various sections of the documentation, such as headers, breakpoints, grids,
- * themes, and utilities. The documentation is generated in Markdown format.
+ * @description
+ * The `BuilderDocumentationConstructor` class is responsible for generating documentation for a UI-Kit project.
+ * It extends the `BuilderConstructor` class and provides methods to build various sections of the documentation, such
+ * as headers, breakpoints, grids, themes, and utilities. The documentation is generated in Markdown format.
  *
  * @example
  * const builder = new BuilderDocumentationConstructor(customSettings, defaultSettings, options);
@@ -27,7 +27,7 @@ export default class BuilderDocumentationConstructor extends BuilderConstructor 
   private readonly options: TBuilderOptions;
 
   /**
-   * @description Constructs a new instance of BuilderDocumentationConstructor.
+   * Constructs a new instance of BuilderDocumentationConstructor.
    *
    * @param customSettings - Custom settings for the builder.
    * @param defaultSettings - Default settings for the builder.
@@ -44,7 +44,7 @@ export default class BuilderDocumentationConstructor extends BuilderConstructor 
   }
 
   /**
-   * @description Builds the H1 section of the documentation.
+   * Builds the H1 section of the documentation.
    *
    * @returns A string containing the H1 section in Markdown format.
    */
@@ -67,7 +67,7 @@ export default class BuilderDocumentationConstructor extends BuilderConstructor 
   }
 
   /**
-   * @description Builds the breakpoints section of the documentation.
+   * Builds the breakpoints section of the documentation.
    *
    * @returns A string containing the breakpoints section in Markdown format.
    */
@@ -129,7 +129,7 @@ export default class BuilderDocumentationConstructor extends BuilderConstructor 
   }
 
   /**
-   * @description Builds the grid section of the documentation.
+   * Builds the grid section of the documentation.
    *
    * @returns A string containing the grid section in Markdown format.
    */
@@ -166,7 +166,7 @@ export default class BuilderDocumentationConstructor extends BuilderConstructor 
   }
 
   /**
-   * @description Builds the themes section of the documentation.
+   * Builds the themes section of the documentation.
    *
    * @returns A string containing the themes section in Markdown format.
    */
@@ -225,7 +225,7 @@ export default class BuilderDocumentationConstructor extends BuilderConstructor 
   }
 
   /**
-   * @description Builds the utilities section of the documentation.
+   * Builds the utilities section of the documentation.
    *
    * @returns A string containing the utilities section in Markdown format.
    */

@@ -3,19 +3,18 @@ import type { TDefaultSettingsGrid } from './default-settings-grid.type';
 import type { TDefaultSettingsGridContainers } from './default-settings-grid-containers.type';
 
 /**
- * @description Default settings.
- *
+ * Default settings.
  */
 export type TDefaultSettings = TDefaultSettingsBreakpoints &
   TDefaultSettingsGrid &
   TDefaultSettingsGridContainers & {
     /**
-     * @description Grid debug settings.
+     * Grid debug settings.
      */
     gridDebug: {};
 
     /**
-     * @description Default grid CSS properties.
+     * Default grid CSS properties.
      */
     gridDefault: {};
   };

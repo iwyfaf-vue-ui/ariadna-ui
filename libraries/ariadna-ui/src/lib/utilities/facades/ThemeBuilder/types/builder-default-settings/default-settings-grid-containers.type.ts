@@ -1,6 +1,6 @@
 export type TDefaultSettingsGridContainers = {
   /**
-   * @description Grid containers default settings.
+   * Grid containers default settings.
    *
    * @example
    * ```typescript
@@ -50,7 +50,7 @@ export type TDefaultSettingsGridContainers = {
    */
   gridContainer: {
     /**
-     * @description Grid container options.
+     * Grid container options.
      *
      * @example
      * ```typescript
@@ -69,7 +69,7 @@ export type TDefaultSettingsGridContainers = {
     container: {};
 
     /**
-     * @description Grid container options.
+     * Grid container options.
      *
      * @example
      * ```typescript

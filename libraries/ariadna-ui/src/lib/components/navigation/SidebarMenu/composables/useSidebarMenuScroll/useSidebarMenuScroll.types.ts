@@ -1,42 +1,41 @@
 import type { ComputedRef, Ref } from 'vue';
 
 /**
- * @description Return type for the `useSidebarMenuScroll` composable function.
- * Contains reactive properties.
+ * Return type for the `useSidebarMenuScroll` composable function.
  */
 export type TUseSidebarMenuScrollReturn = {
   /**
-   * @description CSS class name for the sidebar menu scroll, injected from the provider.
+   * CSS class name for the sidebar menu scroll, injected from the provider.
    */
   cssClass: string | undefined;
 
   /**
-   * @description Reactive ref indicating whether the Sidebar is collapsed.
+   * Reactive ref indicating whether the Sidebar is collapsed.
    */
   collapsed: Ref<boolean | undefined>;
 
   /**
-   * @description Reactive ref indicating whether the scrollbar is visible.
+   * Reactive ref indicating whether the scrollbar is visible.
    */
   isVisible: Ref<boolean, boolean>;
 
   /**
-   * @description Reactive ref indicating whether the scrollbar is draggable.
+   * Reactive ref indicating whether the scrollbar is draggable.
    */
   isDraggable: Ref<boolean, boolean>;
 
   /**
-   * @description Reactive ref to the scroll container element.
+   * Reactive ref to the scroll container element.
    */
   scrollRef: Ref<HTMLDivElement | null, HTMLDivElement | null>;
 
   /**
-   * @description Reactive ref to the scrollbar element.
+   * Reactive ref to the scrollbar element.
    */
   scrollBarRef: Ref<HTMLDivElement | null, HTMLDivElement | null>;
 
   /**
-   * @description Reactive ref to the scroll thumb element.
+   * Reactive ref to the scroll thumb element.
    */
   scrollThumbRef: Ref<HTMLDivElement | null, HTMLDivElement | null>;
 
@@ -46,44 +45,46 @@ export type TUseSidebarMenuScrollReturn = {
   componentClasses: ComputedRef<string>;
 
   /**
-   * @description Handler for mouse entering the scroll area.
-   * Shows the custom scrollbar and updates its position.
+   * Handler for mouse entering the scroll area. Shows the custom scrollbar and updates its position.
    */
   onMouseIn: () => void;
 
   /**
-   * @description Handler for mouse up event after dragging the scrollbar thumb.
-   * Ends the drag operation and removes related event listeners.
+   * Handler for mouse up event after dragging the scrollbar thumb. Ends the drag operation and removes related event
+   * listeners.
    */
   onMouseUp: () => void;
 
   /**
-   * @description Handler for mouse leaving the scroll area.
-   * Hides the custom scrollbar.
+   * Handler for mouse leaving the scroll area. Hides the custom scrollbar.
    */
   onMouseLeave: () => void;
 
   /**
-   * @description Handler for mouse movement during scrollbar thumb drag.
-   * Updates the scroll position based on mouse Y coordinate. Should be attached to the window during drag operation.
+   * Handler for mouse movement during scrollbar thumb drag. Updates the scroll position based on mouse Y coordinate.
+   * Should be attached to the window during drag operation.
+   *
+   * @param {MouseEvent} event
    */
-  onMouseMove: (e: MouseEvent) => void;
+  onMouseMove: (event: MouseEvent) => void;
 
   /**
-   * @description Handler for mouse down event on the scrollbar thumb.
-   * Initiates the drag operation for the scrollbar thumb.
+   * Handler for mouse down event on the scrollbar thumb. Initiates the drag operation for the scrollbar thumb.
+   *
+   * @param {MouseEvent} event
    */
-  onMouseDown: (e: MouseEvent) => void;
+  onMouseDown: (event: MouseEvent) => void;
 
   /**
-   * @description Handler for mouse click event on the scrollbar track.
-   * Moves the scrollbar thumb to the clicked position.
+   * Handler for mouse click event on the scrollbar track. Moves the scrollbar thumb to the clicked position.
+   *
+   * @param {MouseEvent} event
    */
-  onClick: (e: MouseEvent) => void;
+  onClick: (event: MouseEvent) => void;
 
   /**
-   * @description Handler for scroll event on the scroll container.
-   * Updates the scrollbar thumb position to reflect the current scroll state.
+   * Handler for scroll event on the scroll container. Updates the scrollbar thumb position to reflect the current
+   * scroll state.
    */
   onScroll: () => void;
 };

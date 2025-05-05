@@ -9,11 +9,12 @@ import type { ESpinnerPropsDefault } from './types/Spinner.enums';
 export type TSpinnerPropsSize = 'small' | 'medium' | 'large';
 
 /**
- * @description Component props definition.
+ * Component props definition.
  */
 export type TSpinnerProps = {
   /**
-   * @description Predefined size variants for the spinner component.
+   * Predefined size variants for the spinner component.
+   *
    * @example size="small"
    * @example size="medium"
    * @example size="large"
@@ -22,14 +23,16 @@ export type TSpinnerProps = {
   size?: TSpinnerPropsSize;
 
   /**
-   * @description Redefines the CSS class of the root element and its descendants.
+   * Redefines the CSS class of the root element and its descendants.
+   *
    * @example css-class="example"
    * @default {@link ESpinnerPropsDefault.CSS_CLASS}
    */
   cssClass?: string;
 
   /**
-   * @description Modifier of the basic CSS class.
+   * Modifier of the basic CSS class.
+   *
    * @example modifier="primary"
    * @default undefined
    */
@@ -37,26 +40,27 @@ export type TSpinnerProps = {
 };
 
 /**
- * @description Component slots definition.
+ * Component slots definition.
  */
 export type TSpinnerSlots = {
   /**
-   * @description Default component slot.
+   * Default component slot.
+   *
    * @returns {VNode[]}
    */
   default?(): VNode[];
 };
 
 /**
- * @description Component events emitted.
+ * Component events emitted.
  */
 export type TSpinnerEmits = {};
 
 /**
  * Ariadna UI | Components | Indicators
  *
- * @description Spinner is a UI component that indicates an ongoing process, such as fetching data from a server or
- * performing complex computations.
+ * Spinner is a UI component that indicates an ongoing process, such as fetching data from a server or performing
+ * complex computations.
  */
 declare class Spinner extends ClassComponent<
   TSpinnerProps,

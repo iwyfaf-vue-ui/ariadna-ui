@@ -1,5 +1,5 @@
 /**
- * @description Badge default props values.
+ * Badge default props values.
  */
 export enum EBadgePropsDefault {
   SIZE = 'medium',

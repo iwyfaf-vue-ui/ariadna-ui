@@ -12,11 +12,12 @@ export type TButtonPropsIconPosition = 'left' | 'right' | 'top' | 'bottom';
 export type TButtonPropsSize = 'small' | 'medium' | 'large';
 
 /**
- * @description Component props definition.
+ * Component props definition.
  */
 export type TButtonProps = {
   /**
-   * @description The HTML tag to be rendered as the button component.
+   * The HTML tag to be rendered as the button component.
+   *
    * @example tag="button"
    * @example tag="span"
    * @example tag="a"
@@ -25,8 +26,9 @@ export type TButtonProps = {
   tag?: TButtonPropsTag;
 
   /**
-   * @description Specifies the type of button when rendered as a `<button>` element.
-   * Determines the default behavior of the button in forms and interactions.
+   * Specifies the type of button when rendered as a `<button>` element. Determines the default behavior of the button
+   * in forms and interactions.
+   *
    * @example type="button"
    * @example type="submit"
    * @example type="reset"
@@ -35,7 +37,8 @@ export type TButtonProps = {
   type?: TButtonPropsType;
 
   /**
-   * @description Position of the icon relative to the button text.
+   * Position of the icon relative to the button text.
+   *
    * @example icon-position="left"
    * @example icon-position="right"
    * @example icon-position="top"
@@ -45,7 +48,8 @@ export type TButtonProps = {
   iconPosition?: TButtonPropsIconPosition;
 
   /**
-   * @description Predefined size variants for the button component.
+   * Predefined size variants for the button component.
+   *
    * @example size="small"
    * @example size="medium"
    * @example size="large"
@@ -54,56 +58,64 @@ export type TButtonProps = {
   size?: TButtonPropsSize;
 
   /**
-   * @description The buttons are displayed with the largest radius of curvature.
+   * The buttons are displayed with the largest radius of curvature.
+   *
    * @example :text="true"
    * @default false
    */
   rounded?: boolean;
 
   /**
-   * @description The buttons are displayed as textual elements.
+   * The buttons are displayed as textual elements.
+   *
    * @example :text="true"
    * @default false
    */
   textual?: boolean;
 
   /**
-   * @description Outlined buttons display a border with a transparent background.
+   * Outlined buttons display a border with a transparent background.
+   *
    * @example :text="true"
    * @default false
    */
   outlined?: boolean;
 
   /**
-   * @description Selected / active state.
+   * Selected / active state.
+   *
    * @example :selected="true"
    * @default false
    */
   selected?: boolean;
 
   /**
-   * @description Disabled state.
+   * Disabled state.
+   *
    * @example :disabled="true"
    * @default false
    */
   disabled?: boolean;
 
   /**
-   * @description Loading state.
+   * Loading state.
+   *
    * @example :disabled="true"
    * @default false
    */
   loading?: boolean;
 
   /**
-   * @description Redefines the CSS class of the root element and its descendants.
+   * Redefines the CSS class of the root element and its descendants.
+   *
    * @example css-class="example"
    * @default {@link EButtonPropsDefault.CSS_CLASS}
    */
   cssClass?: string;
 
   /**
-   * @description Modifier of the basic CSS class.
+   * Modifier of the basic CSS class.
+   *
    * @example modifier="primary"
    * @default undefined
    */
@@ -111,34 +123,38 @@ export type TButtonProps = {
 };
 
 /**
- * @description Component slots definition.
+ * Component slots definition.
  */
 export type TButtonSlots = {
   /**
-   * @description Default component slot.
+   * Default component slot.
+   *
    * @returns {VNode[]}
    */
   default?(): VNode[];
 
   /**
-   * @description Custom button icon.
+   * Custom button icon.
+   *
    * @returns {VNode[]}
    */
   icon?(): VNode[];
 
   /**
-   * @description Custom button label
+   * Custom button label
+   *
    * @returns {VNode[]}
    */
   loading?(): VNode[];
 };
 
 /**
- * @description Component events emitted.
+ * Component events emitted.
  */
 export type TButtonEmits = {
   /**
    * Native mouse click event.
+   *
    * @param {"click"} e - Event emitted when button is clicked
    * @param {MouseEvent} event - The native mouse event associated with the click.
    */
@@ -148,7 +164,7 @@ export type TButtonEmits = {
 /**
  * Ariadna UI | Components | Buttons
  *
- * @description A highly configurable UI button component.
+ * A highly configurable UI button component.
  */
 declare class Button extends ClassComponent<
   TButtonProps,

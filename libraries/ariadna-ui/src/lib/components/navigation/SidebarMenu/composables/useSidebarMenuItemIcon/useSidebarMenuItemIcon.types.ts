@@ -1,8 +1,7 @@
 import type { ComputedRef } from 'vue';
 
 /**
- * @description Return type for the `useSidebarMenuItemIcon` composable function.
- * Contains reactive properties.
+ * Return type for the `useSidebarMenuItemIcon` composable function.
  */
 export type TUseSidebarMenuItemIconReturn = {
   /**

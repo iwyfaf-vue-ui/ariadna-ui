@@ -3,12 +3,13 @@ import Notifications from '../notifications';
 import { ErrorMessages } from '../notifications/locales/errors.notifications.locales';
 
 /**
- * @description Represents a class responsible for placing files (e.g., SCSS themes or Markdown
- * documentation) in a specified destination.
+ * Represents a class responsible for placing files (e.g., SCSS themes or Markdown documentation) in a specified
+ * destination.
  */
 export default class FilePlacer {
   /**
-   * @description Creates an instance of the `Placement` class.
+   * Creates an instance of the `Placement` class.
+   *
    * @param projectName - The name of the project.
    * @param destination - The destination directory where the file will be placed.
    * @param fileName - The name of the file (without extension).
@@ -24,7 +25,7 @@ export default class FilePlacer {
   }
 
   /**
-   * @description Places an SCSS theme file in the specified destination.
+   * Places an SCSS theme file in the specified destination.
    * @param themeData - The content of the SCSS theme file.
    * @throws {Notifications} - Throws an error notification if `projectName`, `destination`, or `fileName` is not specified.
    * @returns {void}
@@ -47,7 +48,8 @@ export default class FilePlacer {
   }
 
   /**
-   * @description  Places a Markdown documentation file in the specified destination.
+   * Places a Markdown documentation file in the specified destination.
+   *
    * @param documentation - The content of the Markdown documentation file.
    * @throws {Notifications} - Throws an error notification if `projectName`, `destination`, or `fileName` is not specified.
    * @returns {void}

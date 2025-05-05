@@ -1,11 +1,11 @@
 import type { VNode } from 'vue';
 
 /**
- * @description Sidebar menu item component slots.
+ * Sidebar menu item component slots.
  */
 export type TSidebarMenuScrollSlots = {
   /**
-   * @description Default scroll slot.
+   * Default scroll slot.
    */
   default?(): VNode[];
 };

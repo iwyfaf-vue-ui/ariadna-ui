@@ -1,12 +1,11 @@
 /**
- * @description Custom grid settings that define container widths, fields, and gaps for different
- * breakpoints. Allows responsive design configuration with default values and breakpoint
- * overrides.
- *
+ * @description
+ * Custom grid settings that define container widths, fields, and gaps for different breakpoints. Allows responsive
+ * design configuration with default values and breakpoint overrides.
  */
 export type TCustomSettingsGrid = {
   /**
-   * @description Custom grid settings.
+   * Custom grid settings.
    *
    * @example
    * ```typescript
@@ -50,7 +49,7 @@ export type TCustomSettingsGrid = {
    */
   gridSettings: {
     /**
-     * @description Grid container options.
+     * Grid container options.
      *
      * @example
      * ```typescript
@@ -68,22 +67,22 @@ export type TCustomSettingsGrid = {
      */
     container: {
       /**
-       * @description Grid container value.
+       * Grid container value.
        */
       container: string;
 
       /**
-       * @description Grid container value redefinition for specified breakpoint.
+       * Grid container value redefinition for specified breakpoint.
        */
       [key: string]: string;
     };
 
     /**
-     * @description Grid fields in pixels.
+     * Grid fields in pixels.
      */
     fields: {
       /**
-       * @description Grid fields value.
+       * Grid fields value.
        *
        * @example
        * ```typescript
@@ -97,17 +96,17 @@ export type TCustomSettingsGrid = {
       fields: string;
 
       /**
-       * @description Grid fields value redefinition for specified breakpoint.
+       * Grid fields value redefinition for specified breakpoint.
        */
       [key: string]: string;
     };
 
     /**
-     * @description Grid gap in pixels.
+     * Grid gap in pixels.
      */
     gap: {
       /**
-       * @description Grid gap value.
+       * Grid gap value.
        *
        * @example
        * ```typescript
@@ -121,7 +120,7 @@ export type TCustomSettingsGrid = {
       gap: string;
 
       /**
-       * @description Grid gap value redefinition for specified breakpoint.
+       * Grid gap value redefinition for specified breakpoint.
        */
       [key: string]: string;
     };

@@ -2,8 +2,7 @@ import type { ComputedRef, Ref } from 'vue';
 import type { TSidebarMenuItem } from '../../types/SidebarMenu.item';
 
 /**
- * @description Return type for the `useSidebarMenuItem` composable function.
- * Contains reactive properties.
+ * Return type for the `useSidebarMenuItem` composable function.
  */
 export type TUseSidebarMenuItemReturn = {
   /**
@@ -48,36 +47,42 @@ export type TUseSidebarMenuItemReturn = {
 
   /**
    * Handler for mouse enter event on the menu item.
+   *
    * @param event MouseEvent
    */
   onMouseEnter: (event: MouseEvent) => void;
 
   /**
    * Handler for mouse leave event on the menu item.
+   *
    * @param event MouseEvent
    */
   onMouseLeave: (event: MouseEvent) => void;
 
   /**
    * Handler for toggling the expanded state of the menu item.
+   *
    * @param event MouseEvent
    */
   onToggle: (event: MouseEvent) => void;
 
   /**
    * Handler for the start of the expand transition.
+   *
    * @param el Element being expanded
    */
   onExpandEnter: (el: Element) => void;
 
   /**
    * Handler for after the expand transition has completed.
+   *
    * @param el Element that finished expanding
    */
   onExpandAfterEnter: (el: Element) => void;
 
   /**
    * Handler for before the collapse transition starts.
+   *
    * @param el Element being collapsed
    */
   onExpandBeforeLeave: (el: Element) => void;

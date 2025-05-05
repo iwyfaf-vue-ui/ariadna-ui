@@ -1,5 +1,6 @@
 /**
- * @description A class that resolves patterns by replacing placeholders with provided values.
+ * @description
+ * A class that resolves patterns by replacing placeholders with provided values.
  *
  * The class takes a pattern string and an object containing replacement values. It then replaces
  * placeholders in the pattern (e.g., `{{name}}`, `{{content}}`) with the corresponding values from
@@ -7,17 +8,21 @@
  */
 export default class IncludePatternResolver {
   /**
-   * @description The pattern string containing placeholders to be replaced.
+   * The pattern string containing placeholders to be replaced.
+   *
+   * @private
    */
   private readonly pattern: string;
 
   /**
-   * @description An object containing the replacement values for the placeholders.
+   * An object containing the replacement values for the placeholders.
+   *
+   * @private
    */
   private readonly replaces: any;
 
   /**
-   * @description Constructs an instance of `IncludePatternResolver`.
+   * Constructs an instance of `IncludePatternResolver`.
    *
    * @param pattern - The pattern string containing placeholders (e.g., `{{name}}`, `{{content}}`).
    * @param name - The value to replace the `{{name}}` placeholder in the pattern.
@@ -33,7 +38,7 @@ export default class IncludePatternResolver {
   }
 
   /**
-   * @description Renders the pattern by replacing placeholders with their corresponding values.
+   * Renders the pattern by replacing placeholders with their corresponding values.
    *
    * @returns The resolved string with all placeholders replaced by their values.
    */

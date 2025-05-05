@@ -4,11 +4,11 @@ import type { ESidebarMenuPropsDefault } from './types/SidebarMenu.enums';
 export type { TSidebarMenuItem } from './types/SidebarMenu.item';
 
 /**
- * @description Component props definition.
+ * Component props definition.
  */
 export type TSidebarMenuProps = {
   /**
-   * @description An array of SidebarMenu elements.
+   * An array of SidebarMenu elements.
    *
    * @type Array<TSidebarMenuItem>
    * @required
@@ -16,7 +16,7 @@ export type TSidebarMenuProps = {
   data: Array<TSidebarMenuItem>;
 
   /**
-   * @description SidebarMenu collapsed state.
+   * SidebarMenu collapsed state.
    *
    * @type boolean
    * @default false
@@ -24,7 +24,7 @@ export type TSidebarMenuProps = {
   collapsed?: boolean;
 
   /**
-   * @description Tell the SidebarMenu that he needs to remember the expand state for each menu item on its own.
+   * Tell the SidebarMenu that he needs to remember the expand state for each menu item on its own.
    *
    * @type boolean
    * @default false
@@ -32,7 +32,8 @@ export type TSidebarMenuProps = {
   rememberExpanded?: boolean;
 
   /**
-   * @description Redefines the CSS class of the root element and its descendants.
+   * Redefines the CSS class of the root element and its descendants.
+   *
    * @example css-class="example"
    * @default {@link ESidebarMenuPropsDefault.CSS_CLASS}
    */
@@ -40,23 +41,26 @@ export type TSidebarMenuProps = {
 };
 
 /**
- * @description Component slots definition.
+ * Component slots definition.
  */
 export type TSidebarMenuSlots = {
   /**
-   * @description Header SidebarMenu slot.
+   * Header SidebarMenu slot.
+   *
    * @returns {VNode[]}
    */
   header?(): VNode[];
 
   /**
-   * @description Footer SidebarMenu slot.
+   * Footer SidebarMenu slot.
+   *
    * @returns {VNode[]}
    */
   footer?(): VNode[];
 
   /**
-   * @description Dropdown icon element slot.
+   * Dropdown icon element slot.
+   *
    * @param {boolean} props.isOpen - Menu element open state.
    * @returns {VNode[]}
    */
@@ -64,11 +68,12 @@ export type TSidebarMenuSlots = {
 };
 
 /**
- * @description Component events emitted.
+ * Component events emitted.
  */
 export type TSidebarMenuEmits = {
   /**
-   * @description Emit a change for the collapsed state.
+   * Emit a change for the collapsed state.
+   *
    * @param {"update:collapsed"} e
    * @param {boolean} collapsed - Collapsed state.
    */
@@ -78,7 +83,7 @@ export type TSidebarMenuEmits = {
 /**
  * Ariadna UI | Components | Navigation
  *
- * @description Sidebar menu displays a list of navigation elements in vertical orientation.
+ * Sidebar menu displays a list of navigation elements in vertical orientation.
  */
 declare class SidebarMenu extends ClassComponent<
   TSidebarMenuProps,

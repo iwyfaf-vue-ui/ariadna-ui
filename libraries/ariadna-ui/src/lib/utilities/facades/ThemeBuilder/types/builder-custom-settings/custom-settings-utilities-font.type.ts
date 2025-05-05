@@ -1,5 +1,5 @@
 /**
- * @description Utilities fonts settings.
+ * Utilities fonts settings.
  *
  * @example
  * ```typescript
@@ -40,7 +40,7 @@
  */
 export type TCustomSettingsUtilitiesFont = {
   /**
-   * @description Font CSS variables.
+   * Font CSS variables.
    *
    * @example
    * ```typescript
@@ -51,7 +51,7 @@ export type TCustomSettingsUtilitiesFont = {
    */
   font?: {
     /**
-     * @description Font-family CSS variables.
+     * Font-family CSS variables.
      *
      * @example
      * ```typescript
@@ -64,7 +64,7 @@ export type TCustomSettingsUtilitiesFont = {
      */
     family?: {
       /**
-       * @description Font-family utility group.
+       * Font-family utility group.
        *
        * @example
        * ```typescript
@@ -79,7 +79,7 @@ export type TCustomSettingsUtilitiesFont = {
        */
       [key: string]: {
         /**
-         * @description Font-family property with its value.
+         * Font-family property with its value.
          *
          * @example
          * ```typescript
@@ -99,7 +99,7 @@ export type TCustomSettingsUtilitiesFont = {
     };
 
     /**
-     * @description Font-size CSS variables.
+     * Font-size CSS variables.
      *
      * @example
      * ```typescript
@@ -112,7 +112,7 @@ export type TCustomSettingsUtilitiesFont = {
      */
     size?: {
       /**
-       * @description Font-size utility group.
+       * Font-size utility group.
        *
        * @example
        * ```typescript
@@ -128,7 +128,7 @@ export type TCustomSettingsUtilitiesFont = {
        */
       [key: string]: {
         /**
-         * @description Font-size property and its value.
+         * Font-size property and its value.
          *
          * @example
          * ```typescript
@@ -153,7 +153,7 @@ export type TCustomSettingsUtilitiesFont = {
     };
 
     /**
-     * @description Font-weight CSS variables.
+     * Font-weight CSS variables.
      *
      * @example
      * ```typescript
@@ -166,7 +166,7 @@ export type TCustomSettingsUtilitiesFont = {
      */
     weight?: {
       /**
-       * @description Font-weight utility group.
+       * Font-weight utility group.
        *
        * @example
        * ```typescript
@@ -182,7 +182,7 @@ export type TCustomSettingsUtilitiesFont = {
        */
       [key: string]: {
         /**
-         * @description Font-weight property and its value.
+         * Font-weight property and its value.
          *
          * @example
          * ```typescript
@@ -205,7 +205,7 @@ export type TCustomSettingsUtilitiesFont = {
     };
 
     /**
-     * @description Font-height CSS variables.
+     * Font-height CSS variables.
      *
      * @example
      * ```typescript
@@ -218,7 +218,7 @@ export type TCustomSettingsUtilitiesFont = {
      */
     height?: {
       /**
-       * @description Font-height utility group.
+       * Font-height utility group.
        *
        * @example
        * ```typescript
@@ -234,7 +234,7 @@ export type TCustomSettingsUtilitiesFont = {
        */
       [key: string]: {
         /**
-         * @description Font-height property and its value.
+         * Font-height property and its value.
          *
          * @example
          * ```typescript

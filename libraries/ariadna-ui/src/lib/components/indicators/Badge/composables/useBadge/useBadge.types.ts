@@ -1,13 +1,11 @@
 import type { ComputedRef } from 'vue';
 
 /**
- * @description Return type for the `useBadge` composable function.
- * Contains reactive properties.
+ * Return type for the `useBadge` composable function.
  */
 export type TUseBadgeReturn = {
   /**
-   * @description Reactive computed property generating CSS class string based on component props (modifier, size,
-   * states, etc.).
+   * Reactive computed property generating CSS class string based on component props (modifier, size, states, etc.).
    */
   componentClasses: ComputedRef<string>;
 };

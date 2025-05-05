@@ -1,7 +1,7 @@
 /**
  * Ariadna UI | Utilities | Helpers
  *
- * @description Capitalizes the first letter of a given string.
+ * Capitalizes the first letter of a given string.
  *
  * @param {string} string - The input string to capitalize.
  * @returns {string} The input string with the first letter capitalized.

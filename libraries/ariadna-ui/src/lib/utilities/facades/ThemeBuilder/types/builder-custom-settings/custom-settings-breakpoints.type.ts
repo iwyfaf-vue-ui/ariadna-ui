@@ -1,16 +1,16 @@
 /**
- * @description Represents custom breakpoints settings for responsive design.
- * This type allows defining breakpoints for various device sizes, including
- * small (sm), medium (md), large (lg), extra large (xl), very extra large (xxl),
- * and custom breakpoints. Each breakpoint is optional and can be configured
+ * @description
+ * Represents custom breakpoints settings for responsive design.
+ * This type allows defining breakpoints for various device sizes, including small (sm), medium (md), large (lg),
+ * extra large (xl), very extra large (xxl), and custom breakpoints. Each breakpoint is optional and can be configured
  * with a specific width.
  */
 export type TCustomSettingsBreakpoints = {
   /**
    * Breakpoints custom settings.
    *
-   * @description A collection of breakpoints for different device sizes.
-   * Each breakpoint is optional and can be configured with a specific width.
+   * A collection of breakpoints for different device sizes. Each breakpoint is optional and can be configured with a
+   * specific width.
    *
    * @example
    * ```typescript
@@ -59,7 +59,7 @@ export type TCustomSettingsBreakpoints = {
    */
   breakPoints: {
     /**
-     * @description Optional breakpoint for small devices.
+     * Optional breakpoint for small devices.
      *
      * @example
      * ```typescript
@@ -75,7 +75,7 @@ export type TCustomSettingsBreakpoints = {
     };
 
     /**
-     * @description Optional breakpoint for medium devices.
+     * Optional breakpoint for medium devices.
      *
      * @example
      * ```typescript
@@ -91,7 +91,7 @@ export type TCustomSettingsBreakpoints = {
     };
 
     /**
-     * @description Optional breakpoint for large devices.
+     * Optional breakpoint for large devices.
      *
      * @example
      * ```typescript
@@ -107,7 +107,7 @@ export type TCustomSettingsBreakpoints = {
     };
 
     /**
-     * @description Optional breakpoint for extra large devices.
+     * Optional breakpoint for extra large devices.
      *
      * @example
      * ```typescript
@@ -123,7 +123,7 @@ export type TCustomSettingsBreakpoints = {
     };
 
     /**
-     * @description Optional breakpoint for very extra large devices.
+     * Optional breakpoint for very extra large devices.
      *
      * @example
      * ```typescript
@@ -139,7 +139,7 @@ export type TCustomSettingsBreakpoints = {
     };
 
     /**
-     * @description Custom breakpoint.
+     * Custom breakpoint.
      *
      * @example
      * ```typescript

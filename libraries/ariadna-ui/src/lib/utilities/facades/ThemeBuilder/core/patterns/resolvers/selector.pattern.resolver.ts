@@ -1,5 +1,6 @@
 /**
- * @description A class that resolves and renders a pattern string by replacing placeholders with
+ * @description
+ * A class that resolves and renders a pattern string by replacing placeholders with
  * provided values.
  *
  * The class takes a pattern string and a set of replacement values (selector, content, and tabs).
@@ -8,17 +9,21 @@
  */
 export default class SelectorPatternResolver {
   /**
-   * @description The pattern string containing placeholders to be replaced.
+   * The pattern string containing placeholders to be replaced.
+   *
+   * @private
    */
   private readonly pattern: string;
 
   /**
-   * @description An object containing the replacement values for the placeholders in the pattern.
+   * An object containing the replacement values for the placeholders in the pattern.
+   *
+   * @private
    */
   private readonly replaces: any;
 
   /**
-   * @description Constructs a new `SelectorPatternResolver` instance.
+   * Constructs a new `SelectorPatternResolver` instance.
    *
    * @param pattern - The pattern string containing placeholders (e.g., `{{selector}}`, `{{content}}`, etc.).
    * @param selector - The value to replace the `{{selector}}` placeholder in the pattern.
@@ -39,7 +44,7 @@ export default class SelectorPatternResolver {
   }
 
   /**
-   * @description Renders the pattern by replacing placeholders with their corresponding values.
+   * Renders the pattern by replacing placeholders with their corresponding values.
    *
    * This method iterates over the `replaces` object and replaces each placeholder in the pattern
    * (e.g., `{{selector}}`, `{{content}}`, `{{tabs}}`, `{{tab1}}`, etc.) with the corresponding value.

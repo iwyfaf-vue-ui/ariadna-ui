@@ -1,5 +1,6 @@
 /**
- * @description Copy text to clipboard
+ * Copy text to clipboard.
+ *
  * @param {string} text
  * @returns {Promise<unknown>}
  */

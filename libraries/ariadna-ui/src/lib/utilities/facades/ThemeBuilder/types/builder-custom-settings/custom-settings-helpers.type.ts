@@ -1,14 +1,12 @@
 /**
- * @description Represents a configuration object for custom settings helpers.
- * This type defines a set of helper mixins that can be enabled or disabled
- * to generate utility mixins for specific CSS properties or functionalities.
- *
+ * @description
+ * Represents a configuration object for custom settings helpers.
+ * This type defines a set of helper mixins that can be enabled or disabled to generate utility mixins for specific CSS
+ * properties or functionalities.
  */
 export type TCustomSettingsHelpers = {
   /**
-   * @description Configuration object for helper mixins. These mixins provide utility functions
-   * for common CSS patterns.
-   *
+   * Configuration object for helper mixins. These mixins provide utility functions for common CSS patterns.
    * If helper mixin is turned off, it will not be built into the project.
    *
    * @example
@@ -18,9 +16,8 @@ export type TCustomSettingsHelpers = {
    */
   helpers?: {
     /**
-     * @description Determines whether to generate a helper mixin for font-related properties.
-     *  When enabled, it allows the use of a mixin like `text-style-helper` to apply predefined
-     *  font styles.
+     * Determines whether to generate a helper mixin for font-related properties. When enabled, it allows the use of a
+     * mixin like `text-style-helper` to apply predefined font styles.
      *
      * @example
      * ```typescript
@@ -40,7 +37,7 @@ export type TCustomSettingsHelpers = {
     textStyle?: boolean;
 
     /**
-     * @description Determines whether to generate a helper mixin for column offset functionality.
+     * Determines whether to generate a helper mixin for column offset functionality.
      * When enabled, it provides a mixin to manage column offsets in grid or flex layouts.
      *
      * ```typescript

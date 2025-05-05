@@ -1,5 +1,6 @@
 /**
- * @description Checks if the provided value is a plain object.
+ * Checks if the provided value is a plain object.
+ *
  * @param {Record<string, any>} object - The value to check.
  * @returns {boolean} - Returns `true` if the value is a non-null, non-array object; otherwise, returns `false`.
  *

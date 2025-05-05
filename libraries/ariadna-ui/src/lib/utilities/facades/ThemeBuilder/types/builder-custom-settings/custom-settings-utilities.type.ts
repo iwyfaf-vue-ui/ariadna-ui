@@ -3,9 +3,10 @@ import type { TCustomSettingsUtilitiesIndent } from './custom-settings-utilities
 import type { TCustomSettingsUtilitiesCustom } from './custom-settings-utilities-custom.type';
 
 /**
- * @description Represents a collection of utility settings for styling components.
- * This type combines font settings, indentation settings, and custom utility settings
- * into a single configuration object.
+ * @description
+ * Represents a collection of utility settings for styling components.
+ * This type combines font settings, indentation settings, and custom utility settings into a single configuration
+ * object.
  *
  * @extends TCustomSettingsUtilitiesFont
  * @extends TCustomSettingsUtilitiesIndent
@@ -13,7 +14,7 @@ import type { TCustomSettingsUtilitiesCustom } from './custom-settings-utilities
  */
 export type TCustomSettingsUtilities = {
   /**
-   * @description Utilities settings.
+   * Utilities settings.
    *
    * @example
    * ```typescript

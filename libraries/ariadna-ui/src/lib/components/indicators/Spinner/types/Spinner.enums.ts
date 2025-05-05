@@ -1,5 +1,5 @@
 /**
- * @description Spinner default props values.
+ * Spinner default props values.
  */
 export enum ESpinnerPropsDefault {
   SIZE = 'medium',

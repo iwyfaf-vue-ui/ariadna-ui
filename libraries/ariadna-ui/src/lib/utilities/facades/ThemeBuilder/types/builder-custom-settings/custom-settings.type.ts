@@ -5,9 +5,9 @@ import type { TCustomSettingsUtilities } from './custom-settings-utilities.type'
 import type { TCustomSettingsHelpers } from './custom-settings-helpers.type';
 
 /**
- * @description Represents a comprehensive collection of custom settings for a project,
- * combining breakpoints, grid configurations, themes, utilities, and helper flags.
- * This type is an intersection of multiple specialized setting types.
+ * @description
+ * Represents a comprehensive collection of custom settings for a project, combining breakpoints, grid configurations,
+ * themes, utilities, and helper flags. This type is an intersection of multiple specialized setting types.
  *
  * @extends TCustomSettingsBreakpoints - Breakpoint definitions for responsive design.
  * @extends TCustomSettingsGrid - Grid system configuration settings.

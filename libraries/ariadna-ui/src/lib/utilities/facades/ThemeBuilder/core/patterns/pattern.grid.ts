@@ -1,5 +1,5 @@
 /**
- * @description Allowed grid properties.
+ * Allowed grid properties.
  */
 export default (): string[] => {
   return ['container', 'fields', 'gap'];

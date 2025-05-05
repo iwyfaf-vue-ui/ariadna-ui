@@ -1,8 +1,7 @@
 import type { ComputedRef, Ref } from 'vue';
 
 /**
- * @description Return type for the `usePreviewer` composable function.
- * Contains reactive properties.
+ * Return type for the `usePreviewer` composable function.
  */
 export type TUsePreviewerReturn = {
   /**
@@ -27,24 +26,28 @@ export type TUsePreviewerReturn = {
 
   /**
    * Handles the copy-to-clipboard action for the code preview.
+   *
    * @returns {Promise<void>}
    */
   handleCopy: () => Promise<void>;
 
   /**
    * Handler for the start of the expand transition.
+   *
    * @param el Element being expanded
    */
   onExpandEnter: (el: Element) => void;
 
   /**
    * Handler for after the expand transition has completed.
+   *
    * @param el Element that finished expanding
    */
   onExpandAfterEnter: (el: Element) => void;
 
   /**
    * Handler for before the collapse transition starts.
+   *
    * @param el Element being collapsed
    */
   onExpandBeforeLeave: (el: Element) => void;

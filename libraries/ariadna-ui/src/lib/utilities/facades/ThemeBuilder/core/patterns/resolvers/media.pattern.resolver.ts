@@ -1,17 +1,21 @@
 /**
- * @description A class that resolves and wraps CSS styles based on media query conditions.
+ * @description
+ * A class that resolves and wraps CSS styles based on media query conditions.
  * It allows for dynamic generation of media queries for responsive design.
  */
 export default class MediaPatternResolver {
   /**
-   * @default The breakpoint for the media query (e.g., '768px'). If `null`, no media query will be
+   * The breakpoint for the media query (e.g., '768px'). If `null`, no media query will be
    * applied.
+   *
+   * @private
    */
   private readonly breakPoint: string | null;
 
   /**
-   * @description The condition for the media query (e.g., 'min-width' or 'max-width').
+   * The condition for the media query (e.g., 'min-width' or 'max-width').
    *
+   * @private
    * @default 'min-width'
    */
   private readonly condition: string;
@@ -19,12 +23,13 @@ export default class MediaPatternResolver {
   /**
    * The device type for the media query (e.g., 'screen', 'print').
    *
+   * @private
    * @default 'screen'.
    */
   private readonly device: string;
 
   /**
-   * @description Constructs a new instance of `MediaPatternResolver`.
+   * Constructs a new instance of `MediaPatternResolver`.
    *
    * @param breakPoint - The breakpoint for the media query. Defaults to an empty string.
    * @param condition - The condition for the media query. Defaults to 'min-width'.
@@ -37,8 +42,8 @@ export default class MediaPatternResolver {
   }
 
   /**
-   * @description Wraps the provided CSS styles with a media query based on the configured
-   * breakpoint, condition, and device. If no breakpoint is provided, the styles are returned as-is.
+   * Wraps the provided CSS styles with a media query based on the configured breakpoint, condition, and device. If no
+   * breakpoint is provided, the styles are returned as-is.
    *
    * @param styles - The CSS styles to wrap with a media query.
    * @returns The wrapped CSS styles as a string.

@@ -1,5 +1,6 @@
 /**
- * @description Recursively constructs a type with all properties of `T` set to optional.
+ * @description
+ * Recursively constructs a type with all properties of `T` set to optional.
  * This is a deep version of the built-in `Partial` type, meaning that it
  * makes all properties at every level of nesting optional.
  *

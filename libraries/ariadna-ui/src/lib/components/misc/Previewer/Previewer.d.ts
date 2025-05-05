@@ -51,18 +51,21 @@ export type TPreviewerProps = {
 export type TPreviewerSlots = {
   /**
    * Slot for rendering the header content above the previewed component.
+   *
    * @returns {VNode[]}
    */
   header?(): VNode[];
 
   /**
    * Slot for rendering the description content below the header and above the previewed component.
+   *
    * @returns {VNode[]}
    */
   description?(): VNode[];
 
   /**
    * Slot for customizing the code toggle button.
+   *
    * @param {() => void} props.toggle - A function to toggle the visibility of the code block.
    * @param {boolean} props.isShown - Indicates whether the code block is currently visible.
    * @returns {VNode[]}
@@ -71,6 +74,7 @@ export type TPreviewerSlots = {
 
   /**
    * Slot for rendering a custom copy button.
+   *
    * @param {Promise<unknown> } props.toggle - A function to be called when the copy action should be triggered.
    * @param {boolean} props.isCopied - Indicates whether the code is having been copied.
    * @returns {VNode[]}
@@ -79,6 +83,7 @@ export type TPreviewerSlots = {
 
   /**
    * Slot for customizing the component source code appearance.
+   *
    * @param {boolean} props.source - Component source to be rendered as a raw text.
    * @returns {VNode[]}
    */

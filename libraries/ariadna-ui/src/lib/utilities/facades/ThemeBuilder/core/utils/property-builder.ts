@@ -2,12 +2,13 @@ import Notifications from '../notifications/';
 import { UTILITY_PROPERTY_HAS_DASH } from '../notifications/locales/errors.notifications.locales';
 
 /**
- * @description A utility class for building and manipulating property names in objects.
+ * @description
+ * A utility class for building and manipulating property names in objects.
  * Provides functionality to flatten nested objects and customize property names.
  */
 export default class PropertyBuilder {
   /**
-   * @description  Flattens a nested object into a single-level object with keys concatenated by a
+   * Flattens a nested object into a single-level object with keys concatenated by a
    * specified delimiter.
    *
    * @param obj - The object to flatten.
@@ -41,7 +42,7 @@ export default class PropertyBuilder {
   }
 
   /**
-   * @description Duplicates a property name with a custom value appended to it.
+   * Duplicates a property name with a custom value appended to it.
    *
    * @param name - The base name of the property.
    * @param value - The value to append to the property name.

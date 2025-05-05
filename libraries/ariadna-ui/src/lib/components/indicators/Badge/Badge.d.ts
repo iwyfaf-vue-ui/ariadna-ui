@@ -9,11 +9,12 @@ import type { EBadgePropsDefault } from './types/Badge.enums';
 export type TBadgePropsSize = 'small' | 'medium' | 'large';
 
 /**
- * @description Component props definition.
+ * Component props definition.
  */
 export type TBadgeProps = {
   /**
-   * @description Predefined size variants for the badge component.
+   * Predefined size variants for the badge component.
+   *
    * @example size="small"
    * @example size="medium"
    * @example size="large"
@@ -22,28 +23,32 @@ export type TBadgeProps = {
   size?: TBadgePropsSize;
 
   /**
-   * @description The badge are displayed with the largest radius of curvature.
+   * The badge displayed with the largest radius of curvature.
+   *
    * @example :text="true"
    * @default false
    */
   rounded?: boolean;
 
   /**
-   * @description Whether the badge should move to the upper right side relative to the parent element or not.
+   * Whether the badge should move to the upper right side relative to the parent element or not.
+   *
    * @example :floating="true"
    * @default false
    */
   floating?: boolean;
 
   /**
-   * @description Redefines the CSS class of the root element and its descendants.
+   * Redefines the CSS class of the root element and its descendants.
+   *
    * @example css-class="example"
    * @default {@link EBadgePropsDefault.CSS_CLASS}
    */
   cssClass?: string;
 
   /**
-   * @description Modifier of the basic CSS class.
+   * Modifier of the basic CSS class.
+   *
    * @example modifier="primary"
    * @default undefined
    */
@@ -51,25 +56,26 @@ export type TBadgeProps = {
 };
 
 /**
- * @description Component slots definition.
+ * Component slots definition.
  */
 export type TBadgeSlots = {
   /**
-   * @description Default component slot.
+   * Default component slot.
+   *
    * @returns {VNode[]}
    */
   default?(): VNode[];
 };
 
 /**
- * @description Component events emitted.
+ * Component events emitted.
  */
 export type TBadgeEmits = {};
 
 /**
  * Ariadna UI | Components | Indicators
  *
- * @description Badge is a small status indicator for another element.
+ * Badge is a small status indicator for another element.
  */
 declare class Badge extends ClassComponent<
   TBadgeProps,

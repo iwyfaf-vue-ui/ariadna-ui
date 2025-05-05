@@ -1,5 +1,5 @@
 /**
- * @description Button default props values.
+ * Button default props values.
  */
 export enum EButtonPropsDefault {
   TAG = 'button',

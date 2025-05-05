@@ -1,7 +1,7 @@
 import type { TSidebarMenuItem } from '../../types/SidebarMenu.item';
 
 /**
- * @description Проверяет, активен ли пункт меню относительно текущего маршрута.
+ * Проверяет, активен ли пункт меню относительно текущего маршрута.
  *
  * @param {TSidebarMenuItem} item - Элемент меню для проверки.
  * @param {any} route - Объект маршрута, содержащий текущий путь (route.path).

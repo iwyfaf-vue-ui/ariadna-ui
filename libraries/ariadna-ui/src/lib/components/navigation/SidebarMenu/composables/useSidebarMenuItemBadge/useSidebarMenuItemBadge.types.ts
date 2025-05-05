@@ -1,8 +1,7 @@
 import type { ComputedRef } from 'vue';
 
 /**
- * @description Return type for the `useSidebarMenuItemBadge` composable function.
- * Contains reactive properties.
+ * Return type for the `useSidebarMenuItemBadge` composable function.
  */
 export type TUseSidebarMenuItemBadgeReturn = {
   /**

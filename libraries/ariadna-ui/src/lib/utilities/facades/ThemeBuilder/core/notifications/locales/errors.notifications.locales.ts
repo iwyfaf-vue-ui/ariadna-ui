@@ -1,5 +1,5 @@
 /**
- * @description Error messages.
+ * Error messages.
  */
 export enum ErrorMessages {
   NAME_IS_NOT_SPECIFIED = 'Theme name option is not specified',

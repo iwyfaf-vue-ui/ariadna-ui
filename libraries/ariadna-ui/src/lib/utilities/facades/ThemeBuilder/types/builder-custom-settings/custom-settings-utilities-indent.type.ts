@@ -1,5 +1,5 @@
 /**
- * @description Utilities indents settings.
+ * Utilities indents settings.
  *
  * @example
  * ```typescript
@@ -26,7 +26,7 @@
  */
 export type TCustomSettingsUtilitiesIndent = {
   /**
-   * @description Indents variables (i.e. margins & paddings).
+   * Indents variables (i.e. margins & paddings).
    *
    * @example
    * ```typescript
@@ -37,7 +37,7 @@ export type TCustomSettingsUtilitiesIndent = {
    */
   indent?: {
     /**
-     * @description Paddings CSS variables.
+     * Paddings CSS variables.
      *
      * @example
      * ```typescript
@@ -50,7 +50,7 @@ export type TCustomSettingsUtilitiesIndent = {
      */
     padding?: {
       /**
-       * @description Paddings utility group.
+       * Paddings utility group.
        *
        * @example
        * ```typescript
@@ -66,7 +66,7 @@ export type TCustomSettingsUtilitiesIndent = {
        */
       [key: string]: {
         /**
-         * @description Paddings property and its value.
+         * Paddings property and its value.
          *
          * @example
          * ```typescript
@@ -89,7 +89,7 @@ export type TCustomSettingsUtilitiesIndent = {
     };
 
     /**
-     * @description Margins CSS variables.
+     * Margins CSS variables.
      *
      * @example
      * ```typescript
@@ -102,7 +102,7 @@ export type TCustomSettingsUtilitiesIndent = {
      */
     margin?: {
       /**
-       * @description Margins utility group.
+       * Margins utility group.
        *
        * @example
        * ```typescript
@@ -118,7 +118,7 @@ export type TCustomSettingsUtilitiesIndent = {
        */
       [key: string]: {
         /**
-         * @description Margins property and its value.
+         * Margins property and its value.
          *
          * @example
          * ```typescript

@@ -1,7 +1,7 @@
 import type { Component } from 'vue';
 
 /**
- * @description SidebarMenu item element.
+ * SidebarMenu item element.
  */
 export type TSidebarMenuItem = {
   /**

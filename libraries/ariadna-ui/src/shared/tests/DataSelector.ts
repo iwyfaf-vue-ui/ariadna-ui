@@ -1,7 +1,7 @@
 import fs from 'fs';
 
 /**
- * @description A utility class for selecting and reading data from files.
+ * A utility class for selecting and reading data from files.
  */
 export class DataSelector {
   /**

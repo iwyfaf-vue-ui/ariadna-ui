@@ -15,7 +15,7 @@ export type { TCustomSettingsHelpers } from './types/builder-custom-settings/cus
 /**
  * Ariadna UI | Utilities | Facades
  *
- * @description ThemeBuilder is a class responsible for building and placing a theme based on the
+ * ThemeBuilder is a class responsible for building and placing a theme based on the
  * provided options and settings.
  */
 declare class ThemeBuilder {

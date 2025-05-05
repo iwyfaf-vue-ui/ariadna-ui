@@ -1,5 +1,6 @@
 /**
- * @description Represents custom breakpoints settings for responsive design.
+ * @description
+ * Represents custom breakpoints settings for responsive design.
  * This type allows defining breakpoints for various device sizes, including
  * small (sm), medium (md), large (lg), extra large (xl), very extra large (xxl),
  * and custom breakpoints. Each breakpoint is optional and can be configured
@@ -7,9 +8,9 @@
  */
 export type TDefaultSettingsBreakpoints = {
   /**
-   * @description Breakpoints default settings.
+   * Breakpoints default settings.
    *
-   * @description A collection of breakpoints for different device sizes.
+   * A collection of breakpoints for different device sizes.
    * Each breakpoint is optional and can be configured with a specific width.
    *
    * @example
@@ -56,7 +57,7 @@ export type TDefaultSettingsBreakpoints = {
    */
   breakPoints: {
     /**
-     * @description Optional breakpoint for small devices.
+     * Optional breakpoint for small devices.
      *
      * @example
      * ```typescript
@@ -72,7 +73,7 @@ export type TDefaultSettingsBreakpoints = {
     };
 
     /**
-     * @description Optional breakpoint for medium devices.
+     * Optional breakpoint for medium devices.
      *
      * @example
      * ```typescript
@@ -88,7 +89,7 @@ export type TDefaultSettingsBreakpoints = {
     };
 
     /**
-     * @description Optional breakpoint for large devices.
+     * Optional breakpoint for large devices.
      *
      * @example
      * ```typescript
@@ -104,7 +105,7 @@ export type TDefaultSettingsBreakpoints = {
     };
 
     /**
-     * @description Optional breakpoint for extra large devices.
+     * Optional breakpoint for extra large devices.
      *
      * @example
      * ```typescript
@@ -120,7 +121,7 @@ export type TDefaultSettingsBreakpoints = {
     };
 
     /**
-     * @description Optional breakpoint for very extra large devices.
+     * Optional breakpoint for very extra large devices.
      *
      * @example
      * ```typescript

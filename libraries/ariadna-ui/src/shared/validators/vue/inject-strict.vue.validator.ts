@@ -2,7 +2,8 @@ import type { InjectionKey } from 'vue';
 import { inject } from 'vue';
 
 /**
- * @description Strict inject data by key
+ * Strict inject data by key.
+ *
  * @param {InjectionKey<T>} key
  * @param {T} fallback
  * @returns {T}

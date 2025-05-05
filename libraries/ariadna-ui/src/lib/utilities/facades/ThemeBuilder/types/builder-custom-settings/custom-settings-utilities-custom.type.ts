@@ -1,5 +1,6 @@
 /**
- * @description Represents a deeply nested structure for custom CSS utility settings.
+ * @description
+ * Represents a deeply nested structure for custom CSS utility settings.
  * This type allows defining custom CSS properties at multiple nested levels,
  * typically used for utility-first CSS frameworks or theme configurations.
  *
@@ -36,7 +37,7 @@
  */
 export type TCustomSettingsUtilitiesCustom = {
   /**
-   * @description Utility identifier (e.g., 'transition', 'spacing').
+   * Utility identifier (e.g., 'transition', 'spacing').
    * Keys represent utility names, values contain nested utility definitions.
    *
    * @example
@@ -48,7 +49,7 @@ export type TCustomSettingsUtilitiesCustom = {
    */
   [key: string]: {
     /**
-     * @description Utility group (e.g., 'time', 'easing').
+     * Utility group (e.g., 'time', 'easing').
      * Keys represent sub-categories, values contain property definitions.
      *
      * @example
@@ -63,7 +64,7 @@ export type TCustomSettingsUtilitiesCustom = {
      */
     [key: string]: {
       /**
-       * @description Utility subgroup (e.g., '10', 'linear').
+       * Utility subgroup (e.g., '10', 'linear').
        * Keys represent variant names, values contain final CSS properties.
        *
        * @example
@@ -87,7 +88,7 @@ export type TCustomSettingsUtilitiesCustom = {
        */
       [key: string]: {
         /**
-         * @description Individual utility property.
+         * Individual utility property.
          * Keys represent CSS property names, values are CSS values.
          *
          * @example

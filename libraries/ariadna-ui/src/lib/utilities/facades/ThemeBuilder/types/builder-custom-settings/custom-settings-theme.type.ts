@@ -1,11 +1,12 @@
 /**
- * @description Configuration object for theme settings. Allows defining multiple themes with
- * nested color structures. Each theme can have multiple color groups (brand, utility, etc.),
- * subgroups (primary, secondary, etc.), and properties with their respective color values.
+ * @description
+ * Configuration object for theme settings. Allows defining multiple themes with nested color structures. Each theme
+ * can have multiple color groups (brand, utility, etc.), subgroups (primary, secondary, etc.), and properties with
+ * their respective color values.
  */
 export type TCustomSettingsTheme = {
   /**
-   * @description Theme settings.
+   * Theme settings.
    *
    * @example
    * ```typescript
@@ -74,7 +75,7 @@ export type TCustomSettingsTheme = {
    */
   themes: {
     /**
-     * @description Theme identifier (e.g., 'default', 'dark', 'light').
+     * Theme identifier (e.g., 'default', 'dark', 'light').
      * The key represents the theme name that can be used to apply the theme.
      *
      * @example
@@ -87,7 +88,7 @@ export type TCustomSettingsTheme = {
      */
     [key: string]: {
       /**
-       * @description Theme group category (e.g., 'color', 'gradient', etc.').
+       * Theme group category (e.g., 'color', 'gradient', etc.').
        * Organizes theme into logical groups for better maintainability.
        *
        * @example
@@ -106,7 +107,7 @@ export type TCustomSettingsTheme = {
        */
       [key: string]: {
         /**
-         * @description Color group category (e.g., 'text', 'icon', 'background').
+         * Color group category (e.g., 'text', 'icon', 'background').
          * Organizes theme colors into logical groups for better maintainability.
          *
          * @example
@@ -131,7 +132,7 @@ export type TCustomSettingsTheme = {
          */
         [key: string]: {
           /**
-           * @description Color subgroup category (e.g., 'default', 'primary', 'secondary').
+           * Color subgroup category (e.g., 'default', 'primary', 'secondary').
            * Organizes theme colors into logical subgroups for better maintainability.
            *
            * @example
@@ -161,7 +162,7 @@ export type TCustomSettingsTheme = {
            */
           [key: string]: {
             /**
-             * @description Individual color properties with their values.
+             * Individual color properties with their values.
              * Keys can be numeric scales (e.g., 100-900) or semantic names (e.g., 'default').
              * Supports opacity variants with suffix (e.g., '500-50' for 50% opacity).
              *

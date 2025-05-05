@@ -2,11 +2,11 @@ import type { TSidebarMenuItem } from '../../types/SidebarMenu.item';
 import type { VNode } from 'vue';
 
 /**
- * @description Component props definition.
+ * Component props definition.
  */
 export type TSidebarMenuItemProps = {
   /**
-   * @description Sidebar menu element.
+   * Sidebar menu element.
    *
    * @type TSidebarMenuItem
    * @default undefined
@@ -15,7 +15,7 @@ export type TSidebarMenuItemProps = {
   item: TSidebarMenuItem;
 
   /**
-   * @description Sidebar menu item level.
+   * Sidebar menu item level.
    *
    * @type number
    * @default 1
@@ -23,7 +23,7 @@ export type TSidebarMenuItemProps = {
   level?: number;
 
   /**
-   * @description Sidebar menu item active state.
+   * Sidebar menu item active state.
    *
    * @type boolean
    * @default false
@@ -32,16 +32,17 @@ export type TSidebarMenuItemProps = {
 };
 
 /**
- * @description Sidebar menu item component slots.
+ * Sidebar menu item component slots.
  */
 export type TSidebarMenuItemSlots = {
   /**
-   * @description Dropdown icon slot.
+   * Dropdown icon slot.
    */
   dropdownIcon?(props: { isOpen: boolean }): VNode[];
 
   /**
-   * @description Action icon slot.
+   * Action icon slot.
+   *
    * @returns {VNode[]}
    */
   actionIcon?(): VNode[];

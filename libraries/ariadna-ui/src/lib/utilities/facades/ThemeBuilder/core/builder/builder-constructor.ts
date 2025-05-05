@@ -18,14 +18,15 @@ import SelectorPatternResolver from '../patterns/resolvers/selector.pattern.reso
 import IfPatternResolver from '../patterns/resolvers/if.pattern.resolver';
 
 /**
- * @description The `BuilderConstructor` class is responsible for constructing and generating
+ * @description
+ * The `BuilderConstructor` class is responsible for constructing and generating
  * various CSS properties, mixins, and utilities based on provided custom and default settings.
  * It extends the `PropertyBuilder` class and provides methods to build breakpoints,
  * grid settings, themes, utilities, and more.
  */
 export class BuilderConstructor extends PropertyBuilder {
   /**
-   * @description Constructs a new instance of the `BuilderConstructor` class.
+   * Constructs a new instance of the `BuilderConstructor` class.
    *
    * @param customSettings - The custom settings provided by the user.
    * @param defaultSettings - The default settings used as a fallback.
@@ -41,7 +42,7 @@ export class BuilderConstructor extends PropertyBuilder {
   }
 
   /**
-   * @description Merges the default settings with the custom settings to create the theme settings.
+   * Merges the default settings with the custom settings to create the theme settings.
    *
    * @public
    * @returns An object containing the merged theme settings.
@@ -51,7 +52,7 @@ export class BuilderConstructor extends PropertyBuilder {
   }
 
   /**
-   * @description Builds an array of breakpoint names from the theme settings.
+   * Builds an array of breakpoint names from the theme settings.
    *
    * @public
    * @returns An array of breakpoint names.
@@ -67,7 +68,7 @@ export class BuilderConstructor extends PropertyBuilder {
   }
 
   /**
-   * @description This method generates a string with SCSS directives that will be used
+   * This method generates a string with SCSS directives that will be used
    * as imports in SCSS files.
    *
    * @public
@@ -87,7 +88,7 @@ export class BuilderConstructor extends PropertyBuilder {
   }
 
   /**
-   * @description Generates SCSS code for breakpoints based on the theme settings.
+   * Generates SCSS code for breakpoints based on the theme settings.
    *
    * @public
    * @returns A string containing the generated SCSS code for breakpoints.
@@ -107,7 +108,7 @@ export class BuilderConstructor extends PropertyBuilder {
   }
 
   /**
-   * @description Generates SCSS mixins for media queries based on the theme settings.
+   * Generates SCSS mixins for media queries based on the theme settings.
    *
    * @public
    * @returns A string containing the generated SCSS mixins for media queries.
@@ -133,7 +134,7 @@ export class BuilderConstructor extends PropertyBuilder {
   }
 
   /**
-   * @description Generates SCSS code for grid settings based on the theme settings.
+   * Generates SCSS code for grid settings based on the theme settings.
    *
    * @public
    * @returns A string containing the generated SCSS code for grid settings.
@@ -201,7 +202,7 @@ export class BuilderConstructor extends PropertyBuilder {
   }
 
   /**
-   * @description Generates SCSS code for the grid container based on the theme settings.
+   * Generates SCSS code for the grid container based on the theme settings.
    *
    * @public
    * @returns A string containing the generated SCSS code for the grid container.
@@ -227,7 +228,7 @@ export class BuilderConstructor extends PropertyBuilder {
   }
 
   /**
-   * @description Generates SCSS code for the fluid grid container based on the theme settings.
+   * Generates SCSS code for the fluid grid container based on the theme settings.
    *
    * @public
    * @returns A string containing the generated SCSS code for the fluid grid container.
@@ -253,7 +254,7 @@ export class BuilderConstructor extends PropertyBuilder {
   }
 
   /**
-   * @description Generates SCSS code for debugging the grid based on the theme settings.
+   * Generates SCSS code for debugging the grid based on the theme settings.
    *
    * @public
    * @returns A string containing the generated SCSS code for debugging the grid.
@@ -305,7 +306,7 @@ export class BuilderConstructor extends PropertyBuilder {
   }
 
   /**
-   * @description Generates SCSS code for the default grid based on the theme settings.
+   * Generates SCSS code for the default grid based on the theme settings.
    *
    * @public
    * @returns A string containing the generated SCSS code for the default grid.
@@ -352,7 +353,7 @@ export class BuilderConstructor extends PropertyBuilder {
   }
 
   /**
-   * @description Generates SCSS code for themes based on the theme settings.
+   * Generates SCSS code for themes based on the theme settings.
    *
    * @public
    * @returns A string containing the generated SCSS code for themes.
@@ -395,9 +396,9 @@ export class BuilderConstructor extends PropertyBuilder {
   }
 
   /**
-   * @description Generates SCSS code for utilities based on the theme settings.
+   * Generates SCSS code for utilities based on the theme settings.
    *
-   * @pib
+   * @public
    *
    * @returns A string containing the generated SCSS code for utilities.
    */
@@ -471,7 +472,7 @@ export class BuilderConstructor extends PropertyBuilder {
   }
 
   /**
-   * @description Generates SCSS code for the text style helper based on the theme settings.
+   * Generates SCSS code for the text style helper based on the theme settings.
    *
    * @public
    * @returns A string containing the generated SCSS code for the text style helper.
@@ -496,7 +497,7 @@ export class BuilderConstructor extends PropertyBuilder {
   }
 
   /**
-   * @description Generates SCSS code for the column offset helper based on the theme settings.
+   * Generates SCSS code for the column offset helper based on the theme settings.
    *
    * @public
    * @returns A string containing the generated SCSS code for the column offset helper.
@@ -549,7 +550,7 @@ export class BuilderConstructor extends PropertyBuilder {
   }
 
   /**
-   * @description Replaces placeholders in the generated theme with actual values.
+   * Replaces placeholders in the generated theme with actual values.
    *
    * @public
    * @param theme - The theme string containing placeholders.
@@ -568,7 +569,7 @@ export class BuilderConstructor extends PropertyBuilder {
   }
 
   /**
-   * @description Removes empty lines from the generated theme.
+   * Removes empty lines from the generated theme.
    *
    * @public
    * @param theme - The theme string potentially containing empty lines.

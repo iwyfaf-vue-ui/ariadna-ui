@@ -1,7 +1,7 @@
 /**
  * Ariadna UI | Utilities | Helpers
  *
- * @description Converts camelCase or PascalCase string to kebab-case.
+ * Converts camelCase or PascalCase string to kebab-case.
  *
  * This function handles both camelCase and PascalCase strings while preserving acronyms.
  * For example:

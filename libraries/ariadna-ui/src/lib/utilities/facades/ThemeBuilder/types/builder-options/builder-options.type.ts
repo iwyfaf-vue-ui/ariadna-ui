@@ -1,5 +1,5 @@
 /**
- * @description Represents the configuration options for the theme builder.
+ * Represents the configuration options for the theme builder.
  * This type defines the essential properties required to build and place a theme.
  *
  * @example
@@ -16,7 +16,7 @@
  */
 export type TBuilderOptions = {
   /**
-   * @description Name of your project.
+   * Name of your project.
    *
    * @example
    * ```typescript
@@ -26,7 +26,7 @@ export type TBuilderOptions = {
   projectName: string;
 
   /**
-   * @description Destination path (with a closing slash) where theme will be placed.
+   * Destination path (with a closing slash) where theme will be placed.
    *
    * @example
    * ```typescript
@@ -36,7 +36,7 @@ export type TBuilderOptions = {
   destination: string;
 
   /**
-   * @description Name of file with theme.
+   * Name of file with theme.
    *
    * @example
    * ```typescript

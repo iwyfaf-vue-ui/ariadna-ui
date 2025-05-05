@@ -1,6 +1,5 @@
 /**
- * @description A class that resolves and renders mixin patterns by replacing placeholders with
- * provided values.
+ * A class that resolves and renders mixin patterns by replacing placeholders with provided values.
  *
  * @class MixinPatternResolver
  * @example
@@ -14,7 +13,7 @@
  */
 export default class MixinPatternResolver {
   /**
-   * @description The pattern string containing placeholders to be replaced.
+   * The pattern string containing placeholders to be replaced.
    *
    * @private
    * @type {string}
@@ -22,7 +21,7 @@ export default class MixinPatternResolver {
   private readonly pattern: string;
 
   /**
-   * @description An object containing the replacement values for the placeholders in the pattern.
+   * An object containing the replacement values for the placeholders in the pattern.
    *
    * @private
    * @type {Object}
@@ -33,7 +32,8 @@ export default class MixinPatternResolver {
   private readonly replaces: any;
 
   /**
-   * @description Creates an instance of MixinPatternResolver.
+   * Creates an instance of MixinPatternResolver.
+   *
    * @constructor
    * @param {string} pattern - The pattern string containing placeholders.
    * @param {string} name - The value to replace the `{{name}}` placeholder.
@@ -51,8 +51,7 @@ export default class MixinPatternResolver {
   }
 
   /**
-   * @description Renders the mixin pattern by replacing placeholders with their corresponding
-   * values.
+   * Renders the mixin pattern by replacing placeholders with their corresponding values.
    *
    * @returns {string} The rendered string with placeholders replaced.
    * @example
