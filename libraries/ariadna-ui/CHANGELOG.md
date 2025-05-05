@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.8.1
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.8.0...v1.8.1)
+
+### 💅 Refactors
+
+- Update TSDOC ([e392043](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/e392043))
+
+### 📖 Documentation
+
+- Update library version ([5d88a84](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/5d88a84))
+
+### ❤️ Contributors
+
+- IWatchYouFromAfar <skip1209@yahoo.com>
+
 ## v1.8.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.7.1...v1.8.0)
