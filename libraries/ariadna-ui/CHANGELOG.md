@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.8.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.7.1...v1.8.0)
+
+### 🚀 Enhancements
+
+- Add Previewer component ([3f99cbe](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/3f99cbe))
+
+### 📖 Documentation
+
+- Update library version ([0216a86](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/0216a86))
+
+### ❤️ Contributors
+
+- IWatchYouFromAfar <skip1209@yahoo.com>
+
 ## v1.7.1
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.7.0...v1.7.1)
