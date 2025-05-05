@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.7.1",
+  "version": "1.7.2-beta.1",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -70,6 +70,10 @@
       "import": "./dist/lib/components/indicators/Spinner/Spinner.esm.js",
       "types": "./dist/lib/components/indicators/Spinner/Spinner.d.ts"
     },
+    "./Previewer": {
+      "import": "./dist/lib/components/misc/Previewer/Previewer.esm.js",
+      "types": "./dist/lib/components/misc/Previewer/Previewer.d.ts"
+    },
     "./SidebarMenu": {
       "import": "./dist/lib/components/navigation/SidebarMenu/SidebarMenu.esm.js",
       "types": "./dist/lib/components/navigation/SidebarMenu/SidebarMenu.d.ts"
@@ -97,6 +101,9 @@
       ],
       "Spinner": [
         "./dist/lib/components/indicators/Spinner/Spinner.d.ts"
+      ],
+      "Previewer": [
+        "./dist/lib/components/misc/Previewer/Previewer.d.ts"
       ],
       "SidebarMenu": [
         "./dist/lib/components/navigation/SidebarMenu/SidebarMenu.d.ts"

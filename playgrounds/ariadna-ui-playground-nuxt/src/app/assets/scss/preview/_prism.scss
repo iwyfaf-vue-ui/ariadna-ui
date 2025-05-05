@@ -1,0 +1,155 @@
+/**
+ * prism.js Twilight theme
+ * Based (more or less) on the Twilight theme originally of Textmate fame.
+ * @author Remy Bach
+ */
+code[class*='language-'],
+pre[class*='language-'] {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 1em;
+  line-height: 1.5;
+  color: var(--colors-utility-white);
+  text-align: left;
+  word-spacing: normal;
+  hyphens: none;
+  word-break: normal;
+  word-wrap: normal;
+  tab-size: 4;
+  white-space: break-spaces;
+  background: none;
+}
+
+pre[class*='language-'],
+:not(pre) > code[class*='language-'] {
+  background: var(--colors-brand-primary-800);
+}
+
+/* Code blocks */
+pre[class*='language-'] {
+  padding: var(--indents-600);
+  overflow: hidden;
+  border-radius: 0;
+}
+
+pre[class*='language-']::selection {
+  /* Firefox */
+  background: hsl(200deg 4% 16%); /* #282A2B */
+}
+
+/* Text Selection colour */
+pre[class*='language-']::selection,
+pre[class*='language-'] ::selection,
+code[class*='language-']::selection,
+code[class*='language-'] ::selection {
+  text-shadow: none;
+  background: hsl(0deg 0% 93% / 15%); /* #EDEDED */
+}
+
+/* Inline code */
+:not(pre) > code[class*='language-'] {
+  padding: 0.15em 0.2em 0.05em;
+  white-space: normal;
+  border: 0.13em solid hsl(0deg 0% 33%); /* #545454 */
+  border-radius: 0.3em;
+  box-shadow: 1px 1px 0.3em -0.1em black inset;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: hsl(0deg 0% 47%); /* #777777 */
+}
+
+.token.punctuation {
+  opacity: 0.7;
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.tag,
+.token.boolean,
+.token.number,
+.token.deleted {
+  color: hsl(14deg 58% 55%); /* #CF6A4C */
+}
+
+.token.keyword,
+.token.property,
+.token.selector,
+.token.constant,
+.token.symbol,
+.token.builtin {
+  color: hsl(53deg 89% 79%); /* #F9EE98 */
+}
+
+.token.attr-name,
+.token.attr-value,
+.token.string,
+.token.char,
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable,
+.token.inserted {
+  color: hsl(76deg 21% 52%); /* #8F9D6A */
+}
+
+.token.atrule {
+  color: hsl(218deg 22% 55%); /* #7587A6 */
+}
+
+.token.regex,
+.token.important {
+  color: hsl(42deg 75% 65%); /* #E9C062 */
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+/* Markup */
+.language-markup .token.tag,
+.language-markup .token.attr-name,
+.language-markup .token.punctuation {
+  color: hsl(33deg 33% 52%); /* #AC885B */
+}
+
+/* Make the tokens sit above the line highlight so the colours don't look faded. */
+.token {
+  position: relative;
+  z-index: 1;
+}
+
+.line-highlight.line-highlight {
+  z-index: 0;
+  margin-top: 0.75em; /* Same as .prism’s padding-top */
+  background: hsl(0deg 0% 33% / 25%); /* #545454 */
+  background: linear-gradient(
+    to right,
+    hsl(0deg 0% 33% / 10%) 70%,
+    hsl(0deg 0% 33% / 0%)
+  ); /* #545454 */
+
+  border-top: 1px dashed hsl(0deg 0% 33%); /* #545454 */
+  border-bottom: 1px dashed hsl(0deg 0% 33%); /* #545454 */
+}
+
+.line-highlight.line-highlight::before,
+.line-highlight.line-highlight[data-end]::after {
+  color: hsl(24deg 20% 95%); /* #F5F2F0 */
+  background-color: hsl(215deg 15% 59%); /* #8794A6 */
+}

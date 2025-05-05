@@ -90,6 +90,15 @@ const data = ref<Array<TSidebarMenuItem>>([
           },
         ],
       },
+      {
+        title: 'Misc',
+        children: [
+          {
+            title: 'Previewer',
+            href: '/components/misc/previewer',
+          },
+        ],
+      },
     ],
   },
   {

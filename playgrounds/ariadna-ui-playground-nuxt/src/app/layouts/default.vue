@@ -8,6 +8,8 @@
 
         <div class="app-root__main-content">
           <div class="app-root__main-content--overlay" @click="sidebarCollapsedHandler"></div>
+          <h1>{{ pageTitle }}</h1>
+
           <slot />
         </div>
       </div>
@@ -24,4 +26,8 @@ import Sidebar from '~/view/organisms/frame/Sidebar';
 import useSidebar from '~/composables/states/useSidebar/useSidebar';
 
 const { sidebarCollapsedHandler } = useSidebar();
+
+const route = useRoute();
+
+const pageTitle = computed(() => route.meta.title || 'Default Title');
 </script>

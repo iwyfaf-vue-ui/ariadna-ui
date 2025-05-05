@@ -16,5 +16,10 @@ useHead({
     { name: 'robots', content: 'noindex, nofollow' },
     { name: 'format-detection', content: 'telephone=no' },
   ],
+  script: [
+    {
+      src: '/scripts/prism.js',
+    },
+  ],
 });
 </script>
