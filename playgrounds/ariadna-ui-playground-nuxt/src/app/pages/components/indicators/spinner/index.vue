@@ -20,7 +20,7 @@
   </Previewer>
 
   <Previewer :component="DemoPropsCssClass" :component-source="DemoPropsCssClassSource">
-    <template #header> Props cssClass </template>
+    <template #header> Props CssClass </template>
 
     <template #showCodeToggle="{ toggle, isShown }">
       <Button @click="toggle">
