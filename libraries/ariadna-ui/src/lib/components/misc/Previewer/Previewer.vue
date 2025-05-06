@@ -1,22 +1,19 @@
 <template>
   <div :class="componentClasses">
-    <header v-if="!!slots.header" :class="`${props.cssClass}__header`">
+    <div v-if="!!slots.header" :class="`${props.cssClass}__header`">
       <slot name="header" />
-    </header>
+    </div>
 
-    <section v-if="!!slots.description" :class="`${props.cssClass}__description`">
+    <div v-if="!!slots.description" :class="`${props.cssClass}__description`">
       <slot name="description" />
-    </section>
+    </div>
 
-    <section :class="`${props.cssClass}__component`">
+    <div :class="`${props.cssClass}__component`">
       <component v-if="props.component" :is="props.component" />
       <template v-else>No component provided.</template>
-    </section>
+    </div>
 
-    <section
-      v-if="props.showCodeToggle && props.componentSource"
-      :class="`${props.cssClass}__action`"
-    >
+    <div v-if="props.showCodeToggle && props.componentSource" :class="`${props.cssClass}__action`">
       <div :class="`${props.cssClass}__action-toggle`">
         <slot name="showCodeToggle" :toggle="toggleCode" :is-shown="showCode">
           <button type="button" :aria-pressed="showCode" @click="toggleCode">
@@ -32,7 +29,7 @@
           </button>
         </slot>
       </div>
-    </section>
+    </div>
 
     <Transition
       :name="`${cssClass}__code-expand`"
@@ -40,11 +37,11 @@
       @after-enter="onExpandAfterEnter"
       @before-leave="onExpandBeforeLeave"
     >
-      <section v-if="showCode" :class="`${props.cssClass}__code`" tabindex="0">
+      <div v-if="showCode" :class="`${props.cssClass}__code`" tabindex="0">
         <slot name="source" :source="props.componentSource!">
           <pre><code>{{ props.componentSource }}</code></pre>
         </slot>
-      </section>
+      </div>
     </Transition>
   </div>
 </template>
