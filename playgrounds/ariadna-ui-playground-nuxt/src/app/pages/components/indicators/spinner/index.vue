@@ -1,6 +1,6 @@
 <template>
   <Previewer :component="DemoPropsSize" :component-source="DemoPropsSizeSource">
-    <template #header> Props Size </template>
+    <template #header> Prop Size </template>
 
     <template #showCodeToggle="{ toggle, isShown }">
       <Button @click="toggle">
@@ -20,7 +20,7 @@
   </Previewer>
 
   <Previewer :component="DemoPropsCssClass" :component-source="DemoPropsCssClassSource">
-    <template #header> Props CssClass </template>
+    <template #header> Prop CssClass </template>
 
     <template #showCodeToggle="{ toggle, isShown }">
       <Button @click="toggle">
@@ -40,7 +40,7 @@
   </Previewer>
 
   <Previewer :component="DemoPropsModifier" :component-source="DemoPropsModifierSource">
-    <template #header> Props Modifier </template>
+    <template #header> Prop Modifier </template>
 
     <template #showCodeToggle="{ toggle, isShown }">
       <Button @click="toggle">
