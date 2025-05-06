@@ -1,5 +1,5 @@
 <template>
-  <div :class="componentClasses" role="progressbar">
+  <div :class="componentClasses">
     <div :class="`${props.cssClass}__loader`"></div>
     <slot></slot>
   </div>
