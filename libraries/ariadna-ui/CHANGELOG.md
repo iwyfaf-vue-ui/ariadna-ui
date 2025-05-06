@@ -1,6 +1,34 @@
 # Changelog
 
 
+## v1.8.2
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.8.1...v1.8.2)
+
+### 🩹 Fixes
+
+- Spinner semantic ([cc66858](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/cc66858))
+- Previewer semantic ([2c16dea](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/2c16dea))
+- SidebarMenu action click propagation ([fdfea4e](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/fdfea4e))
+
+### 💅 Refactors
+
+- Badge playground ([a17cfe4](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/a17cfe4))
+- Spinner playground ([31da5e2](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/31da5e2))
+- Badge playground ([7280393](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/7280393))
+- Badge  playground ([a22218c](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/a22218c))
+- Spinner playground ([f6bde1b](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/f6bde1b))
+- Playground ([45d03ab](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/45d03ab))
+- Playground ([3af118c](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/3af118c))
+
+### 📖 Documentation
+
+- Update library version ([d332052](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/d332052))
+
+### ❤️ Contributors
+
+- IWatchYouFromAfar <skip1209@yahoo.com>
+
 ## v1.8.1
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.8.0...v1.8.1)
