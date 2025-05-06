@@ -1,5 +1,10 @@
 <template>
-  <span v-if="props.action" tabindex="0" :class="componentClasses" @click.prevent="props.action">
+  <span
+    v-if="props.action"
+    tabindex="0"
+    :class="componentClasses"
+    @click.prevent.stop="props.action"
+  >
     <template v-if="isActionString">
       {{ props.actionIcon }}
     </template>
