@@ -6,6 +6,11 @@ $previewer: '.ar-previewer';
   padding: var(--indent-padding-xlarge);
   border-radius: var(--radius-default-medium);
 
+  // .ar-previewer:not(:last-child)
+  &:not(:last-child) {
+    margin-bottom: var(--indent-padding-xlarge);
+  }
+
   // .ar-previewer--theme
   &--theme {
     background: var(--color-background-default-medium);
@@ -43,6 +48,11 @@ $previewer: '.ar-previewer';
 
   // .ar-previewer__component
   &__component {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent-padding-large);
+    align-items: center;
+    justify-content: center;
     border-top-style: solid;
     border-right-style: solid;
     border-left-style: solid;

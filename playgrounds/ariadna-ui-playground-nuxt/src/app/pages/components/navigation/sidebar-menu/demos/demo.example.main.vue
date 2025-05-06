@@ -13,20 +13,22 @@
 import { markRaw } from 'vue';
 
 // Components
-import SidebarMenu from '@iwyfaf-vue-ui/ariadna-ui/SidebarMenu';
-import type { TSidebarMenuItem } from '@iwyfaf-vue-ui/ariadna-ui/SidebarMenu';
-import iconComponent from './_icon.vue';
-import badgeComponent from './_badge.vue';
-import actionComponent from './_action.vue';
+import Spinner from '@iwyfaf-vue-ui/ariadna-ui/Spinner';
+import Button from '@iwyfaf-vue-ui/ariadna-ui/Button';
+import SidebarMenu, { type TSidebarMenuItem } from '@iwyfaf-vue-ui/ariadna-ui/SidebarMenu';
+import iconComponent from '~/pages/components/navigation/sidebar-menu/_icon.vue';
+import badgeComponent from '~/pages/components/navigation/sidebar-menu/_badge.vue';
+import actionComponent from '~/pages/components/navigation/sidebar-menu/_action.vue';
 
-definePageMeta({
-  title: 'SidebarMenu',
-  layout: 'default',
-});
+const loading = ref(false);
 
-useHead({
-  title: 'SidebarMenu',
-});
+function toggle() {
+  loading.value = !loading.value;
+
+  setTimeout(() => {
+    loading.value = false;
+  }, 1500);
+}
 
 const icon = markRaw(iconComponent);
 const badge = markRaw(badgeComponent);

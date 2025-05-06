@@ -1,20 +1,40 @@
 <template>
-  <h1>Capitalize</h1>
+  <Previewer :component="DemoExampleFull" :component-source="DemoExampleFullSource">
+    <template #header> Пример всего функционала </template>
 
-  {{ capitalize('john') }}
-  {{ capitalizeComputed }}
+    <template #showCodeToggle="{ toggle, isShown }">
+      <Button @click="toggle">
+        {{ isShown ? 'Скрыть' : 'Показать' }}
+      </Button>
+    </template>
+
+    <template #copy="{ handler, isCopied }">
+      <Button @click="handler" :disabled="isCopied">
+        {{ isCopied ? 'Скопировано!' : 'Копировать' }}
+      </Button>
+    </template>
+
+    <template #source="{ source }">
+      <pre v-code-highlight><code>{{ source }}</code></pre>
+    </template>
+  </Previewer>
 </template>
 
 <script setup lang="ts">
-import capitalize from '@iwyfaf-vue-ui/ariadna-ui/Capitalize';
+// Components
+import Previewer from '@iwyfaf-vue-ui/ariadna-ui/Previewer';
+import Button from '@iwyfaf-vue-ui/ariadna-ui/Button';
+
+// Demos
+import DemoExampleFull from './demos/demo.example.full.vue';
+import DemoExampleFullSource from './demos/demo.example.full.vue?raw';
 
 definePageMeta({
+  title: 'Capitalize',
   layout: 'default',
 });
 
 useHead({
   title: 'Capitalize',
 });
-
-const capitalizeComputed = computed(() => capitalize('smith'));
 </script>

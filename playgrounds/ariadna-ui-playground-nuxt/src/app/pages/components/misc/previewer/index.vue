@@ -1,8 +1,6 @@
 <template>
-  <Previewer :component-source="_previewerExampleSource">
-    <template #header> Заголовок примера. </template>
-
-    <template #description> Описание примера. </template>
+  <Previewer :component-source="_demoExampleFull">
+    <template #header> Пример всего функционала. </template>
 
     <template #showCodeToggle="{ toggle, isShown }">
       <Button @click="toggle">
@@ -27,8 +25,8 @@
 import Previewer from '@iwyfaf-vue-ui/ariadna-ui/Previewer';
 import Button from '@iwyfaf-vue-ui/ariadna-ui/Button';
 
-// Examples
-import _previewerExampleSource from './demo/_previewer.example.vue?raw';
+// Demos
+import _demoExampleFull from './demo/demo.example.full.vue?raw';
 
 definePageMeta({
   title: 'Previewer',

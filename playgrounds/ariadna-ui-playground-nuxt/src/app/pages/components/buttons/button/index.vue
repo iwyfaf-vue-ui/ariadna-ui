@@ -305,7 +305,7 @@
 import Button from '@iwyfaf-vue-ui/ariadna-ui/Button';
 import Previewer from '@iwyfaf-vue-ui/ariadna-ui/Previewer';
 
-// Examples
+// Demos
 import DemoPropsTag from './demos/demo.props.tag.vue';
 import DemoPropsTagSource from './demos/demo.props.tag.vue?raw';
 import DemoPropsType from './demos/demo.props.type.vue';

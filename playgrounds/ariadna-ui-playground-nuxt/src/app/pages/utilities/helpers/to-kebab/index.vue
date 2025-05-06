@@ -1,20 +1,40 @@
 <template>
-  <h1>To Kebab</h1>
+  <Previewer :component="DemoExampleFull" :component-source="DemoExampleFullSource">
+    <template #header> Пример всего функционала </template>
 
-  <p>{{ toKebab('camelCase') }}</p>
-  <p>{{ camelToKebabComputed }}</p>
+    <template #showCodeToggle="{ toggle, isShown }">
+      <Button @click="toggle">
+        {{ isShown ? 'Скрыть' : 'Показать' }}
+      </Button>
+    </template>
+
+    <template #copy="{ handler, isCopied }">
+      <Button @click="handler" :disabled="isCopied">
+        {{ isCopied ? 'Скопировано!' : 'Копировать' }}
+      </Button>
+    </template>
+
+    <template #source="{ source }">
+      <pre v-code-highlight><code>{{ source }}</code></pre>
+    </template>
+  </Previewer>
 </template>
 
 <script setup lang="ts">
-import toKebab from '@iwyfaf-vue-ui/ariadna-ui/ToKebab';
+// Components
+import Button from '@iwyfaf-vue-ui/ariadna-ui/Button';
+import Previewer from '@iwyfaf-vue-ui/ariadna-ui/Previewer';
+
+// Demos
+import DemoExampleFull from './demos/demo.example.full.vue';
+import DemoExampleFullSource from './demos/demo.example.full.vue?raw';
 
 definePageMeta({
+  title: 'ToKebab',
   layout: 'default',
 });
 
 useHead({
-  title: 'To Kebab',
+  title: 'ToKebab',
 });
-
-const camelToKebabComputed = computed(() => toKebab('xml-http-request'));
 </script>

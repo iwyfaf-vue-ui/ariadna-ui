@@ -85,7 +85,7 @@
 import Button from '@iwyfaf-vue-ui/ariadna-ui/Button';
 import Previewer from '@iwyfaf-vue-ui/ariadna-ui/Previewer';
 
-// Examples
+// Demos
 import DemoPropsSize from './demos/demo.props.size.vue';
 import DemoPropsSizeSource from './demos/demo.props.size.vue?raw';
 import DemoPropsCssClass from './demos/demo.props.css-class.vue';
