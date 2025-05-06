@@ -1,87 +1,106 @@
 <template>
-  <h1>Spinner</h1>
+  <Previewer :component="DemoPropsSize" :component-source="DemoPropsSizeSource">
+    <template #header> Props Size </template>
 
-  <Spinner size="small"></Spinner>
-  <Spinner size="small" css-class="ar-spinner-atom"></Spinner>
-  <Spinner size="medium"></Spinner>
-  <Spinner size="medium" css-class="ar-spinner-atom"></Spinner>
-  <Spinner size="large"></Spinner>
-  <Spinner size="large" css-class="ar-spinner-atom"></Spinner>
-
-  <hr />
-
-  <Spinner size="small" modifier="primary"></Spinner>
-  <Spinner size="small" css-class="ar-spinner-atom" modifier="primary"></Spinner>
-  <Spinner size="medium" modifier="primary"></Spinner>
-  <Spinner size="medium" css-class="ar-spinner-atom" modifier="primary"></Spinner>
-  <Spinner size="large" modifier="primary"></Spinner>
-  <Spinner size="large" css-class="ar-spinner-atom" modifier="primary"></Spinner>
-
-  <hr />
-
-  <Spinner size="small" modifier="secondary"></Spinner>
-  <Spinner size="small" css-class="ar-spinner-atom" modifier="secondary"></Spinner>
-  <Spinner size="medium" modifier="secondary"></Spinner>
-  <Spinner size="medium" css-class="ar-spinner-atom" modifier="secondary"></Spinner>
-  <Spinner size="large" modifier="secondary"></Spinner>
-  <Spinner size="large" css-class="ar-spinner-atom" modifier="secondary"></Spinner>
-
-  <hr />
-
-  <Spinner size="small" modifier="success"></Spinner>
-  <Spinner size="small" css-class="ar-spinner-atom" modifier="success"></Spinner>
-  <Spinner size="medium" modifier="success"></Spinner>
-  <Spinner size="medium" css-class="ar-spinner-atom" modifier="success"></Spinner>
-  <Spinner size="large" modifier="success"></Spinner>
-  <Spinner size="large" css-class="ar-spinner-atom" modifier="success"></Spinner>
-
-  <hr />
-
-  <Spinner size="small" modifier="warning"></Spinner>
-  <Spinner size="small" css-class="ar-spinner-atom" modifier="warning"></Spinner>
-  <Spinner size="medium" modifier="warning"></Spinner>
-  <Spinner size="medium" css-class="ar-spinner-atom" modifier="warning"></Spinner>
-  <Spinner size="large" modifier="warning"></Spinner>
-  <Spinner size="large" css-class="ar-spinner-atom" modifier="warning"></Spinner>
-
-  <hr />
-
-  <Spinner size="small" modifier="danger"></Spinner>
-  <Spinner size="small" css-class="ar-spinner-atom" modifier="danger"></Spinner>
-  <Spinner size="medium" modifier="danger"></Spinner>
-  <Spinner size="medium" css-class="ar-spinner-atom" modifier="danger"></Spinner>
-  <Spinner size="large" modifier="danger"></Spinner>
-  <Spinner size="large" css-class="ar-spinner-atom" modifier="danger"></Spinner>
-
-  <hr />
-
-  <Button :loading="loading" @click="loading = !loading">
-    Click me
-    <template #loading>
-      <Spinner size="small"></Spinner>
+    <template #showCodeToggle="{ toggle, isShown }">
+      <Button @click="toggle">
+        {{ isShown ? 'Скрыть' : 'Показать' }}
+      </Button>
     </template>
-  </Button>
 
-  <Button :loading="loading" modifier="secondary" @click="loading = !loading">
-    Click me
-    <template #loading>
-      <Spinner size="small" css-class="ar-spinner-atom"></Spinner>
+    <template #copy="{ handler, isCopied }">
+      <Button @click="handler" :disabled="isCopied">
+        {{ isCopied ? 'Скопировано!' : 'Копировать' }}
+      </Button>
     </template>
-  </Button>
+
+    <template #source="{ source }">
+      <pre v-code-highlight><code>{{ source }}</code></pre>
+    </template>
+  </Previewer>
+
+  <Previewer :component="DemoPropsCssClass" :component-source="DemoPropsCssClassSource">
+    <template #header> Props cssClass </template>
+
+    <template #showCodeToggle="{ toggle, isShown }">
+      <Button @click="toggle">
+        {{ isShown ? 'Скрыть' : 'Показать' }}
+      </Button>
+    </template>
+
+    <template #copy="{ handler, isCopied }">
+      <Button @click="handler" :disabled="isCopied">
+        {{ isCopied ? 'Скопировано!' : 'Копировать' }}
+      </Button>
+    </template>
+
+    <template #source="{ source }">
+      <pre v-code-highlight><code>{{ source }}</code></pre>
+    </template>
+  </Previewer>
+
+  <Previewer :component="DemoPropsModifier" :component-source="DemoPropsModifierSource">
+    <template #header> Props Modifier </template>
+
+    <template #showCodeToggle="{ toggle, isShown }">
+      <Button @click="toggle">
+        {{ isShown ? 'Скрыть' : 'Показать' }}
+      </Button>
+    </template>
+
+    <template #copy="{ handler, isCopied }">
+      <Button @click="handler" :disabled="isCopied">
+        {{ isCopied ? 'Скопировано!' : 'Копировать' }}
+      </Button>
+    </template>
+
+    <template #source="{ source }">
+      <pre v-code-highlight><code>{{ source }}</code></pre>
+    </template>
+  </Previewer>
+
+  <Previewer :component="DemoExampleButton" :component-source="DemoExampleButtonSource">
+    <template #header> Пример с Button </template>
+
+    <template #showCodeToggle="{ toggle, isShown }">
+      <Button @click="toggle">
+        {{ isShown ? 'Скрыть' : 'Показать' }}
+      </Button>
+    </template>
+
+    <template #copy="{ handler, isCopied }">
+      <Button @click="handler" :disabled="isCopied">
+        {{ isCopied ? 'Скопировано!' : 'Копировать' }}
+      </Button>
+    </template>
+
+    <template #source="{ source }">
+      <pre v-code-highlight><code>{{ source }}</code></pre>
+    </template>
+  </Previewer>
 </template>
 
 <script setup lang="ts">
 // Components
-import Spinner from '@iwyfaf-vue-ui/ariadna-ui/Spinner';
 import Button from '@iwyfaf-vue-ui/ariadna-ui/Button';
+import Previewer from '@iwyfaf-vue-ui/ariadna-ui/Previewer';
+
+// Examples
+import DemoPropsSize from './demos/demo.props.size.vue';
+import DemoPropsSizeSource from './demos/demo.props.size.vue?raw';
+import DemoPropsCssClass from './demos/demo.props.css-class.vue';
+import DemoPropsCssClassSource from './demos/demo.props.css-class.vue?raw';
+import DemoPropsModifier from './demos/demo.props.modifier.vue';
+import DemoPropsModifierSource from './demos/demo.props.modifier.vue?raw';
+import DemoExampleButton from './demos/demo.example.button.vue';
+import DemoExampleButtonSource from './demos/demo.example.button.vue?raw';
 
 definePageMeta({
+  title: 'Spinner',
   layout: 'default',
 });
 
 useHead({
   title: 'Spinner',
 });
-
-const loading = ref(false);
 </script>
