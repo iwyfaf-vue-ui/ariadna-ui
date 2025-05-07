@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.9.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.8.2...v1.9.0)
+
+### 🚀 Enhancements
+
+- Add RenderAttributeOnce directive ([e92c463](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/e92c463))
+
+### 📖 Documentation
+
+- Update library version ([ba1f450](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/ba1f450))
+
+### ❤️ Contributors
+
+- IWatchYouFromAfar <skip1209@yahoo.com>
+
 ## v1.8.2
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.8.1...v1.8.2)
