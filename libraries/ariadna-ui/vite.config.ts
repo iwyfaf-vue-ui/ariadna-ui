@@ -26,6 +26,12 @@ const components: TFileTree = scanFiles(
   ['components', 'composables', 'core', 'directive', 'prompts', 'providers', 'tests', 'types'],
 );
 
+const directives: TFileTree = scanFiles(
+  './src/lib/directives',
+  ['.test.ts'],
+  ['composables', 'core', 'prompts', 'providers', 'tests', 'types'],
+);
+
 const utilities: TFileTree = scanFiles(
   './src/lib/utilities',
   ['.test.ts'],
@@ -33,7 +39,7 @@ const utilities: TFileTree = scanFiles(
 );
 
 const dynamicFileNames = Object.fromEntries(
-  Object.entries({ ...components, ...utilities }).map(([_, value]) => {
+  Object.entries({ ...components, ...directives, ...utilities }).map(([_, value]) => {
     const file = value[0];
     const fileName = file.name.split('.')[0];
     const isVue = value.some((file) => file.name.endsWith('.vue'));

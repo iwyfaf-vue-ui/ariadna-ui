@@ -38,12 +38,12 @@ const updatePackage = () => {
   //   ['.test.ts', '.d.ts'],
   //   ['composables', 'test-data', 'core', 'shared', 'directive'],
   // );
-  //
-  // const directives = scanFiles(
-  //   './src/lib/directives',
-  //   ['.test.ts', '.d.ts'],
-  //   ['composables', 'test-data', 'core', 'shared', 'directive'],
-  // );
+
+  const directives = scanFiles(
+    './src/lib/directives',
+    ['.test.ts'],
+    ['composables', 'core', 'prompts', 'providers', 'tests', 'types'],
+  );
 
   const utilities = scanFiles(
     './src/lib/utilities',
@@ -52,7 +52,7 @@ const updatePackage = () => {
   );
 
   const typesVersions = Object.fromEntries(
-    Object.entries({ ...components, ...utilities }).map(([_, value]) => {
+    Object.entries({ ...components, ...directives, ...utilities }).map(([_, value]) => {
       const file = value.find(
         (file) => file.name.includes('.d.ts') || file.name.includes('.types.ts'),
       );
@@ -62,7 +62,7 @@ const updatePackage = () => {
   );
 
   const exports = Object.fromEntries(
-    Object.entries({ ...components, ...utilities }).map(([_, value]) => {
+    Object.entries({ ...components, ...directives, ...utilities }).map(([_, value]) => {
       const file = value.find(
         (file) => file.name.includes('.d.ts') || file.name.includes('.types.ts'),
       );

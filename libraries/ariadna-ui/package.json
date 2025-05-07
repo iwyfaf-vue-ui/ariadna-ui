@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.8.2",
+  "version": "1.8.3-beta.0",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -78,6 +78,10 @@
       "import": "./dist/lib/components/navigation/SidebarMenu/SidebarMenu.esm.js",
       "types": "./dist/lib/components/navigation/SidebarMenu/SidebarMenu.d.ts"
     },
+    "./RenderAttributeOnce": {
+      "import": "./dist/lib/directives/attributes/RenderAttributeOnce/RenderAttributeOnce.esm.js",
+      "types": "./dist/lib/directives/attributes/RenderAttributeOnce/RenderAttributeOnce.d.ts"
+    },
     "./ThemeBuilder": {
       "import": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.esm.js",
       "types": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.d.ts"
@@ -107,6 +111,9 @@
       ],
       "SidebarMenu": [
         "./dist/lib/components/navigation/SidebarMenu/SidebarMenu.d.ts"
+      ],
+      "RenderAttributeOnce": [
+        "./dist/lib/directives/attributes/RenderAttributeOnce/RenderAttributeOnce.d.ts"
       ],
       "ThemeBuilder": [
         "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.d.ts"

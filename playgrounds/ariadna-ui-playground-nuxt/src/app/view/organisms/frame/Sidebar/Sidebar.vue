@@ -102,6 +102,21 @@ const data = ref<Array<TSidebarMenuItem>>([
     ],
   },
   {
+    title: 'Directives',
+    expand: true,
+    children: [
+      {
+        title: 'Attributes',
+        children: [
+          {
+            title: 'RenderAttributeOnce',
+            href: '/directives/attributes/render-attribute-once',
+          },
+        ],
+      },
+    ],
+  },
+  {
     title: 'Utilities',
     expand: true,
     children: [
