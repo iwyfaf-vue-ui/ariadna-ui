@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.9.2
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.9.1...v1.9.2)
+
+### 📖 Documentation
+
+- Update library version ([26872c4](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/26872c4))
+- Typo ([a22a794](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/a22a794))
+
+### ❤️ Contributors
+
+- IWatchYouFromAfar <skip1209@yahoo.com>
+
 ## v1.9.1
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.9.0...v1.9.1)
