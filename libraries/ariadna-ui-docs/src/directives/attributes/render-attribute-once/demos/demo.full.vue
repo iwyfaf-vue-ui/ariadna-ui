@@ -11,7 +11,7 @@
     <textarea v-render-attribute-once="{ id: randomId }" />
   </div>
 
-  <Button @click="reRenderAttribute">Обновить значение атрибутов</Button>
+  <button @click="reRenderAttribute">Обновить значение атрибутов</button>
 </template>
 
 <script setup lang="ts">
