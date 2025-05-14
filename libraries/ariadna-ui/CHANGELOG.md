@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.10.1
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.10.0...v1.10.1)
+
+### 🩹 Fixes
+
+- Improve types ([3402120](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/3402120))
+
+### 📖 Documentation
+
+- Update library version ([5b5d650](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/5b5d650))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.10.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.9.2...v1.10.0)
