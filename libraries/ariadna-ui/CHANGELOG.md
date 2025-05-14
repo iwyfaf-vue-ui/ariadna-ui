@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v1.10.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.9.2...v1.10.0)
+
+### 🚀 Enhancements
+
+- Add InputText component ([a828fbd](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/a828fbd))
+
+### 📖 Documentation
+
+- Update library version ([a6a32fe](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/a6a32fe))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+- IWatchYouFromAfar <skip1209@yahoo.com>
+
 ## v1.9.2
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.9.1...v1.9.2)
