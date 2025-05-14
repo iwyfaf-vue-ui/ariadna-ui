@@ -12,6 +12,7 @@ export type TSidebarMenuProps = {
    *
    * @type Array<TSidebarMenuItem>
    * @required
+   * @example :data="data"
    */
   data: Array<TSidebarMenuItem>;
 
@@ -20,6 +21,7 @@ export type TSidebarMenuProps = {
    *
    * @type boolean
    * @default false
+   * @example :collapsed="true"
    */
   collapsed?: boolean;
 
@@ -28,14 +30,16 @@ export type TSidebarMenuProps = {
    *
    * @type boolean
    * @default false
+   * @example :remember-expanded="true"
    */
   rememberExpanded?: boolean;
 
   /**
    * Redefines the CSS class of the root element and its descendants.
    *
-   * @example css-class="example"
+   * @type string
    * @default {@link ESidebarMenuPropsDefault.CSS_CLASS}
+   * @example css-class="example"
    */
   cssClass?: string;
 };

@@ -5,11 +5,12 @@ import type {
 } from '../../../../types/component';
 import type { VNode } from 'vue';
 import type { EButtonPropsDefault } from './types/Button.enums';
-
-export type TButtonPropsTag = 'button' | 'span' | 'a';
-export type TButtonPropsType = 'button' | 'submit' | 'reset';
-export type TButtonPropsIconPosition = 'left' | 'right' | 'top' | 'bottom';
-export type TButtonPropsSize = 'small' | 'medium' | 'large';
+import type {
+  TButtonPropsIconPosition,
+  TButtonPropsSize,
+  TButtonPropsTag,
+  TButtonPropsType,
+} from './types/Button.types';
 
 /**
  * Component props definition.
@@ -18,10 +19,11 @@ export type TButtonProps = {
   /**
    * The HTML tag to be rendered as the button component.
    *
+   * @type TButtonPropsTag
+   * @default {@link EButtonPropsDefault.TAG}
    * @example tag="button"
    * @example tag="span"
    * @example tag="a"
-   * @default 'button'
    */
   tag?: TButtonPropsTag;
 
@@ -29,95 +31,99 @@ export type TButtonProps = {
    * Specifies the type of button when rendered as a `<button>` element. Determines the default behavior of the button
    * in forms and interactions.
    *
+   * @type TButtonPropsType
+   * @default {@link EButtonPropsDefault.TYPE}
    * @example type="button"
    * @example type="submit"
    * @example type="reset"
-   * @default 'button'
    */
   type?: TButtonPropsType;
 
   /**
    * Position of the icon relative to the button text.
    *
+   * @type TButtonPropsIconPosition
+   * @default {@link EButtonPropsDefault.ICON_POSITION}
    * @example icon-position="left"
    * @example icon-position="right"
    * @example icon-position="top"
    * @example icon-position="bottom"
-   * @default 'left'
    */
   iconPosition?: TButtonPropsIconPosition;
 
   /**
    * Predefined size variants for the button component.
    *
+   * @type TButtonPropsSize
+   * @default {@link EButtonPropsDefault.SIZE}
    * @example size="small"
    * @example size="medium"
    * @example size="large"
-   * @default 'medium'
    */
   size?: TButtonPropsSize;
 
   /**
    * The buttons are displayed with the largest radius of curvature.
    *
-   * @example :text="true"
    * @default false
+   * @example :text="true"
    */
   rounded?: boolean;
 
   /**
    * The buttons are displayed as textual elements.
    *
-   * @example :text="true"
    * @default false
+   * @example :text="true"
    */
   textual?: boolean;
 
   /**
    * Outlined buttons display a border with a transparent background.
    *
-   * @example :text="true"
    * @default false
+   * @example :text="true"
    */
   outlined?: boolean;
 
   /**
    * Selected / active state.
    *
-   * @example :selected="true"
    * @default false
+   * @example :selected="true"
    */
   selected?: boolean;
 
   /**
    * Disabled state.
    *
-   * @example :disabled="true"
    * @default false
+   * @example :disabled="true"
    */
   disabled?: boolean;
 
   /**
    * Loading state.
    *
-   * @example :disabled="true"
    * @default false
+   * @example :disabled="true"
    */
   loading?: boolean;
 
   /**
    * Redefines the CSS class of the root element and its descendants.
    *
-   * @example css-class="example"
+   * @type string
    * @default {@link EButtonPropsDefault.CSS_CLASS}
+   * @example css-class="example"
    */
   cssClass?: string;
 
   /**
    * Modifier of the basic CSS class.
    *
-   * @example modifier="primary"
    * @default undefined
+   * @example modifier="primary"
    */
   modifier?: TSharedPropsModifier;
 };

@@ -14,6 +14,7 @@ export type TInputTextProps = {
    * @type Nullable<string>
    * @default null
    * @required
+   * @example v-model="inputTextValue"
    */
   modelValue: Nullable<string>;
 
@@ -22,6 +23,7 @@ export type TInputTextProps = {
    *
    * @type string
    * @default undefined
+   * @example label="Associated label"
    */
   label?: string;
 
@@ -42,6 +44,7 @@ export type TInputTextProps = {
    * @type string
    * @default Random generated string by using Vue 3.5 useId() helper.
    * @see https://vuejs.org/api/composition-api-helpers.html#useid
+   * @example id="custom-id"
    */
   id?: string;
 
@@ -50,6 +53,7 @@ export type TInputTextProps = {
    *
    * @type string
    * @default undefined
+   * @example placeholder="Placeholder from props"
    */
   placeholder?: string;
 
@@ -58,6 +62,7 @@ export type TInputTextProps = {
    *
    * @type string
    * @default undefined
+   * @example name="username"
    */
   name?: string;
 
@@ -66,6 +71,7 @@ export type TInputTextProps = {
    *
    * @type boolean
    * @default false
+   * @example :autocomplete="true"
    */
   autocomplete?: boolean;
 
@@ -74,6 +80,7 @@ export type TInputTextProps = {
    *
    * @type boolean
    * @default false
+   * @example :disabled="true"
    */
   disabled?: boolean;
 
@@ -82,6 +89,7 @@ export type TInputTextProps = {
    *
    * @type boolean
    * @default false
+   * @example :readonly="true"
    */
   readonly?: boolean;
 
@@ -101,6 +109,7 @@ export type TInputTextProps = {
    *
    * @type boolean
    * @default false
+   * @example :valid="true"
    */
   valid?: boolean;
 
@@ -109,6 +118,7 @@ export type TInputTextProps = {
    *
    * @type boolean
    * @default false
+   * @example :invalid="true"
    */
   invalid?: boolean;
 
@@ -117,14 +127,16 @@ export type TInputTextProps = {
    *
    * @type Array<string>
    * @default []
+   * @example :errors="['First error', 'Second error']"
    */
   errors?: Array<string>;
 
   /**
    * Redefines the CSS class of the root element and its descendants.
    *
-   * @example css-class="example"
+   * @type string
    * @default {@link EInputTextPropsDefault.CSS_CLASS}
+   * @example css-class="example"
    */
   cssClass?: string;
 };

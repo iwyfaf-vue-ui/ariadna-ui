@@ -9,14 +9,18 @@ export type TPreviewerProps = {
   /**
    * Component to be rendered in the preview.
    *
+   * @type Component | string
    * @default undefined
+   * @example :component="_previewerExample"
    */
   component?: Component | string;
 
   /**
    * Component source to be rendered as a raw text.
    *
+   * @type string
    * @default undefined
+   * @example :component-source="_previewerExampleSource"
    */
   componentSource?: string;
 
@@ -25,6 +29,7 @@ export type TPreviewerProps = {
    *
    * @type boolean
    * @default false
+   * @example :show-code="true"
    */
   showCode?: boolean;
 
@@ -33,14 +38,16 @@ export type TPreviewerProps = {
    *
    * @type boolean
    * @default true
+   * @example :show-code-toggle="true"
    */
   showCodeToggle?: boolean;
 
   /**
    * Redefines the CSS class of the root element and its descendants.
    *
-   * @example css-class="example"
+   * @type string
    * @default {@link EPreviewerPropsDefault.CSS_CLASS}
+   * @example css-class="example"
    */
   cssClass?: string;
 };
