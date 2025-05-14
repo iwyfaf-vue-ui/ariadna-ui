@@ -60,6 +60,24 @@ const data = ref<Array<TSidebarMenuItem>>([
     expand: true,
     children: [
       {
+        title: 'Buttons',
+        children: [
+          {
+            title: 'Button',
+            href: '/components/buttons/button',
+          },
+        ],
+      },
+      {
+        title: 'Controls',
+        children: [
+          {
+            title: 'InputText',
+            href: '/components/controls/input-text',
+          },
+        ],
+      },
+      {
         title: 'Indicators',
         children: [
           {
@@ -73,11 +91,11 @@ const data = ref<Array<TSidebarMenuItem>>([
         ],
       },
       {
-        title: 'Buttons',
+        title: 'Misc',
         children: [
           {
-            title: 'Button',
-            href: '/components/buttons/button',
+            title: 'Previewer',
+            href: '/components/misc/previewer',
           },
         ],
       },
@@ -87,15 +105,6 @@ const data = ref<Array<TSidebarMenuItem>>([
           {
             title: 'SidebarMenu',
             href: '/components/navigation/sidebar-menu',
-          },
-        ],
-      },
-      {
-        title: 'Misc',
-        children: [
-          {
-            title: 'Previewer',
-            href: '/components/misc/previewer',
           },
         ],
       },

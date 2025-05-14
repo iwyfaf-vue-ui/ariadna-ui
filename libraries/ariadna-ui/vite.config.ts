@@ -67,6 +67,7 @@ export default defineConfig(({ mode }) => {
       vue({}),
       viteStaticCopy({
         targets: [
+          { src: 'src/types/index.d.ts', dest: 'types/' },
           { src: 'src/types/component.d.ts', dest: 'types/' },
           ...Object.entries(fileNames).map(([key, value]) => ({
             src: `src/${value.path}/${value.name}.d.ts`,

@@ -1,0 +1,189 @@
+@use '../../../../themes/asana/asana' as theme;
+
+$input-text: '.ar-input-text';
+
+#{$input-text} {
+  position: relative;
+  width: 100%;
+
+  // .ar-input-text--theme
+  &--theme {
+    // .ar-input-text--theme .ar-input-text__input
+    #{$input-text}__input {
+      color: var(--color-text-default-weak);
+      background: var(--color-background-default-weak);
+      border-color: var(--color-border-default);
+    }
+  }
+
+  // .ar-input-text--focused
+  &--focused {
+    // .ar-input-text--focused.ar-input-text--theme
+    &#{$input-text}--theme {
+      // .ar-input-text--focused.ar-input-text--theme .ar-input-text__input
+      #{$input-text}__input {
+        border-color: var(--color-border-default-active);
+      }
+    }
+  }
+
+  // .ar-input-text--hover
+  &--hover {
+    // .ar-input-text--hover.ar-input-text--theme
+    &#{$input-text}--theme {
+      // .ar-input-text--hover.ar-input-text--theme .ar-input-text__input
+      #{$input-text}__input {
+        border-color: var(--color-border-default-hover);
+      }
+    }
+  }
+
+  // .ar-input-text--disabled
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+
+  // .ar-input-text--readonly
+  &--readonly {
+    #{$input-text}__input {
+      font-size: 16px;
+      border: 0;
+    }
+  }
+
+  // .ar-input-text--filled
+  &--filled {
+    // .ar-input-text--filled .ar-input-text__placeholder
+    #{$input-text}__placeholder {
+      display: none;
+    }
+  }
+
+  // .ar-input-text--valid
+  &--valid {
+    // .ar-input-text--valid.ar-input-text--theme
+    &#{$input-text}--theme {
+      // .ar-input-text--valid.ar-input-text--theme .ar-input-text__input
+      #{$input-text}__input {
+        border-color: var(--color-border-success);
+
+        // .ar-input-text--valid.ar-input-text--theme .ar-input-text__input:hover
+        &:hover {
+          border-color: var(--color-border-success-hover);
+        }
+
+        // .ar-input-text--valid.ar-input-text--theme .ar-input-text__input:focus
+        &:focus {
+          border-color: var(--color-border-success-active);
+        }
+      }
+    }
+  }
+
+  // .ar-input-text--invalid
+  &--invalid {
+    color: var(--color-text-dangern);
+
+    // .ar-input-text--invalid.ar-input-text--theme
+    &#{$input-text}--theme {
+      // .ar-input-text--invalid.ar-input-text--theme .ar-input-text__input
+      #{$input-text}__input {
+        border-color: var(--color-border-danger);
+
+        // .ar-input-text--invalid.ar-input-text--theme .ar-input-text__input:hover
+        &:hover {
+          border-color: var(--color-border-danger-hover);
+        }
+
+        // .ar-input-text--invalid.ar-input-text--theme .ar-input-text__input:focus
+        &:focus {
+          border-color: var(--color-border-danger-active);
+        }
+      }
+    }
+  }
+
+  // .ar-input-text--small
+  &--small {
+    #{$input-text}__input {
+      @include theme.text-style-helper(t3);
+
+      height: 24px;
+      padding: 0 var(--indent-padding-small);
+    }
+  }
+
+  // .ar-input-text--medium
+  &--medium {
+    #{$input-text}__input {
+      @include theme.text-style-helper(t3);
+
+      height: 36px;
+      padding: 0 var(--indent-padding-small);
+    }
+  }
+
+  // .ar-input-text--large
+  &--large {
+    #{$input-text}__input {
+      @include theme.text-style-helper(t3);
+
+      height: 48px;
+      padding: 0 var(--indent-padding-small);
+    }
+  }
+
+  // .ar-input-text__label
+  &__label {
+    position: relative;
+    display: block;
+  }
+
+  // .ar-input-text__input
+  &__input {
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    outline: 0;
+    background-color: inherit;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--radius-default-medium);
+  }
+
+  // .ar-input-text__placeholder
+  &__placeholder {
+    @include theme.text-style-helper(t3);
+
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    pointer-events: none;
+    opacity: 0.3;
+  }
+
+  // .ar-input-text__errors
+  &__errors {
+    @include theme.text-style-helper(t3);
+
+    // .ar-input-text__errors-expand-enter-active, .ar-input-text__errors--expand-leave-active
+    &-expand-enter-active,
+    &-expand-leave-active {
+      overflow: hidden;
+      transition:
+        height 0.2s ease,
+        padding-top 0.2s ease;
+    }
+
+    // .ar-input-text__errors--expand-enter-from, .ar-input-text__errors---expand-leave-to
+    &-expand-enter-from,
+    &-expand-leave-to {
+      height: 0 !important;
+      padding-top: 0 !important;
+    }
+  }
+}
