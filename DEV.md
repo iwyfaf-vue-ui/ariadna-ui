@@ -93,7 +93,7 @@ rules for creating new library elements:
          * Slots typing via `defineSlots<T>()`;
          * Emits typing via `defineEmits<T>()`;
          * The reactive logic should be implemented in the composables directory;
-         * Non-active logic should be implemented in the core directory.
+         * Non-reactive logic should be implemented in the core directory.
    3. Directives:
       1. Mandatory Requirements:
          * Argument typing (`binding: DirectiveBinding<T>`);
