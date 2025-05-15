@@ -3,7 +3,7 @@ import { mount } from '@vue/test-utils';
 import Button from '../Button.vue';
 import { ButtonSelectorTestData } from './test-data/Button.selector.test-data';
 import { EButtonPropsDefault } from '../types/Button.enums';
-import type { TButtonPropsTag } from '../Button';
+import type { TButtonPropsTag } from '../types/Button.types';
 
 const defaultMock = new ButtonSelectorTestData();
 
