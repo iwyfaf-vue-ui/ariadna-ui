@@ -103,7 +103,7 @@ rules for creating new library elements:
         * Return `ref` / `reactive` with explicit typing.
 4. Documentation:
    1. Each library element must contain:
-      * Description in JSDoc format in `d.ts` files.
+      * Description in TSDoc format in `d.ts` files.
    2. Each library element should have its own documentation on [ui.iwyfaf.ru](https://ui.iwyfaf.ru) and should contain:
       * Usage examples;
       * Description of `props`, `slots`, `emits` and `expose` (Vue 3);
