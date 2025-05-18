@@ -39,6 +39,11 @@ import vPhoneMask from '@iwyfaf-vue-ui/ariadna-ui/PhoneMask';
 Подключив директиву к проекту, на `input` поле к которому необходимо применить маску, надо повесить директиву 
 `v-phone-mask`:
 
+::: warning Важно!
+Директива `v-phone-mask` корректно работает только с двусторонней привязкой `v-model="inputTextNull"`. При передаче
+значение через `value="inputTextNull"`, маска будет работать некорректно.
+:::
+
 ### Нативный `input`
 
 ::: details Пример
