@@ -27,8 +27,8 @@ $input-text: '.ar-input-text';
     }
   }
 
-  // .ar-input-text--hover
-  &--hover {
+  // .ar-input-text--hovered
+  &--hovered {
     // .ar-input-text--hover.ar-input-text--theme
     &#{$input-text}--theme {
       // .ar-input-text--hover.ar-input-text--theme .ar-input-text__input

@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.10.1",
+  "version": "1.10.2-beta.0",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -23,11 +23,12 @@
     "node": ">=20.18.0"
   },
   "scripts": {
-    "update-package": "node packageGenerator/update-package.js",
-    "build": "npm run update-package && vue-tsc --noEmit && vite build --out-dir dist",
-    "build-dev": "npm run update-package && vue-tsc --noEmit && vite build --out-dir dist --mode development",
+    "prettier": "npx prettier \"**/*.{vue,ts}\" --check --ignore-unknown",
     "test": "vitest --dom --watch=false",
     "test:watch": "vitest --dom",
+    "update-package": "node packageGenerator/update-package.js",
+    "build": "npm run prettier && npm run update-package && vue-tsc --noEmit && vite build --out-dir dist",
+    "build-dev": "npm run prettier && npm run update-package && vue-tsc --noEmit && vite build --out-dir dist --mode development",
     "release": "npm run build && changelogen --release --push --publish --no-github",
     "release-notes": "changelogen gh release",
     "pre-release": "npm run test && npm run build && changelogen --release --no-github --no-commit --no-output --no-tag --prerelease beta --push --publish --publishTag beta"
@@ -86,6 +87,10 @@
       "import": "./dist/lib/directives/attributes/RenderAttributeOnce/RenderAttributeOnce.esm.js",
       "types": "./dist/lib/directives/attributes/RenderAttributeOnce/RenderAttributeOnce.d.ts"
     },
+    "./PhoneMask": {
+      "import": "./dist/lib/directives/elements/PhoneMask/PhoneMask.esm.js",
+      "types": "./dist/lib/directives/elements/PhoneMask/PhoneMask.d.ts"
+    },
     "./ThemeBuilder": {
       "import": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.esm.js",
       "types": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.d.ts"
@@ -121,6 +126,9 @@
       ],
       "RenderAttributeOnce": [
         "./dist/lib/directives/attributes/RenderAttributeOnce/RenderAttributeOnce.d.ts"
+      ],
+      "PhoneMask": [
+        "./dist/lib/directives/elements/PhoneMask/PhoneMask.d.ts"
       ],
       "ThemeBuilder": [
         "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.d.ts"

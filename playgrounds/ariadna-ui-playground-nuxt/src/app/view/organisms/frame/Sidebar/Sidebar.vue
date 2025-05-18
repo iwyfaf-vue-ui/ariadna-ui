@@ -123,6 +123,15 @@ const data = ref<Array<TSidebarMenuItem>>([
           },
         ],
       },
+      {
+        title: 'Elements',
+        children: [
+          {
+            title: 'PhoneMask',
+            href: '/directives/elements/phone-mask',
+          },
+        ],
+      },
     ],
   },
   {
