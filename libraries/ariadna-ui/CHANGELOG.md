@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.10.6
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.10.5...v1.10.6)
+
+### 📖 Documentation
+
+- Update library version ([fe20416](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/fe20416))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.10.5
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.10.4...v1.10.5)
