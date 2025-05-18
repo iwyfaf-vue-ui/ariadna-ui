@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.10.5
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.10.4...v1.10.5)
+
+### 📖 Documentation
+
+- Update library version ([b00ec61](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/b00ec61))
+- Fix InputText type prop ([0bc7738](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/0bc7738))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.10.4
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.10.3...v1.10.4)
