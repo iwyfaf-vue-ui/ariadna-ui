@@ -34,7 +34,7 @@ export type TInputTextProps = {
    * @default {@link EInputTextPropsDefault.TYPE}
    * @example type="text"
    * @example type="email"
-   * @example type="phone"
+   * @example type="tel"
    */
   type?: TInputTextPropsType;
 

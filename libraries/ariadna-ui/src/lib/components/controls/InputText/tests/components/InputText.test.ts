@@ -97,17 +97,17 @@ describe('InputText.vue: Props.', () => {
     ).toBe('email');
   });
 
-  it('type: Should set input type to "phone" from prop.', async () => {
+  it('type: Should set input type to "tel" from prop.', async () => {
     const wrapper = mount(InputText, {
       props: {
         modelValue: null,
-        type: 'phone',
+        type: 'tel',
       },
     });
 
     expect(
       wrapper.find(defaultMock.getSelectorWithDot(defaultMock.inputEl)).attributes('type'),
-    ).toBe('phone');
+    ).toBe('tel');
   });
 
   it('id: Should set input id from id prop if provided.', () => {
