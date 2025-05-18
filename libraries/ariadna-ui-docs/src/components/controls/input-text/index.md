@@ -80,7 +80,7 @@ import InputText from '@iwyfaf-vue-ui/ariadna-ui/InputText';
 
 ### `type`
 
-- **Тип:** `string`
+- **Тип:** `TInputTextPropsType`
 - **Значение по умолчанию:** `text`
 - **Описание**: Значение нативного атрибута `type` элемента `input`.
 
