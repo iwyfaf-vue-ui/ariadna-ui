@@ -1,6 +1,31 @@
 # Changelog
 
 
+## v1.10.2
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.10.1...v1.10.2)
+
+### 🩹 Fixes
+
+- Remove from gitignore package-lock ([99e9cd6](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/99e9cd6))
+- Prettier ([a42634c](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/a42634c))
+
+### 💅 Refactors
+
+- Rewrite Button component prompt ([cba7492](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/cba7492))
+- Rewrite Badge component prompt ([fb7ce87](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/fb7ce87))
+- Rewrite Spinner component prompt ([17b97a6](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/17b97a6))
+
+### 📖 Documentation
+
+- Update library version ([eeb7d98](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/eeb7d98))
+- Update DEV.md ([40cb5ae](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/40cb5ae))
+- Update DEV.md ([342bded](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/342bded))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.10.1
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.10.0...v1.10.1)
