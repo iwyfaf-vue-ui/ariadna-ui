@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.10.4
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.10.3...v1.10.4)
+
+### 🩹 Fixes
+
+- InputPhone type props changed to tel ([3218038](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/3218038))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.10.3
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.10.2...v1.10.3)
