@@ -19,7 +19,6 @@ import InputText from '@iwyfaf-vue-ui/ariadna-ui/InputText';
 import debounce from '@iwyfaf-vue-ui/ariadna-ui/Debounce';
 
 // Types
-// Types
 import type { TInputTextProps } from '@iwyfaf-vue-ui/ariadna-ui/InputText';
 import type { Nullable } from '@iwyfaf-vue-ui/ariadna-ui/types';
 
