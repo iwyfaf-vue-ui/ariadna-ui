@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.13.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.12.0...v1.13.0)
+
+### 🚀 Enhancements
+
+- Add default typesVersions mapping ([448af40](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/448af40))
+
+### 📖 Documentation
+
+- Update library version ([1069efe](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/1069efe))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.12.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.11.0...v1.12.0)
