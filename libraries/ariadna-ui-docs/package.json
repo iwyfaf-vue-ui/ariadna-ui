@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@iwyfaf-vue-ui/ariadna-ui": "^1.10.5"
+    "@iwyfaf-vue-ui/ariadna-ui": "^1.10.7-beta.0"
   },
   "devDependencies": {
     "prettier": "^3.5.3",

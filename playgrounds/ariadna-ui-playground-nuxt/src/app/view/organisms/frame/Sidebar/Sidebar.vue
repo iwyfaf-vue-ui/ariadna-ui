@@ -151,6 +151,15 @@ const data = ref<Array<TSidebarMenuItem>>([
           },
         ],
       },
+      {
+        title: 'Functions decorators',
+        children: [
+          {
+            title: 'Throttle',
+            href: '/utilities/functions-decorators/throttle',
+          },
+        ],
+      },
     ],
   },
 ]);
