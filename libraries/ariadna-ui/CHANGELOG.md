@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.12.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.11.0...v1.12.0)
+
+### 🚀 Enhancements
+
+- Add debounce function decorator ([1b08319](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/1b08319))
+
+### 📖 Documentation
+
+- Update library version ([f905e6c](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/f905e6c))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.11.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.10.6...v1.11.0)
