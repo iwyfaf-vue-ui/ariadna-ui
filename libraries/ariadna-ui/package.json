@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.11.0",
+  "version": "1.11.1-beta.0",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -59,6 +59,9 @@
     "vue-tsc": "^2.2.8"
   },
   "exports": {
+    "./types": {
+      "types": "./dist/types/index.d.ts"
+    },
     "./Button": {
       "import": "./dist/lib/components/buttons/Button/Button.esm.js",
       "types": "./dist/lib/components/buttons/Button/Button.d.ts"
@@ -94,6 +97,10 @@
     "./ThemeBuilder": {
       "import": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.esm.js",
       "types": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.d.ts"
+    },
+    "./Debounce": {
+      "import": "./dist/lib/utilities/functions-decorators/Debounce/Debounce.esm.js",
+      "types": "./dist/lib/utilities/functions-decorators/Debounce/Debounce.d.ts"
     },
     "./Throttle": {
       "import": "./dist/lib/utilities/functions-decorators/Throttle/Throttle.esm.js",
@@ -136,6 +143,9 @@
       ],
       "ThemeBuilder": [
         "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.d.ts"
+      ],
+      "Debounce": [
+        "./dist/lib/utilities/functions-decorators/Debounce/Debounce.d.ts"
       ],
       "Throttle": [
         "./dist/lib/utilities/functions-decorators/Throttle/Throttle.d.ts"

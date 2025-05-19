@@ -6,6 +6,10 @@ const sidebarUtilitiesFunctionsDecorators: DefaultTheme.SidebarItem = {
   link: '/utilities/functions-decorators/',
   items: [
     {
+      text: 'Debounce',
+      link: '/utilities/functions-decorators/debounce/',
+    },
+    {
       text: 'Throttle',
       link: '/utilities/functions-decorators/throttle/',
     },

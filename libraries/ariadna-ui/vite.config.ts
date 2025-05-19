@@ -116,6 +116,7 @@ export default defineConfig(({ mode }) => {
       rollupOptions: {
         external: ['vue', 'fs'],
         output: {
+          chunkFileNames: '_common/[name]-[hash].js',
           globals: {
             vue: 'Vue',
           },

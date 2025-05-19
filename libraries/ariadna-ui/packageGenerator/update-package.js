@@ -13,7 +13,11 @@ import scanFiles from './scan-files.js';
  * This can be used to manually specify exports that are not automatically detected by the script.
  * @type {Object}
  */
-const exportsByDefault = {};
+const exportsByDefault = {
+  './types': {
+    types: './dist/types/index.d.ts',
+  },
+};
 
 /**
  * Updates the `package.json` file with the correct `typesVersions` and `exports` fields.
