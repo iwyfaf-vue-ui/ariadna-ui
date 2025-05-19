@@ -20,6 +20,14 @@ const exportsByDefault = {
 };
 
 /**
+ * An object containing the default TypeScript types version mapping for the package.
+ * This can be used to manually specify typesVersions that are not automatically detected by the script.
+ */
+const typesVersionsByDefault = {
+  types: ['./dist/types/index.d.ts'],
+};
+
+/**
  * Updates the `package.json` file with the correct `typesVersions` and `exports` fields.
  * It scans the `src/lib` directory for components, composables, directives, and utilities,
  * and generates the appropriate paths for their TypeScript declaration files and ES modules.
@@ -83,7 +91,7 @@ const updatePackage = () => {
   );
 
   // Update the `package.json` file with the new `typesVersions` and `exports` fields
-  packageJSON['typesVersions'] = { '*': { ...typesVersions } };
+  packageJSON['typesVersions'] = { '*': { ...typesVersionsByDefault, ...typesVersions } };
   packageJSON['exports'] = { ...exportsByDefault, ...exports };
 
   // Write the updated `package.json` file back to disk
