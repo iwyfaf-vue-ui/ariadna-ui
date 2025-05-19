@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.11.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.10.6...v1.11.0)
+
+### 🚀 Enhancements
+
+- Add throttle function-decorator ([aaa520a](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/aaa520a))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.10.6
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.10.5...v1.10.6)
