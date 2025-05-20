@@ -124,7 +124,7 @@ declare class Previewer extends ClassComponent<
   TPreviewerProps,
   TPreviewerSlots,
   TPreviewerEmits,
-  HTMLButtonElement
+  HTMLElement
 > {}
 
 declare module '@vue/runtime-core' {

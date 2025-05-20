@@ -93,7 +93,7 @@ declare class SidebarMenu extends ClassComponent<
   TSidebarMenuProps,
   TSidebarMenuSlots,
   TSidebarMenuEmits,
-  HTMLButtonElement
+  HTMLElement
 > {}
 
 declare module '@vue/runtime-core' {

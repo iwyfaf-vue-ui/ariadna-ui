@@ -79,12 +79,7 @@ export type TBadgeEmits = {};
  *
  * Badge is a small status indicator for another element.
  */
-declare class Badge extends ClassComponent<
-  TBadgeProps,
-  TBadgeSlots,
-  TBadgeEmits,
-  HTMLButtonElement
-> {}
+declare class Badge extends ClassComponent<TBadgeProps, TBadgeSlots, TBadgeEmits, HTMLElement> {}
 
 declare module '@vue/runtime-core' {
   interface GlobalComponents {

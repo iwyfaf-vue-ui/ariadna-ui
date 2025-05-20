@@ -203,7 +203,7 @@ declare class InputText extends ClassComponent<
   TInputTextProps,
   TInputTextSlots,
   TInputTextEmits,
-  HTMLButtonElement
+  HTMLInputElement
 > {}
 
 declare module '@vue/runtime-core' {

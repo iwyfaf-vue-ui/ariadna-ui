@@ -68,7 +68,7 @@ declare class Spinner extends ClassComponent<
   TSpinnerProps,
   TSpinnerSlots,
   TSpinnerEmits,
-  HTMLButtonElement
+  HTMLElement
 > {}
 
 declare module '@vue/runtime-core' {
