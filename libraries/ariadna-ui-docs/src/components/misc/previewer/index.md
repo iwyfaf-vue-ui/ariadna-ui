@@ -189,6 +189,12 @@ $previewer: '.ar-previewer';
     & #{$previewer}__code {}
   }
 
+  // .ar-previewer--primary
+  &--primary {
+    // .ar-previewer--primary.ar-previewer--theme
+    &#{$previewer}--theme {}
+  }
+
   // .ar-previewer__header
   &__header {}
 
