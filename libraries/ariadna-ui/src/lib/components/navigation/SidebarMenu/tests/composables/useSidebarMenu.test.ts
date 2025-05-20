@@ -41,59 +41,61 @@ function mountWithComposable(
   );
 }
 
-describe('useSidebarMenu.ts: Basic functionality.', () => {
-  it('Should return expected structure.', () => {
-    const collapsed = ref(false);
-    const wrapper = mountWithComposable(mockProps, collapsed);
-    const vm = wrapper.vm;
+describe('useSidebarMenu', () => {
+  describe('Basic functionality', () => {
+    it('Should return expected structure.', () => {
+      const collapsed = ref(false);
+      const wrapper = mountWithComposable(mockProps, collapsed);
+      const vm = wrapper.vm;
 
-    expect(vm).toHaveProperty('componentClasses');
-    expect(vm).toHaveProperty('isMenuItemActiveComputed');
-  });
-});
-
-describe('useSidebarMenu.ts: componentClasses ComputedRef.', () => {
-  beforeEach(() => {
-    vi.clearAllMocks();
+      expect(vm).toHaveProperty('componentClasses');
+      expect(vm).toHaveProperty('isMenuItemActiveComputed');
+    });
   });
 
-  it('Should generate correct componentClasses for default props.', () => {
-    const collapsed = ref(false);
-    const wrapper = mountWithComposable(mockProps, collapsed);
-    const vm = wrapper.vm;
+  describe('componentClasses ComputedRef', () => {
+    beforeEach(() => {
+      vi.clearAllMocks();
+    });
 
-    expect(vm.componentClasses).toBe(
-      `${defaultMock.getSelectorWithoutDot(defaultMock.rootEl)} ${defaultMock.getSelectorWithoutDot(defaultMock.themeModifier)}`,
-    );
+    it('Should generate correct componentClasses for default props.', () => {
+      const collapsed = ref(false);
+      const wrapper = mountWithComposable(mockProps, collapsed);
+      const vm = wrapper.vm;
+
+      expect(vm.componentClasses).toBe(
+        `${defaultMock.getSelectorWithoutDot(defaultMock.rootEl)} ${defaultMock.getSelectorWithoutDot(defaultMock.themeModifier)}`,
+      );
+    });
+
+    it('Should generate correct componentClasses with modifier.', () => {
+      const collapsed = ref(false);
+      const wrapper = mountWithComposable({ ...mockProps }, collapsed);
+      const vm = wrapper.vm;
+
+      expect(vm.componentClasses).toBe(
+        `${defaultMock.getSelectorWithoutDot(defaultMock.rootEl)} ${defaultMock.getSelectorWithoutDot(defaultMock.themeModifier)}`,
+      );
+    });
   });
 
-  it('Should generate correct componentClasses with modifier.', () => {
-    const collapsed = ref(false);
-    const wrapper = mountWithComposable({ ...mockProps }, collapsed);
-    const vm = wrapper.vm;
+  describe('isMenuItemActiveComputed ComputedRef', () => {
+    it('Should return false if item is not active.', () => {
+      const collapsed = ref(false);
+      const item = { title: 'Main', href: '/' };
+      const wrapper = mountWithComposable(mockProps, collapsed, { path: '/dashboard' });
+      const vm = wrapper.vm;
 
-    expect(vm.componentClasses).toBe(
-      `${defaultMock.getSelectorWithoutDot(defaultMock.rootEl)} ${defaultMock.getSelectorWithoutDot(defaultMock.themeModifier)}`,
-    );
-  });
-});
+      expect(vm.isMenuItemActiveComputed(item)).toBe(false);
+    });
 
-describe('useSidebarMenu.ts: isMenuItemActiveComputed ComputedRef.', () => {
-  it('Should return false if item is not active.', () => {
-    const collapsed = ref(false);
-    const item = { title: 'Main', href: '/' };
-    const wrapper = mountWithComposable(mockProps, collapsed, { path: '/dashboard' });
-    const vm = wrapper.vm;
+    it('Should return true if item is active.', () => {
+      const collapsed = ref(false);
+      const item = { title: 'Dashboard', href: '/dashboard' };
+      const wrapper = mountWithComposable(mockProps, collapsed, { path: '/dashboard' });
+      const vm = wrapper.vm;
 
-    expect(vm.isMenuItemActiveComputed(item)).toBe(false);
-  });
-
-  it('Should return true if item is active.', () => {
-    const collapsed = ref(false);
-    const item = { title: 'Dashboard', href: '/dashboard' };
-    const wrapper = mountWithComposable(mockProps, collapsed, { path: '/dashboard' });
-    const vm = wrapper.vm;
-
-    expect(vm.isMenuItemActiveComputed(item)).toBe(true);
+      expect(vm.isMenuItemActiveComputed(item)).toBe(true);
+    });
   });
 });

@@ -18,72 +18,74 @@ const DummyIconComponent = defineComponent({
   },
 });
 
-describe('SidebarMenuItemIcon.vue: Basic render.', () => {
-  const wrapper = mount(SidebarMenuItemIcon, {
-    props: {
-      icon: 'mdi-icon',
-    },
-  });
-
-  it('Should mount without errors.', () => {
-    expect(wrapper.exists()).toBe(true);
-  });
-
-  it('Should render as a span element.', () => {
-    expect(wrapper.element.tagName).toEqual('SPAN');
-  });
-
-  it('Should render component with default props.', () => {
-    let warningMessage = '';
-
+describe('SidebarMenuItemIcon.vue', () => {
+  describe('Basic render', () => {
     const wrapper = mount(SidebarMenuItemIcon, {
-      global: {
-        config: {
-          warnHandler: (msg) => {
-            warningMessage = msg;
-          },
-        },
+      props: {
+        icon: 'mdi-icon',
       },
     });
-    expect(wrapper.exists()).toBe(true);
-    expect(wrapper.classes()).toContain(defaultMock.getSelectorWithoutDot(defaultMock.iconEl));
-    expect(warningMessage).toContain('Missing required prop: "icon"');
-  });
-});
 
-describe('SidebarMenuItemIcon.vue: Props.', () => {
-  it('icon: Should render icon when "icon" prop is provided.', () => {
-    const wrapper = mount(SidebarMenuItemIcon, {
-      props: { icon: 'mdi-home' },
+    it('Should mount without errors.', () => {
+      expect(wrapper.exists()).toBe(true);
     });
 
-    expect(wrapper.find('.mdi-home').exists()).toBe(true);
-  });
-
-  it('icon: Should render Vue component badge.', () => {
-    const wrapper = mount(SidebarMenuItemIcon, {
-      props: { icon: markRaw(DummyIconComponent) },
+    it('Should render as a span element.', () => {
+      expect(wrapper.element.tagName).toEqual('SPAN');
     });
 
-    expect(wrapper.findComponent(DummyIconComponent).exists()).toBe(true);
+    it('Should render component with default props.', () => {
+      let warningMessage = '';
+
+      const wrapper = mount(SidebarMenuItemIcon, {
+        global: {
+          config: {
+            warnHandler: (msg) => {
+              warningMessage = msg;
+            },
+          },
+        },
+      });
+      expect(wrapper.exists()).toBe(true);
+      expect(wrapper.classes()).toContain(defaultMock.getSelectorWithoutDot(defaultMock.iconEl));
+      expect(warningMessage).toContain('Missing required prop: "icon"');
+    });
   });
 
-  it('icon: Should render function badge as component.', () => {
-    const badgeFn = () => h('span', 'fn');
+  describe('Props', () => {
+    it('icon: Should render icon when "icon" prop is provided.', () => {
+      const wrapper = mount(SidebarMenuItemIcon, {
+        props: { icon: 'mdi-home' },
+      });
 
-    const wrapper = mount(SidebarMenuItemIcon, {
-      props: { icon: badgeFn },
+      expect(wrapper.find('.mdi-home').exists()).toBe(true);
     });
-    expect(wrapper.find('span').text()).toBe('fn');
+
+    it('icon: Should render Vue component badge.', () => {
+      const wrapper = mount(SidebarMenuItemIcon, {
+        props: { icon: markRaw(DummyIconComponent) },
+      });
+
+      expect(wrapper.findComponent(DummyIconComponent).exists()).toBe(true);
+    });
+
+    it('icon: Should render function badge as component.', () => {
+      const badgeFn = () => h('span', 'fn');
+
+      const wrapper = mount(SidebarMenuItemIcon, {
+        props: { icon: badgeFn },
+      });
+      expect(wrapper.find('span').text()).toBe('fn');
+    });
   });
-});
 
-describe('SidebarMenuItemIcon.vue: Accessibility.', () => {
-  it('Should set aria-hidden="true" on root element.', () => {
-    const wrapper = mount(SidebarMenuItemIcon, {
-      props: { icon: 'mdi-home' },
+  describe('Accessibility', () => {
+    it('Should set aria-hidden="true" on root element.', () => {
+      const wrapper = mount(SidebarMenuItemIcon, {
+        props: { icon: 'mdi-home' },
+      });
+
+      expect(wrapper.attributes('aria-hidden')).toBe('true');
     });
-
-    expect(wrapper.attributes('aria-hidden')).toBe('true');
   });
 });
