@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { ELibraryConfig } from '@/types/internal';
-import vOnClickOutside from '../OnClickOutside';
-import { EOnClickOutsideConfig, EOnClickOutsideErrors } from '../types/OnClickOutside.enum';
+import vOnClickOutside from '../../OnClickOutside';
+import { EOnClickOutsideConfig, EOnClickOutsideErrors } from '../../types/OnClickOutside.enum';
 
 describe('OnClickOutside', () => {
   let container: HTMLElement;
