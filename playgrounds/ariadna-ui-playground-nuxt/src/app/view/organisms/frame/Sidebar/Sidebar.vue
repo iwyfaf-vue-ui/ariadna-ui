@@ -132,6 +132,15 @@ const data = ref<Array<TSidebarMenuItem>>([
           },
         ],
       },
+      {
+        title: 'Sensors',
+        children: [
+          {
+            title: 'OnClickOutside',
+            href: '/directives/sensors/on-click-outside',
+          },
+        ],
+      },
     ],
   },
   {
