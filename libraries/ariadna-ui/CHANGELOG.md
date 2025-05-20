@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.16.1
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.16.0...v1.16.1)
+
+### 📖 Documentation
+
+- Update library version ([e2363c9](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/e2363c9))
+- Add styles example for primary previewer modifier ([d21ded6](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/d21ded6))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.16.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.15.0...v1.16.0)
