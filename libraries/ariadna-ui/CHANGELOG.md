@@ -1,6 +1,28 @@
 # Changelog
 
 
+## v1.15.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.14.0...v1.15.0)
+
+### 🚀 Enhancements
+
+- Add Textarea component ([2412d8e](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/2412d8e))
+
+### 💅 Refactors
+
+- Rename directive binding types for clarity ([0284ebb](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/0284ebb))
+
+### 📖 Documentation
+
+- Update library version ([1c0425d](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/1c0425d))
+- Fix debounce enums documentation comments ([0714e4b](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/0714e4b))
+- Fix directive name in phone-mask documentation ([55a42a9](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/55a42a9))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.14.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.13.0...v1.14.0)
