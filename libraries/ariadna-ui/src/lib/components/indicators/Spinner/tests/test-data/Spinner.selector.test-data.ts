@@ -28,7 +28,9 @@ export class SpinnerSelectorTestData extends DataSelector {
     this.sizeLargeModifier = `${className}--large`;
   }
 
-  public spinnerContent() {
-    return 'Loading...';
-  }
+  public mockProps: TSpinnerProps = {
+    size: 'medium',
+    cssClass: ESpinnerPropsDefault.CSS_CLASS,
+    modifier: 'primary',
+  };
 }

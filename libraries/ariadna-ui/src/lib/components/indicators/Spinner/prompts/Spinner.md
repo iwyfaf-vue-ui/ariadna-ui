@@ -12,8 +12,10 @@
 │   │   │   ├── useSpinner.ts           # Composable useSpinner
 │   │   │   ├── useSpinner.types.ts     # Типы composable useSpinner
 │   ├── tests                           # Каталог с Unit-тестами компонента
-│   │   ├── Spinner.test.ts             # Unit-тесты главного компонента
-│   │   ├── useSpinner.test.ts          # Unit-тесты composable useSpinner
+│   │   ├── components                  # Каталог с Unit-тестами для компонентов
+│   │   │   ├── Spinner.test.ts         # Unit-тесты главного компонента
+│   │   ├── composables                 # Каталог с Unit-тестами для composables
+│   │   │   ├── useSpinner.test.ts      # Unit-тесты composable useSpinner
 │   ├── types                           # Каталог с типами компонента
 │   ├── Spinner.vue                     # Основной (входной) файл элемента
 │   ├── Spinner.d.ts                    # Основной файл с типами элементов
