@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.14.0",
+  "version": "1.14.1-beta.1",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -70,6 +70,10 @@
       "import": "./dist/lib/components/controls/InputText/InputText.esm.js",
       "types": "./dist/lib/components/controls/InputText/InputText.d.ts"
     },
+    "./Textarea": {
+      "import": "./dist/lib/components/controls/Textarea/Textarea.esm.js",
+      "types": "./dist/lib/components/controls/Textarea/Textarea.d.ts"
+    },
     "./Badge": {
       "import": "./dist/lib/components/indicators/Badge/Badge.esm.js",
       "types": "./dist/lib/components/indicators/Badge/Badge.d.ts"
@@ -129,6 +133,9 @@
       ],
       "InputText": [
         "./dist/lib/components/controls/InputText/InputText.d.ts"
+      ],
+      "Textarea": [
+        "./dist/lib/components/controls/Textarea/Textarea.d.ts"
       ],
       "Badge": [
         "./dist/lib/components/indicators/Badge/Badge.d.ts"

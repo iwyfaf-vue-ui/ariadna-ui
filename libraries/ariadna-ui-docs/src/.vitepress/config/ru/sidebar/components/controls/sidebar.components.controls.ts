@@ -1,11 +1,19 @@
 import { DefaultTheme } from 'vitepress/theme';
-import sidebarComponentsControlsInputText from './input-text/sidebar.components.controls.input-text';
 
 const sidebarComponentsControls: DefaultTheme.SidebarItem = {
   text: 'Controls',
   collapsed: true,
   link: '/components/controls/',
-  items: [sidebarComponentsControlsInputText],
+  items: [
+    {
+      text: 'InputText',
+      link: '/components/controls/input-text/',
+    },
+    {
+      text: 'Textarea',
+      link: '/components/controls/textarea/',
+    },
+  ],
 };
 
 export default sidebarComponentsControls;

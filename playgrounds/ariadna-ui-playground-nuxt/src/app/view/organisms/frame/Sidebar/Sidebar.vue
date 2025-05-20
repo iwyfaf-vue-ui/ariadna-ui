@@ -75,6 +75,10 @@ const data = ref<Array<TSidebarMenuItem>>([
             title: 'InputText',
             href: '/components/controls/input-text',
           },
+          {
+            title: 'Textarea',
+            href: '/components/controls/textarea',
+          },
         ],
       },
       {
