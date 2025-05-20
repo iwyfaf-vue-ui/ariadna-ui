@@ -12,8 +12,10 @@
 │   │   │   ├── useButton.ts            # Composable useButton
 │   │   │   ├── useButton.types.ts      # Типы composable useButton
 │   ├── tests                           # Каталог с Unit-тестами компонента
-│   │   ├── Button.test.ts              # Unit-тесты главного компонента
-│   │   ├── useButton.test.ts           # Unit-тесты composable useButton
+│   │   ├── components                  # Каталог с Unit-тестами для компонентов
+│   │   │   ├── Button.test.ts          # Unit-тесты главного компонента
+│   │   ├── composables                 # Каталог с Unit-тестами для composables
+│   │   │   ├── useButton.test.ts       # Unit-тесты composable useButton
 │   ├── types                           # Каталог с типами компонента
 │   ├── Button.vue                      # Основной (входной) файл элемента
 │   ├── Button.d.ts                     # Основной файл с типами элементов

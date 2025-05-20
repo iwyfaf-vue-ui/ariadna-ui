@@ -54,6 +54,16 @@ export class ButtonSelectorTestData extends DataSelector {
     this.selectedModifier = `${className}--selected`;
   }
 
+  public mockProps: TButtonProps = {
+    iconPosition: 'left',
+    size: 'medium',
+    selected: false,
+    disabled: false,
+    loading: false,
+    cssClass: EButtonPropsDefault.CSS_CLASS,
+    modifier: 'primary',
+  };
+
   public buttonContent() {
     return 'Button text';
   }
