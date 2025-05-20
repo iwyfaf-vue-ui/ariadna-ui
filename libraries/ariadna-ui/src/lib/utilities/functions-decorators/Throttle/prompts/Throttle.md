@@ -8,7 +8,8 @@
 ```text
 ├── Throttle                                          # Каталог с именем утилиты
 │   ├── tests                                         # Каталог с Unit-тестами
-│   │   ├── Throttle.test.ts                          # Unit-тесты главной утилиты
+│   │   ├── Throttle                                  # Каталог с Unit-тестами для утилиты
+│   │   │   ├── Throttle.test.ts                      # Unit-тесты главной утилиты
 │   ├── types                                         # Каталог с типами директивы
 │   │   ├── Throttle.enum.ts                          # Enum утилиты
 │   │   ├── Throttle.types.ts                         # Типы утилиты

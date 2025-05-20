@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import throttle from '../Throttle';
+import throttle from '../../Throttle';
 import { ELibraryConfig } from '@/types/internal';
-import { EThrottleConfig, EThrottleErrors } from '../types/Throttle.enum';
+import { EThrottleConfig, EThrottleErrors } from '../../types/Throttle.enum';
 
 describe('throttle', () => {
   beforeEach(() => {
