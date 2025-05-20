@@ -1,8 +1,8 @@
 import type { Mock } from 'vitest';
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { ELibraryConfig } from '@/types/internal';
-import debounce from '../Debounce';
-import { EDebounceConfig, EDebounceErrors } from '../types/Debounce.enum';
+import debounce from '../../Debounce';
+import { EDebounceConfig, EDebounceErrors } from '../../types/Debounce.enum';
 
 describe('debounce', () => {
   let mockCallback: Mock;

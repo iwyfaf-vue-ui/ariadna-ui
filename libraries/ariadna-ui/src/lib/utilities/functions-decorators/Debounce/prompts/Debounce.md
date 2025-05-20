@@ -8,7 +8,8 @@
 ```text
 ├── Debounce                                          # Каталог с именем утилиты
 │   ├── tests                                         # Каталог с Unit-тестами
-│   │   ├── Debounce.test.ts                          # Unit-тесты главной утилиты
+│   │   ├── Debounce                                  # Каталог с Unit-тестами для утилиты
+│   │   │   ├── Debounce.test.ts                      # Unit-тесты главной утилиты
 │   ├── types                                         # Каталог с типами директивы
 │   │   ├── Debounce.enum.ts                          # Enum утилиты
 │   │   ├── Debounce.types.ts                         # Типы утилиты
