@@ -1,6 +1,27 @@
 # Changelog
 
 
+## v1.14.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.13.0...v1.14.0)
+
+### 🚀 Enhancements
+
+- Add OnClickOutside Vue directive and docs ([8893abd](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/8893abd))
+
+### 📖 Documentation
+
+- Update library version ([06d60b2](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/06d60b2))
+
+### 🎨 Styles
+
+- Remove redundant comment in debounce leading demo ([ef47baa](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/ef47baa))
+- Remove duplicate comment and unused code line ([6b0910d](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/6b0910d))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.13.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.12.0...v1.13.0)
