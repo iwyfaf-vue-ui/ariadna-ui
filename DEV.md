@@ -11,7 +11,6 @@ chmod +x .git-hooks/pre-commit
 Go to the library directory and specify the local path to the file `.gitconfig`:
 
 ```shell
-cd libraries/ariadna-ui
 git config --local include.path ../.gitconfig
 ```
 
