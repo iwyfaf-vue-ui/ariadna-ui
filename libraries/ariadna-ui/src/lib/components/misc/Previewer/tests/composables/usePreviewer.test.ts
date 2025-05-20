@@ -106,64 +106,76 @@ describe('usePreviewer.ts: componentClasses ComputedRef.', () => {
       `${defaultMock.getSelectorWithoutDot(defaultMock.rootEl)} ${defaultMock.getSelectorWithoutDot(defaultMock.themeModifier)}`,
     );
   });
-});
 
-describe('usePreviewer.ts: toggleCode Function.', () => {
-  beforeEach(() => {
-    vi.useFakeTimers();
-    vi.clearAllMocks();
+  it('Should include modifier class when provided.', () => {
+    const wrapper = mountWithComposable({
+      ...mockProps,
+      modifier: defaultMock.modifierProp,
+    });
+    const vm = wrapper.vm;
+
+    expect(vm.componentClasses).toContain(
+      defaultMock.getSelectorWithoutDot(defaultMock.primaryModifier),
+    );
   });
 
-  afterEach(() => {
-    vi.useRealTimers();
+  describe('usePreviewer.ts: toggleCode Function.', () => {
+    beforeEach(() => {
+      vi.useFakeTimers();
+      vi.clearAllMocks();
+    });
+
+    afterEach(() => {
+      vi.useRealTimers();
+    });
+
+    it('Should handle copy: call copyToClipboard, set isCopied true, then false after timeout.', async () => {
+      const { handleCopy, isCopied } = usePreviewer(mockProps);
+
+      expect(isCopied.value).toBe(false);
+
+      await handleCopy();
+      expect(copyToClipboard).toHaveBeenCalledWith(mockProps.componentSource);
+      expect(isCopied.value).toBe(true);
+
+      vi.advanceTimersByTime(1500);
+      await nextTick();
+      expect(isCopied.value).toBe(false);
+    });
   });
 
-  it('Should handle copy: call copyToClipboard, set isCopied true, then false after timeout.', async () => {
-    const { handleCopy, isCopied } = usePreviewer(mockProps);
+  describe('usePreviewer.ts: onExpandEnter Function.', () => {
+    it('Should set height on onExpandEnter.', () => {
+      const { onExpandEnter } = usePreviewer(mockProps);
 
-    expect(isCopied.value).toBe(false);
+      const el = document.createElement('div');
+      Object.defineProperty(el, 'scrollHeight', { value: 123, configurable: true });
+      onExpandEnter(el);
 
-    await handleCopy();
-    expect(copyToClipboard).toHaveBeenCalledWith(mockProps.componentSource);
-    expect(isCopied.value).toBe(true);
-
-    vi.advanceTimersByTime(1500);
-    await nextTick();
-    expect(isCopied.value).toBe(false);
+      expect(el.style.height).toBe('123px');
+    });
   });
-});
 
-describe('usePreviewer.ts: onExpandEnter Function.', () => {
-  it('Should set height on onExpandEnter.', () => {
-    const { onExpandEnter } = usePreviewer(mockProps);
+  describe('usePreviewer.ts: onExpandAfterEnter Function.', () => {
+    it('Should set height to auto on onExpandAfterEnter.', () => {
+      const { onExpandAfterEnter } = usePreviewer(mockProps);
 
-    const el = document.createElement('div');
-    Object.defineProperty(el, 'scrollHeight', { value: 123, configurable: true });
-    onExpandEnter(el);
+      const el = document.createElement('div');
+      onExpandAfterEnter(el);
 
-    expect(el.style.height).toBe('123px');
+      expect(el.style.height).toBe('auto');
+    });
   });
-});
 
-describe('usePreviewer.ts: onExpandAfterEnter Function.', () => {
-  it('Should set height to auto on onExpandAfterEnter.', () => {
-    const { onExpandAfterEnter } = usePreviewer(mockProps);
+  describe('usePreviewer.ts: onExpandBeforeLeave Function.', () => {
+    it('Should set height on onExpandBeforeLeave.', () => {
+      const { onExpandBeforeLeave } = usePreviewer(mockProps);
 
-    const el = document.createElement('div');
-    onExpandAfterEnter(el);
+      const el = document.createElement('div');
+      Object.defineProperty(el, 'scrollHeight', { value: 456, configurable: true });
+      onExpandBeforeLeave(el);
 
-    expect(el.style.height).toBe('auto');
-  });
-});
-
-describe('usePreviewer.ts: onExpandBeforeLeave Function.', () => {
-  it('Should set height on onExpandBeforeLeave.', () => {
-    const { onExpandBeforeLeave } = usePreviewer(mockProps);
-
-    const el = document.createElement('div');
-    Object.defineProperty(el, 'scrollHeight', { value: 456, configurable: true });
-    onExpandBeforeLeave(el);
-
-    expect(el.style.height).toBe('456px');
+      expect(el.style.height).toBe('456px');
+    });
   });
 });

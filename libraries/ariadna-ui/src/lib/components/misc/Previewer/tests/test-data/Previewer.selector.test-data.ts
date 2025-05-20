@@ -15,12 +15,13 @@ export class PreviewerSelectorTestData extends DataSelector {
   public readonly actionCopyEl: string = '';
   public readonly codeEl: string = '';
   public readonly codeExpandEl: string = '';
-
+  public readonly primaryModifier: string = '';
   public readonly themeModifier: string = '';
 
   public componentSourceProp: TPreviewerProps['componentSource'] =
     '<span class="dummy">Test</span>';
   public cssClassProp: TPreviewerProps['cssClass'] = 'newCssClass';
+  public modifierProp: TPreviewerProps['modifier'] = 'primary';
 
   constructor(className: string = EPreviewerPropsDefault.CSS_CLASS) {
     super();
@@ -35,7 +36,7 @@ export class PreviewerSelectorTestData extends DataSelector {
     this.actionCopyEl = `.${className}__action-copy`;
     this.codeEl = `.${className}__code`;
     this.codeExpandEl = `.${className}__code-expand`;
-
+    this.primaryModifier = `${className}--primary`;
     this.themeModifier = `${className}--theme`;
   }
 

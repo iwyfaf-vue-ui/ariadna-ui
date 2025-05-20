@@ -1,4 +1,8 @@
-import type { ClassComponent, GlobalComponentConstructor } from '../../../../types/component';
+import type {
+  ClassComponent,
+  GlobalComponentConstructor,
+  TSharedPropsModifier,
+} from '../../../../types/component';
 import type { Component, VNode } from 'vue';
 import { EPreviewerPropsDefault } from './types/Previewer.enums';
 
@@ -50,6 +54,14 @@ export type TPreviewerProps = {
    * @example css-class="example"
    */
   cssClass?: string;
+
+  /**
+   * Modifier of the basic CSS class.
+   *
+   * @default undefined
+   * @example modifier="primary"
+   */
+  modifier?: TSharedPropsModifier;
 };
 
 /**

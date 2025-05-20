@@ -126,6 +126,18 @@ describe('Previewer.vue: Props.', () => {
     );
     expect(wrapper.find(defaultMock.getSelectorWithDot(_defaultMock.codeEl)).exists()).toBe(true);
   });
+
+  it('modifier: Should apply modifier class.', async () => {
+    const wrapper = mount(Previewer, {
+      props: {
+        component: defaultMock.dummyComponent(),
+        componentSource: defaultMock.componentSourceProp,
+        modifier: defaultMock.modifierProp,
+      },
+    });
+
+    expect(wrapper.find(defaultMock.rootEl).classes()).toContain(defaultMock.primaryModifier);
+  });
 });
 
 describe('Previewer.vue: Slots.', () => {

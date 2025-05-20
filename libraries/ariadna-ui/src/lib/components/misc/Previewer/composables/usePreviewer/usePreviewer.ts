@@ -13,8 +13,9 @@ export default function usePreviewer(props: TPreviewerProps): TUsePreviewerRetur
     const base = props.cssClass;
 
     const theme = `${base}--theme`;
+    const modifier = props.modifier ? `${base}--${props.modifier}` : undefined;
 
-    return [base, theme].filter(Boolean).join(' ');
+    return [base, theme, modifier].filter(Boolean).join(' ');
   });
 
   const toggleCode = () => {

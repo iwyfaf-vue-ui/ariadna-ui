@@ -37,13 +37,15 @@ import Previewer from '@iwyfaf-vue-ui/ariadna-ui/Previewer';
 
 ## Props
 
-| Prop              | Required | Type                  | Default         | Description                                                                |
-|-------------------|----------|-----------------------|-----------------|----------------------------------------------------------------------------|
-| `component`       | -        | `Component \| string` | `undefined`     | Компонент, который будет отображаться в режиме предварительного просмотра. |
-| `componentSource` | -        | `string`              | `undefined`     | Исходный код компонента, который будет отображаться в виде чистого текста. |
-| `showCode`        | -        | `boolean`             | `false`         | Показывать ли блок кода сразу.                                             |
-| `showCodeToggle`  | -        | `boolean`             | `true`          | Показывать ли кнопку переключения кода.                                         |
-| `cssClass`        | -        | `string`              | `ar-previewer`  | Переопределяет структуру CSS классов.                                      |
+| Prop              | Required | Type                    | Default        | Description                                                                |
+|-------------------|----------|-------------------------|----------------|----------------------------------------------------------------------------|
+| `component`       | -        | `Component \| string`   | `undefined`    | Компонент, который будет отображаться в режиме предварительного просмотра. |
+| `componentSource` | -        | `string`                | `undefined`    | Исходный код компонента, который будет отображаться в виде чистого текста. |
+| `showCode`        | -        | `boolean`               | `false`        | Показывать ли блок кода сразу.                                             |
+| `showCodeToggle`  | -        | `boolean`               | `true`         | Показывать ли кнопку переключения кода.                                         |
+| `cssClass`        | -        | `string`                | `ar-previewer` | Переопределяет структуру CSS классов.                                      |
+| `modifier`        | -        | `TSharedPropsModifier`  | `undefined`    | Модификатор базового CSS-класса.                                  |
+
 
 ### `component`
 
@@ -84,6 +86,16 @@ import Previewer from '@iwyfaf-vue-ui/ariadna-ui/Previewer';
 
 ::: details Пример
 <demo src="./demos/demo.props.show-code-toggle.vue"></demo>
+:::
+
+### `modifier`
+
+- **Тип:** `TSharedPropsModifier`
+- **Значение по умолчанию:** `undefined`
+- **Описание**: Модификатор базового CSS-класса. Позволяет создавать различные вариации кнопки.
+
+::: details Пример
+<demo src="./demos/demo.props.modifier.vue"></demo>
 :::
 
 ## Slots
