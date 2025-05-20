@@ -40,6 +40,12 @@ export class PreviewerSelectorTestData extends DataSelector {
     this.themeModifier = `${className}--theme`;
   }
 
+  public mockProps: TPreviewerProps = {
+    component: {},
+    componentSource: '<div></div>',
+    cssClass: EPreviewerPropsDefault.CSS_CLASS,
+  };
+
   public dummyComponent() {
     return markRaw({
       template: '<span class="dummy">Test</span>',
