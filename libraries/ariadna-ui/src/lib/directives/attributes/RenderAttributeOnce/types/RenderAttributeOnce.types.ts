@@ -1,9 +1,9 @@
 import type { DirectiveBinding } from 'vue';
 
 /**
- * Binding of RenderAttributeOnce directive.
+ * Represents the value type for the RenderAttributeOnce directive.
  */
-export type TRenderAttributeOnceDirectiveBinding = {};
+export type TRenderAttributeOnceDirectiveValue = {};
 
 /**
  * @description
@@ -18,7 +18,7 @@ export type TRenderAttributeOnceDirective = {
    * @param el - The target HTML element to which the directive is bound.
    * @param binding - The binding object containing the value with attributes to set.
    */
-  created(el: HTMLElement, binding: DirectiveBinding<TRenderAttributeOnceDirectiveBinding>): void;
+  created(el: HTMLElement, binding: DirectiveBinding<TRenderAttributeOnceDirectiveValue>): void;
 
   /**
    * Provides SSR (Server-Side Rendering) support by returning the attributes to be rendered on the server.
@@ -27,6 +27,6 @@ export type TRenderAttributeOnceDirective = {
    * @returns The attributes object to be rendered on the server.
    */
   getSSRProps(
-    binding: DirectiveBinding<TRenderAttributeOnceDirectiveBinding>,
-  ): TRenderAttributeOnceDirectiveBinding;
+    binding: DirectiveBinding<TRenderAttributeOnceDirectiveValue>,
+  ): TRenderAttributeOnceDirectiveValue;
 };

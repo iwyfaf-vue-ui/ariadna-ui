@@ -1,9 +1,9 @@
 import type { DirectiveBinding } from 'vue';
 
 /**
- * Binding of PhoneMask directive.
+ * Represents the value type for the PhoneMask directive.
  */
-export type TPhoneMaskDirectiveBinding = {
+export type TPhoneMaskDirectiveValue = {
   /**
    * Flag to determine if the input element should be cloned for masking.
    *
@@ -30,5 +30,5 @@ export type TPhoneMaskDirective = {
    * @param el - The HTML input element to which the directive is attached.
    * @param binding - The binding object containing the directive options.
    */
-  mounted(el: HTMLInputElement, binding: DirectiveBinding<TPhoneMaskDirectiveBinding>): void;
+  mounted(el: HTMLInputElement, binding: DirectiveBinding<TPhoneMaskDirectiveValue>): void;
 };
