@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.16.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.15.0...v1.16.0)
+
+### 🚀 Enhancements
+
+- Add modifier prop to Previewer component ([7123278](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/7123278))
+
+### 📖 Documentation
+
+- Update library version ([1c3ef37](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/1c3ef37))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.15.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.14.0...v1.15.0)
