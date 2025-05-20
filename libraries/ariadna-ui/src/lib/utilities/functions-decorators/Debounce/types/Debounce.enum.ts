@@ -1,12 +1,12 @@
 /**
- * Throttle config.
+ * Debounce config.
  */
 export enum EDebounceConfig {
   NAME = 'Debounce',
 }
 
 /**
- * Throttle function errors.
+ * Debounce function errors.
  */
 export enum EDebounceErrors {
   EXPECTED_FUNCTION = 'Expected a function',
