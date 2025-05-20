@@ -12,8 +12,10 @@
 │   │   │   ├── useBadge.ts             # Composable useBadge
 │   │   │   ├── useBadge.types.ts       # Типы composable useBadge
 │   ├── tests                           # Каталог с Unit-тестами компонента
-│   │   ├── Badge.test.ts               # Unit-тесты главного компонента
-│   │   ├── useBadge.test.ts            # Unit-тесты composable useBadge
+│   │   ├── components                  # Каталог с Unit-тестами для компонентов
+│   │   │   ├── Badge.test.ts           # Unit-тесты главного компонента
+│   │   ├── composables                 # Каталог с Unit-тестами для composables
+│   │   │   ├── useBadge.test.ts        # Unit-тесты composable useBadge
 │   ├── types                           # Каталог с типами компонента
 │   ├── Badge.vue                       # Основной (входной) файл элемента
 │   ├── Badge.d.ts                      # Основной файл с типами элементов

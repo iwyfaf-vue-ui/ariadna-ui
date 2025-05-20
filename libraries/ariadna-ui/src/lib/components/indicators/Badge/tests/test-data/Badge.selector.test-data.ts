@@ -29,4 +29,12 @@ export class BadgeSelectorTestData extends DataSelector {
     this.roundedModifier = `${className}--rounded`;
     this.floatingModifier = `${className}--floating`;
   }
+
+  public mockProps: TBadgeProps = {
+    size: 'medium',
+    rounded: false,
+    floating: false,
+    cssClass: EBadgePropsDefault.CSS_CLASS,
+    modifier: 'primary',
+  };
 }
