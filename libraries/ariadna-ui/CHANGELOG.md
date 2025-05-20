@@ -1,6 +1,37 @@
 # Changelog
 
 
+## v1.16.2
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.16.1...v1.16.2)
+
+### 🩹 Fixes
+
+- Correct component root element types in d.ts files ([2677c75](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/2677c75))
+
+### 📖 Documentation
+
+- Update library version ([a342fe9](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/a342fe9))
+- Update instructions for gitconfig setup ([08c05ed](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/08c05ed))
+
+### ✅ Tests
+
+- Refactor and restructure Button unit tests ([b39daf6](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/b39daf6))
+- Restructure InputText tests into grouped describes ([f146383](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/f146383))
+- Move and update Badge component unit tests ([5010cfc](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/5010cfc))
+- Restructure and update Spinner tests layout ([90261c9](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/90261c9))
+- Refactor Previewer tests for clarity and consistency ([577ab88](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/577ab88))
+- Refactor SidebarMenu tests ([1a6f6c5](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/1a6f6c5))
+- Group RenderAttributeOnce tests by environment ([d352226](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/d352226))
+- Move OnClickOutside test to nested directory ([34331dc](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/34331dc))
+- Move ThemeBuilder.test.ts and update import paths ([cfa285e](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/cfa285e))
+- Move Debounce tests to nested directory ([83ea8d6](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/83ea8d6))
+- Move Throttle tests to dedicated directory ([2f22310](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/2f22310))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.16.1
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.16.0...v1.16.1)
