@@ -161,6 +161,24 @@ $input-phone: '.ar-input-phone';
     }
   }
 
+  // .ar-input-phone--primary
+  &--primary {
+    // .ar-input-phone--primary.ar-input-phone--theme
+    #{$input-phone}__input {
+      color: var(--color-text-default-foreground);
+      background: var(--color-background-primary);
+      border-color: var(--color-border-primary);
+    }
+
+    // .ar-input-phone--primary.ar-input-phone--hovered
+    &#{$input-phone}--hovered {
+      // .ar-input-phone--primary.ar-input-phone--hovered .ar-input-phone__input
+      #{$input-phone}__input {
+        border-color: var(--color-text-default-foreground);
+      }
+    }
+  }
+
   // .ar-input-phone__group
   &__group {
     position: relative;

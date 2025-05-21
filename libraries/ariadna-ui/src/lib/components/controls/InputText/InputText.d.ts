@@ -1,4 +1,8 @@
-import type { ClassComponent, GlobalComponentConstructor } from '../../../../types/component';
+import type {
+  ClassComponent,
+  GlobalComponentConstructor,
+  TSharedPropsModifier,
+} from '../../../../types/component';
 import type { Nullable } from '../../../../types/index';
 import type { VNode } from 'vue';
 import type { EInputTextPropsDefault } from './types/InputText.enums';
@@ -139,6 +143,14 @@ export type TInputTextProps = {
    * @example css-class="example"
    */
   cssClass?: string;
+
+  /**
+   * Modifier of the basic CSS class.
+   *
+   * @default undefined
+   * @example modifier="primary"
+   */
+  modifier?: TSharedPropsModifier;
 };
 
 /**

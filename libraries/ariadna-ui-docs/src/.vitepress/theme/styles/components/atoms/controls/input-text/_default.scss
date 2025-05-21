@@ -134,6 +134,24 @@ $input-text: '.ar-input-text';
     }
   }
 
+  // .ar-input-text--primary
+  &--primary {
+    // .ar-input-text--primary.ar-input-text--theme
+    #{$input-text}__input {
+      color: var(--color-text-default-foreground);
+      background: var(--color-background-primary);
+      border-color: var(--color-border-primary);
+    }
+
+    // .ar-input-text--primary.ar-input-text--hovered
+    &#{$input-text}--hovered {
+      // .ar-input-text--primary.ar-input-text--hovered .ar-input-text__input
+      #{$input-text}__input {
+        border-color: var(--color-text-default-foreground);
+      }
+    }
+  }
+
   // .ar-input-text__label
   &__label {
     position: relative;

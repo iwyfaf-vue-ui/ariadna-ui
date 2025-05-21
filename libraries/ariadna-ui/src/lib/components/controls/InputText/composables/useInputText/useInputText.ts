@@ -60,8 +60,9 @@ export default function useInputText(
     const disable = props.disabled ? `${base}--disabled` : undefined;
     const valid = props.valid ? `${base}--valid` : undefined;
     const invalid = props.invalid ? `${base}--invalid` : undefined;
+    const modifier = props.modifier ? `${base}--${props.modifier}` : undefined;
 
-    return [base, theme, size, focus, hover, fill, valid, invalid, disable]
+    return [base, theme, size, focus, hover, fill, valid, invalid, disable, modifier]
       .filter(Boolean)
       .join(' ');
   });

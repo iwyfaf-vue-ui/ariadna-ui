@@ -92,7 +92,7 @@ import Previewer from '@iwyfaf-vue-ui/ariadna-ui/Previewer';
 
 - **Тип:** `TSharedPropsModifier`
 - **Значение по умолчанию:** `undefined`
-- **Описание**: Модификатор базового CSS-класса. Позволяет создавать различные вариации кнопки.
+- **Описание**: Модификатор базового CSS-класса. Позволяет создавать различные визуальные вариации компонента.
 
 ::: details Пример
 <demo src="./demos/demo.props.modifier.vue"></demo>

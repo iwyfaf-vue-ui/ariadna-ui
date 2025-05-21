@@ -59,7 +59,8 @@
     * `valid?: boolean` (по умолчанию `false`).
     * `invalid?: boolean` (по умолчанию `false`).
     * `errors?: Array`  (по умолчанию `[]`).
-    * `cssClass?: string` (по умолчанию `'ar-input-text'`)
+    * `cssClass?: string` (по умолчанию `'ar-input-text'`) 
+    * `modifier` (тип: `TSharedPropsModifier`, по умолчанию: `undefined`): Модификатор базового CSS класса.
 5. Слоты:
     * `placeholder` — кастомный `placeholder`, если задан, prop `placeholder` игнорируется.
     * `errors` — кастомный вывод ошибок, получает prop `errors`.

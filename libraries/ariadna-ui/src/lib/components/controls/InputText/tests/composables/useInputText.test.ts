@@ -152,7 +152,7 @@ describe('useInputText', () => {
     });
   });
 
-  describe('listeners ComputedRef', () => {
+  describe('componentClasses ComputedRef', () => {
     it('Should generate correct componentClasses for default props.', () => {
       const wrapper = mountWithComposable(defaultMock.mockProps);
       const vm = wrapper.vm;
@@ -166,6 +166,18 @@ describe('useInputText', () => {
 
       expect(classes).toEqual(expect.arrayContaining(expectedClasses));
       expect(classes.length).toBe(expectedClasses.length);
+    });
+
+    it('Should include modifier class when provided.', () => {
+      const wrapper = mountWithComposable({
+        ...defaultMock.mockProps,
+        modifier: defaultMock.modifierProp,
+      });
+      const vm = wrapper.vm;
+
+      expect(vm.componentClasses).toContain(
+        defaultMock.getSelectorWithoutDot(defaultMock.primaryModifier),
+      );
     });
 
     it('Should generate correct componentClasses with modifier.', () => {

@@ -13,6 +13,7 @@ export class InputTextSelectorTestData extends DataSelector {
   public readonly errorsEl: string = '';
   public readonly errorsExpandEl: string = '';
   public readonly themeModifier: string = '';
+  public readonly primaryModifier: string = '';
   public readonly sizeSmallModifier: string = '';
   public readonly sizeMediumModifier: string = '';
   public readonly sizeLargeModifier: string = '';
@@ -30,6 +31,7 @@ export class InputTextSelectorTestData extends DataSelector {
   public nameProp: TInputTextProps['name'] = 'input name';
   public sizeProp: TInputTextProps['size'] = 'small';
   public cssClassProp: TInputTextProps['cssClass'] = 'newCssClass';
+  public modifierProp: TInputTextProps['modifier'] = 'primary';
 
   constructor(className: string = EInputTextPropsDefault.CSS_CLASS) {
     super();
@@ -43,6 +45,7 @@ export class InputTextSelectorTestData extends DataSelector {
     this.errorsEl = `.${className}__errors`;
     this.errorsExpandEl = `.${className}__errors-expand`;
     this.themeModifier = `${className}--theme`;
+    this.primaryModifier = `${className}--primary`;
     this.sizeSmallModifier = `${className}--small`;
     this.sizeMediumModifier = `${className}--medium`;
     this.sizeLargeModifier = `${className}--large`;
