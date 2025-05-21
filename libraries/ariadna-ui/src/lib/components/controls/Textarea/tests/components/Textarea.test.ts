@@ -348,6 +348,17 @@ describe('Textarea', () => {
         wrapper.find(defaultMock.getSelectorWithDot(_defaultMock.invalidModifier)).exists(),
       ).toBe(true);
     });
+
+    it('modifier: Should apply modifier class.', async () => {
+      const wrapper = mount(Textarea, {
+        props: {
+          modelValue: null,
+          modifier: defaultMock.modifierProp,
+        },
+      });
+
+      expect(wrapper.find(defaultMock.rootEl).classes()).toContain(defaultMock.primaryModifier);
+    });
   });
 
   describe('Slots', () => {

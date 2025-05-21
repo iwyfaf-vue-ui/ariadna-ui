@@ -104,6 +104,24 @@ $textarea: '.ar-textarea';
     }
   }
 
+  // .ar-textarea--primary
+  &--primary {
+    // .ar-textarea--primary.ar-textarea__textarea
+    #{$textarea}__textarea {
+      color: var(--color-text-default-foreground);
+      background: var(--color-background-primary);
+      border-color: var(--color-border-primary);
+    }
+
+    // .ar-textarea--primary.ar-textarea--hovered
+    &#{$textarea}--hovered {
+      // .ar-textarea--primary.ar-textarea--hovered .ar-textarea__input
+      #{$textarea}__input {
+        border-color: var(--color-text-default-foreground);
+      }
+    }
+  }
+
   // .ar-textarea__label
   &__label {
     position: relative;

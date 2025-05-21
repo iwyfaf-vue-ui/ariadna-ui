@@ -2,6 +2,7 @@ import * as path from 'path';
 import { DataSelector } from '@/shared/tests/DataSelector';
 import type { TTextareaProps } from '../../Textarea';
 import { ETextareaPropsDefault } from '../../types/Textarea.enums';
+import type { TButtonProps } from '@/lib/components/buttons/Button/Button';
 
 export class TextareaSelectorTestData extends DataSelector {
   public readonly className: string = '';
@@ -13,6 +14,7 @@ export class TextareaSelectorTestData extends DataSelector {
   public readonly errorsEl: string = '';
   public readonly errorsExpandEl: string = '';
   public readonly themeModifier: string = '';
+  public readonly primaryModifier: string = '';
   public readonly focusedModifier: string = '';
   public readonly hoveredModifier: string = '';
   public readonly filledModifier: string = '';
@@ -28,6 +30,7 @@ export class TextareaSelectorTestData extends DataSelector {
   public rowsProp: TTextareaProps['rows'] = '20';
   public colsProp: TTextareaProps['cols'] = '40';
   public cssClassProp: TTextareaProps['cssClass'] = 'newCssClass';
+  public modifierProp: TButtonProps['modifier'] = 'primary';
 
   constructor(className: string = ETextareaPropsDefault.CSS_CLASS) {
     super();
@@ -41,6 +44,7 @@ export class TextareaSelectorTestData extends DataSelector {
     this.errorsEl = `.${className}__errors`;
     this.errorsExpandEl = `.${className}__errors-expand`;
     this.themeModifier = `${className}--theme`;
+    this.primaryModifier = `${className}--primary`;
     this.focusedModifier = `${className}--focused`;
     this.hoveredModifier = `${className}--hovered`;
     this.filledModifier = `${className}--filled`;

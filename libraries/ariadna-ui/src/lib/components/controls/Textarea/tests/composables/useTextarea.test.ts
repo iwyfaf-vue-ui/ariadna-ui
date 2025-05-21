@@ -4,6 +4,7 @@ import { defineComponent, h } from 'vue';
 import { TextareaSelectorTestData } from '../test-data/Textarea.selector.test-data';
 import type { TTextareaProps } from '../../Textarea';
 import useTextarea from '../../composables/useTextarea/useTextarea';
+import { ETextareaPropsDefault } from '../../types/Textarea.enums';
 
 const defaultMock = new TextareaSelectorTestData();
 
@@ -149,6 +150,52 @@ describe('useTextarea', () => {
       vm.listeners.mouseleave();
       // hovered is internal, so we check via componentClasses
       expect(vm.componentClasses.includes(defaultMock.hoveredModifier)).toBe(false);
+    });
+  });
+
+  describe('componentClasses computed', () => {
+    it('Should generate base class correctly', () => {
+      const slots = {};
+      const wrapper = mountWithComposable(defaultMock.mockProps, slots);
+      const vm = wrapper.vm;
+
+      expect(vm.componentClasses).toContain(ETextareaPropsDefault.CSS_CLASS);
+    });
+
+    it('Should include modifier class when provided.', () => {
+      const slots = {};
+      const wrapper = mountWithComposable(
+        {
+          ...defaultMock.mockProps,
+          modifier: defaultMock.modifierProp,
+        },
+        slots,
+      );
+      const vm = wrapper.vm;
+
+      expect(vm.componentClasses).toContain(
+        defaultMock.getSelectorWithoutDot(defaultMock.primaryModifier),
+      );
+    });
+
+    it('Should include disabled class when disabled is true.', () => {
+      const props = { ...defaultMock.mockProps, disabled: true };
+      const slots = {};
+      const wrapper = mountWithComposable(props, slots);
+      const vm = wrapper.vm;
+
+      expect(vm.componentClasses).toContain(
+        defaultMock.getSelectorWithoutDot(defaultMock.disabledModifier),
+      );
+    });
+
+    it('Should handle undefined props gracefully.', () => {
+      const props = { cssClass: 'btn' } as TTextareaProps;
+      const slots = {};
+      const wrapper = mountWithComposable(props, slots);
+      const vm = wrapper.vm;
+
+      expect(vm.componentClasses).toContain('btn');
     });
   });
 

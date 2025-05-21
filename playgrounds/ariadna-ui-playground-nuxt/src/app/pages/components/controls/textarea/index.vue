@@ -299,6 +299,26 @@
     </template>
   </Previewer>
 
+  <Previewer :component="DemoPropsModifier" :component-source="DemoPropsModifierSource">
+    <template #header> Prop Modifier </template>
+
+    <template #showCodeToggle="{ toggle, isShown }">
+      <Button @click="toggle">
+        {{ isShown ? 'Скрыть' : 'Показать' }}
+      </Button>
+    </template>
+
+    <template #copy="{ handler, isCopied }">
+      <Button @click="handler" :disabled="isCopied">
+        {{ isCopied ? 'Скопировано!' : 'Копировать' }}
+      </Button>
+    </template>
+
+    <template #source="{ source }">
+      <pre v-code-highlight><code>{{ source }}</code></pre>
+    </template>
+  </Previewer>
+
   <Previewer :component="DemoSlotsPlaceholder" :component-source="DemoSlotsPlaceholderSource">
     <template #header> Slot Placeholder </template>
 
@@ -376,6 +396,8 @@ import DemoPropsErrors from './demos/demo.props.errors.vue';
 import DemoPropsErrorsSource from './demos/demo.props.errors.vue?raw';
 import DemoPropsCssClass from './demos/demo.props.css-class.vue';
 import DemoPropsCssClassSource from './demos/demo.props.css-class.vue?raw';
+import DemoPropsModifier from './demos/demo.props.modifier.vue';
+import DemoPropsModifierSource from './demos/demo.props.modifier.vue?raw';
 import DemoSlotsPlaceholder from './demos/demo.slots.placeholder.vue';
 import DemoSlotsPlaceholderSource from './demos/demo.slots.placeholder.vue?raw';
 import DemoSlotsErrors from './demos/demo.slots.errors.vue';

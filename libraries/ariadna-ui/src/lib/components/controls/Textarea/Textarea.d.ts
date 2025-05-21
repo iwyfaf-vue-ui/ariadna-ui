@@ -1,4 +1,8 @@
-import type { ClassComponent, GlobalComponentConstructor } from '../../../../types/component';
+import type {
+  ClassComponent,
+  GlobalComponentConstructor,
+  TSharedPropsModifier,
+} from '../../../../types/component';
 import type { Nullable, Numberish } from '../../../../types/index';
 import type { VNode } from 'vue';
 import type { ETextareaPropsDefault } from './types/Textarea.enums';
@@ -145,6 +149,14 @@ export type TTextareaProps = {
    * @example css-class="example"
    */
   cssClass?: string;
+
+  /**
+   * Modifier of the basic CSS class.
+   *
+   * @default undefined
+   * @example modifier="primary"
+   */
+  modifier?: TSharedPropsModifier;
 };
 
 /**

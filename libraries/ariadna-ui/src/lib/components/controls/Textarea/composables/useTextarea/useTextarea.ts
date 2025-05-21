@@ -59,8 +59,11 @@ export default function useTextarea(
     const disable = props.disabled ? `${base}--disabled` : undefined;
     const valid = props.valid ? `${base}--valid` : undefined;
     const invalid = props.invalid ? `${base}--invalid` : undefined;
+    const modifier = props.modifier ? `${base}--${props.modifier}` : undefined;
 
-    return [base, theme, focus, hover, fill, valid, invalid, disable].filter(Boolean).join(' ');
+    return [base, theme, focus, hover, fill, valid, invalid, disable, modifier]
+      .filter(Boolean)
+      .join(' ');
   });
 
   function onExpandEnter(el: Element) {

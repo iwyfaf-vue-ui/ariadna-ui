@@ -58,6 +58,7 @@
     * `invalid (boolean | undefined)`: Состояние невалидности поля (по умолчанию `false`).
     * `errors (Array<string>)`: Список ошибок для отображения (по умолчанию `[]`).
     * `cssClass (string)`: CSS-класс для стилизации (по умолчанию `ar-textarea`).
+    * `modifier` (тип: `TSharedPropsModifier`, по умолчанию: `undefined`): Модификатор базового CSS класса.
 5. Слоты:
     * `placeholder`: Кастомный `placeholder` (опционально).
     * `errors`: Кастомное отображение ошибок, получает проп `errors`.

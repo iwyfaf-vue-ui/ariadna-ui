@@ -39,23 +39,24 @@ import Textarea from '@iwyfaf-vue-ui/ariadna-ui/Textarea';
 
 ## Props
 
-| Prop           | Required | Type               | Default                                                               | Description                                                     |
-|----------------|----------|--------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------|
-| `modelValue`   | ✓        | `Nullable<string>` | `null`                                                                | Значение компонента.                                            |
-| `label`        | -        | `string`           | `undefined`                                                           | Текст элемента `label`.                                         | 
-| `id`           | -        | `string`           | Случайно сгенерированная строка с помощью помощника Vue 3.5 `useId()` | Значение нативного атрибута `id` элемента `textarea`.           |
-| `placeholder`  | -        | `string`           | `undefined`                                                           | Значение нативного атрибута `placeholder` элемента `textarea`.  |
-| `name`         | -        | `string`           | `undefined`                                                           | Значение нативного атрибута `name` элемента `textarea`.         |
-| `rows`         | -        | `Numberish`        | `'2'`                                                                 | Количество строк элемента `textarea`.                           |
-| `cols`         | -        | `Numberish`        | `'20'`                                                                | Количество столбцов элемента `textarea`.                        |
-| `autocomplete` | -        | `boolean`          | `false`                                                               | Значение нативного атрибута `autocomplete` элемента `textarea`. |
-| `spellcheck`   | -        | `boolean`          | `true`                                                                | Включение нативной проверки орфографии.                         |
-| `disabled`     | -        | `boolean`          | `false`                                                               | Значение нативного атрибута `disabled` элемента `textarea`.     |
-| `readonly`     | -        | `boolean`          | `false`                                                               | Значение нативного атрибута `readonly` элемента `textarea`.     |
-| `valid`        | -        | `boolean`          | `false`                                                               | Состояние компонента `valid`.                                   |
-| `invalid`      | -        | `boolean`          | `false`                                                               | Состояние компонента `invalid`.                                 |
-| `errors`       | -        | `Array<string>`    | `[]`                                                                  | Массив ошибок. Используется в слоте `errors`.                   |
-| `cssClass`     | -        | `string`           | `ar-textarea`                                                         | Переопределяет структуру CSS классов.                           |
+| Prop           | Required | Type                   | Default                                                               | Description                                                     |
+|----------------|----------|------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------|
+| `modelValue`   | ✓        | `Nullable<string>`     | `null`                                                                | Значение компонента.                                            |
+| `label`        | -        | `string`               | `undefined`                                                           | Текст элемента `label`.                                         | 
+| `id`           | -        | `string`               | Случайно сгенерированная строка с помощью помощника Vue 3.5 `useId()` | Значение нативного атрибута `id` элемента `textarea`.           |
+| `placeholder`  | -        | `string`               | `undefined`                                                           | Значение нативного атрибута `placeholder` элемента `textarea`.  |
+| `name`         | -        | `string`               | `undefined`                                                           | Значение нативного атрибута `name` элемента `textarea`.         |
+| `rows`         | -        | `Numberish`            | `'2'`                                                                 | Количество строк элемента `textarea`.                           |
+| `cols`         | -        | `Numberish`            | `'20'`                                                                | Количество столбцов элемента `textarea`.                        |
+| `autocomplete` | -        | `boolean`              | `false`                                                               | Значение нативного атрибута `autocomplete` элемента `textarea`. |
+| `spellcheck`   | -        | `boolean`              | `true`                                                                | Включение нативной проверки орфографии.                         |
+| `disabled`     | -        | `boolean`              | `false`                                                               | Значение нативного атрибута `disabled` элемента `textarea`.     |
+| `readonly`     | -        | `boolean`              | `false`                                                               | Значение нативного атрибута `readonly` элемента `textarea`.     |
+| `valid`        | -        | `boolean`              | `false`                                                               | Состояние компонента `valid`.                                   |
+| `invalid`      | -        | `boolean`              | `false`                                                               | Состояние компонента `invalid`.                                 |
+| `errors`       | -        | `Array<string>`        | `[]`                                                                  | Массив ошибок. Используется в слоте `errors`.                   |
+| `cssClass`     | -        | `string`               | `ar-textarea`                                                         | Переопределяет структуру CSS классов.                           |
+| `modifier`     | -        | `TSharedPropsModifier` | `undefined`                                                           | Модификатор базового CSS-класса.                                |
 
 ### `modelValue`
 
@@ -209,6 +210,16 @@ import Textarea from '@iwyfaf-vue-ui/ariadna-ui/Textarea';
 <demo src="./demos/demo.props.css-class.vue"></demo>
 :::
 
+### `modifier`
+
+- **Тип:** `TSharedPropsModifier`
+- **Значение по умолчанию:** `undefined`
+- **Описание**: Модификатор базового CSS-класса. Позволяет создавать различные визуальные вариации компонента.
+
+::: details Пример
+<demo src="./demos/demo.props.modifier.vue"></demo>
+:::
+
 ## Slots
 
 | Slot          | Description                                       |
@@ -359,6 +370,17 @@ $textarea: '.ar-textarea';
         // .ar-textarea--invalid.ar-textarea--theme .ar-textarea__textarea:focus
         &:focus {}
       }
+    }
+  }
+
+  // .ar-textarea--primary
+  &--primary {
+    // .ar-textarea--primary.ar-textarea__textarea
+    #{$textarea}__textarea {}
+    // .ar-textarea--primary.ar-textarea--hovered
+    &#{$textarea}--hovered {
+      // .ar-textarea--primary.ar-textarea--hovered .ar-textarea__input
+      #{$textarea}__input {}
     }
   }
 
