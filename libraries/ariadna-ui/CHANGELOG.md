@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.17.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.16.2...v1.17.0)
+
+### 🚀 Enhancements
+
+- Add TextareaAutoHeight directive ([0ec82dc](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/0ec82dc))
+
+### 📖 Documentation
+
+- Update library version ([328c491](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/328c491))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.16.2
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.16.1...v1.16.2)
