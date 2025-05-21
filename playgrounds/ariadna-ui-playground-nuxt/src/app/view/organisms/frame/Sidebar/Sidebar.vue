@@ -134,6 +134,10 @@ const data = ref<Array<TSidebarMenuItem>>([
             title: 'PhoneMask',
             href: '/directives/elements/phone-mask',
           },
+          {
+            title: 'TextareaAutoHeight',
+            href: '/directives/elements/textarea-auto-height',
+          },
         ],
       },
       {

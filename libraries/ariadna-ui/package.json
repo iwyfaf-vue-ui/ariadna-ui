@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.16.2",
+  "version": "1.16.3-beta.1",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -98,6 +98,10 @@
       "import": "./dist/lib/directives/elements/PhoneMask/PhoneMask.esm.js",
       "types": "./dist/lib/directives/elements/PhoneMask/PhoneMask.d.ts"
     },
+    "./TextareaAutoHeight": {
+      "import": "./dist/lib/directives/elements/TextareaAutoHeight/TextareaAutoHeight.esm.js",
+      "types": "./dist/lib/directives/elements/TextareaAutoHeight/TextareaAutoHeight.d.ts"
+    },
     "./OnClickOutside": {
       "import": "./dist/lib/directives/sensors/OnClickOutside/OnClickOutside.esm.js",
       "types": "./dist/lib/directives/sensors/OnClickOutside/OnClickOutside.d.ts"
@@ -154,6 +158,9 @@
       ],
       "PhoneMask": [
         "./dist/lib/directives/elements/PhoneMask/PhoneMask.d.ts"
+      ],
+      "TextareaAutoHeight": [
+        "./dist/lib/directives/elements/TextareaAutoHeight/TextareaAutoHeight.d.ts"
       ],
       "OnClickOutside": [
         "./dist/lib/directives/sensors/OnClickOutside/OnClickOutside.d.ts"

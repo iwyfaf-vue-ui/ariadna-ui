@@ -9,6 +9,10 @@ const sidebarDirectivesElements: DefaultTheme.SidebarItem = {
       text: 'PhoneMask',
       link: '/directives/elements/phone-mask/',
     },
+    {
+      text: 'TextareaAutoHeight',
+      link: '/directives/elements/textarea-auto-height/',
+    },
   ],
 };
 
