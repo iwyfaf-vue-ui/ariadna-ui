@@ -1,6 +1,27 @@
 # Changelog
 
 
+## v1.18.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.17.0...v1.18.0)
+
+### 🚀 Enhancements
+
+- Add modifier prop to InputText component ([908cbe6](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/908cbe6))
+- **textarea:** Add modifier prop for style variants ([0d6b9a1](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/0d6b9a1))
+
+### 📖 Documentation
+
+- Update library version ([c5cb42e](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/c5cb42e))
+
+### ✅ Tests
+
+- Rename test files for component and composable ([935484d](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/935484d))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.17.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.16.2...v1.17.0)
