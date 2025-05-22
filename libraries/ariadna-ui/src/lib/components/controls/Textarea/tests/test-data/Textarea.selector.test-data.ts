@@ -59,14 +59,16 @@ export class TextareaSelectorTestData extends DataSelector {
   };
 
   static async getTextareaPlaceholderSlotCustom(): Promise<string> {
-    return await this.readFile(
-      path.resolve(__dirname, 'components/Textarea/slot.placeholder.custom.html').trim(),
-    );
+    return (
+      await this.readFile(
+        path.resolve(__dirname, 'components/Textarea/slot.placeholder.custom.html'),
+      )
+    ).trim();
   }
 
   static async getTextareaErrorsSlotCustom(): Promise<string> {
-    return await this.readFile(
-      path.resolve(__dirname, 'components/Textarea/slot.errors.custom.html').trim(),
-    );
+    return (
+      await this.readFile(path.resolve(__dirname, 'components/Textarea/slot.errors.custom.html'))
+    ).trim();
   }
 }

@@ -53,40 +53,44 @@ export class PreviewerSelectorTestData extends DataSelector {
   }
 
   static async getPreviewerSlotHeaderCustom(): Promise<string> {
-    return await this.readFile(
-      path.resolve(__dirname, 'components/slot.header.custom.html').trim(),
-    );
+    return (
+      await this.readFile(path.resolve(__dirname, 'components/slot.header.custom.html'))
+    ).trim();
   }
 
   static async getPreviewerSlotDescriptionCustom(): Promise<string> {
-    return await this.readFile(
-      path.resolve(__dirname, 'components/slot.description.custom.html').trim(),
-    );
+    return (
+      await this.readFile(path.resolve(__dirname, 'components/slot.description.custom.html'))
+    ).trim();
   }
 
   static async getPreviewerSlotShowCodeToggleDefault(): Promise<string> {
-    return await this.readFile(
-      path.resolve(__dirname, 'components/slot.show-code-toggle.default.html').trim(),
-    );
+    return (
+      await this.readFile(path.resolve(__dirname, 'components/slot.show-code-toggle.default.html'))
+    ).trim();
   }
 
   static async getPreviewerSlotShowCodeToggleCustom(): Promise<string> {
-    return await this.readFile(
-      path.resolve(__dirname, 'components/slot.show-code-toggle.custom.html').trim(),
-    );
+    return (
+      await this.readFile(path.resolve(__dirname, 'components/slot.show-code-toggle.custom.html'))
+    ).trim();
   }
 
   static async getPreviewerSlotCopyDefault(): Promise<string> {
-    return await this.readFile(path.resolve(__dirname, 'components/slot.copy.default.html').trim());
+    return (
+      await this.readFile(path.resolve(__dirname, 'components/slot.copy.default.html'))
+    ).trim();
   }
 
   static async getPreviewerSlotCopyCustom(): Promise<string> {
-    return await this.readFile(path.resolve(__dirname, 'components/slot.copy.custom.html').trim());
+    return (
+      await this.readFile(path.resolve(__dirname, 'components/slot.copy.custom.html'))
+    ).trim();
   }
 
   static async getPreviewerSlotSourceCustom(): Promise<string> {
-    return await this.readFile(
-      path.resolve(__dirname, 'components/slot.source.custom.html').trim(),
-    );
+    return (
+      await this.readFile(path.resolve(__dirname, 'components/slot.source.custom.html'))
+    ).trim();
   }
 }

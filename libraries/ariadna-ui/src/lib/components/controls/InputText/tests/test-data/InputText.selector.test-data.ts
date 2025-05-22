@@ -63,14 +63,16 @@ export class InputTextSelectorTestData extends DataSelector {
   };
 
   static async getInputTextPlaceholderSlotCustom(): Promise<string> {
-    return await this.readFile(
-      path.resolve(__dirname, 'components/InputText/slot.placeholder.custom.html').trim(),
-    );
+    return (
+      await this.readFile(
+        path.resolve(__dirname, 'components/InputText/slot.placeholder.custom.html'),
+      )
+    ).trim();
   }
 
   static async getInputTextErrorsSlotCustom(): Promise<string> {
-    return await this.readFile(
-      path.resolve(__dirname, 'components/InputText/slot.errors.custom.html').trim(),
-    );
+    return (
+      await this.readFile(path.resolve(__dirname, 'components/InputText/slot.errors.custom.html'))
+    ).trim();
   }
 }

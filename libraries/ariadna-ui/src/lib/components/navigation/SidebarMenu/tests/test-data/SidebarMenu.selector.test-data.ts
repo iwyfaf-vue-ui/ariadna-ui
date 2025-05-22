@@ -135,50 +135,62 @@ export class SidebarMenuSelectorTestData extends DataSelector {
   };
 
   static async getSidebarMenuItemLinkSlotDefaultCustom(): Promise<string> {
-    return await this.readFile(
-      path.resolve(__dirname, 'components/SidebarMenuItemLink/slot.default.custom.html').trim(),
-    );
+    return (
+      await this.readFile(
+        path.resolve(__dirname, 'components/SidebarMenuItemLink/slot.default.custom.html'),
+      )
+    ).trim();
   }
 
   static async getSidebarMenuScrollSlotDefaultCustom(): Promise<string> {
-    return await this.readFile(
-      path.resolve(__dirname, 'components/SidebarMenuScroll/slot.default.custom.html').trim(),
-    );
+    return (
+      await this.readFile(
+        path.resolve(__dirname, 'components/SidebarMenuScroll/slot.default.custom.html'),
+      )
+    ).trim();
   }
 
   static async getSidebarMenuItemSlotDropdownIconCustom(): Promise<string> {
-    return await this.readFile(
-      path.resolve(__dirname, 'components/SidebarMenuItem/slot.dropdown-icon.custom.html').trim(),
-    );
+    return (
+      await this.readFile(
+        path.resolve(__dirname, 'components/SidebarMenuItem/slot.dropdown-icon.custom.html'),
+      )
+    ).trim();
   }
 
   static async getSidebarMenuItemSlotActionIconCustom(): Promise<string> {
-    return await this.readFile(
-      path.resolve(__dirname, 'components/SidebarMenuItem/slot.action-icon.custom.html').trim(),
-    );
+    return (
+      await this.readFile(
+        path.resolve(__dirname, 'components/SidebarMenuItem/slot.action-icon.custom.html'),
+      )
+    ).trim();
   }
 
   static async getSidebarMenuSlotHeaderCustom(): Promise<string> {
-    return await this.readFile(
-      path.resolve(__dirname, 'components/SidebarMenu/slot.header.custom.html').trim(),
-    );
+    return (
+      await this.readFile(path.resolve(__dirname, 'components/SidebarMenu/slot.header.custom.html'))
+    ).trim();
   }
 
   static async getSidebarMenuSlotFooterCustom(): Promise<string> {
-    return await this.readFile(
-      path.resolve(__dirname, 'components/SidebarMenu/slot.footer.custom.html').trim(),
-    );
+    return (
+      await this.readFile(path.resolve(__dirname, 'components/SidebarMenu/slot.footer.custom.html'))
+    ).trim();
   }
 
   static async getSidebarMenuSlotDropdownIconCustom(): Promise<string> {
-    return await this.readFile(
-      path.resolve(__dirname, 'components/SidebarMenu/slot.dropdown-icon.custom.html').trim(),
-    );
+    return (
+      await this.readFile(
+        path.resolve(__dirname, 'components/SidebarMenu/slot.dropdown-icon.custom.html'),
+      )
+    ).trim();
   }
 
   static async getSidebarMenuSlotActionIconCustom(): Promise<string> {
-    return await this.readFile(
-      path.resolve(__dirname, 'components/SidebarMenu/slot.action-icon.custom.html').trim(),
-    );
+    return (
+      await this.readFile(
+        path.resolve(__dirname, 'components/SidebarMenu/slot.action-icon.custom.html'),
+      )
+    ).trim();
   }
 }
