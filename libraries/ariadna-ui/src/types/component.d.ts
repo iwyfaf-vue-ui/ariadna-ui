@@ -11,4 +11,12 @@ export type GlobalComponentConstructor<T> = {
   new (): T;
 };
 
+/**
+ * Type for Modifier prop.
+ */
 export type TSharedPropsModifier = 'primary' | 'secondary' | 'quaternary' | 'tertiary' | string;
+
+/**
+ * Type for Size prop.
+ */
+export type TSharedPropsSize = 'small' | 'medium' | 'large';

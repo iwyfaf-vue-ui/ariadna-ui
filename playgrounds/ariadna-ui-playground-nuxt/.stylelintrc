@@ -7,7 +7,6 @@
   ],
   "rules": {
     "at-rule-no-unknown": null,
-    "scss/at-rule-no-unknown": null,
-    "max-nesting-depth": 4
+    "scss/at-rule-no-unknown": null
   }
 }

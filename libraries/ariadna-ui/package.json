@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.18.0",
+  "version": "1.18.1-beta.0",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -65,6 +65,10 @@
     "./Button": {
       "import": "./dist/lib/components/buttons/Button/Button.esm.js",
       "types": "./dist/lib/components/buttons/Button/Button.d.ts"
+    },
+    "./Checkbox": {
+      "import": "./dist/lib/components/controls/Checkbox/Checkbox.esm.js",
+      "types": "./dist/lib/components/controls/Checkbox/Checkbox.d.ts"
     },
     "./InputText": {
       "import": "./dist/lib/components/controls/InputText/InputText.esm.js",
@@ -134,6 +138,9 @@
       ],
       "Button": [
         "./dist/lib/components/buttons/Button/Button.d.ts"
+      ],
+      "Checkbox": [
+        "./dist/lib/components/controls/Checkbox/Checkbox.d.ts"
       ],
       "InputText": [
         "./dist/lib/components/controls/InputText/InputText.d.ts"

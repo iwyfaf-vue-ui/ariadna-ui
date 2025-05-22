@@ -13,6 +13,10 @@ const sidebarComponentsControls: DefaultTheme.SidebarItem = {
       text: 'Textarea',
       link: '/components/controls/textarea/',
     },
+    {
+      text: 'Checkbox',
+      link: '/components/controls/checkbox/',
+    },
   ],
 };
 
