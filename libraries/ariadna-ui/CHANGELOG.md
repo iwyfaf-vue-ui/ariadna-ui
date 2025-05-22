@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.19.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.18.0...v1.19.0)
+
+### 🚀 Enhancements
+
+- Add Checkbox component ([4bf4ef3](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/4bf4ef3))
+
+### 📖 Documentation
+
+- Update library version ([a6a92d7](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/a6a92d7))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.18.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.17.0...v1.18.0)
