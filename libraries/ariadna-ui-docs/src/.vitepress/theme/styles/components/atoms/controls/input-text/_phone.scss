@@ -107,7 +107,7 @@ $input-phone: '.ar-input-phone';
 
   // .ar-input-phone--invalid
   &--invalid {
-    color: var(--color-text-dangern);
+    color: var(--color-text-danger);
 
     // .ar-input-phone--invalid.ar-input-phone--theme
     &#{$input-phone}--theme {

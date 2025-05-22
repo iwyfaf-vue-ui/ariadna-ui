@@ -83,7 +83,7 @@ $input-text: '.ar-input-text';
 
   // .ar-input-text--invalid
   &--invalid {
-    color: var(--color-text-dangern);
+    color: var(--color-text-danger);
 
     // .ar-input-text--invalid.ar-input-text--theme
     &#{$input-text}--theme {

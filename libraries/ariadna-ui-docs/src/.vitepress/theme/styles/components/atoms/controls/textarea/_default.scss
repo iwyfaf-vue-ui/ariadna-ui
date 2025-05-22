@@ -83,7 +83,7 @@ $textarea: '.ar-textarea';
 
   // .ar-textarea--invalid
   &--invalid {
-    color: var(--color-text-dangern);
+    color: var(--color-text-danger);
 
     // .ar-textarea--invalid.ar-textarea--theme
     &#{$textarea}--theme {
