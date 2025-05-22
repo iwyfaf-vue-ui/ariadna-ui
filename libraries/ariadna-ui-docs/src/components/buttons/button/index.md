@@ -44,20 +44,20 @@ import Button from '@iwyfaf-vue-ui/ariadna-ui/Button';
 
 ## Props
 
-| Prop           | Required | Type                                     | Default     | Description                                                       |
-|----------------|----------|------------------------------------------|-------------|-------------------------------------------------------------------|
-| `tag`          | -        | `'button' \| 'span' \| 'a'`              | `button`    | HTML-тег, который будет отображаться как компонент кнопки.        |
-| `type`         | -        | `'button' \| 'submit' \| 'reset'`        | `button`    | Определяет тип кнопки при отображении в виде элемента `<button>`. |
-| `iconPosition` | -        | `'left' \| 'right' \| 'top' \| 'bottom'` | `left`      | Положение иконки относительно текста кнопки.                      |
-| `size`         | -        | `'small' \| 'medium' \| 'large'`         | `medium`    | Предопределенные варианты размеров для кнопки.                    |
-| `rounded`      | -        | `boolean`                                | `false`     | Кнопки отображаются с наибольшим радиусом закругления.            |
-| `textual`      | -        | `boolean`                                | `false`     | Кнопки отображаются в виде текстовых элементов.                   |
-| `outlined`     | -        | `boolean`                                | `false`     | Outlined отображают кнопки с границами, но с прозрачным фоном.    |
-| `selected`     | -        | `boolean`                                | `false`     | Определяет состояние `selected`.                                  |
-| `disabled`     | -        | `boolean`                                | `false`     | Определяет состояние `disabled`.                                  |
-| `loading`      | -        | `boolean`                                | `false`     | Определяет состояние `loading`.                                   |
-| `cssClass`     | -        | `string`                                 | `ar-button` | Переопределяет структуру CSS классов.                             |
-| `modifier`     | -        | `TSharedPropsModifier`                   | `undefined` | Модификатор базового CSS-класса.                                  |
+| Prop           | Required | Type                                     | Default                          | Description                                                       |
+|----------------|----------|------------------------------------------|----------------------------------|-------------------------------------------------------------------|
+| `tag`          | -        | `'button' \| 'span' \| 'a'`              | `button`                         | HTML-тег, который будет отображаться как компонент кнопки.        |
+| `type`         | -        | `'button' \| 'submit' \| 'reset'`        | `button`                         | Определяет тип кнопки при отображении в виде элемента `<button>`. |
+| `iconPosition` | -        | `'left' \| 'right' \| 'top' \| 'bottom'` | `left`                           | Положение иконки относительно текста кнопки.                      |
+| `size`         | -        | `TSharedPropsSize`                       | `EButtonPropsDefault.SIZE`       | Предопределенные варианты размеров для кнопки.                    |
+| `rounded`      | -        | `boolean`                                | `false`                          | Кнопки отображаются с наибольшим радиусом закругления.            |
+| `textual`      | -        | `boolean`                                | `false`                          | Кнопки отображаются в виде текстовых элементов.                   |
+| `outlined`     | -        | `boolean`                                | `false`                          | Outlined отображают кнопки с границами, но с прозрачным фоном.    |
+| `selected`     | -        | `boolean`                                | `false`                          | Определяет состояние `selected`.                                  |
+| `disabled`     | -        | `boolean`                                | `false`                          | Определяет состояние `disabled`.                                  |
+| `loading`      | -        | `boolean`                                | `false`                          | Определяет состояние `loading`.                                   |
+| `cssClass`     | -        | `string`                                 | `EButtonPropsDefault.CSS_CLASS`  | Переопределяет структуру CSS классов.                             |
+| `modifier`     | -        | `TSharedPropsModifier`                   | `undefined`                      | Модификатор базового CSS-класса.                                  |
 
 ### `tag`
 
@@ -93,8 +93,8 @@ import Button from '@iwyfaf-vue-ui/ariadna-ui/Button';
 
 ### `size`
 
-- **Тип:** `'small' | 'medium' | 'large'`
-- **Значение по умолчанию:** `medium`
+- **Тип:** `TSharedPropsSize`
+- **Значение по умолчанию:** `EButtonPropsDefault.SIZE`
 - **Описание**: Предопределенные варианты размеров для кнопки. Добавляет модификаторы `--small`, `--medium` и 
 `--large`.
 
@@ -166,7 +166,7 @@ import Button from '@iwyfaf-vue-ui/ariadna-ui/Button';
 ### `cssClass`
 
 - **Тип:** `string`
-- **Значение по умолчанию:** `ar-button`
+- **Значение по умолчанию:** `EButtonPropsDefault.CSS_CLASS`
 - **Описание**: Переопределяет CSS-класс корневого элемента и его потомков. Полезен, при необходимости создавать более 
 одного вида компонента.
 

@@ -37,16 +37,16 @@ import Spinner from '@iwyfaf-vue-ui/ariadna-ui/Spinner';
 
 ## Props
 
-| Prop        | Required | Type                                                               | Default      | Description                                      |
-|-------------| -------- |--------------------------------------------------------------------|--------------|--------------------------------------------------|
-| `size`      | -        | `'small' \| 'medium' \| 'large'`                                   | `medium`     | Предопределенные варианты размеров для спиннера. |
-| `cssClass`  | -        | `string`                                                           | `ar-spinner` | Переопределяет структуру CSS классов.            |
-| `modifier`  | -        | `'primary' \| 'secondary' \| 'quaternary' \| 'tertiary' \| string` | `undefined`  | Модификатор базового CSS-класса.                 |
+| Prop        | Required | Type                    | Default                           | Description                                      |
+|-------------| -------- |-------------------------|-----------------------------------|--------------------------------------------------|
+| `size`      | -        | `TSharedPropsSize`      | `ESpinnerPropsDefault.SIZE`       | Предопределенные варианты размеров для спиннера. |
+| `cssClass`  | -        | `string`                | `ESpinnerPropsDefault.CSS_CLASS`  | Переопределяет структуру CSS классов.            |
+| `modifier`  | -        | `TSharedPropsModifier`  | `undefined`                       | Модификатор базового CSS-класса.                 |
 
 ### `size`
 
-- **Тип:** `'small' | 'medium' | 'large'`
-- **Значение по умолчанию:** `medium`
+- **Тип:** `TSharedPropsSize`
+- **Значение по умолчанию:** `ESpinnerPropsDefault.SIZE`
 - **Описание**: Предопределенные варианты размеров для спиннера. Добавляет модификаторы `--small`, `--medium` и
 `--large`.
 
@@ -57,7 +57,7 @@ import Spinner from '@iwyfaf-vue-ui/ariadna-ui/Spinner';
 ### `cssClass`
 
 - **Тип:** `string`
-- **Значение по умолчанию:** `ar-spinner`
+- **Значение по умолчанию:** `ESpinnerPropsDefault.CSS_CLASS`
 - **Описание**: Переопределяет CSS-класс корневого элемента и его потомков. Полезен, при необходимости создавать более
 одного вида компонента.
 

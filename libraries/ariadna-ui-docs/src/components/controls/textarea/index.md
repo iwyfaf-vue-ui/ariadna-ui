@@ -55,7 +55,7 @@ import Textarea from '@iwyfaf-vue-ui/ariadna-ui/Textarea';
 | `valid`        | -        | `boolean`              | `false`                                                               | Состояние компонента `valid`.                                   |
 | `invalid`      | -        | `boolean`              | `false`                                                               | Состояние компонента `invalid`.                                 |
 | `errors`       | -        | `Array<string>`        | `[]`                                                                  | Массив ошибок. Используется в слоте `errors`.                   |
-| `cssClass`     | -        | `string`               | `ar-textarea`                                                         | Переопределяет структуру CSS классов.                           |
+| `cssClass`     | -        | `string`               | `ETextareaPropsDefault.CSS_CLASS`                                     | Переопределяет структуру CSS классов.                           |
 | `modifier`     | -        | `TSharedPropsModifier` | `undefined`                                                           | Модификатор базового CSS-класса.                                |
 
 ### `modelValue`
@@ -202,7 +202,7 @@ import Textarea from '@iwyfaf-vue-ui/ariadna-ui/Textarea';
 ### `cssClass`
 
 - **Тип:** `string`
-- **Значение по умолчанию:** `ar-textarea`
+- **Значение по умолчанию:** `ETextareaPropsDefault.CSS_CLASS`
 - **Описание**: Переопределяет CSS-класс корневого элемента и его потомков. Полезен, при необходимости создавать более
 одного вида компонента.
 

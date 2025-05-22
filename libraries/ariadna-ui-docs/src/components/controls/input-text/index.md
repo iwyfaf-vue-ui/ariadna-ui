@@ -43,18 +43,18 @@ import InputText from '@iwyfaf-vue-ui/ariadna-ui/InputText';
 |----------------|----------|------------------------|-----------------------------------------------------------------------|--------------------------------------------------------------|
 | `modelValue`   | ✓        | `Nullable<string>`     | `null`                                                                | Значение компонента.                                         |
 | `label`        | -        | `string`               | `undefined`                                                           | Текст элемента `label`.                                      |
-| `type`         | -        | `TInputTextPropsType`  | `text`                                                                | Значение нативного атрибута `type` элемента `input`.         |
+| `type`         | -        | `TInputTextPropsType`  | `EInputTextPropsDefault.TYPE`                                         | Значение нативного атрибута `type` элемента `input`.         |
 | `id`           | -        | `string`               | Случайно сгенерированная строка с помощью помощника Vue 3.5 `useId()` | Значение нативного атрибута `id` элемента `input`.           |
 | `placeholder`  | -        | `string`               | `undefined`                                                           | Значение нативного атрибута `placeholder` элемента `input`.  |
 | `name`         | -        | `string`               | `undefined`                                                           | Значение нативного атрибута `name` элемента `input`.         |
 | `autocomplete` | -        | `boolean`              | `false`                                                               | Значение нативного атрибута `autocomplete` элемента `input`. |
 | `disabled`     | -        | `boolean`              | `false`                                                               | Значение нативного атрибута `disabled` элемента `input`.     |
 | `readonly`     | -        | `boolean`              | `false`                                                               | Значение нативного атрибута `readonly` элемента `input`.     |
-| `size`         | -        | `TInputTextPropsSize`  | `medium`                                                              | Предопределенные варианты размеров для элемента `input`.     |
+| `size`         | -        | `TSharedPropsSize`     | `EInputTextPropsDefault.SIZE`                                         | Предопределенные варианты размеров для элемента `input`.     |
 | `valid`        | -        | `boolean`              | `false`                                                               | Состояние компонента `valid`.                                |
 | `invalid`      | -        | `boolean`              | `false`                                                               | Состояние компонента `invalid`.                              |
 | `errors`       | -        | `Array<string>`        | `[]`                                                                  | Массив ошибок. Используется в слоте `errors`.                |
-| `cssClass`     | -        | `string`               | `ar-input-text`                                                       | Переопределяет структуру CSS классов.                        |
+| `cssClass`     | -        | `string`               | `EInputTextPropsDefault.CSS_CLASS`                                    | Переопределяет структуру CSS классов.                        |
 | `modifier`     | -        | `TSharedPropsModifier` | `undefined`                                                           | Модификатор базового CSS-класса.                             |
 
 ### `modelValue`
@@ -82,7 +82,7 @@ import InputText from '@iwyfaf-vue-ui/ariadna-ui/InputText';
 ### `type`
 
 - **Тип:** `TInputTextPropsType`
-- **Значение по умолчанию:** `text`
+- **Значение по умолчанию:** `EInputTextPropsDefault.TYPE`
 - **Описание**: Значение нативного атрибута `type` элемента `input`.
 
 ::: details Пример
@@ -151,10 +151,9 @@ import InputText from '@iwyfaf-vue-ui/ariadna-ui/InputText';
 
 ### `size`
 
-- **Тип:** `TInputTextPropsSize`
-- **Значение по умолчанию:** `medium`
-- **Описание**: Предопределенные варианты размеров для значка. Добавляет модификаторы `--small`, 
-`--medium` и `--large`.
+- **Тип:** `TSharedPropsSize`
+- **Значение по умолчанию:** `EInputTextPropsDefault.SIZE`
+- **Описание**: Предопределенные варианты размеров для значка. Добавляет модификаторы `--small`, `--medium` и `--large`.
 
 ::: details Пример
 <demo src="./demos/demo.props.size.vue"></demo>
@@ -195,7 +194,7 @@ import InputText from '@iwyfaf-vue-ui/ariadna-ui/InputText';
 ### `cssClass`
 
 - **Тип:** `string`
-- **Значение по умолчанию:** `ar-input-text`
+- **Значение по умолчанию:** `EInputTextPropsDefault.CSS_CLASS` 
 - **Описание**: Переопределяет CSS-класс корневого элемента и его потомков. Полезен, при 
 необходимости создавать более одного вида компонента.
 

@@ -12,8 +12,3 @@ export type TButtonPropsType = 'button' | 'submit' | 'reset';
  * Type for IconPosition prop.
  */
 export type TButtonPropsIconPosition = 'left' | 'right' | 'top' | 'bottom';
-
-/**
- * Type for Size prop.
- */
-export type TButtonPropsSize = 'small' | 'medium' | 'large';

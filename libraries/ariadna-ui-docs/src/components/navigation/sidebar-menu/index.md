@@ -44,12 +44,12 @@ import SidebarMenu from '@iwyfaf-vue-ui/ariadna-ui/SidebarMenu';
 
 ## Props
 
-| Prop                | Required | Type                                                               | Default            | Description                                                                                           |
-|---------------------| -------- |--------------------------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------|
-| `data`              | ✓        | `Array<TSidebarMenuItem>`                                          | `undefined`        | Массив элементов SidebarMenu.                                                                         |
-| `collapsed`         | -        | `boolean`                                                          | `false`            | Состояние свернутости меню (`collapsed`).                                                             |
-| `rememberExpanded`  | -        | `boolean`                                                          | `false`            | Указывает SidebarMenu, что ему нужно запомнить состояние раскрытия для каждого пункта меню отдельно.  |
-| `cssClass`          | -        | `string`                                                           | `ar-sidebar-menu`  | Переопределяет структуру CSS классов.                                                                 |
+| Prop                | Required | Type                                                               | Default                               | Description                                                                                           |
+|---------------------| -------- |--------------------------------------------------------------------|---------------------------------------|-------------------------------------------------------------------------------------------------------|
+| `data`              | ✓        | `Array<TSidebarMenuItem>`                                          | `undefined`                           | Массив элементов SidebarMenu.                                                                         |
+| `collapsed`         | -        | `boolean`                                                          | `false`                               | Состояние свернутости меню (`collapsed`).                                                             |
+| `rememberExpanded`  | -        | `boolean`                                                          | `false`                               | Указывает SidebarMenu, что ему нужно запомнить состояние раскрытия для каждого пункта меню отдельно.  |
+| `cssClass`          | -        | `string`                                                           | `ESidebarMenuPropsDefault.CSS_CLASS`  | Переопределяет структуру CSS классов.                                                                 |
 
 ### `data`
 
@@ -83,7 +83,7 @@ import SidebarMenu from '@iwyfaf-vue-ui/ariadna-ui/SidebarMenu';
 ### `cssClass`
 
 - **Тип:** `string`
-- **Значение по умолчанию:** `ar-sidebar-menu`
+- **Значение по умолчанию:** `ESidebarMenuPropsDefault.CSS_CLASS` 
 - **Описание**: Переопределяет CSS-класс корневого элемента и его потомков. Полезен, при необходимости создавать более
 одного вида компонента.
 

@@ -37,14 +37,14 @@ import Previewer from '@iwyfaf-vue-ui/ariadna-ui/Previewer';
 
 ## Props
 
-| Prop              | Required | Type                    | Default        | Description                                                                |
-|-------------------|----------|-------------------------|----------------|----------------------------------------------------------------------------|
-| `component`       | -        | `Component \| string`   | `undefined`    | Компонент, который будет отображаться в режиме предварительного просмотра. |
-| `componentSource` | -        | `string`                | `undefined`    | Исходный код компонента, который будет отображаться в виде чистого текста. |
-| `showCode`        | -        | `boolean`               | `false`        | Показывать ли блок кода сразу.                                             |
-| `showCodeToggle`  | -        | `boolean`               | `true`         | Показывать ли кнопку переключения кода.                                         |
-| `cssClass`        | -        | `string`                | `ar-previewer` | Переопределяет структуру CSS классов.                                      |
-| `modifier`        | -        | `TSharedPropsModifier`  | `undefined`    | Модификатор базового CSS-класса.                                  |
+| Prop              | Required | Type                    | Default                             | Description                                                                |
+|-------------------|----------|-------------------------|-------------------------------------|----------------------------------------------------------------------------|
+| `component`       | -        | `Component \| string`   | `undefined`                         | Компонент, который будет отображаться в режиме предварительного просмотра. |
+| `componentSource` | -        | `string`                | `undefined`                         | Исходный код компонента, который будет отображаться в виде чистого текста. |
+| `showCode`        | -        | `boolean`               | `false`                             | Показывать ли блок кода сразу.                                             |
+| `showCodeToggle`  | -        | `boolean`               | `true`                              | Показывать ли кнопку переключения кода.                                         |
+| `cssClass`        | -        | `string`                | `EPreviewerPropsDefault.CSS_CLASS`  | Переопределяет структуру CSS классов.                                      |
+| `modifier`        | -        | `TSharedPropsModifier`  | `undefined`                         | Модификатор базового CSS-класса.                                  |
 
 
 ### `component`

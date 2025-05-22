@@ -45,7 +45,7 @@
   * `tag` (тип: `TButtonPropsTag`, по умолчанию: `'button'`): HTML тег для рендеринга компонента.
   * `type` (тип: `TButtonPropsType`, по умолчанию: `'button'`): Тип кнопки (актуально только для тега `button`).
   * `iconPosition` (тип: `TButtonPropsIconPosition`, по умолчанию: `'left'`): Позиция иконки относительно текста.
-  * `size` (тип: `TButtonPropsSize`, по умолчанию: `'medium'`): Размер кнопки.
+  * `size` (тип: `TSharedPropsSize`, по умолчанию: `'medium'`): Размер кнопки.
   * `rounded` (тип: `boolean`, по умолчанию: `false`): Закругленные углы кнопки.
   * `textual` (тип: `boolean`, по умолчанию: `false`): Текстовый стиль кнопки.
   * `outlined` (тип: `boolean`, по умолчанию: `false`): Контурный стиль кнопки.

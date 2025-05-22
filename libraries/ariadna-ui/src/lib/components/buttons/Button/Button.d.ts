@@ -2,12 +2,12 @@ import type {
   TSharedPropsModifier,
   ClassComponent,
   GlobalComponentConstructor,
+  TSharedPropsSize,
 } from '../../../../types/component';
 import type { VNode } from 'vue';
 import type { EButtonPropsDefault } from './types/Button.enums';
 import type {
   TButtonPropsIconPosition,
-  TButtonPropsSize,
   TButtonPropsTag,
   TButtonPropsType,
 } from './types/Button.types';
@@ -54,13 +54,13 @@ export type TButtonProps = {
   /**
    * Predefined size variants for the button component.
    *
-   * @type TButtonPropsSize
+   * @type TSharedPropsSize
    * @default {@link EButtonPropsDefault.SIZE}
    * @example size="small"
    * @example size="medium"
    * @example size="large"
    */
-  size?: TButtonPropsSize;
+  size?: TSharedPropsSize;
 
   /**
    * The buttons are displayed with the largest radius of curvature.

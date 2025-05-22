@@ -2,10 +2,10 @@ import type {
   TSharedPropsModifier,
   ClassComponent,
   GlobalComponentConstructor,
+  TSharedPropsSize,
 } from '../../../../types/component';
 import type { VNode } from 'vue';
 import type { ESpinnerPropsDefault } from './types/Spinner.enums';
-import type { TSpinnerPropsSize } from './types/Spinner.types';
 
 /**
  * Component props definition.
@@ -14,13 +14,13 @@ export type TSpinnerProps = {
   /**
    * Predefined size variants for the spinner component.
    *
-   * @type TSpinnerPropsSize
+   * @type TSharedPropsSize
    * @default {@link ESpinnerPropsDefault.SIZE}
    * @example size="small"
    * @example size="medium"
    * @example size="large"
    */
-  size?: TSpinnerPropsSize;
+  size?: TSharedPropsSize;
 
   /**
    * Redefines the CSS class of the root element and its descendants.

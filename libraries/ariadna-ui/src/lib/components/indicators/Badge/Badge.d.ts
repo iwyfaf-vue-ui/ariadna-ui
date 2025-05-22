@@ -2,10 +2,10 @@ import type {
   TSharedPropsModifier,
   ClassComponent,
   GlobalComponentConstructor,
+  TSharedPropsSize,
 } from '../../../../types/component';
 import type { VNode } from 'vue';
 import type { EBadgePropsDefault } from './types/Badge.enums';
-import type { TBadgePropsSize } from './types/Badge.types';
 
 /**
  * Component props definition.
@@ -14,13 +14,13 @@ export type TBadgeProps = {
   /**
    * Predefined size variants for the badge component.
    *
-   * @type TBadgePropsSize
+   * @type TSharedPropsSize
    * @default {@link EBadgePropsDefault.SIZE}
    * @example size="small"
    * @example size="medium"
    * @example size="large"
    */
-  size?: TBadgePropsSize;
+  size?: TSharedPropsSize;
 
   /**
    * The badge displayed with the largest radius of curvature.

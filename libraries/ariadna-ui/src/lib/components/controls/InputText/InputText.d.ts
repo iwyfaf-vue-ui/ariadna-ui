@@ -2,11 +2,12 @@ import type {
   ClassComponent,
   GlobalComponentConstructor,
   TSharedPropsModifier,
+  TSharedPropsSize,
 } from '../../../../types/component';
 import type { Nullable } from '../../../../types/index';
 import type { VNode } from 'vue';
 import type { EInputTextPropsDefault } from './types/InputText.enums';
-import type { TInputTextPropsSize, TInputTextPropsType } from './types/InputText.types';
+import type { TInputTextPropsType } from './types/InputText.types';
 
 /**
  * Component props definition.
@@ -100,13 +101,13 @@ export type TInputTextProps = {
   /**
    * Predefined size variants for the component.
    *
-   * @type TInputTextPropsSize
+   * @type TSharedPropsSize
    * @default {@link EInputTextPropsDefault.SIZE}
    * @example size="small"
    * @example size="medium"
    * @example size="large"
    */
-  size?: TInputTextPropsSize;
+  size?: TSharedPropsSize;
 
   /**
    * Input valid state.
