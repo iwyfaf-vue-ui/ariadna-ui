@@ -3,7 +3,7 @@ import type { ComputedRef } from 'vue';
 /**
  * @description
  * Return type for the `useRadio` composable function.
- * Contains reactive properties and methods for Textarea component functionality.
+ * Contains reactive properties and methods for Radio component functionality.
  */
 export type TUseRadioReturn = {
   /**
