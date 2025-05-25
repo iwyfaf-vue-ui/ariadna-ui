@@ -17,6 +17,10 @@ const sidebarComponentsControls: DefaultTheme.SidebarItem = {
       text: 'Checkbox',
       link: '/components/controls/checkbox/',
     },
+    {
+      text: 'Radio',
+      link: '/components/controls/radio/',
+    },
   ],
 };
 

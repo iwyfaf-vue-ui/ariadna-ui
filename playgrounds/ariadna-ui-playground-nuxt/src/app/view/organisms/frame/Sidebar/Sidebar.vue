@@ -83,6 +83,10 @@ const data = ref<Array<TSidebarMenuItem>>([
             title: 'Checkbox',
             href: '/components/controls/checkbox',
           },
+          {
+            title: 'Radio',
+            href: '/components/controls/radio',
+          },
         ],
       },
       {
