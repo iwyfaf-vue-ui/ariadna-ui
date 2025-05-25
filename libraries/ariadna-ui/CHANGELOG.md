@@ -1,6 +1,31 @@
 # Changelog
 
 
+## v1.20.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.19.0...v1.20.0)
+
+### 🚀 Enhancements
+
+- Add Radio component ([2f45bb8](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/2f45bb8))
+
+### 🩹 Fixes
+
+- Correct color variable name in invalid state styles ([50f52da](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/50f52da))
+
+### 💅 Refactors
+
+- **test:** Fix .trim() usage with readFile async calls ([85cc32c](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/85cc32c))
+- Unify size prop types using TSharedPropsSize ([06fc0dd](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/06fc0dd))
+
+### 🏡 Chore
+
+- Bump ariadna-ui dependency to 1.19.0 ([f5fdb72](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/f5fdb72))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.19.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.18.0...v1.19.0)
