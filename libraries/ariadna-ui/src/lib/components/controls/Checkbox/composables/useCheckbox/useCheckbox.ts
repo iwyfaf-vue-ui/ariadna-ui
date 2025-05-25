@@ -1,11 +1,12 @@
 import { computed, type ModelRef, ref, useId } from 'vue';
 import type { TCheckboxEmits, TCheckboxProps } from '../../Checkbox';
+import type { TUseCheckboxReturn } from './useCheckbox.types';
 
 export default function useCheckbox(
   props: TCheckboxProps,
   emits: TCheckboxEmits,
   vModel: ModelRef<boolean | undefined, string, boolean | undefined, boolean | undefined>,
-) {
+): TUseCheckboxReturn {
   const id = useId();
   const focused = ref(false);
   const hovered = ref(false);
