@@ -1,6 +1,31 @@
 # Changelog
 
 
+## v1.20.1
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.20.0...v1.20.1)
+
+### 💅 Refactors
+
+- **Checkbox:** Rename TCheckboxPropsType to TCheckboxPropsPosition ([008b2b7](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/008b2b7))
+
+### 📖 Documentation
+
+- Fix documentation for useRadio return type ([d8fc3e2](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/d8fc3e2))
+- Add explicit return type for useCheckbox composable ([482559c](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/482559c))
+
+### 🏡 Chore
+
+- Bump @iwyfaf-vue-ui/ariadna-ui to 1.20.0 ([37bccd1](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/37bccd1))
+
+### ✅ Tests
+
+- Rename test case for custom slot rendering ([9c94eca](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/9c94eca))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.20.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.19.0...v1.20.0)
