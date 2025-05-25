@@ -336,7 +336,7 @@ describe('Checkbox.vue', () => {
       );
     });
 
-    it('default: Should render custom slot if provided.', async () => {
+    it('custom: Should render custom slot if provided.', async () => {
       const wrapper = mount(Checkbox, {
         props: {
           modelValue: false,
