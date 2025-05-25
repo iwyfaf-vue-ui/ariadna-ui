@@ -5,7 +5,7 @@ import type {
   TSharedPropsSize,
 } from '../../../../types/component';
 import type { VNode } from 'vue';
-import type { TCheckboxPropsType } from './types/Checkbox.types';
+import type { TCheckboxPropsPosition } from './types/Checkbox.types';
 import type { ECheckboxPropsDefault } from './types/Checkbox.enums';
 
 /**
@@ -64,11 +64,11 @@ export type TCheckboxProps = {
   /**
    * The position of the checkbox relative to its content.
    *
-   * @type TCheckboxPropsType
+   * @type TCheckboxPropsPosition
    * @default undefined
    * @example position="right"
    */
-  position?: TCheckboxPropsType;
+  position?: TCheckboxPropsPosition;
 
   /**
    * Custom checkbox implementation.

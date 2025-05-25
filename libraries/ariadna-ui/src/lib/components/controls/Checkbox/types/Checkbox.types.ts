@@ -1,4 +1,4 @@
 /**
  * Type for Position prop.
  */
-export type TCheckboxPropsType = 'left' | 'right';
+export type TCheckboxPropsPosition = 'left' | 'right';

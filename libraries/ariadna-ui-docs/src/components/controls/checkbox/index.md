@@ -33,21 +33,21 @@ import Checkbox from '@iwyfaf-vue-ui/ariadna-ui/Checkbox';
 
 ## Props
 
-| Prop          | Required | Type                   | Default                                                               | Description                                                      |
-|---------------|----------|------------------------|-----------------------------------------------------------------------|------------------------------------------------------------------|
-| `modelValue`  | ✓        | `boolean`              | `false`                                                               | Значение компонента.                                             |
-| `id`          | -        | `string`               | Случайно сгенерированная строка с помощью помощника Vue 3.5 `useId()` | Значение нативного атрибута `id` элемента `input`.               |
-| `name`        | -        | `string`               | `undefined`                                                           | Значение нативного атрибута `name` элемента `input`.             |
-| `disabled`    | -        | `boolean`              | `false`                                                               | Значение нативного атрибута `disabled` элемента `input`.         |
-| `size`        | -        | `TSharedPropsSize`     | `ECheckboxPropsDefault.SIZE`                                          | Предопределенные варианты размеров компонента.                   |
-| `position`    | -        | `TCheckboxPropsType`   | `undefined`                                                           | Положение чекбокса относительно его контента.                    |
-| `custom`      | -        | `boolean`              | `false`                                                               | Позволяет имплементировать кастомный `<input type="checkbox">`.  |
-| `valid`       | -        | `boolean`              | `false`                                                               | Состояние компонента `valid`.                                    |
-| `invalid`     | -        | `boolean`              | `false`                                                               | Состояние компонента `invalid`.                                  |
-| `errors`      | -        | `Array<string>`        | `[]`                                                                  | Массив ошибок. Используется в слоте `errors`.                    |
-| `cssClass`    | -        | `string`               | `ECheckboxPropsDefault.CSS_CLASS`                                     | Переопределяет структуру CSS классов.                            |
-| `modifier`    | -        | `TSharedPropsModifier` | `undefined`                                                           | Модификатор базового CSS-класса.                                 |
-| `ariaLabel`   | -        | `string`               | `undefined`                                                           | `aria-label` для лучшей доступности.                             |
+| Prop          | Required | Type                      | Default                                                               | Description                                                      |
+|---------------|----------|---------------------------|-----------------------------------------------------------------------|------------------------------------------------------------------|
+| `modelValue`  | ✓        | `boolean`                 | `false`                                                               | Значение компонента.                                             |
+| `id`          | -        | `string`                  | Случайно сгенерированная строка с помощью помощника Vue 3.5 `useId()` | Значение нативного атрибута `id` элемента `input`.               |
+| `name`        | -        | `string`                  | `undefined`                                                           | Значение нативного атрибута `name` элемента `input`.             |
+| `disabled`    | -        | `boolean`                 | `false`                                                               | Значение нативного атрибута `disabled` элемента `input`.         |
+| `size`        | -        | `TSharedPropsSize`        | `ECheckboxPropsDefault.SIZE`                                          | Предопределенные варианты размеров компонента.                   |
+| `position`    | -        | `TCheckboxPropsPosition`  | `undefined`                                                           | Положение чекбокса относительно его контента.                    |
+| `custom`      | -        | `boolean`                 | `false`                                                               | Позволяет имплементировать кастомный `<input type="checkbox">`.  |
+| `valid`       | -        | `boolean`                 | `false`                                                               | Состояние компонента `valid`.                                    |
+| `invalid`     | -        | `boolean`                 | `false`                                                               | Состояние компонента `invalid`.                                  |
+| `errors`      | -        | `Array<string>`           | `[]`                                                                  | Массив ошибок. Используется в слоте `errors`.                    |
+| `cssClass`    | -        | `string`                  | `ECheckboxPropsDefault.CSS_CLASS`                                     | Переопределяет структуру CSS классов.                            |
+| `modifier`    | -        | `TSharedPropsModifier`    | `undefined`                                                           | Модификатор базового CSS-класса.                                 |
+| `ariaLabel`   | -        | `string`                  | `undefined`                                                           | `aria-label` для лучшей доступности.                             |
 
 ### `modelValue`
  
@@ -102,7 +102,7 @@ import Checkbox from '@iwyfaf-vue-ui/ariadna-ui/Checkbox';
 
 ### `position`
 
-- **Тип:** `TCheckboxPropsType`
+- **Тип:** `TCheckboxPropsPosition`
 - **Значение по умолчанию:** `undefined`
 - **Описание**: Положение чекбокса относительно его контента. Добавляет модификаторы `--left` или `--right`.
 
