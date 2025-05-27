@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.21.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.20.1...v1.21.0)
+
+### 🚀 Enhancements
+
+- Add Rating component ([5996db9](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/5996db9))
+
+### 🏡 Chore
+
+- Bump ariadna-ui to version 1.20.1 in docs ([9a61550](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/9a61550))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.20.1
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.20.0...v1.20.1)
