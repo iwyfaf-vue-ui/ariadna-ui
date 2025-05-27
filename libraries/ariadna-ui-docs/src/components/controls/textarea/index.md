@@ -72,8 +72,8 @@ import Textarea from '@iwyfaf-vue-ui/ariadna-ui/Textarea';
 
 - **Тип:** `string`
 - **Значение по умолчанию:** `undefined`
-- **Описание**: Используется для вывода элемента `label`. Реализует нативную браузерную связку `textarea` элемента с 
-элементом `label`. Когда такая связь установлена, клик по `label` активирует `textarea`.
+- **Описание**: Используется для отображения элемента `label`. Реализует нативную браузерную связку `textarea` элемента
+с элементом `label`. Когда такая связь установлена, клик по `label` активирует `textarea`.
 
 ::: details Пример
 <demo src="./demos/demo.props.label.vue"></demo>
@@ -222,14 +222,14 @@ import Textarea from '@iwyfaf-vue-ui/ariadna-ui/Textarea';
 
 ## Slots
 
-| Slot          | Description                                       |
-|---------------|---------------------------------------------------|
-| `placeholder` | Используется для вывода кастомного `placeholder`. |
-| `errors`      | Используется для вывода ошибок `textarea` поля.   |
+| Slot          | Description                                            |
+|---------------|--------------------------------------------------------|
+| `placeholder` | Используется для отображения кастомного `placeholder`. |
+| `errors`      | Используется для отображения ошибок `textarea` поля.   |
 
 ### `placeholder`
 
-- **Описание:** Используется для вывода кастомного `placeholder`. Если указан, то [`props.placeholder`](#placeholder)
+- **Описание:** Используется для отображения кастомного `placeholder`. Если указан, то [`props.placeholder`](#placeholder)
 будет проигнорирован.
 - **Тип:** `() => VNode[]`
 
@@ -239,7 +239,7 @@ import Textarea from '@iwyfaf-vue-ui/ariadna-ui/Textarea';
 
 ### `errors`
 
-- **Описание:** Используется для вывода ошибок `textarea` поля.
+- **Описание:** Используется для отображения ошибок компонента.
 - **Тип:** `(props: { errors: Array<string> }) => VNode[]`
 
 ::: details Пример

@@ -101,7 +101,7 @@ import SidebarMenu from '@iwyfaf-vue-ui/ariadna-ui/SidebarMenu';
 
 ### `header`
 
-- **Описание:** Используется для вывода шапки SidebarMenu.
+- **Описание:** Используется для отображения шапки SidebarMenu.
 - **Тип:** `() => VNode[]`
 
 ::: details Пример
@@ -110,7 +110,7 @@ import SidebarMenu from '@iwyfaf-vue-ui/ariadna-ui/SidebarMenu';
 
 ### `Footer`
 
-- **Описание:** Используется для вывода шапки SidebarMenu.
+- **Описание:** Используется для отображения шапки SidebarMenu.
 - **Тип:** `() => VNode[]`
 
 ::: details Пример
