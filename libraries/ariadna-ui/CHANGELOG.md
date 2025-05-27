@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v1.21.1
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.21.0...v1.21.1)
+
+### 📖 Documentation
+
+- Improve slot descriptions for clarity ([06234bb](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/06234bb))
+- Correct errors prop type in component typings ([de23423](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/de23423))
+
+### 🏡 Chore
+
+- Bump ariadna-ui dependency to 1.21.0 ([195b68a](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/195b68a))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.21.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.20.1...v1.21.0)
