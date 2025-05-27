@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.20.1",
+  "version": "1.20.2-beta.1",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -78,6 +78,10 @@
       "import": "./dist/lib/components/controls/Radio/Radio.esm.js",
       "types": "./dist/lib/components/controls/Radio/Radio.d.ts"
     },
+    "./Rating": {
+      "import": "./dist/lib/components/controls/Rating/Rating.esm.js",
+      "types": "./dist/lib/components/controls/Rating/Rating.d.ts"
+    },
     "./Textarea": {
       "import": "./dist/lib/components/controls/Textarea/Textarea.esm.js",
       "types": "./dist/lib/components/controls/Textarea/Textarea.d.ts"
@@ -151,6 +155,9 @@
       ],
       "Radio": [
         "./dist/lib/components/controls/Radio/Radio.d.ts"
+      ],
+      "Rating": [
+        "./dist/lib/components/controls/Rating/Rating.d.ts"
       ],
       "Textarea": [
         "./dist/lib/components/controls/Textarea/Textarea.d.ts"

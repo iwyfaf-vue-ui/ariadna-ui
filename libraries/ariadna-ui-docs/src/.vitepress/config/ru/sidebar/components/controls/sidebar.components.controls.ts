@@ -21,6 +21,10 @@ const sidebarComponentsControls: DefaultTheme.SidebarItem = {
       text: 'Radio',
       link: '/components/controls/radio/',
     },
+    {
+      text: 'Rating',
+      link: '/components/controls/rating/',
+    },
   ],
 };
 
