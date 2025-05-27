@@ -172,7 +172,7 @@ export type TTextareaSlots = {
   /**
    * Component error messages.
    *
-   * @param {boolean} props.errors - An array of component error messages.
+   * @param {Array<string>} props.errors - An array of component error messages.
    * @returns {VNode[]}
    */
   errors?(props: { errors: Array<string> }): VNode[];
