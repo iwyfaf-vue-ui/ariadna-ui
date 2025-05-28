@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.22.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.21.1...v1.22.0)
+
+### 🚀 Enhancements
+
+- Add Card component ([4c6da0a](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/4c6da0a))
+
+### 🏡 Chore
+
+- Update ariadna-ui to version 1.21.1 ([5a5f29e](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/5a5f29e))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.21.1
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.21.0...v1.21.1)
