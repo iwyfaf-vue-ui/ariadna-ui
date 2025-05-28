@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.21.1",
+  "version": "1.21.2-beta.1",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -102,6 +102,10 @@
       "import": "./dist/lib/components/navigation/SidebarMenu/SidebarMenu.esm.js",
       "types": "./dist/lib/components/navigation/SidebarMenu/SidebarMenu.d.ts"
     },
+    "./Card": {
+      "import": "./dist/lib/components/panels/Card/Card.esm.js",
+      "types": "./dist/lib/components/panels/Card/Card.d.ts"
+    },
     "./RenderAttributeOnce": {
       "import": "./dist/lib/directives/attributes/RenderAttributeOnce/RenderAttributeOnce.esm.js",
       "types": "./dist/lib/directives/attributes/RenderAttributeOnce/RenderAttributeOnce.d.ts"
@@ -173,6 +177,9 @@
       ],
       "SidebarMenu": [
         "./dist/lib/components/navigation/SidebarMenu/SidebarMenu.d.ts"
+      ],
+      "Card": [
+        "./dist/lib/components/panels/Card/Card.d.ts"
       ],
       "RenderAttributeOnce": [
         "./dist/lib/directives/attributes/RenderAttributeOnce/RenderAttributeOnce.d.ts"
