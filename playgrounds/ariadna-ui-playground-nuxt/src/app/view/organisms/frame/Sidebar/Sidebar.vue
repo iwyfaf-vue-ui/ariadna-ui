@@ -143,6 +143,10 @@ const data = ref<Array<TSidebarMenuItem>>([
         title: 'Elements',
         children: [
           {
+            title: 'useDragViewport',
+            href: '/composables/elements/useDragViewport',
+          },
+          {
             title: 'usePosition',
             href: '/composables/elements/usePosition',
           },

@@ -9,9 +9,9 @@
   // .app-root__main
   &__main {
     position: relative;
-    top: var(--header-height);
     display: flex;
     min-height: 100vh;
+    padding-top: var(--header-height);
 
     // .app-root__main-content
     &-content {
