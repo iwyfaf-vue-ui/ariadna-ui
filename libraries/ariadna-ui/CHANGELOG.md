@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.23.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.22.0...v1.23.0)
+
+### 🚀 Enhancements
+
+- Add usePosition composable ([3364f5d](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/3364f5d))
+
+### 🏡 Chore
+
+- Bump ariadna-ui to version 1.22.0 ([7092266](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/7092266))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.22.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.21.1...v1.22.0)
