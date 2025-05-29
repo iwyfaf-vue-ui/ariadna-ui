@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.24.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.23.0...v1.24.0)
+
+### 🚀 Enhancements
+
+- **InputText:** Add minlength and maxlength props ([a4d436c](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/a4d436c))
+
+### 🏡 Chore
+
+- Bump ariadna-ui to version 1.23.0 ([0dd4856](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/0dd4856))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.23.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.22.0...v1.23.0)
