@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.25.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.24.0...v1.25.0)
+
+### 🚀 Enhancements
+
+- Add useDragViewport composable ([8db0ee5](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/8db0ee5))
+
+### 🏡 Chore
+
+- Bump ariadna-ui to v1.24.0 in docs package ([63b972c](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/63b972c))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.24.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.23.0...v1.24.0)
