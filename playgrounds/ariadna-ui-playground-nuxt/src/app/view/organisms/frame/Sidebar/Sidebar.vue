@@ -136,6 +136,21 @@ const data = ref<Array<TSidebarMenuItem>>([
     ],
   },
   {
+    title: 'Composables',
+    expand: true,
+    children: [
+      {
+        title: 'Elements',
+        children: [
+          {
+            title: 'usePosition',
+            href: '/composables/elements/usePosition',
+          },
+        ],
+      },
+    ],
+  },
+  {
     title: 'Directives',
     expand: true,
     children: [

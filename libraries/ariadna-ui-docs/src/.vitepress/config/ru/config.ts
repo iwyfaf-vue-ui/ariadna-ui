@@ -1,6 +1,7 @@
 import { LocaleConfig } from 'vitepress';
 import { DefaultTheme } from 'vitepress/theme';
 import sidebarComponents from './sidebar/components/sidebar.components';
+import sidebarComposables from './sidebar/composables/sidebar.composables';
 import sidebarDirectives from './sidebar/directives/sidebar.directives';
 import sidebarUtilities from './sidebar/utilities/sidebar.utilities';
 
@@ -17,6 +18,7 @@ export const config: LocaleConfig<DefaultTheme.Config> = {
     themeConfig: {
       sidebar: {
         ...sidebarComponents,
+        ...sidebarComposables,
         ...sidebarDirectives,
         ...sidebarUtilities,
       },

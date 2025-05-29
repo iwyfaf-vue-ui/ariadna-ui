@@ -26,6 +26,12 @@ const components: TFileTree = scanFiles(
   ['components', 'composables', 'core', 'directive', 'prompts', 'providers', 'tests', 'types'],
 );
 
+const composables: TFileTree = scanFiles(
+  './src/lib/composables',
+  ['.test.ts'],
+  ['core', 'prompts', 'tests', 'types'],
+);
+
 const directives: TFileTree = scanFiles(
   './src/lib/directives',
   ['.test.ts'],
@@ -39,21 +45,23 @@ const utilities: TFileTree = scanFiles(
 );
 
 const dynamicFileNames = Object.fromEntries(
-  Object.entries({ ...components, ...directives, ...utilities }).map(([_, value]) => {
-    const file = value[0];
-    const fileName = file.name.split('.')[0];
-    const isVue = value.some((file) => file.name.endsWith('.vue'));
-    const isTS = value.some((file) => file.name.endsWith('.ts'));
+  Object.entries({ ...components, ...composables, ...directives, ...utilities }).map(
+    ([_, value]) => {
+      const file = value[0];
+      const fileName = file.name.split('.')[0];
+      const isVue = value.some((file) => file.name.endsWith('.vue'));
+      const isTS = value.some((file) => file.name.endsWith('.ts'));
 
-    let ext: ETypes;
-    if (isVue) {
-      ext = ETypes.VUE;
-    } else if (isTS) {
-      ext = ETypes.TS;
-    }
+      let ext: ETypes;
+      if (isVue) {
+        ext = ETypes.VUE;
+      } else if (isTS) {
+        ext = ETypes.TS;
+      }
 
-    return [fileName, { path: file.path.replace('src/', ''), name: fileName, ext: ext }];
-  }),
+      return [fileName, { path: file.path.replace('src/', ''), name: fileName, ext: ext }];
+    },
+  ),
 );
 
 export const fileNames = {

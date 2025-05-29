@@ -22,9 +22,9 @@ export default defineConfig({
 
     nav: [
       { text: 'Компоненты', link: '/components/' },
+      { text: 'Composables', link: '/composables/' },
       { text: 'Директивы', link: '/directives/' },
       { text: 'Утилиты', link: '/utilities/' },
-      { text: 'Стили', link: '/styles/' },
     ],
 
     outline: 'deep',

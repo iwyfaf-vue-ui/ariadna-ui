@@ -45,11 +45,11 @@ const updatePackage = () => {
     ['components', 'composables', 'core', 'directive', 'prompts', 'providers', 'tests', 'types'],
   );
 
-  // const composables = scanFiles(
-  //   './src/lib/composables',
-  //   ['.test.ts', '.d.ts'],
-  //   ['composables', 'test-data', 'core', 'shared', 'directive'],
-  // );
+  const composables = scanFiles(
+    './src/lib/composables',
+    ['.test.ts'],
+    ['core', 'prompts', 'tests', 'types'],
+  );
 
   const directives = scanFiles(
     './src/lib/directives',
@@ -64,30 +64,34 @@ const updatePackage = () => {
   );
 
   const typesVersions = Object.fromEntries(
-    Object.entries({ ...components, ...directives, ...utilities }).map(([_, value]) => {
-      const file = value.find(
-        (file) => file.name.includes('.d.ts') || file.name.includes('.types.ts'),
-      );
+    Object.entries({ ...components, ...composables, ...directives, ...utilities }).map(
+      ([_, value]) => {
+        const file = value.find(
+          (file) => file.name.includes('.d.ts') || file.name.includes('.types.ts'),
+        );
 
-      return [file.name.split('.')[0], [`${file.path}/${file.name}`.replace('src', './dist')]];
-    }),
+        return [file.name.split('.')[0], [`${file.path}/${file.name}`.replace('src', './dist')]];
+      },
+    ),
   );
 
   const exports = Object.fromEntries(
-    Object.entries({ ...components, ...directives, ...utilities }).map(([_, value]) => {
-      const file = value.find(
-        (file) => file.name.includes('.d.ts') || file.name.includes('.types.ts'),
-      );
-      const fileName = file.name.split('.')[0];
+    Object.entries({ ...components, ...composables, ...directives, ...utilities }).map(
+      ([_, value]) => {
+        const file = value.find(
+          (file) => file.name.includes('.d.ts') || file.name.includes('.types.ts'),
+        );
+        const fileName = file.name.split('.')[0];
 
-      return [
-        `./${fileName}`,
-        {
-          import: `${file.path}/${fileName}.esm.js`.replace('src', './dist'),
-          types: `${file.path}/${file.name}`.replace('src', './dist'),
-        },
-      ];
-    }),
+        return [
+          `./${fileName}`,
+          {
+            import: `${file.path}/${fileName}.esm.js`.replace('src', './dist'),
+            types: `${file.path}/${file.name}`.replace('src', './dist'),
+          },
+        ];
+      },
+    ),
   );
 
   // Update the `package.json` file with the new `typesVersions` and `exports` fields
