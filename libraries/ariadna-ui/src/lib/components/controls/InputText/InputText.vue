@@ -11,6 +11,8 @@
         :id="uniqueID"
         :placeholder="defaultPlaceholder"
         :autocomplete="props.autocomplete ? 'on' : 'off'"
+        :minlength="minlength"
+        :maxlength="maxlength"
         :disabled="props.disabled"
         :readonly="props.readonly"
         :name="props.name"

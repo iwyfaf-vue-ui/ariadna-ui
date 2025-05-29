@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.23.0",
+  "version": "1.23.1-beta.0",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",

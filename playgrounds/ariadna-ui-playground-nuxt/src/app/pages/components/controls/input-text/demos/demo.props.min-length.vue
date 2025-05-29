@@ -1,6 +1,5 @@
 <template>
-  <InputText v-model="inputTextValue" label="Default id" />
-  <InputText v-model="inputTextValue" label="Custom id" id="custom-id" />
+  <InputText v-model="inputTextValue" label="MinLength is 5" minlength="5" />
 </template>
 
 <script setup lang="ts">

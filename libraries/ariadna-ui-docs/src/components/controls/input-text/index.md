@@ -39,23 +39,25 @@ import InputText from '@iwyfaf-vue-ui/ariadna-ui/InputText';
 
 ## Props
 
-| Prop           | Required | Type                   | Default                                                               | Description                                                  |
-|----------------|----------|------------------------|-----------------------------------------------------------------------|--------------------------------------------------------------|
-| `modelValue`   | ✓        | `Nullable<string>`     | `null`                                                                | Значение компонента.                                         |
-| `label`        | -        | `string`               | `undefined`                                                           | Текст элемента `label`.                                      |
-| `type`         | -        | `TInputTextPropsType`  | `EInputTextPropsDefault.TYPE`                                         | Значение нативного атрибута `type` элемента `input`.         |
-| `id`           | -        | `string`               | Случайно сгенерированная строка с помощью помощника Vue 3.5 `useId()` | Значение нативного атрибута `id` элемента `input`.           |
-| `placeholder`  | -        | `string`               | `undefined`                                                           | Значение нативного атрибута `placeholder` элемента `input`.  |
-| `name`         | -        | `string`               | `undefined`                                                           | Значение нативного атрибута `name` элемента `input`.         |
-| `autocomplete` | -        | `boolean`              | `false`                                                               | Значение нативного атрибута `autocomplete` элемента `input`. |
-| `disabled`     | -        | `boolean`              | `false`                                                               | Значение нативного атрибута `disabled` элемента `input`.     |
-| `readonly`     | -        | `boolean`              | `false`                                                               | Значение нативного атрибута `readonly` элемента `input`.     |
-| `size`         | -        | `TSharedPropsSize`     | `EInputTextPropsDefault.SIZE`                                         | Предопределенные варианты размеров для элемента `input`.     |
-| `valid`        | -        | `boolean`              | `false`                                                               | Состояние компонента `valid`.                                |
-| `invalid`      | -        | `boolean`              | `false`                                                               | Состояние компонента `invalid`.                              |
-| `errors`       | -        | `Array<string>`        | `[]`                                                                  | Массив ошибок. Используется в слоте `errors`.                |
-| `cssClass`     | -        | `string`               | `EInputTextPropsDefault.CSS_CLASS`                                    | Переопределяет структуру CSS классов.                        |
-| `modifier`     | -        | `TSharedPropsModifier` | `undefined`                                                           | Модификатор базового CSS-класса.                             |
+| Prop           | Required | Type                   | Default                                                               | Description                                                                                                                                     |
+|----------------|----------|------------------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| `modelValue`   | ✓        | `Nullable<string>`     | `null`                                                                | Значение компонента.                                                                                                                            |
+| `label`        | -        | `string`               | `undefined`                                                           | Текст элемента `label`.                                                                                                                         |
+| `type`         | -        | `TInputTextPropsType`  | `EInputTextPropsDefault.TYPE`                                         | Значение нативного атрибута `type` элемента `input`.                                                                                            |
+| `id`           | -        | `string`               | Случайно сгенерированная строка с помощью помощника Vue 3.5 `useId()` | Значение нативного атрибута `id` элемента `input`.                                                                                              |
+| `placeholder`  | -        | `string`               | `undefined`                                                           | Значение нативного атрибута `placeholder` элемента `input`.                                                                                     |
+| `name`         | -        | `string`               | `undefined`                                                           | Значение нативного атрибута `name` элемента `input`.                                                                                            |
+| `minlength`    | -        | `Numberish`            | `undefined`                                                           | Значение нативного атрибута `minlength` элемента `input` - определяет минимальную длину строки, которую пользователь может ввести в `<input>`.  |
+| `maxlength`    | -        | `Numberish`            | `undefined`                                                           | Значение нативного атрибута `minlength` элемента `input` - определяет максимальную длину строки, которую пользователь может ввести в `<input>`. |
+| `autocomplete` | -        | `boolean`              | `false`                                                               | Значение нативного атрибута `autocomplete` элемента `input`.                                                                                    |
+| `disabled`     | -        | `boolean`              | `false`                                                               | Значение нативного атрибута `disabled` элемента `input`.                                                                                        |
+| `readonly`     | -        | `boolean`              | `false`                                                               | Значение нативного атрибута `readonly` элемента `input`.                                                                                        |
+| `size`         | -        | `TSharedPropsSize`     | `EInputTextPropsDefault.SIZE`                                         | Предопределенные варианты размеров для элемента `input`.                                                                                        |
+| `valid`        | -        | `boolean`              | `false`                                                               | Состояние компонента `valid`.                                                                                                                   |
+| `invalid`      | -        | `boolean`              | `false`                                                               | Состояние компонента `invalid`.                                                                                                                 |
+| `errors`       | -        | `Array<string>`        | `[]`                                                                  | Массив ошибок. Используется в слоте `errors`.                                                                                                   |
+| `cssClass`     | -        | `string`               | `EInputTextPropsDefault.CSS_CLASS`                                    | Переопределяет структуру CSS классов.                                                                                                           |
+| `modifier`     | -        | `TSharedPropsModifier` | `undefined`                                                           | Модификатор базового CSS-класса.                                                                                                                |
 
 ### `modelValue`
 
@@ -116,6 +118,28 @@ import InputText from '@iwyfaf-vue-ui/ariadna-ui/InputText';
 
 ::: details Пример
 <demo src="./demos/demo.props.name.vue"></demo>
+:::
+
+### `minlength`
+
+- **Тип:** `Numberish`
+- **Значение по умолчанию:** `undefined`
+- **Описание**: Значение нативного атрибута `minlength` элемента `input` - определяет минимальную длину строки, которую
+пользователь может ввести в `<input>`.
+
+::: details Пример
+<demo src="./demos/demo.props.min-length.vue"></demo>
+:::
+
+### `maxlength`
+
+- **Тип:** `Numberish`
+- **Значение по умолчанию:** `undefined`
+- **Описание**: Значение нативного атрибута `maxlength` элемента `input` - определяет максимальную длину строки,
+которую пользователь может ввести в `<input>`.
+
+::: details Пример
+<demo src="./demos/demo.props.max-length.vue"></demo>
 :::
 
 ### `autocomplete`

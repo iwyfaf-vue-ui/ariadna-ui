@@ -119,6 +119,46 @@
     </template>
   </Previewer>
 
+  <Previewer :component="DemoPropsMinLength" :component-source="DemoPropsMinLengthSource">
+    <template #header> Prop MinLength </template>
+
+    <template #showCodeToggle="{ toggle, isShown }">
+      <Button @click="toggle">
+        {{ isShown ? 'Скрыть' : 'Показать' }}
+      </Button>
+    </template>
+
+    <template #copy="{ handler, isCopied }">
+      <Button @click="handler" :disabled="isCopied">
+        {{ isCopied ? 'Скопировано!' : 'Копировать' }}
+      </Button>
+    </template>
+
+    <template #source="{ source }">
+      <pre v-code-highlight><code>{{ source }}</code></pre>
+    </template>
+  </Previewer>
+
+  <Previewer :component="DemoPropsMaxLength" :component-source="DemoPropsMaxLengthSource">
+    <template #header> Prop MaxLength </template>
+
+    <template #showCodeToggle="{ toggle, isShown }">
+      <Button @click="toggle">
+        {{ isShown ? 'Скрыть' : 'Показать' }}
+      </Button>
+    </template>
+
+    <template #copy="{ handler, isCopied }">
+      <Button @click="handler" :disabled="isCopied">
+        {{ isCopied ? 'Скопировано!' : 'Копировать' }}
+      </Button>
+    </template>
+
+    <template #source="{ source }">
+      <pre v-code-highlight><code>{{ source }}</code></pre>
+    </template>
+  </Previewer>
+
   <Previewer :component="DemoPropsAutocomplete" :component-source="DemoPropsAutocompleteSource">
     <template #header> Prop Autocomplete </template>
 
@@ -358,6 +398,10 @@ import DemoPropsPlaceholder from './demos/demo.props.placeholder.vue';
 import DemoPropsPlaceholderSource from './demos/demo.props.placeholder.vue?raw';
 import DemoPropsName from './demos/demo.props.name.vue';
 import DemoPropsNameSource from './demos/demo.props.name.vue?raw';
+import DemoPropsMinLength from './demos/demo.props.min-length.vue';
+import DemoPropsMinLengthSource from './demos/demo.props.min-length.vue?raw';
+import DemoPropsMaxLength from './demos/demo.props.max-length.vue';
+import DemoPropsMaxLengthSource from './demos/demo.props.max-length.vue?raw';
 import DemoPropsAutocomplete from './demos/demo.props.autocomplete.vue';
 import DemoPropsAutocompleteSource from './demos/demo.props.autocomplete.vue?raw';
 import DemoPropsDisabled from './demos/demo.props.disabled.vue';

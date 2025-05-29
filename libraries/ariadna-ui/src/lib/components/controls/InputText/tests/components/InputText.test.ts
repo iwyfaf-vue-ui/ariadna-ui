@@ -162,6 +162,50 @@ describe('InputText.vue', () => {
       ).toBe(defaultMock.nameProp);
     });
 
+    it('minlength: Should validate minlength correct.', async () => {
+      const wrapper = mount(InputText, {
+        props: {
+          modelValue: null,
+          minlength: 5,
+        },
+      });
+
+      const input = wrapper.find(defaultMock.inputEl);
+      const inputEl = input.element as HTMLInputElement;
+
+      await input.setValue('123');
+
+      expect(inputEl.validity.tooShort).toBe(true);
+      expect(inputEl.checkValidity()).toBe(false);
+
+      // Вводим строку, удовлетворяющую minlength
+      await input.setValue('12345');
+      expect(inputEl.validity.tooShort).toBe(false);
+      expect(inputEl.checkValidity()).toBe(true);
+    });
+
+    it('maxlength: Should validate maxlength correct.', async () => {
+      const wrapper = mount(InputText, {
+        props: {
+          modelValue: null,
+          maxlength: 5,
+        },
+      });
+
+      const input = wrapper.find(defaultMock.inputEl);
+      const inputEl = input.element as HTMLInputElement;
+
+      await input.setValue('123456');
+
+      expect(inputEl.validity.tooLong).toBe(true);
+      expect(inputEl.checkValidity()).toBe(false);
+
+      // Вводим строку, удовлетворяющую maxlength
+      await input.setValue('12345');
+      expect(inputEl.validity.tooShort).toBe(false);
+      expect(inputEl.checkValidity()).toBe(true);
+    });
+
     it('autocomplete: Should set input autocomplete from prop.', () => {
       const wrapper = mount(InputText, {
         props: {

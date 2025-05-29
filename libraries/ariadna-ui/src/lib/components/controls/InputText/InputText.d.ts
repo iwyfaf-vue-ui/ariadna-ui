@@ -4,7 +4,7 @@ import type {
   TSharedPropsModifier,
   TSharedPropsSize,
 } from '../../../../types/component';
-import type { Nullable } from '../../../../types/index';
+import type { Nullable, Numberish } from '../../../../types/index';
 import type { VNode } from 'vue';
 import type { EInputTextPropsDefault } from './types/InputText.enums';
 import type { TInputTextPropsType } from './types/InputText.types';
@@ -70,6 +70,24 @@ export type TInputTextProps = {
    * @example name="username"
    */
   name?: string;
+
+  /**
+   * Input native minlength attribute - defines the minimum string length that the user can enter into an `<input>`.
+   *
+   * @type Numberish
+   * @default undefined
+   * @example max-length="10"
+   */
+  minlength?: Numberish;
+
+  /**
+   * Input native maxlength attribute - defines the maximum string length that the user can enter into an `<input>`.
+   *
+   * @type Numberish
+   * @default undefined
+   * @example max-length="10"
+   */
+  maxlength?: Numberish;
 
   /**
    * Input native autocomplete attribute.
