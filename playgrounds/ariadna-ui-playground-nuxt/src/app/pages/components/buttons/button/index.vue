@@ -100,7 +100,7 @@
   </Previewer>
 
   <Previewer :component="DemoPropsTextual" :component-source="DemoPropsTextualSource">
-    <template #header> Prop Rounded </template>
+    <template #header> Prop Textual </template>
 
     <template #showCodeToggle="{ toggle, isShown }">
       <Button @click="toggle">
