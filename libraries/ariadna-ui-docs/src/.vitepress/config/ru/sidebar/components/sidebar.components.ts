@@ -4,6 +4,7 @@ import sidebarComponentsControls from './controls/sidebar.components.controls';
 import sidebarComponentsIndicators from './indicators/sidebar.components.indicators';
 import sidebarComponentsNavigation from './navigation/sidebar.components.navigation';
 import sidebarComponentsPanels from './panels/sidebar.components.panels';
+import sidebarComponentsOverlays from './overlays/sidebar.components.overlays';
 import sidebarComponentsMisc from './misc/sidebar.components.misc';
 
 const sidebarComponents: DefaultTheme.SidebarItem[] | DefaultTheme.SidebarMulti = {
@@ -13,6 +14,7 @@ const sidebarComponents: DefaultTheme.SidebarItem[] | DefaultTheme.SidebarMulti 
     sidebarComponentsControls,
     sidebarComponentsNavigation,
     sidebarComponentsPanels,
+    sidebarComponentsOverlays,
     sidebarComponentsMisc,
   ],
 };

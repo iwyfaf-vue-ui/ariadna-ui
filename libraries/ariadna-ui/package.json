@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.25.0",
+  "version": "1.25.1-beta.0",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -102,6 +102,10 @@
       "import": "./dist/lib/components/navigation/SidebarMenu/SidebarMenu.esm.js",
       "types": "./dist/lib/components/navigation/SidebarMenu/SidebarMenu.d.ts"
     },
+    "./Dropbox": {
+      "import": "./dist/lib/components/overlays/Dropbox/Dropbox.esm.js",
+      "types": "./dist/lib/components/overlays/Dropbox/Dropbox.d.ts"
+    },
     "./Card": {
       "import": "./dist/lib/components/panels/Card/Card.esm.js",
       "types": "./dist/lib/components/panels/Card/Card.d.ts"
@@ -185,6 +189,9 @@
       ],
       "SidebarMenu": [
         "./dist/lib/components/navigation/SidebarMenu/SidebarMenu.d.ts"
+      ],
+      "Dropbox": [
+        "./dist/lib/components/overlays/Dropbox/Dropbox.d.ts"
       ],
       "Card": [
         "./dist/lib/components/panels/Card/Card.d.ts"

@@ -125,6 +125,15 @@ const data = ref<Array<TSidebarMenuItem>>([
         ],
       },
       {
+        title: 'Overlays',
+        children: [
+          {
+            title: 'Dropbox',
+            href: '/components/overlays/dropbox',
+          },
+        ],
+      },
+      {
         title: 'Misc',
         children: [
           {
