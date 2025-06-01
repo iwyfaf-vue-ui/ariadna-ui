@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.26.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.25.0...v1.26.0)
+
+### 🚀 Enhancements
+
+- Add Dropbox component ([07902fe](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/07902fe))
+
+### 🏡 Chore
+
+- Update ariadna-ui to v1.25.0 in docs ([585b37b](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/585b37b))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.25.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.24.0...v1.25.0)
