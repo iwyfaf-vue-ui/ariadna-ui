@@ -1,6 +1,30 @@
 # Changelog
 
 
+## v1.27.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.26.0...v1.27.0)
+
+### 🚀 Enhancements
+
+- Add Dialog component ([8cb8572](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/8cb8572))
+
+### 📖 Documentation
+
+- Correct Previewer header for prop section ([9d29276](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/9d29276))
+
+### 🏡 Chore
+
+- Bump ariadna-ui to version 1.26.0 ([ee7bae6](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/ee7bae6))
+
+### ✅ Tests
+
+- Fix component name in Dropbox.vue test suite ([71e8308](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/71e8308))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.26.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.25.0...v1.26.0)
