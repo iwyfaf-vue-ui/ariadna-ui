@@ -5,7 +5,7 @@ import { DropboxSelectorTestData } from '../test-data/Dropbox.selector.test-data
 
 const defaultMock = new DropboxSelectorTestData();
 
-describe('Checkbox.vue', () => {
+describe('Dropbox.vue', () => {
   describe('Basic render', () => {
     const wrapper = mount(Dropbox, {
       props: {
