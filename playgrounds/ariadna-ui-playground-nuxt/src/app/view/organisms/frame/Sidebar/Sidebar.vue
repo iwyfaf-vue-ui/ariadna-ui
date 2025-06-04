@@ -128,6 +128,10 @@ const data = ref<Array<TSidebarMenuItem>>([
         title: 'Overlays',
         children: [
           {
+            title: 'Dialog',
+            href: '/components/overlays/dialog',
+          },
+          {
             title: 'Dropbox',
             href: '/components/overlays/dropbox',
           },

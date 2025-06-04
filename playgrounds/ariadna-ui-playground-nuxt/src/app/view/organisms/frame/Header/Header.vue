@@ -50,7 +50,7 @@ const headerClasses = computed(() => {
   width: 100%;
   min-width: 320px;
   padding: 0 var(--indent-margin-xlarge);
-  z-index: 9999;
+  z-index: 9000;
   background-color: var(--color-background-default-strong);
   border-bottom: 1px solid var(--color-border-default);
 

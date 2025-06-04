@@ -208,83 +208,99 @@ import Dropbox from '@iwyfaf-vue-ui/ariadna-ui/Dropbox';
 
 ::: details Пример расстановки стилей
 ```scss
-$dropbox: '.ar-dropbox';
+$dialog: '.ar-dialog';
 
-#{$dropbox} {
-  // .ar-dropbox--theme
+#{$dialog} {
+  // .ar-dialog--theme
   &--theme {
-    // .ar-dropbox--theme .ar-dropbox__input
-    #{$dropbox}__content {
-      // .ar-dropbox--theme .ar-dropbox__content-header, .ar-dropbox--theme .ar-dropbox__content-main
-      &-header,
-      &-main {}
-    }
+    // .ar-dialog--theme .ar-dialog__overlay
+    #{$dialog}__overlay {}
+
+    // .ar-dialog--theme .ar-dialog__header, .ar-dialog--theme .ar-dialog__content, .ar-dialog--theme .ar-dialog__footer
+    #{$dialog}__header,
+    #{$dialog}__content,
+    #{$dialog}__footer {}
+
+    // .ar-dialog--theme .ar-dialog__header
+    #{$dialog}__header {}
+
+    // .ar-dialog--theme .ar-dialog__footer
+    #{$dialog}__footer {}
   }
 
-  // .ar-dropbox--opened
-  &--opened {
-    // ar-dropbox--opened .ar-dropbox__content
-    #{$dropbox}__content {
-      // .ar-dropbox--opened .ar-dropbox__content--vertical-bottom-right,
-      // .ar-dropbox--opened .ar-dropbox__content--vertical-bottom-left
-      &--vertical-bottom-right,
-      &--vertical-bottom-left,
-      &--vertical-bottom-center {}
-
-      // .ar-dropbox--opened .ar-dropbox__content--vertical-top-right,
-      // .ar-dropbox--opened .ar-dropbox__content--vertical-top-left
-      &--vertical-top-left,
-      &--vertical-top-right {}
-
-      // .ar-dropbox--opened .ar-dropbox__content--horizontal-right-center
-      &--horizontal-right-center { }
-
-      // .ar-dropbox--opened  .ar-dropbox__content--vertical-top-center, .ar-dropbox--opened  .ar-dropbox__content--vertical-bottom-center
-      &--vertical-top-center,
-      &--vertical-bottom-center {}
-    }
+  // .ar-dialog--shake
+  &--shake {
+    // .ar-dialog--shake .ar-dialog__dialog
+    #{$dialog}__dialog {}
   }
 
-  // .ar-dropbox--primary
+  // .ar-dialog--maximized
+  &--maximized {
+    // .ar-dialog--maximized .ar-dialog__dialog
+    #{$dialog}__dialog {}
+
+    // .ar-dialog--maximized .ar-dialog__content
+    #{$dialog}__content {}
+  }
+
+  // .ar-dialog--dragging
+  &--dragging {}
+
+  // .ar-dialog--content-scrollable
+  &--content-scrollable {
+    // .ar-dialog--content-scrollable .ar-dialog__content
+    #{$dialog}__content {}
+  }
+
+  // .ar-dialog--primary
   &--primary {
-    // .ar-dropbox--primary.ar-dropbox--theme
-    &#{$dropbox}--theme {
-      // .ar-dropbox--primary.ar-dropbox--theme ar-dropbox__content
-      #{$dropbox}__content {
-        // .ar-dropbox--primary.ar-dropbox--theme .ar-dropbox__content-header, .ar-dropbox--primary.ar-dropbox--theme .ar-dropbox__content-main
-        &-header,
-        &-main {}
-      }
+    // .ar-dialog--primary.ar-dialog--theme
+    &#{$dialog}--theme {
+      // .ar-dialog--theme .ar-dialog__header, .ar-dialog--theme .ar-dialog__content, .ar-dialog--theme .ar-dialog__footer
+      #{$dialog}__header,
+      #{$dialog}__content,
+      #{$dialog}__footer {}
     }
   }
 
-  // .ar-dropbox__content
-  &__content {
-    // .e-dropbox__content-header
-    &-header {}
+  // .ar-dialog__overlay
+  &__overlay {}
 
-    // .e-dropbox__content-main
-    &-main {}
+  // .ar-dialog-forms__container
+  &__container {}
 
-    // .ar-dropbox__content--vertical-bottom-right
-    &--vertical-bottom-right {}
+  // .ar-dialog__dialog
+  &__dialog {}
 
-    // .ar-dropbox__content--vertical-top-right
-    &--vertical-top-right {}
+  // .ar-dialog__header
+  &__header {}
 
-    // .ar-dropbox__content--vertical-bottom-left
-    &--vertical-bottom-left {}
+  // .ar-dialog__content
+  &__content {}
 
-    // .ar-dropbox__content--vertical-top-left
-    &--vertical-top-left {}
+  // .ar-dialog__footer
+  &__footer {}
 
-    // .ar-dropbox__content--horizontal-right-center
-    &--horizontal-right-center {}
+  // Анимация появления
+  &__animation-enter-active,
+  &__animation-leave-active {}
 
-    // .ar-dropbox__content--vertical-top-center, .ar-dropbox__content--vertical-bottom-center
-    &--vertical-top-center,
-    &--vertical-bottom-center {}
-  }
+  // Анимация появления overlay элемента
+  &__animation-enter-active #{$dialog}__overlay,
+  &__animation-leave-active #{$dialog}__overlay {}
+
+  // Анимация удаления overlay элемента
+  &__animation-enter-from #{$dialog}__overlay,
+  &__animation-leave-to #{$dialog}__overlay {}
+
+  // Анимация появления dialog элемента
+  &__animation-enter-active #{$dialog}__dialog,
+  &__animation-leave-active #{$dialog}__dialog {}
+
+  // Анимация удаления dialog элемента
+  &__animation-enter-from #{$dialog}__dialog,
+  &__animation-leave-to #{$dialog}__dialog,
+  &__animation-leave-from #{$dialog}__dialog {}
 }
 ```
 :::

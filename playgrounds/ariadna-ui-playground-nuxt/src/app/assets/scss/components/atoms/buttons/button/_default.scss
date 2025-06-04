@@ -46,24 +46,27 @@ $button: '.ar-button';
   &--small {
     @include theme.text-style-helper(t4);
 
-    height: 30px;
-    padding: 0 var(--indent-padding-small);
+    #{$button}__group {
+      padding: var(--indent-padding-small);
+    }
   }
 
   // .ar-button--medium
   &--medium {
     @include theme.text-style-helper(t3);
 
-    height: 38px;
-    padding: 0 var(--indent-padding-medium);
+    #{$button}__group {
+      padding: var(--indent-padding-medium);
+    }
   }
 
   // .ar-button--large
   &--large {
     @include theme.text-style-helper(t3);
 
-    height: 46px;
-    padding: 0 var(--indent-padding-large);
+    #{$button}__group {
+      padding: var(--indent-padding-large);
+    }
   }
 
   // .ar-button--icon-top, .ar-button--icon-bottom

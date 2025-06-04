@@ -6,6 +6,10 @@ const sidebarComponentsOverlays: DefaultTheme.SidebarItem = {
   link: '/components/overlays/',
   items: [
     {
+      text: 'Dialog',
+      link: '/components/overlays/dialog/',
+    },
+    {
       text: 'Dropbox',
       link: '/components/overlays/dropbox/',
     },
