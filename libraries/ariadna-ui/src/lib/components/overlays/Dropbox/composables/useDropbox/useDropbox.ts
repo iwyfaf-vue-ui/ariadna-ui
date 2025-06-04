@@ -41,10 +41,10 @@ export default function useDropbox(
   }));
 
   async function open() {
+    vModel.value = true;
+
     await nextTick();
     calculate();
-
-    vModel.value = true;
   }
 
   function close() {
@@ -54,10 +54,10 @@ export default function useDropbox(
   }
 
   async function toggle() {
+    vModel.value = !vModel.value;
+
     await nextTick();
     calculate();
-
-    vModel.value = !vModel.value;
   }
 
   function closeOnClickOutside() {
