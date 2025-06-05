@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v1.28.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.27.0...v1.28.0)
+
+### 🚀 Enhancements
+
+- Update ariadna-ui dependency to version 1.27.0 ([5c3aa34](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/5c3aa34))
+- Add Accordion component ([0462797](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/0462797))
+
+### 🩹 Fixes
+
+- Improve open and toggle functions in useDropbox composable ([da2f6de](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/da2f6de))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.27.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.26.0...v1.27.0)
