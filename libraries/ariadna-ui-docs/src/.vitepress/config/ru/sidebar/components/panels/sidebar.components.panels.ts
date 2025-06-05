@@ -6,6 +6,10 @@ const sidebarComponentsPanels: DefaultTheme.SidebarItem = {
   link: '/components/panels/',
   items: [
     {
+      text: 'Accordion',
+      link: '/components/panels/accordion/',
+    },
+    {
       text: 'Card',
       link: '/components/panels/card/',
     },

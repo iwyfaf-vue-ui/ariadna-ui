@@ -119,6 +119,10 @@ const data = ref<Array<TSidebarMenuItem>>([
         title: 'Panels',
         children: [
           {
+            title: 'Accordion',
+            href: '/components/panels/accordion',
+          },
+          {
             title: 'Card',
             href: '/components/panels/card',
           },

@@ -1,0 +1,99 @@
+@use '../../../../themes/asana/asana' as theme;
+
+$accordion: '.ar-accordion';
+
+#{$accordion} {
+  display: flex;
+  flex-direction: column;
+  gap: var(--indent-margin-xlarge);
+  width: 100%;
+
+  // .ar-accordion--disabled
+  &--disabled {
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.3;
+  }
+}
+
+$accordion-item: '.ar-accordion-item';
+
+#{$accordion-item} {
+  padding: var(--indent-margin-xlarge);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--radius-default-medium);
+
+  // .ar-accordion-item--theme
+  &--theme {
+    background: var(--color-background-default-strong);
+    border-color: var(--color-border-default);
+    transition: background var(--transition-default-easein);
+
+    // .ar-accordion-item--theme:hover
+    &:hover {
+      background: var(--color-background-default-hover);
+      transition: background var(--transition-default-easein);
+    }
+  }
+
+  // .ar-accordion-item--disabled
+  &--active {
+    // .ar-accordion-item--active.ar-accordion-item__header
+    #{$accordion-item}__header {
+      padding-bottom: calc(2 * var(--indent-margin-xlarge));
+      transition: padding-bottom var(--transition-default-easein);
+    }
+  }
+
+  // .ar-accordion-item--disabled
+  &--disabled {
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.3;
+  }
+
+  // .ar-accordion-item--primary
+  &--primary {
+    // .ar-accordion-item--primary.ar-accordion-item--theme
+    &#{$accordion-item}--theme {
+      background: var(--color-background-primary);
+      border-color: var(--color-border-primary);
+
+      // .ar-accordion-item--primary.ar-accordion-item--theme:hover
+      &:hover {
+        background: var(--color-background-primary-strong-hover);
+        transition: background var(--transition-default-easein);
+      }
+    }
+  }
+
+  // .ar-accordion-item__header
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--indent-margin-xlarge);
+    margin: calc(-1 * var(--indent-margin-xlarge));
+    cursor: pointer;
+    transition: padding-bottom var(--transition-default-easeout);
+  }
+
+  // .ar-accordion-item__reveal
+  &__reveal {
+    // .ar-accordion-item__reveal-enter-active, .ar-accordion-item__reveal-leave-active
+    &-enter-active,
+    &-leave-active {
+      transition: all var(--transition-default-easein);
+    }
+
+    // .ar-accordion-item__reveal-enter-from, .ar-accordion-item__reveal-leave-to
+    &-enter-from,
+    &-leave-to {
+      height: 0 !important;
+      opacity: 0;
+      transition:
+        opacity var(--transition-default-easeout),
+        height var(--transition-default-easeout);
+    }
+  }
+}
