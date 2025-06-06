@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.29.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.28.0...v1.29.0)
+
+### 🚀 Enhancements
+
+- Add Timeline component ([6c80587](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/6c80587))
+
+### 🏡 Chore
+
+- Update ariadna-ui dependency to version 1.28.0 ([c1668a7](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/c1668a7))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.28.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.27.0...v1.28.0)
