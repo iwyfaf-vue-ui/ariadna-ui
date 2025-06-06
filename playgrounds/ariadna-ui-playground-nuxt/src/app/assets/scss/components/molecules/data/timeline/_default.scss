@@ -1,0 +1,121 @@
+@use '../../../../themes/asana/asana' as theme;
+
+$timeline: '.ar-timeline';
+
+#{$timeline} {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  // .ar-timeline--theme
+  &--theme {
+    // .ar-timeline--theme .ar-timeline__event
+    #{$timeline}__event {
+      // .ar-timeline--theme .ar-timeline__event-separator
+      &-separator {
+        // .ar-timeline--theme .ar-timeline__event-separator::before
+        &::before {
+          background-color: var(--color-background-default-weak);
+        }
+
+        // .ar-timeline--theme .ar-timeline__event-separator::before
+        &::after {
+          background-color: var(--color-background-default-contrast);
+        }
+      }
+    }
+  }
+
+  // .ar-timeline--primary
+  &--primary {
+    // .ar-timeline--primary.ar-card--theme
+    &#{$timeline}--theme {
+      // .ar-timeline--primary.ar-timeline--theme .ar-timeline__event
+      #{$timeline}__event {
+        // .ar-timeline--primary.ar-timeline--theme .ar-timeline__event-separator
+        &-separator {
+          // .ar-timeline--primary.ar-timeline--theme .ar-timeline__event-separator::before
+          &::before {
+            background-color: var(--color-background-primary);
+          }
+        }
+      }
+    }
+  }
+
+  // .ar-timeline__event
+  &__event {
+    display: flex;
+    justify-content: center;
+    min-height: 100px;
+
+    // .ar-timeline__event--last
+    &--last {
+      min-height: 0;
+
+      // .ar-timeline__event--last .ar-timeline__event-separator
+      #{$timeline}__event-separator {
+        height: 0;
+      }
+    }
+
+    // .ar-timeline__event-content
+    &-content {
+      width: calc(50% - 30px);
+
+      // .ar-timeline__event-content--left
+      &--left {
+        text-align: right;
+      }
+    }
+
+    // .ar-timeline__event-spacer, // .ar-timeline__event-opposite
+    &-spacer,
+    &-opposite {
+      position: relative;
+      order: unset;
+      width: calc(50% - 30px);
+    }
+
+    // .ar-timeline__event-separator
+    &-separator {
+      position: relative;
+      top: var(--indent-margin-medium);
+      flex: 0 0 32px;
+      order: unset;
+
+      // .ar-timeline__event-separator::before, .ar-timeline__event-separator::after
+      &::before,
+      &::after {
+        position: absolute;
+        left: 50%;
+        display: block;
+        content: '';
+        transform: translate(-50%);
+      }
+
+      // .ar-timeline__event-separator::before
+      &::before {
+        top: 5px;
+        width: 6px;
+        height: 100%;
+        border-radius: var(--radius-default-medium);
+      }
+
+      // .ar-timeline__event-separator::after
+      &::after {
+        width: 10px;
+        height: 10px;
+        border-radius: var(--radius-default-medium);
+      }
+    }
+
+    // .ar-timeline__event-opposite
+    &-opposite {
+      // .ar-timeline__event-opposite--right
+      &--right {
+        text-align: right;
+      }
+    }
+  }
+}

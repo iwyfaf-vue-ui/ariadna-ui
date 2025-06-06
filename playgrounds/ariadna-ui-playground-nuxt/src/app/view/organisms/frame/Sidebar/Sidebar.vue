@@ -107,6 +107,15 @@ const data = ref<Array<TSidebarMenuItem>>([
         ],
       },
       {
+        title: 'Data',
+        children: [
+          {
+            title: 'Timeline',
+            href: '/components/data/timeline',
+          },
+        ],
+      },
+      {
         title: 'Navigation',
         children: [
           {

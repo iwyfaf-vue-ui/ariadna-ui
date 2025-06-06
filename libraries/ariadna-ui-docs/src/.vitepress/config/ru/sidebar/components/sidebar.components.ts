@@ -1,6 +1,7 @@
 import { DefaultTheme } from 'vitepress/theme';
 import sidebarComponentsButtons from './buttons/sidebar.components.buttons';
 import sidebarComponentsControls from './controls/sidebar.components.controls';
+import sidebarComponentsData from './data/sidebar.components.data';
 import sidebarComponentsIndicators from './indicators/sidebar.components.indicators';
 import sidebarComponentsNavigation from './navigation/sidebar.components.navigation';
 import sidebarComponentsPanels from './panels/sidebar.components.panels';
@@ -12,6 +13,7 @@ const sidebarComponents: DefaultTheme.SidebarItem[] | DefaultTheme.SidebarMulti 
     sidebarComponentsIndicators,
     sidebarComponentsButtons,
     sidebarComponentsControls,
+    sidebarComponentsData,
     sidebarComponentsNavigation,
     sidebarComponentsPanels,
     sidebarComponentsOverlays,
