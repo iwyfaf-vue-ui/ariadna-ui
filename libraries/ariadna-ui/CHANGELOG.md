@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.31.1
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.31.0...v1.31.1)
+
+### 🏡 Chore
+
+- Update ariadna-ui dependency to version 1.31.0 ([038f949](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/038f949))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.31.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.30.0...v1.31.0)
