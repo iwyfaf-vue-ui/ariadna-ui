@@ -52,6 +52,11 @@ export default defineConfig({
     ssr: {
       noExternal: ['@iwyfaf-vue-ui/ariadna-ui'],
     },
+    build: {
+      rollupOptions: {
+        external: ['vue-router'],
+      },
+    },
     plugins: [VitePluginVitepressDemo()],
   },
 });
