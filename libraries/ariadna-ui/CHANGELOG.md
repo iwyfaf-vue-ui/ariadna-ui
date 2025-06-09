@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v1.30.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.29.0...v1.30.0)
+
+### 🚀 Enhancements
+
+- Add Tabs component ([3598e84](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/3598e84))
+
+### 🏡 Chore
+
+- Update Ariadna UI dependency to v1.29.0 ([98e1870](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/98e1870))
+- Bump ariadna-ui package to 1.29.1-beta.0 ([5610df8](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/5610df8))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.29.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.28.0...v1.29.0)
