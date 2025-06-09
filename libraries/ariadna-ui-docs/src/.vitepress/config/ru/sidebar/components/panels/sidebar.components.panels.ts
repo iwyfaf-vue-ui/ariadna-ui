@@ -13,6 +13,10 @@ const sidebarComponentsPanels: DefaultTheme.SidebarItem = {
       text: 'Card',
       link: '/components/panels/card/',
     },
+    {
+      text: 'Tabs',
+      link: '/components/panels/tabs/',
+    },
   ],
 };
 

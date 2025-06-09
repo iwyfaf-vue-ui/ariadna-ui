@@ -10,6 +10,10 @@ const sidebarComposablesElements: DefaultTheme.SidebarItem = {
       link: '/composables/elements/use-drag-viewport/',
     },
     {
+      text: 'useElementSize',
+      link: '/composables/elements/use-element-size/',
+    },
+    {
       text: 'usePosition',
       link: '/composables/elements/use-position/',
     },

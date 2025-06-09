@@ -135,6 +135,10 @@ const data = ref<Array<TSidebarMenuItem>>([
             title: 'Card',
             href: '/components/panels/card',
           },
+          {
+            title: 'Tabs',
+            href: '/components/panels/tabs',
+          },
         ],
       },
       {
@@ -171,6 +175,10 @@ const data = ref<Array<TSidebarMenuItem>>([
           {
             title: 'useDragViewport',
             href: '/composables/elements/useDragViewport',
+          },
+          {
+            title: 'useElementSize',
+            href: '/composables/elements/useElementSize',
           },
           {
             title: 'usePosition',

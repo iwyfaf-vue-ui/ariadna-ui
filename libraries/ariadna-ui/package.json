@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.29.1-beta.0",
+  "version": "1.29.1-beta.1",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -126,9 +126,17 @@
       "import": "./dist/lib/components/panels/Card/Card.esm.js",
       "types": "./dist/lib/components/panels/Card/Card.d.ts"
     },
+    "./Tabs": {
+      "import": "./dist/lib/components/panels/Tabs/Tabs.esm.js",
+      "types": "./dist/lib/components/panels/Tabs/Tabs.d.ts"
+    },
     "./useDragViewport": {
       "import": "./dist/lib/composables/elements/useDragViewport/useDragViewport.esm.js",
       "types": "./dist/lib/composables/elements/useDragViewport/useDragViewport.d.ts"
+    },
+    "./useElementSize": {
+      "import": "./dist/lib/composables/elements/useElementSize/useElementSize.esm.js",
+      "types": "./dist/lib/composables/elements/useElementSize/useElementSize.d.ts"
     },
     "./usePosition": {
       "import": "./dist/lib/composables/elements/usePosition/usePosition.esm.js",
@@ -224,8 +232,14 @@
       "Card": [
         "./dist/lib/components/panels/Card/Card.d.ts"
       ],
+      "Tabs": [
+        "./dist/lib/components/panels/Tabs/Tabs.d.ts"
+      ],
       "useDragViewport": [
         "./dist/lib/composables/elements/useDragViewport/useDragViewport.d.ts"
+      ],
+      "useElementSize": [
+        "./dist/lib/composables/elements/useElementSize/useElementSize.d.ts"
       ],
       "usePosition": [
         "./dist/lib/composables/elements/usePosition/usePosition.d.ts"
