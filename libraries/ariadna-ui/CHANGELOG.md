@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.31.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.30.0...v1.31.0)
+
+### 🚀 Enhancements
+
+- Update ariadna-ui dependency to v1.30.0 ([04948d5](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/04948d5))
+
+### 🩹 Fixes
+
+- Exclude vue-router from external dependencies in build ([ee24244](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/ee24244))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.30.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.29.0...v1.30.0)
