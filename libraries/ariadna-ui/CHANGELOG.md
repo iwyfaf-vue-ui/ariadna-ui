@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.32.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.31.1...v1.32.0)
+
+### 🚀 Enhancements
+
+- Add DesktopMenu component ([a2ccbc8](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/a2ccbc8))
+
+### 🩹 Fixes
+
+- Update ariadna-ui dependency to version 1.31.1 ([b79173d](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/b79173d))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.31.1
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.31.0...v1.31.1)
