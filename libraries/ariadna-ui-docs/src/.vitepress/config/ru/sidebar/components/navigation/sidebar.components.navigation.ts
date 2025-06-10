@@ -6,6 +6,10 @@ const sidebarComponentsNavigation: DefaultTheme.SidebarItem = {
   link: '/components/navigation/',
   items: [
     {
+      text: 'DesktopMenu',
+      link: '/components/navigation/desktop-menu/',
+    },
+    {
       text: 'SidebarMenu',
       link: '/components/navigation/sidebar-menu/',
     },

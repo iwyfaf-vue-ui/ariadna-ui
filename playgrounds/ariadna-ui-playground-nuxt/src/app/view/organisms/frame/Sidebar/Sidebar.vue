@@ -119,6 +119,10 @@ const data = ref<Array<TSidebarMenuItem>>([
         title: 'Navigation',
         children: [
           {
+            title: 'DesktopMenu',
+            href: '/components/navigation/desktop-menu',
+          },
+          {
             title: 'SidebarMenu',
             href: '/components/navigation/sidebar-menu',
           },
