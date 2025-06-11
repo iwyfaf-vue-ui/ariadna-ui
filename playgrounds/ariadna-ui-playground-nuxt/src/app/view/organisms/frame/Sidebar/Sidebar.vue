@@ -190,6 +190,15 @@ const data = ref<Array<TSidebarMenuItem>>([
           },
         ],
       },
+      {
+        title: 'Reactivity',
+        children: [
+          {
+            title: 'useDelayedValue',
+            href: '/composables/reactivity/useDelayedValue',
+          },
+        ],
+      },
     ],
   },
   {
