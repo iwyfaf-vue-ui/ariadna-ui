@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.33.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.32.0...v1.33.0)
+
+### 🚀 Enhancements
+
+- Add useDelayedValue composable ([2b6ee46](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/2b6ee46))
+
+### 🏡 Chore
+
+- Update ariadna-ui dependency to version 1.32.0 ([e177a56](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/e177a56))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.32.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.31.1...v1.32.0)
