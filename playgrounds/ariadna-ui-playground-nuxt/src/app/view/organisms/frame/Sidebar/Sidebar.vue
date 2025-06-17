@@ -189,6 +189,10 @@ const data = ref<Array<TSidebarMenuItem>>([
             href: '/composables/elements/useElementSize',
           },
           {
+            title: 'useOrderedElements',
+            href: '/composables/elements/useOrderedElements',
+          },
+          {
             title: 'usePosition',
             href: '/composables/elements/usePosition',
           },
