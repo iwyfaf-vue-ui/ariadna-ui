@@ -123,6 +123,10 @@ const data = ref<Array<TSidebarMenuItem>>([
             href: '/components/navigation/desktop-menu',
           },
           {
+            title: 'MobileMenu',
+            href: '/components/navigation/mobile-menu',
+          },
+          {
             title: 'SidebarMenu',
             href: '/components/navigation/sidebar-menu',
           },

@@ -10,6 +10,10 @@ const sidebarComponentsNavigation: DefaultTheme.SidebarItem = {
       link: '/components/navigation/desktop-menu/',
     },
     {
+      text: 'MobileMenu',
+      link: '/components/navigation/mobile-menu/',
+    },
+    {
       text: 'SidebarMenu',
       link: '/components/navigation/sidebar-menu/',
     },

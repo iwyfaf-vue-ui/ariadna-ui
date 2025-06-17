@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.33.0",
+  "version": "1.33.1-beta.0",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -105,6 +105,10 @@
     "./DesktopMenu": {
       "import": "./dist/lib/components/navigation/DesktopMenu/DesktopMenu.esm.js",
       "types": "./dist/lib/components/navigation/DesktopMenu/DesktopMenu.d.ts"
+    },
+    "./MobileMenu": {
+      "import": "./dist/lib/components/navigation/MobileMenu/MobileMenu.esm.js",
+      "types": "./dist/lib/components/navigation/MobileMenu/MobileMenu.d.ts"
     },
     "./SidebarMenu": {
       "import": "./dist/lib/components/navigation/SidebarMenu/SidebarMenu.esm.js",
@@ -224,6 +228,9 @@
       ],
       "DesktopMenu": [
         "./dist/lib/components/navigation/DesktopMenu/DesktopMenu.d.ts"
+      ],
+      "MobileMenu": [
+        "./dist/lib/components/navigation/MobileMenu/MobileMenu.d.ts"
       ],
       "SidebarMenu": [
         "./dist/lib/components/navigation/SidebarMenu/SidebarMenu.d.ts"
