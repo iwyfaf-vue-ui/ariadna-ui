@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.35.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.34.0...v1.35.0)
+
+### 🚀 Enhancements
+
+- Add useOrderedElements composable ([bacf82f](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/bacf82f))
+
+### 📖 Documentation
+
+- Update ariadna-ui dependency to v1.34.0 ([4c9b2f6](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/4c9b2f6))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.34.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.33.0...v1.34.0)
