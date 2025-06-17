@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.34.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.33.0...v1.34.0)
+
+### 🚀 Enhancements
+
+- Add MobileMenu component ([74618e4](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/74618e4))
+
+### 🏡 Chore
+
+- Update @iwyfaf-vue-ui/ariadna-ui dependency to v1.33.0 ([19f8c5c](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/19f8c5c))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.33.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.32.0...v1.33.0)
