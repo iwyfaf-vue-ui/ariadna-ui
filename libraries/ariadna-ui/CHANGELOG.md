@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v1.36.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.35.0...v1.36.0)
+
+### 🚀 Enhancements
+
+- Add QueryBuilder utility ([72c1d32](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/72c1d32))
+
+### 🩹 Fixes
+
+- Prevent duplicate addresses in peer discovery list ([98127c8](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/98127c8))
+
+### 🏡 Chore
+
+- Bump ariadna-ui version to 1.35.1-beta.0 ([02f408e](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/02f408e))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.35.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.34.0...v1.35.0)
