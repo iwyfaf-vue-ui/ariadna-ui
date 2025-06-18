@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.35.1-beta.0",
+  "version": "1.35.1-beta.1",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -174,6 +174,10 @@
       "import": "./dist/lib/directives/sensors/OnClickOutside/OnClickOutside.esm.js",
       "types": "./dist/lib/directives/sensors/OnClickOutside/OnClickOutside.d.ts"
     },
+    "./QueryBuilder": {
+      "import": "./dist/lib/utilities/builders/QueryBuilder/QueryBuilder.esm.js",
+      "types": "./dist/lib/utilities/builders/QueryBuilder/QueryBuilder.d.ts"
+    },
     "./ThemeBuilder": {
       "import": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.esm.js",
       "types": "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.d.ts"
@@ -283,6 +287,9 @@
       ],
       "OnClickOutside": [
         "./dist/lib/directives/sensors/OnClickOutside/OnClickOutside.d.ts"
+      ],
+      "QueryBuilder": [
+        "./dist/lib/utilities/builders/QueryBuilder/QueryBuilder.d.ts"
       ],
       "ThemeBuilder": [
         "./dist/lib/utilities/facades/ThemeBuilder/ThemeBuilder.d.ts"

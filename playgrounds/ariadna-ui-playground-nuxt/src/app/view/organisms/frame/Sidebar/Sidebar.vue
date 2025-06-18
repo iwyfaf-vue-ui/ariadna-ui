@@ -251,15 +251,11 @@ const data = ref<Array<TSidebarMenuItem>>([
     expand: true,
     children: [
       {
-        title: 'Helpers',
+        title: 'Builders',
         children: [
           {
-            title: 'Capitalize',
-            href: '/utilities/helpers/capitalize',
-          },
-          {
-            title: 'ToKebab',
-            href: '/utilities/helpers/to-kebab',
+            title: 'QueryBuilder',
+            href: '/utilities/builders/query-builder',
           },
         ],
       },
@@ -273,6 +269,19 @@ const data = ref<Array<TSidebarMenuItem>>([
           {
             title: 'Throttle',
             href: '/utilities/functions-decorators/throttle',
+          },
+        ],
+      },
+      {
+        title: 'Helpers',
+        children: [
+          {
+            title: 'Capitalize',
+            href: '/utilities/helpers/capitalize',
+          },
+          {
+            title: 'ToKebab',
+            href: '/utilities/helpers/to-kebab',
           },
         ],
       },
