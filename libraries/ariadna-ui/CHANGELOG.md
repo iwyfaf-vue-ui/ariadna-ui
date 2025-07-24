@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.37.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.36.0...v1.37.0)
+
+### 🚀 Enhancements
+
+- Add Slider component ([d847c8d](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/d847c8d))
+
+### 🏡 Chore
+
+- Update ariadna-ui dependency to version 1.36.0 ([b0199b5](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/b0199b5))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.36.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.35.0...v1.36.0)
