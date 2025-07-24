@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.37.1
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.37.0...v1.37.1)
+
+### 🩹 Fixes
+
+- **spinner:** Use <span> element and update loader styles ([97fcd07](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/97fcd07))
+
+### 📖 Documentation
+
+- Update library version ([ceb4f53](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/ceb4f53))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.37.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.36.0...v1.37.0)
