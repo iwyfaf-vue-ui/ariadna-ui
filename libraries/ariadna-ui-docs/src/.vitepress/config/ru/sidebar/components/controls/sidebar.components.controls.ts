@@ -25,6 +25,10 @@ const sidebarComponentsControls: DefaultTheme.SidebarItem = {
       text: 'Rating',
       link: '/components/controls/rating/',
     },
+    {
+      text: 'Slider',
+      link: '/components/controls/slider/',
+    },
   ],
 };
 
