@@ -7,32 +7,33 @@ $spinner: '.ar-spinner-atom';
 
   // .ar-spinner-atom__loader
   &__loader {
+    display: block;
+    border-radius: 50%;
     transform: rotateZ(45deg);
     perspective: 1000px;
-    border-radius: 50%;
 
     // .ar-spinner-atom__loader::before, .ar-spinner-atom__loader::after
-    &:before,
-    &:after {
-      content: '';
-      display: block;
+    &::before,
+    &::after {
       position: absolute;
       top: 0;
       left: 0;
+      display: block;
       width: inherit;
       height: inherit;
+      content: '';
       border-radius: 50%;
       animation: 1s spin linear infinite;
     }
 
     // .ar-spinner-atom__loader::before
-    &:before {
+    &::before {
       transform: rotateX(70deg);
       animation: 1s spin linear infinite;
     }
 
     // .ar-spinner-atom__loader::after
-    &:after {
+    &::after {
       transform: rotateY(70deg);
       animation: 1s spin-reverse linear infinite;
     }
@@ -45,7 +46,7 @@ $spinner: '.ar-spinner-atom';
     // .ar-spinner-atom--small .ar-spinner-atom__loader
     #{$spinner}__loader {
       // .ar-spinner-atom--theme .ar-spinner-atom__loader::after
-      &:after {
+      &::after {
         color: var(--color-text-default);
       }
     }
@@ -54,8 +55,8 @@ $spinner: '.ar-spinner-atom';
   // .ar-spinner-atom--small
   &--small {
     #{$spinner}__loader {
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
     }
   }
 
@@ -84,7 +85,7 @@ $spinner: '.ar-spinner-atom';
     // .ar-spinner-atom--primary .ar-spinner-atom__loader
     #{$spinner}__loader {
       // .ar-spinner-atom--primary .ar-spinner-atom__loader::after
-      &:after {
+      &::after {
         color: var(--color-background-primary-strong);
       }
     }
@@ -97,7 +98,7 @@ $spinner: '.ar-spinner-atom';
     // .ar-spinner-atom--secondary .ar-spinner-atom__loader
     #{$spinner}__loader {
       // .ar-spinner-atom--secondary .ar-spinner-atom__loader::after
-      &:after {
+      &::after {
         color: var(--color-background-secondary-strong);
       }
     }
@@ -110,7 +111,7 @@ $spinner: '.ar-spinner-atom';
     // .ar-spinner-atom--success .ar-spinner-atom__loader
     #{$spinner}__loader {
       // .ar-spinner-atom--success .ar-spinner-atom__loader::after
-      &:after {
+      &::after {
         color: var(--color-background-success-strong);
       }
     }
@@ -123,7 +124,7 @@ $spinner: '.ar-spinner-atom';
     // .ar-spinner-atom--warning .ar-spinner-atom__loader
     #{$spinner}__loader {
       // .ar-spinner-atom--warning .ar-spinner-atom__loader::after
-      &:after {
+      &::after {
         color: var(--color-background-warning-strong);
       }
     }
@@ -136,7 +137,7 @@ $spinner: '.ar-spinner-atom';
     // .ar-spinner-atom--danger .ar-spinner-atom__loader
     #{$spinner}__loader {
       // .ar-spinner-atom--danger .ar-spinner-atom__loader::after
-      &:after {
+      &::after {
         color: var(--color-background-danger-strong);
       }
     }
@@ -147,6 +148,7 @@ $spinner: '.ar-spinner-atom';
   0% {
     transform: translate(-50%, -50%) rotateZ(0deg);
   }
+
   100% {
     transform: translate(-50%, -50%) rotateZ(360deg);
   }
@@ -157,24 +159,31 @@ $spinner: '.ar-spinner-atom';
   100% {
     box-shadow: 0.2em 0 0 0 currentcolor;
   }
+
   12% {
     box-shadow: 0.2em 0.2em 0 0 currentcolor;
   }
+
   25% {
     box-shadow: 0 0.2em 0 0 currentcolor;
   }
+
   37% {
     box-shadow: -0.2em 0.2em 0 0 currentcolor;
   }
+
   50% {
     box-shadow: -0.2em 0 0 0 currentcolor;
   }
+
   62% {
     box-shadow: -0.2em -0.2em 0 0 currentcolor;
   }
+
   75% {
-    box-shadow: 0px -0.2em 0 0 currentcolor;
+    box-shadow: 0 -0.2em 0 0 currentcolor;
   }
+
   87% {
     box-shadow: 0.2em -0.2em 0 0 currentcolor;
   }
@@ -184,15 +193,19 @@ $spinner: '.ar-spinner-atom';
   0% {
     box-shadow: -0.2em 0 0 0 currentcolor;
   }
+
   25% {
     box-shadow: 0 -0.2em 0 0 currentcolor;
   }
+
   50% {
     box-shadow: 0.2em 0 0 0 currentcolor;
   }
+
   75% {
     box-shadow: 0 0.2em 0 0 currentcolor;
   }
+
   100% {
     box-shadow: -0.2em 0 0 0 currentcolor;
   }

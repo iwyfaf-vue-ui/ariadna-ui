@@ -1,8 +1,8 @@
 <template>
-  <div :class="componentClasses">
-    <div :class="`${props.cssClass}__loader`"></div>
+  <span :class="componentClasses">
+    <span :class="`${props.cssClass}__loader`"></span>
     <slot></slot>
-  </div>
+  </span>
 </template>
 
 <script setup lang="ts">

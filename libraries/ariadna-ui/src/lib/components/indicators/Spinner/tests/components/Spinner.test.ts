@@ -18,7 +18,7 @@ describe('Spinner.vue', () => {
 
     it('Should render a div element.', () => {
       expect(wrapper.find(defaultMock.rootEl).exists()).toBe(true);
-      expect(wrapper.find(defaultMock.rootEl).element.tagName).toEqual('DIV');
+      expect(wrapper.find(defaultMock.rootEl).element.tagName).toEqual('SPAN');
     });
 
     it('Should have the default CSS class with predefined modifiers.', () => {
