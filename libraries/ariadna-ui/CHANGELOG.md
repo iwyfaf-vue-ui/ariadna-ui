@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.39.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.38.1...v1.39.0)
+
+### 🚀 Enhancements
+
+- Add Clamp utility ([c8c9147](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/c8c9147))
+
+### 🏡 Chore
+
+- Bump ariadna-ui to version 1.38.1 ([9764c6f](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/9764c6f))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.38.1
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.38.0...v1.38.1)
