@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.38.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.37.1...v1.38.0)
+
+### 🚀 Enhancements
+
+- Add Video component & useFocusBlur composable ([9348d55](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/9348d55))
+
+### 📖 Documentation
+
+- Update library version ([136589c](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/136589c))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.37.1
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.37.0...v1.37.1)
