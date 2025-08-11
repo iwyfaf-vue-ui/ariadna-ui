@@ -1,7 +1,7 @@
 import { ref } from 'vue';
 import type { TUseFocusBlurReturn } from './types/useFocusBlur.types';
 
-export default function useVideoFocus(): TUseFocusBlurReturn {
+export default function useFocusBlur(): TUseFocusBlurReturn {
   const isFocused = ref<boolean>(false);
 
   function onFocus() {
