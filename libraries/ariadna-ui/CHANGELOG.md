@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.38.1
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.38.0...v1.38.1)
+
+### 💅 Refactors
+
+- Rename useVideoFocus to useFocusBlur hook ([ea78687](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/ea78687))
+
+### 🏡 Chore
+
+- Bump ariadna-ui to v1.38.0 in docs ([9ebb281](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/9ebb281))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.38.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.37.1...v1.38.0)
