@@ -5,6 +5,7 @@ import { AntdTheme } from 'vite-plugin-vitepress-demo/theme';
 import HomeLayout from '../layouts/HomeLayout.vue';
 import CategoriesLayout from '../layouts/CategoriesLayout.vue';
 import './styles/styles.scss';
+import './fonts/icons/icons.css';
 
 export default {
   extends: DefaultTheme,

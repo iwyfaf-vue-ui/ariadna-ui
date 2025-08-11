@@ -1,6 +1,6 @@
 module.exports = {
-  inputDir: './assets/images/icons',
-  outputDir: './assets/fonts/icons',
+  inputDir: './src/app/assets/images/icons',
+  outputDir: './src/app/assets/fonts/icons',
   fontTypes: ['woff2'],
   assetTypes: ['css', 'html'],
   fontsUrl: '',

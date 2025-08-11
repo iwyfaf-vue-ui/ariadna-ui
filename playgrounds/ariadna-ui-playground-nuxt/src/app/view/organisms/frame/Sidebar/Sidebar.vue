@@ -167,6 +167,15 @@ const data = ref<Array<TSidebarMenuItem>>([
         ],
       },
       {
+        title: 'Media',
+        children: [
+          {
+            title: 'Video',
+            href: '/components/media/video',
+          },
+        ],
+      },
+      {
         title: 'Misc',
         children: [
           {
@@ -208,6 +217,15 @@ const data = ref<Array<TSidebarMenuItem>>([
           {
             title: 'useDelayedValue',
             href: '/composables/reactivity/useDelayedValue',
+          },
+        ],
+      },
+      {
+        title: 'Sensors',
+        children: [
+          {
+            title: 'useFocusBlur',
+            href: '/composables/sensors/useFocusBlur',
           },
         ],
       },

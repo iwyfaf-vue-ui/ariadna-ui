@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.37.1",
+  "version": "1.37.2-beta.0",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -102,6 +102,10 @@
       "import": "./dist/lib/components/indicators/Spinner/Spinner.esm.js",
       "types": "./dist/lib/components/indicators/Spinner/Spinner.d.ts"
     },
+    "./Video": {
+      "import": "./dist/lib/components/media/Video/Video.esm.js",
+      "types": "./dist/lib/components/media/Video/Video.d.ts"
+    },
     "./Previewer": {
       "import": "./dist/lib/components/misc/Previewer/Previewer.esm.js",
       "types": "./dist/lib/components/misc/Previewer/Previewer.d.ts"
@@ -161,6 +165,10 @@
     "./useDelayedValue": {
       "import": "./dist/lib/composables/reactivity/useDelayedValue/useDelayedValue.esm.js",
       "types": "./dist/lib/composables/reactivity/useDelayedValue/useDelayedValue.d.ts"
+    },
+    "./useFocusBlur": {
+      "import": "./dist/lib/composables/sensors/useFocusBlur/useFocusBlur.esm.js",
+      "types": "./dist/lib/composables/sensors/useFocusBlur/useFocusBlur.d.ts"
     },
     "./RenderAttributeOnce": {
       "import": "./dist/lib/directives/attributes/RenderAttributeOnce/RenderAttributeOnce.esm.js",
@@ -238,6 +246,9 @@
       "Spinner": [
         "./dist/lib/components/indicators/Spinner/Spinner.d.ts"
       ],
+      "Video": [
+        "./dist/lib/components/media/Video/Video.d.ts"
+      ],
       "Previewer": [
         "./dist/lib/components/misc/Previewer/Previewer.d.ts"
       ],
@@ -282,6 +293,9 @@
       ],
       "useDelayedValue": [
         "./dist/lib/composables/reactivity/useDelayedValue/useDelayedValue.d.ts"
+      ],
+      "useFocusBlur": [
+        "./dist/lib/composables/sensors/useFocusBlur/useFocusBlur.d.ts"
       ],
       "RenderAttributeOnce": [
         "./dist/lib/directives/attributes/RenderAttributeOnce/RenderAttributeOnce.d.ts"

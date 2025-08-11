@@ -37,7 +37,7 @@ export default defineNuxtConfig({
       ],
     ],
   },
-  css: ['@/assets/scss/app.scss'],
+  css: ['@/assets/scss/app.scss', '@/assets/fonts/icons/icons.css'],
   vite: {
     css: {
       preprocessorOptions: {

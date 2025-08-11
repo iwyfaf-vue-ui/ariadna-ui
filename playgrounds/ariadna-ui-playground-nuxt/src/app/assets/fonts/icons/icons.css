@@ -1,0 +1,35 @@
+@font-face {
+font-family: "icons";
+src: url("./icons.woff2?0ea09f2cf271e9581d26e44c693f79a2") format("woff2");
+font-display: swap;
+}
+
+  i[class^="icon-"]:before, i[class*=" icon-"]:before {
+font-family: icons;
+font-style: normal;
+font-weight: normal !important;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+    .icon-fill-volume-on:before {
+  content: "\f101";
+  }
+    .icon-fill-volume-off:before {
+  content: "\f102";
+  }
+    .icon-fill-play:before {
+  content: "\f103";
+  }
+    .icon-fill-pause:before {
+  content: "\f104";
+  }
+    .icon-fill-fullscreen-out:before {
+  content: "\f105";
+  }
+    .icon-fill-fullscreen-in:before {
+  content: "\f106";
+  }
