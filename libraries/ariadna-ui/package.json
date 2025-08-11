@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.38.1",
+  "version": "1.38.2-beta.0",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -209,6 +209,10 @@
     "./ToKebab": {
       "import": "./dist/lib/utilities/helpers/ToKebab/ToKebab.esm.js",
       "types": "./dist/lib/utilities/helpers/ToKebab/ToKebab.d.ts"
+    },
+    "./Clamp": {
+      "import": "./dist/lib/utilities/number/Clamp/Clamp.esm.js",
+      "types": "./dist/lib/utilities/number/Clamp/Clamp.d.ts"
     }
   },
   "typesVersions": {
@@ -326,6 +330,9 @@
       ],
       "ToKebab": [
         "./dist/lib/utilities/helpers/ToKebab/ToKebab.d.ts"
+      ],
+      "Clamp": [
+        "./dist/lib/utilities/number/Clamp/Clamp.d.ts"
       ]
     }
   }

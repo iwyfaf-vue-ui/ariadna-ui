@@ -4,6 +4,7 @@ import type { ShallowRef } from 'vue';
 import type { TSliderEmits, TSliderProps } from '../../Slider';
 import type { TUseSliderReturn } from './useSlider.types';
 import { EThumbPosition } from '../../types/Slider.enums';
+import clamp from '@/lib/utilities/number/Clamp/Clamp';
 
 export default function useSlider(
   props: TSliderProps,
@@ -50,10 +51,6 @@ export default function useSlider(
       (_, index) => index * (props.step || 0),
     );
   });
-
-  function clamp(min: number, middle: number, max: number) {
-    return Math.max(min, Math.min(middle, max));
-  }
 
   function roundByStep(value: number) {
     return props.step ? Math.round(value / props.step) * props.step : value;

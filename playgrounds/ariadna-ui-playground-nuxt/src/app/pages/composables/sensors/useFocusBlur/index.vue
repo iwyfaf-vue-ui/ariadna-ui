@@ -35,11 +35,11 @@ import DemoDefault from './demos/demo.default.vue';
 import DemoDefaultSource from './demos/demo.default.vue?raw';
 
 definePageMeta({
-  title: 'useDelayedValue',
+  title: 'useFocusBlur',
   layout: 'default',
 });
 
 useHead({
-  title: 'useDelayedValue',
+  title: 'useFocusBlur',
 });
 </script>

@@ -633,11 +633,11 @@ import DemoSlotsTime from './demos/demo.slots.time.vue';
 import DemoSlotsTimeSource from './demos/demo.slots.time.vue?raw';
 
 definePageMeta({
-  title: 'Player',
+  title: 'Video',
   layout: 'default',
 });
 
 useHead({
-  title: 'Player',
+  title: 'Video',
 });
 </script>

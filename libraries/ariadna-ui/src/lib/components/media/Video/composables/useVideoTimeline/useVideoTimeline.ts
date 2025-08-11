@@ -3,6 +3,7 @@ import type { ShallowRef } from 'vue';
 import type { TVideoEmits, TVideoProps } from '../../Video';
 import type { TUseVideoTimelineReturn } from './useVideoTimeline.types';
 import type { TSliderTrack } from '@/lib/components/controls/Slider/types/Slider.types';
+import clamp from '@/lib/utilities/number/Clamp/Clamp';
 
 export default function useVideoTimeline(
   props: TVideoProps,
@@ -38,10 +39,6 @@ export default function useVideoTimeline(
   ]);
   const loadingPercentage = ref<number>(0);
   const loading = ref<boolean>(false);
-
-  function clamp(min: number, middle: number, max: number) {
-    return Math.max(min, Math.min(middle, max));
-  }
 
   function seek(toSeconds: number) {
     if (!videoTagRef.value) {

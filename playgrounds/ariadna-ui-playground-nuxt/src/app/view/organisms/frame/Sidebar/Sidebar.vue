@@ -273,6 +273,15 @@ const data = ref<Array<TSidebarMenuItem>>([
     expand: true,
     children: [
       {
+        title: 'Number',
+        children: [
+          {
+            title: 'Clamp',
+            href: '/utilities/number/clamp',
+          },
+        ],
+      },
+      {
         title: 'Builders',
         children: [
           {

@@ -138,19 +138,6 @@ describe('useSlider', () => {
     });
   });
 
-  describe('clamp Function', () => {
-    it('Should clamp value within min and max.', () => {
-      const wrapper = mountWithComposable({
-        ...defaultMock.mockProps,
-      });
-      const vm = wrapper.vm;
-
-      expect(vm.clamp(0, 50, 100)).toBe(50);
-      expect(vm.clamp(0, -10, 100)).toBe(0);
-      expect(vm.clamp(0, 150, 100)).toBe(100);
-    });
-  });
-
   describe('roundByStep Function', () => {
     it('Should round value to nearest step.', () => {
       const wrapper = mountWithComposable({
