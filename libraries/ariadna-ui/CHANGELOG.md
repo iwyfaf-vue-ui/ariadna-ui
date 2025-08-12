@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.40.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.39.0...v1.40.0)
+
+### 🚀 Enhancements
+
+- Add IframeVideoHelper helper class ([6ca01fe](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/6ca01fe))
+
+### 🏡 Chore
+
+- Bump ariadna-ui to version 1.39.0 ([a89cd26](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/a89cd26))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.39.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.38.1...v1.39.0)
