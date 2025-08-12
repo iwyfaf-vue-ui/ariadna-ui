@@ -13,6 +13,10 @@ const sidebarUtilitiesHelpers: DefaultTheme.SidebarItem = {
       text: 'ToKebab',
       link: '/utilities/helpers/to-kebab/',
     },
+    {
+      text: 'IframeVideoHelper',
+      link: '/utilities/helpers/iframe-video-helper/',
+    },
   ],
 };
 

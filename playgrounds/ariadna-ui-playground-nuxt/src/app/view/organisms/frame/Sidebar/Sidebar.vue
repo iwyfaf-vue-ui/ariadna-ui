@@ -314,6 +314,10 @@ const data = ref<Array<TSidebarMenuItem>>([
             title: 'ToKebab',
             href: '/utilities/helpers/to-kebab',
           },
+          {
+            title: 'IframeVideoHelper',
+            href: '/utilities/helpers/iframe-video-helper',
+          },
         ],
       },
     ],
