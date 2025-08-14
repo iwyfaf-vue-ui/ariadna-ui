@@ -18,7 +18,8 @@
       width: 100%;
       padding: var(--indent-padding-xlarge);
       margin-left: 0;
-      overflow: auto;
+      overflow: hidden;
+      word-break: break-word;
       transition: margin-left 0.3s ease;
 
       @include theme.md {

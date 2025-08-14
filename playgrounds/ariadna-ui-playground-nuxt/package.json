@@ -4,9 +4,9 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --host localhost --host 127.0.0.1",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
+    "preview": "nuxt preview --host localhost --host 127.0.0.1",
     "postinstall": "nuxt prepare",
     "theme": "node theme.config.js",
     "generate:icons": "fantasticon --normalize"

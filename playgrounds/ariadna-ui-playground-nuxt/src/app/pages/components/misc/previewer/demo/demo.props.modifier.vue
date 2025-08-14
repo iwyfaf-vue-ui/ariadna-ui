@@ -30,6 +30,6 @@ import Previewer from '@iwyfaf-vue-ui/ariadna-ui/Previewer';
 import Button from '@iwyfaf-vue-ui/ariadna-ui/Button';
 
 // Examples
-import _previewerExample from './_previewer.example.vue';
-import _previewerExampleSource from './_previewer.example.vue?raw';
+import _previewerExample from './example.vue';
+import _previewerExampleSource from './example.vue?raw';
 </script>

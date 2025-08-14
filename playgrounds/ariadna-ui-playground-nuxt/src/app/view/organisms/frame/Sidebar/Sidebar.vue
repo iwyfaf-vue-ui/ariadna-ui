@@ -227,6 +227,10 @@ const data = ref<Array<TSidebarMenuItem>>([
             title: 'useFocusBlur',
             href: '/composables/sensors/useFocusBlur',
           },
+          {
+            title: 'useGesturePinchExpand',
+            href: '/composables/sensors/useGesturePinchExpand',
+          },
         ],
       },
     ],

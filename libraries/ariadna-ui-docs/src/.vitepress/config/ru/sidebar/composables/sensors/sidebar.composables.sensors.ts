@@ -9,6 +9,10 @@ const sidebarComposablesSensors: DefaultTheme.SidebarItem = {
       text: 'useFocusBlur',
       link: '/composables/sensors/use-focus-blur/',
     },
+    {
+      text: 'useGesturePinchExpand',
+      link: '/composables/sensors/use-gesture-pinch-expand/',
+    },
   ],
 };
 

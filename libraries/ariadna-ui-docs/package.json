@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "Ariadna UI docs.",
   "scripts": {
-    "docs:dev": "vitepress dev src",
+    "docs:dev": "vitepress dev src --host localhost --host 192.168.0.100",
     "docs:build": "vitepress build src",
     "docs:preview": "vitepress preview src"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@iwyfaf-vue-ui/ariadna-ui": "^1.40.0"
+    "@iwyfaf-vue-ui/ariadna-ui": "^1.40.1-beta.0"
   },
   "devDependencies": {
     "prettier": "^3.5.3",
