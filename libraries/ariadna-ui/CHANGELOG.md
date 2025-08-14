@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v1.41.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.40.0...v1.41.0)
+
+### 🚀 Enhancements
+
+- Add useGesturePinchExpand composable and docs ([001adf7](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/001adf7))
+
+### 🏡 Chore
+
+- Bump ariadna-ui to version 1.40.0 ([83ce898](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/83ce898))
+
+### ✅ Tests
+
+- Add tests for isObject, isImage, and isVideo ([4cba4df](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/4cba4df))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.40.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.39.0...v1.40.0)
