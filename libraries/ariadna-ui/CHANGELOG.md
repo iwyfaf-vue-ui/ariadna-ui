@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v1.42.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.41.0...v1.42.0)
+
+### 🚀 Enhancements
+
+- Add Observable pattern implementation with tests ([584266c](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/584266c))
+- Add Viewer component ([29a8098](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/29a8098))
+
+### 🏡 Chore
+
+- Update @iwyfaf-vue-ui/ariadna-ui to 1.41.0 ([617dfac](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/617dfac))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.41.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.40.0...v1.41.0)
