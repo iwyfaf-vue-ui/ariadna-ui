@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.41.0",
+  "version": "1.41.1-beta.1",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -150,6 +150,10 @@
       "import": "./dist/lib/components/panels/Tabs/Tabs.esm.js",
       "types": "./dist/lib/components/panels/Tabs/Tabs.d.ts"
     },
+    "./useViewer": {
+      "import": "./dist/lib/composables/components/useViewer/useViewer.esm.js",
+      "types": "./dist/lib/composables/components/useViewer/useViewer.d.ts"
+    },
     "./useDragViewport": {
       "import": "./dist/lib/composables/elements/useDragViewport/useDragViewport.esm.js",
       "types": "./dist/lib/composables/elements/useDragViewport/useDragViewport.d.ts"
@@ -157,6 +161,10 @@
     "./useElementSize": {
       "import": "./dist/lib/composables/elements/useElementSize/useElementSize.esm.js",
       "types": "./dist/lib/composables/elements/useElementSize/useElementSize.d.ts"
+    },
+    "./useElementsSizes": {
+      "import": "./dist/lib/composables/elements/useElementsSizes/useElementsSizes.esm.js",
+      "types": "./dist/lib/composables/elements/useElementsSizes/useElementsSizes.d.ts"
     },
     "./useOrderedElements": {
       "import": "./dist/lib/composables/elements/useOrderedElements/useOrderedElements.esm.js",
@@ -193,6 +201,10 @@
     "./OnClickOutside": {
       "import": "./dist/lib/directives/sensors/OnClickOutside/OnClickOutside.esm.js",
       "types": "./dist/lib/directives/sensors/OnClickOutside/OnClickOutside.d.ts"
+    },
+    "./ViewerService": {
+      "import": "./dist/lib/services/components/ViewerService/ViewerService.esm.js",
+      "types": "./dist/lib/services/components/ViewerService/ViewerService.d.ts"
     },
     "./QueryBuilder": {
       "import": "./dist/lib/utilities/builders/QueryBuilder/QueryBuilder.esm.js",
@@ -298,11 +310,17 @@
       "Tabs": [
         "./dist/lib/components/panels/Tabs/Tabs.d.ts"
       ],
+      "useViewer": [
+        "./dist/lib/composables/components/useViewer/useViewer.d.ts"
+      ],
       "useDragViewport": [
         "./dist/lib/composables/elements/useDragViewport/useDragViewport.d.ts"
       ],
       "useElementSize": [
         "./dist/lib/composables/elements/useElementSize/useElementSize.d.ts"
+      ],
+      "useElementsSizes": [
+        "./dist/lib/composables/elements/useElementsSizes/useElementsSizes.d.ts"
       ],
       "useOrderedElements": [
         "./dist/lib/composables/elements/useOrderedElements/useOrderedElements.d.ts"
@@ -330,6 +348,9 @@
       ],
       "OnClickOutside": [
         "./dist/lib/directives/sensors/OnClickOutside/OnClickOutside.d.ts"
+      ],
+      "ViewerService": [
+        "./dist/lib/services/components/ViewerService/ViewerService.d.ts"
       ],
       "QueryBuilder": [
         "./dist/lib/utilities/builders/QueryBuilder/QueryBuilder.d.ts"

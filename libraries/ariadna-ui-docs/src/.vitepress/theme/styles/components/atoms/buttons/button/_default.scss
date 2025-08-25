@@ -269,6 +269,14 @@ $button: '.ar-button';
     gap: var(--indent-padding-small);
   }
 
+  // .ar-button__text
+  &__text {
+    // .ar-button__text i[class^="icon-"]
+    i[class^='icon-'] {
+      display: flex;
+    }
+  }
+
   // .ar-button__loading
   &__loading {
     position: absolute;

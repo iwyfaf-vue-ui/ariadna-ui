@@ -9,6 +9,10 @@ const sidebarComponentsMedia: DefaultTheme.SidebarItem = {
       text: 'Video',
       link: '/components/media/video/',
     },
+    {
+      text: 'Viewer',
+      link: '/components/media/viewer/',
+    },
   ],
 };
 

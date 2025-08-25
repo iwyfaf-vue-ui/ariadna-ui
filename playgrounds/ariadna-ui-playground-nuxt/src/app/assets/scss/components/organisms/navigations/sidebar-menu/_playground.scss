@@ -267,7 +267,7 @@ $sidebar-menu: '.playground-sidebar-menu';
   &__scroll {
     position: relative;
     height: calc(
-      100vh - (var(--sidebar-header-height) + var(--sidebar-footer-height) + var(--header-height))
+      100dvh - (var(--sidebar-header-height) + var(--sidebar-footer-height) + var(--header-height))
     );
 
     // .playground-sidebar-menu__scroll-bar-area

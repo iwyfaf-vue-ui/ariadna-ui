@@ -1,6 +1,6 @@
 @font-face {
 font-family: "icons";
-src: url("./icons.woff2?0ea09f2cf271e9581d26e44c693f79a2") format("woff2");
+src: url("./icons.woff2?8cf43bfe1a80467c631e745c4bf755ac") format("woff2");
 font-display: swap;
 }
 
@@ -15,21 +15,30 @@ line-height: 1;
 -moz-osx-font-smoothing: grayscale;
 }
 
-    .icon-fill-volume-on:before {
+    .icon-line-right:before {
   content: "\f101";
   }
-    .icon-fill-volume-off:before {
+    .icon-line-left:before {
   content: "\f102";
   }
-    .icon-fill-play:before {
+    .icon-line-close:before {
   content: "\f103";
   }
-    .icon-fill-pause:before {
+    .icon-fill-volume-on:before {
   content: "\f104";
   }
-    .icon-fill-fullscreen-out:before {
+    .icon-fill-volume-off:before {
   content: "\f105";
   }
-    .icon-fill-fullscreen-in:before {
+    .icon-fill-play:before {
   content: "\f106";
+  }
+    .icon-fill-pause:before {
+  content: "\f107";
+  }
+    .icon-fill-fullscreen-out:before {
+  content: "\f108";
+  }
+    .icon-fill-fullscreen-in:before {
+  content: "\f109";
   }

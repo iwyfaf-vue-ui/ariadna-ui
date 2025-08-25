@@ -173,6 +173,10 @@ const data = ref<Array<TSidebarMenuItem>>([
             title: 'Video',
             href: '/components/media/video',
           },
+          {
+            title: 'Viewer',
+            href: '/components/media/viewer',
+          },
         ],
       },
       {
@@ -200,6 +204,10 @@ const data = ref<Array<TSidebarMenuItem>>([
           {
             title: 'useElementSize',
             href: '/composables/elements/useElementSize',
+          },
+          {
+            title: 'useElementsSizes',
+            href: '/composables/elements/useElementsSizes',
           },
           {
             title: 'useOrderedElements',

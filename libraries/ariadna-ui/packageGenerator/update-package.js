@@ -42,7 +42,17 @@ const updatePackage = () => {
   const components = scanFiles(
     './src/lib/components',
     ['.test.ts'],
-    ['components', 'composables', 'core', 'directive', 'prompts', 'providers', 'tests', 'types'],
+    [
+      'components',
+      'composables',
+      'core',
+      'directive',
+      'event-bus',
+      'prompts',
+      'providers',
+      'tests',
+      'types',
+    ],
   );
 
   const composables = scanFiles(
@@ -57,6 +67,12 @@ const updatePackage = () => {
     ['composables', 'core', 'prompts', 'providers', 'tests', 'types'],
   );
 
+  const services = scanFiles(
+    './src/lib/services',
+    ['.test.ts'],
+    ['core', 'types', 'tests', 'prompts'],
+  );
+
   const utilities = scanFiles(
     './src/lib/utilities',
     ['.test.ts'],
@@ -64,7 +80,7 @@ const updatePackage = () => {
   );
 
   const typesVersions = Object.fromEntries(
-    Object.entries({ ...components, ...composables, ...directives, ...utilities }).map(
+    Object.entries({ ...components, ...composables, ...directives, ...services, ...utilities }).map(
       ([_, value]) => {
         const file = value.find(
           (file) => file.name.includes('.d.ts') || file.name.includes('.types.ts'),
@@ -76,7 +92,7 @@ const updatePackage = () => {
   );
 
   const exports = Object.fromEntries(
-    Object.entries({ ...components, ...composables, ...directives, ...utilities }).map(
+    Object.entries({ ...components, ...composables, ...directives, ...services, ...utilities }).map(
       ([_, value]) => {
         const file = value.find(
           (file) => file.name.includes('.d.ts') || file.name.includes('.types.ts'),

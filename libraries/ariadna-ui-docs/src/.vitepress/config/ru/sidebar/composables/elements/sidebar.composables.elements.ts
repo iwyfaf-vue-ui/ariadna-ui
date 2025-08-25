@@ -14,6 +14,10 @@ const sidebarComposablesElements: DefaultTheme.SidebarItem = {
       link: '/composables/elements/use-element-size/',
     },
     {
+      text: 'useElementsSizes',
+      link: '/composables/elements/use-elements-sizes/',
+    },
+    {
       text: 'useOrderedElements',
       link: '/composables/elements/use-ordered-elements/',
     },

@@ -23,7 +23,17 @@ type TFileTree = {
 const components: TFileTree = scanFiles(
   './src/lib/components',
   ['.test.ts'],
-  ['components', 'composables', 'core', 'directive', 'prompts', 'providers', 'tests', 'types'],
+  [
+    'components',
+    'composables',
+    'core',
+    'directive',
+    'event-bus',
+    'prompts',
+    'providers',
+    'tests',
+    'types',
+  ],
 );
 
 const composables: TFileTree = scanFiles(
@@ -38,6 +48,12 @@ const directives: TFileTree = scanFiles(
   ['composables', 'core', 'prompts', 'providers', 'tests', 'types'],
 );
 
+const services: TFileTree = scanFiles(
+  './src/lib/services',
+  ['.test.ts'],
+  ['core', 'types', 'tests', 'prompts'],
+);
+
 const utilities: TFileTree = scanFiles(
   './src/lib/utilities',
   ['.test.ts'],
@@ -45,7 +61,7 @@ const utilities: TFileTree = scanFiles(
 );
 
 const dynamicFileNames = Object.fromEntries(
-  Object.entries({ ...components, ...composables, ...directives, ...utilities }).map(
+  Object.entries({ ...components, ...composables, ...directives, ...services, ...utilities }).map(
     ([_, value]) => {
       const file = value[0];
       const fileName = file.name.split('.')[0];
