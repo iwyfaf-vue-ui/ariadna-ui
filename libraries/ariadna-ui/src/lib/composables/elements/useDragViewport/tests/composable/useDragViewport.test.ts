@@ -36,7 +36,7 @@ describe('useDrag', () => {
       expect(vm.x).toBe(0);
       expect(vm.y).toBe(0);
       expect(vm.isDragging).toBe(false);
-      expect(vm.style.position).toBe('absolute');
+      expect(vm.style.position).toBe('fixed');
       expect(vm.style.touchAction).toBe('none');
       expect(vm.style.left).toBe(undefined);
       expect(vm.style.top).toBe(undefined);

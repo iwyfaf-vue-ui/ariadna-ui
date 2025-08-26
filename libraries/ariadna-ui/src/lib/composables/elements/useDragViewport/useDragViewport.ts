@@ -30,7 +30,7 @@ export default function useDragViewport(
   const offset = { x: 0, y: 0 };
 
   const style = computed<CSSProperties>(() => ({
-    position: !mergedOptions.disabled.value ? 'absolute' : undefined,
+    position: !mergedOptions.disabled.value ? 'fixed' : undefined,
     left: !mergedOptions.disabled.value && x.value ? `${x.value}px` : undefined,
     top: !mergedOptions.disabled.value && y.value ? `${y.value}px` : undefined,
     touchAction: !mergedOptions.disabled.value ? `none` : undefined,
@@ -62,27 +62,24 @@ export default function useDragViewport(
       const viewportHeight = window.innerHeight;
       const containerRect = container.value.getBoundingClientRect();
 
-      let newX = e.pageX - offset.x;
-      let newY = e.pageY - offset.y;
+      let newX = e.clientX - offset.x;
+      let newY = e.clientY - offset.y;
 
       if (containerRect) {
-        const scrollLeft = window.scrollX || window.pageXOffset;
-        const scrollTop = window.scrollY || window.pageYOffset;
-
-        if (newX < scrollLeft) {
+        if (newX < 0) {
           newX = x.value;
         }
 
-        if (newX + containerRect.width > viewportWidth + scrollLeft) {
-          newX = viewportWidth + scrollLeft - containerRect.width;
+        if (newX + containerRect.width > viewportWidth) {
+          newX = viewportWidth - containerRect.width;
         }
 
-        if (newY < scrollTop) {
+        if (newY < 0) {
           newY = y.value;
         }
 
-        if (newY + containerRect.height > viewportHeight + scrollTop) {
-          newY = viewportHeight + scrollTop - containerRect.height;
+        if (newY + containerRect.height > viewportHeight) {
+          newY = viewportHeight - containerRect.height;
         }
       }
 
