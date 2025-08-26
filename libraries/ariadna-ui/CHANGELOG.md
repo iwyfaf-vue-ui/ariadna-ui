@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v1.42.1
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.42.0...v1.42.1)
+
+### 🩹 Fixes
+
+- UseDragViewport uses fixed position and client coords ([17a76e5](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/17a76e5))
+
+### 📖 Documentation
+
+- Rename usePosition.md to useElementSize.md ([f740d24](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/f740d24))
+
+### 🏡 Chore
+
+- Bump ariadna-ui to version 1.42.0 ([632e5f6](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/632e5f6))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.42.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.41.0...v1.42.0)
