@@ -10,6 +10,10 @@ const sidebarComponentsControls: DefaultTheme.SidebarItem = {
       link: '/components/controls/input-text/',
     },
     {
+      text: 'InputNumber',
+      link: '/components/controls/input-number/',
+    },
+    {
       text: 'Textarea',
       link: '/components/controls/textarea/',
     },

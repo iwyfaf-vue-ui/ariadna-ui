@@ -46,7 +46,7 @@ const updatePackage = () => {
       'components',
       'composables',
       'core',
-      'directive',
+      'directives',
       'event-bus',
       'prompts',
       'providers',

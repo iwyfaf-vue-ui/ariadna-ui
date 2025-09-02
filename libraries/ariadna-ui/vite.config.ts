@@ -27,7 +27,7 @@ const components: TFileTree = scanFiles(
     'components',
     'composables',
     'core',
-    'directive',
+    'directives',
     'event-bus',
     'prompts',
     'providers',
@@ -93,6 +93,7 @@ export default defineConfig(({ mode }) => {
         targets: [
           { src: 'src/types/index.d.ts', dest: 'types/' },
           { src: 'src/types/component.d.ts', dest: 'types/' },
+          { src: 'src/types/locales/bcp-language-tags.types.d.ts', dest: 'types/locales' },
           ...Object.entries(fileNames).map(([key, value]) => ({
             src: `src/${value.path}/${value.name}.d.ts`,
             dest: value.path,

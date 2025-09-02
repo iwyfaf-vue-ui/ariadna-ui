@@ -134,8 +134,7 @@ $input-phone: '.ar-input-phone';
     #{$input-phone}__input-cloned {
       @include theme.text-style-helper(t3);
 
-      height: 24px;
-      padding: 0 var(--indent-padding-small);
+      padding: var(--indent-margin-small) var(--indent-margin-medium);
     }
   }
 
@@ -145,8 +144,7 @@ $input-phone: '.ar-input-phone';
     #{$input-phone}__input-cloned {
       @include theme.text-style-helper(t3);
 
-      height: 36px;
-      padding: 0 var(--indent-padding-small);
+      padding: var(--indent-margin-medium) var(--indent-margin-large);
     }
   }
 
@@ -156,8 +154,7 @@ $input-phone: '.ar-input-phone';
     #{$input-phone}__input-cloned {
       @include theme.text-style-helper(t3);
 
-      height: 48px;
-      padding: 0 var(--indent-padding-small);
+      padding: var(--indent-margin-large) var(--indent-margin-xlarge);
     }
   }
 

@@ -109,8 +109,7 @@ $input-text: '.ar-input-text';
     #{$input-text}__input {
       @include theme.text-style-helper(t3);
 
-      height: 24px;
-      padding: 0 var(--indent-padding-small);
+      padding: var(--indent-margin-small) var(--indent-margin-medium);
     }
   }
 
@@ -119,8 +118,7 @@ $input-text: '.ar-input-text';
     #{$input-text}__input {
       @include theme.text-style-helper(t3);
 
-      height: 36px;
-      padding: 0 var(--indent-padding-small);
+      padding: var(--indent-margin-medium) var(--indent-margin-large);
     }
   }
 
@@ -129,8 +127,7 @@ $input-text: '.ar-input-text';
     #{$input-text}__input {
       @include theme.text-style-helper(t3);
 
-      height: 48px;
-      padding: 0 var(--indent-padding-small);
+      padding: var(--indent-margin-large) var(--indent-margin-xlarge);
     }
   }
 

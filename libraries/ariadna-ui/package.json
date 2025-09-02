@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.42.1",
+  "version": "1.42.2-beta.0",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -29,6 +29,7 @@
     "update-package": "node packageGenerator/update-package.js",
     "build": "npm run prettier && npm run update-package && vue-tsc --noEmit && vite build --out-dir dist",
     "build-dev": "npm run prettier && npm run update-package && vue-tsc --noEmit && vite build --out-dir dist --mode development",
+    "build-dev-light": "vite build --out-dir dist --mode development",
     "release": "npm run build && changelogen --release --push --publish --no-github",
     "release-notes": "changelogen gh release",
     "pre-release": "npm run test && npm run build && changelogen --release --no-github --no-commit --no-output --no-tag --prerelease beta --push --publish --publishTag beta"
@@ -69,6 +70,10 @@
     "./Checkbox": {
       "import": "./dist/lib/components/controls/Checkbox/Checkbox.esm.js",
       "types": "./dist/lib/components/controls/Checkbox/Checkbox.d.ts"
+    },
+    "./InputNumber": {
+      "import": "./dist/lib/components/controls/InputNumber/InputNumber.esm.js",
+      "types": "./dist/lib/components/controls/InputNumber/InputNumber.d.ts"
     },
     "./InputText": {
       "import": "./dist/lib/components/controls/InputText/InputText.esm.js",
@@ -249,6 +254,9 @@
       ],
       "Checkbox": [
         "./dist/lib/components/controls/Checkbox/Checkbox.d.ts"
+      ],
+      "InputNumber": [
+        "./dist/lib/components/controls/InputNumber/InputNumber.d.ts"
       ],
       "InputText": [
         "./dist/lib/components/controls/InputText/InputText.d.ts"
