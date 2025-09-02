@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.43.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.42.1...v1.43.0)
+
+### 🚀 Enhancements
+
+- Add InputNumber component ([1fce929](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/1fce929))
+
+### 🏡 Chore
+
+- Bump ariadna-ui to version 1.42.1 in docs ([e832540](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/e832540))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.42.1
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.42.0...v1.42.1)
