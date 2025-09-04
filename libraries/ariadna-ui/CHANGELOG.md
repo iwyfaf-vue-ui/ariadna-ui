@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.44.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.43.0...v1.44.0)
+
+### 🚀 Enhancements
+
+- Handle single minus sign input in InputNumber formatter ([42f609a](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/42f609a))
+
+### 🏡 Chore
+
+- Update ariadna-ui dependency to v1.43.0 ([80b391a](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/80b391a))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.43.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.42.1...v1.43.0)
