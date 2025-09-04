@@ -45,6 +45,10 @@ export default class InputNumberFormatterCore implements IInputNumberFormatterCo
    * ```
    */
   private numberOnly(regExp?: RegExp) {
+    if (this.input === '-') {
+      return '-';
+    }
+
     return (
       this.input
         ?.toString()
@@ -65,8 +69,18 @@ export default class InputNumberFormatterCore implements IInputNumberFormatterCo
    * formatter.input = "123.45";
    * formatter.realNumber(); // 123.45
    */
-  private realNumber(): number {
-    return parseFloat(this.numberOnly());
+  private realNumber(): number | string {
+    if (this.input === '-') {
+      return '-';
+    }
+
+    const numStr = this.numberOnly();
+
+    if (numStr === '' || numStr === '-') {
+      return '';
+    }
+
+    return parseFloat(numStr);
   }
 
   /**
@@ -81,6 +95,10 @@ export default class InputNumberFormatterCore implements IInputNumberFormatterCo
    * formatter.isNull(); // true
    */
   private isNull() {
+    if (this.input === '-') {
+      return false;
+    }
+
     return !this.numberOnly(this.isClean ? this.numberRegExp : this.negativeRegExp);
   }
 
@@ -97,6 +115,10 @@ export default class InputNumberFormatterCore implements IInputNumberFormatterCo
    */
   private numbers() {
     const { locale } = this.options;
+
+    if (this.input === '-') {
+      return '-';
+    }
 
     this.number = Number(this.numberOnly());
 
@@ -125,7 +147,9 @@ export default class InputNumberFormatterCore implements IInputNumberFormatterCo
 
     const hasMinus = this.input.toString().indexOf('-') >= 0;
     if (this.isClean) {
-      return hasMinus && this.realNumber() > 0 ? '-' : '';
+      const realNum = this.realNumber();
+
+      return hasMinus && typeof realNum === 'number' && realNum > 0 ? '-' : '';
     }
 
     return hasMinus ? '-' : '';
@@ -153,6 +177,12 @@ export default class InputNumberFormatterCore implements IInputNumberFormatterCo
 
   public increment(): number {
     const { step, max, min } = this.options;
+
+    if (this.input === '-') {
+      const newNumber = Number(step);
+      return min && newNumber < min ? min : newNumber;
+    }
+
     const newNumber = parseFloat(this.sign() + this.numberOnly()) + Number(step);
 
     if (min && newNumber < min) {
@@ -168,6 +198,11 @@ export default class InputNumberFormatterCore implements IInputNumberFormatterCo
 
   public decrement(): number {
     const { step, min, max } = this.options;
+
+    if (this.input === '-') {
+      const newNumber = 0 - Math.abs(Number(step));
+      return max && newNumber > max ? max : newNumber;
+    }
 
     const newNumber = parseFloat(this.sign() + this.numberOnly()) - Math.abs(Number(step));
 
@@ -188,7 +223,11 @@ export default class InputNumberFormatterCore implements IInputNumberFormatterCo
 
     const { empty, prefix, suffix } = this.options;
 
-    if (this.isNull()) {
+    if (input === '-') {
+      return '-';
+    }
+
+    if (input === '' || this.isNull()) {
       return <string>empty;
     }
 
@@ -199,6 +238,10 @@ export default class InputNumberFormatterCore implements IInputNumberFormatterCo
   }
 
   public unFormat(input: Numberish): number | string {
+    if (input === '-') {
+      return '-';
+    }
+
     this.input = input;
 
     const { empty } = this.options;

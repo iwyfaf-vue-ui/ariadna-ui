@@ -181,6 +181,10 @@ describe('InputNumberFormat', () => {
       expect(formatter.format(0)).toBe('0');
     });
 
+    it('Should format with first minus sign.', () => {
+      expect(formatter.format('-')).toBe('-');
+    });
+
     it('Should format with prefix/suffix containing special characters.', () => {
       formatter.options.prefix = '$[₽].';
       formatter.options.suffix = '%^()';
@@ -230,6 +234,10 @@ describe('InputNumberFormat', () => {
 
     it('Should unformat zero.', () => {
       expect(formatter.unFormat('0')).toBe(0);
+    });
+
+    it('Should unformat with first minus sign.', () => {
+      expect(formatter.unFormat('-')).toBe('-');
     });
 
     it('Should unformat with prefix/suffix containing special characters.', () => {
