@@ -1,6 +1,6 @@
 import type { VNode } from 'vue';
 import type { IInputNumberElement } from '../../types/InputNumber.types';
-import InputNumberEventsCore from '@/lib/components/controls/InputNumber/core/events/input-number.events.core';
+import InputNumberEventsCore from '../events/input-number.events.core';
 
 /**
  * Interface defining the core methods for managing and interacting with an InputNumber element.
