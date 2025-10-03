@@ -1,6 +1,6 @@
 import type { TInputNumberProps } from '../InputNumber';
 import type { Numberish } from '../../../../../types/index';
-import type InputNumberElementCore from '@/lib/components/controls/InputNumber/core/element/input-number.element.core';
+import type InputNumberElementCore from '../core/element/input-number.element.core';
 
 /**
  * Represents the configuration options for the InputNumber component.
