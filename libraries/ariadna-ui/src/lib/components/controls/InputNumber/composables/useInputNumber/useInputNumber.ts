@@ -56,8 +56,7 @@ export default function useInputNumber(
     const size = props.size ? `${base}--${props.size}` : undefined;
     const focus = focused.value ? `${base}--focused` : undefined;
     const hover = hovered.value && !focused.value ? `${base}--hovered` : undefined;
-    const fill =
-      props.modelValue !== null || props.modelValue !== undefined ? `${base}--filled` : undefined;
+    const fill = props.modelValue !== null ? `${base}--filled` : undefined;
     const disable = props.disabled ? `${base}--disabled` : undefined;
     const valid = props.valid ? `${base}--valid` : undefined;
     const invalid = props.invalid ? `${base}--invalid` : undefined;
