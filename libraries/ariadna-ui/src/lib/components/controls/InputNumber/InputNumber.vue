@@ -113,13 +113,13 @@ import vInputNumber from './directives/InputNumber';
 
 // Composables
 import useInputNumber from './composables/useInputNumber/useInputNumber';
+import useInputNumberHandlers from './composables/useInputNumberHandlers/useInputNumberHandlers';
 
 // Core
 import InputNumberFormatterCore from './core/formatter/input-number.formatter.core';
 
 // Shared
 import type { Numberish } from '@/types';
-import useInputNumberHandlers from '@/lib/components/controls/InputNumber/composables/useInputNumberHandlers/useInputNumberHandlers';
 
 defineOptions({
   inheritAttrs: false,
