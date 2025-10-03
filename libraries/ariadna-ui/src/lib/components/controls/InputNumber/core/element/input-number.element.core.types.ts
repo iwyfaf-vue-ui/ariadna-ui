@@ -5,7 +5,7 @@ import InputNumberEventsCore from '../events/input-number.events.core';
 /**
  * Interface defining the core methods for managing and interacting with an InputNumber element.
  */
-export interface IInputNumberElementCore {
+export default interface IInputNumberElementCore {
   /**
    * Retrieves the input number element instance from a given HTML element.
    *
