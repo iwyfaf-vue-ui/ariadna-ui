@@ -1,5 +1,5 @@
 import type { VNode } from 'vue';
-import type { IInputNumberElementCore } from './input-number.element.core.types';
+import type IInputNumberElementCore from './input-number.element.core.types';
 import type { IInputNumberElement } from '../../types/InputNumber.types';
 import { ELibraryConfig } from '@/types/internal';
 import { EInputNumberConfig, EInputNumberErrors } from '../../types/InputNumber.enums';

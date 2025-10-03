@@ -1,6 +1,7 @@
 import type { TInputNumberProps } from '../InputNumber';
 import type { Numberish } from '../../../../../types/index';
-import type InputNumberElementCore from '../core/element/input-number.element.core';
+// @ts-ignore because that core interface is not exported from the package
+import type { IInputNumberElementCore } from '../core/element/input-number.element.core.types';
 
 /**
  * Represents the configuration options for the InputNumber component.
@@ -90,7 +91,7 @@ export interface IInputNumberElement extends HTMLInputElement {
    * and state. This property is used internally and should not be accessed or modified directly outside the
    * component's implementation.
    */
-  __inputNumberCore__?: InputNumberElementCore;
+  __inputNumberCore__?: IInputNumberElementCore;
 }
 
 /**
