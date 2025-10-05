@@ -73,9 +73,9 @@ export interface IInputNumberFormatterCore {
    * Formats the given input value into a string representation according to the formatter's rules.
    *
    * @param {Numberish} input - The value to format (number or string).
-   * @returns {string} - The formatted string representation of the input.
+   * @returns {string | null} - The formatted string representation of the input.
    */
-  format(input: Numberish): string;
+  format(input: Numberish): string | null;
 
   /**
    * Parses and unformats the given input value, returning its numeric representation or original string if invalid.

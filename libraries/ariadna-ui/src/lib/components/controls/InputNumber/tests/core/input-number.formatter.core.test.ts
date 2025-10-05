@@ -11,7 +11,7 @@ describe('InputNumberFormat', () => {
     min: undefined,
     max: undefined,
     step: 1,
-    empty: '',
+    empty: null,
   };
 
   beforeEach(() => {

@@ -50,7 +50,7 @@ export type TInputNumberEmitStepPayload = {
   /**
    * The current numeric value of the input after the step action.
    */
-  value: Numberish;
+  value: Numberish | null;
 
   /**
    * The direction of the step action: 'up' for increment, 'down' for decrement.
@@ -79,7 +79,7 @@ export interface IInputNumberElement extends HTMLInputElement {
   /**
    * The formatted string representation of the input value.
    */
-  masked: string;
+  masked: string | null;
 
   /**
    * The raw numeric value (unformatted).

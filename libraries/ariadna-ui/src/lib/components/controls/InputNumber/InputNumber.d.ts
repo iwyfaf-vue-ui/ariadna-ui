@@ -137,11 +137,11 @@ export type TInputNumberProps = {
   /**
    * Default value of `<input>` element when no value present.
    *
-   * @type string
-   * @default {@link EInputNumberPropsDefault.EMPTY}
+   * @type string | null
+   * @default null
    * @example empty="No value"
    */
-  empty?: string;
+  empty?: string | null;
 
   /**
    * Text to display before the value.
@@ -280,9 +280,9 @@ export type TInputNumberEmits = {
    * Emitted when the model value is updated.
    *
    * @param {"update:model-value"} e - The event name: 'update:model-value'.
-   * @param {Numberish | undefined} payload - The new value of the InputNumber component.
+   * @param {Numberish | null} payload - The new value of the InputNumber component.
    */
-  (e: 'update:model-value', payload: Numberish | undefined): void;
+  (e: 'update:model-value', payload: Numberish | null): void;
 
   /**
    * Emitted when component gains focus.

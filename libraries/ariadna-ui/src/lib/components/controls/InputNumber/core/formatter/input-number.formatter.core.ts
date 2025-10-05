@@ -217,7 +217,7 @@ export default class InputNumberFormatterCore implements IInputNumberFormatterCo
     return newNumber;
   }
 
-  public format(input: Numberish | null): string {
+  public format(input: Numberish | null): string | null {
     this.input = input;
     this.isNegative();
 
@@ -228,7 +228,7 @@ export default class InputNumberFormatterCore implements IInputNumberFormatterCo
     }
 
     if (input === '' || this.isNull()) {
-      return <string>empty;
+      return <string | null>empty;
     }
 
     const prefixStr = prefix !== undefined ? prefix : '';

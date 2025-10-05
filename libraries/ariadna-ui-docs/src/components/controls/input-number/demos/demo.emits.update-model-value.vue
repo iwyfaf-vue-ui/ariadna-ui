@@ -18,7 +18,7 @@ import type { Numberish } from '@iwyfaf-vue-ui/ariadna-ui/types';
 
 const inputNumberValue = ref(0);
 
-function onUpdateModelValue(event: Numberish | undefined) {
+function onUpdateModelValue(event: Numberish | null) {
   console.log(event);
 }
 </script>

@@ -9,9 +9,9 @@ import type { TInputNumberEmitStepPayload } from '../../types/InputNumber.types'
 
 export default function useInputNumberHandlers(
   emits: TInputNumberEmits,
-  maskedValue: Ref<string, string>,
+  maskedValue: Ref<string | null, string | null>,
   unmaskedValue: Ref<Numberish, Numberish>,
-  emittedValue: ComputedRef<Numberish>,
+  emittedValue: ComputedRef<Numberish | null>,
   inputNumberFormatterCore: InputNumberFormatterCore,
 ): TUseInputNumberHandlersReturn {
   const calculationInterval = ref<ReturnType<typeof setInterval> | null>(null);

@@ -159,8 +159,14 @@ export default class InputNumberElementCore implements IInputNumberElementCore {
       el.masked = masked;
       el.unmasked = unmasked;
 
+      if (masked === null && unmasked === null) {
+        el.value = masked!;
+        emit = false;
+        return emit && el.dispatchEvent(InputNumberEventsCore.createBase('input'));
+      }
+
       if (el.value !== masked) {
-        el.value = masked;
+        el.value = masked!;
         emit = true;
       }
 

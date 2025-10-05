@@ -49,7 +49,7 @@ import InputNumber from '@iwyfaf-vue-ui/ariadna-ui/InputNumber';
 | `min`          | -        | `number`                   | `undefined`                                                           | Минимальное значение `input`.                                                                |
 | `max`          | -        | `number`                   | `undefined`                                                           | Максимальное значение `input`.                                                               |
 | `step`         | -        | `Numberish`                | `EInputNumberPropsDefault.STEP`                                       | Шаговый коэффициент для увеличения или уменьшения значения. Может быть целым или десятичным. |
-| `empty`        | -        | `string`                   | `undefined`                                                           | Значение элемента `input` по умолчанию, если значение отсутствует.                           |
+| `empty`        | -        | `string \| null`           | `null`                                                                | Значение элемента `input` по умолчанию, если значение отсутствует.                           |
 | `prefix`       | -        | `string`                   | `undefined`                                                           | Текст, который будет показан до значения.                                                    |
 | `suffix`       | -        | `string`                   | `undefined`                                                           | Текст, который будет показан после значения.                                                 |
 | `locale`       | -        | `TBcpLanguageTags \| null` | `undefined`                                                           | Локаль, которая будет использоваться при форматировании значения `input`.                    |
@@ -100,7 +100,6 @@ import InputNumber from '@iwyfaf-vue-ui/ariadna-ui/InputNumber';
 ::: details Пример
 <demo src="./demos/demo.props.placeholder.vue"></demo>
 :::
-
 
 ### `name`
 
@@ -194,8 +193,8 @@ import InputNumber from '@iwyfaf-vue-ui/ariadna-ui/InputNumber';
 
 ### `empty`
 
-- **Тип:** `string`
-- **Значение по умолчанию:** `undefined`
+- **Тип:** `string | null`
+- **Значение по умолчанию:** `null`
 - **Описание**: Значение элемента `input` по умолчанию, если значение отсутствует.
 
 ::: details Пример
@@ -374,7 +373,7 @@ import InputNumber from '@iwyfaf-vue-ui/ariadna-ui/InputNumber';
 ### update:model-value
 
 - **Описание:** Событие срабатывает при обновлении значения `modelValue`.
-- **Тип:** `payload: TInputTextProps['modelValue']`
+- **Тип:** `payload: Numberish | null`
 
 ::: details Пример
 <demo src="./demos/demo.emits.update-model-value.vue"></demo>

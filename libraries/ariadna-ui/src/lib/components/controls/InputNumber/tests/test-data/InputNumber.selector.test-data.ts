@@ -72,7 +72,7 @@ export class InputNumberSelectorTestData extends DataSelector {
     modelValue: 0,
     size: EInputNumberPropsDefault.SIZE,
     step: EInputNumberPropsDefault.STEP,
-    empty: EInputNumberPropsDefault.EMPTY as string,
+    empty: null,
     cssClass: EInputNumberPropsDefault.CSS_CLASS as string,
   };
 

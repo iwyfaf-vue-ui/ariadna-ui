@@ -11,7 +11,6 @@ export enum EInputNumberConfig {
 export enum EInputNumberPropsDefault {
   SIZE = 'medium',
   STEP = 1,
-  EMPTY = '',
   CSS_CLASS = 'ar-input-number',
 }
 

@@ -16,7 +16,7 @@ function createInputNumberElement(options = {}) {
     min: undefined,
     max: undefined,
     step: 1,
-    empty: '',
+    empty: null,
     ...options,
   };
   (input as IInputNumberElement).masked = '';

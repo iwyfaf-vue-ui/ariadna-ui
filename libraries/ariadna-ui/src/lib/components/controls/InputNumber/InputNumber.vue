@@ -40,7 +40,7 @@
           :class="`${props.cssClass}__input`"
           :aria-valuemin="props.min"
           :aria-valuemax="props.max"
-          :aria-valuenow="maskedValue"
+          :aria-valuenow="maskedValue ?? undefined"
           v-on="listeners"
           @input="inputHandler"
           @keydown.prevent.up="onKeyDownOrUpHandler"
@@ -129,7 +129,7 @@ const props = withDefaults(defineProps<TInputNumberProps>(), {
   modelValue: 0,
   size: EInputNumberPropsDefault.SIZE,
   step: EInputNumberPropsDefault.STEP,
-  empty: EInputNumberPropsDefault.EMPTY,
+  empty: null,
   errors: () => [],
   cssClass: EInputNumberPropsDefault.CSS_CLASS,
 });
