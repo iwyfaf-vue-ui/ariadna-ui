@@ -14,6 +14,10 @@ const sidebarComponentsControls: DefaultTheme.SidebarItem = {
       link: '/components/controls/input-number/',
     },
     {
+      text: 'InputPassword',
+      link: '/components/controls/input-password/',
+    },
+    {
       text: 'Textarea',
       link: '/components/controls/textarea/',
     },

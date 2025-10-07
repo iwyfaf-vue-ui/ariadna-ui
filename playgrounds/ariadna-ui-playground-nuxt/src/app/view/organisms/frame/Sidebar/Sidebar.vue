@@ -93,6 +93,10 @@ const data = ref<Array<TSidebarMenuItem>>([
             href: '/components/controls/input-number',
           },
           {
+            title: 'InputPassword',
+            href: '/components/controls/input-password',
+          },
+          {
             title: 'Textarea',
             href: '/components/controls/textarea',
           },

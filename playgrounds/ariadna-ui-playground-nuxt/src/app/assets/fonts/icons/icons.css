@@ -1,6 +1,6 @@
 @font-face {
 font-family: "icons";
-src: url("./icons.woff2?8cf43bfe1a80467c631e745c4bf755ac") format("woff2");
+src: url("./icons.woff2?7caa35b304d9568411216b9807cbe553") format("woff2");
 font-display: swap;
 }
 
@@ -21,24 +21,30 @@ line-height: 1;
     .icon-line-left:before {
   content: "\f102";
   }
-    .icon-line-close:before {
+    .icon-line-eye:before {
   content: "\f103";
   }
-    .icon-fill-volume-on:before {
+    .icon-line-eye-off:before {
   content: "\f104";
   }
-    .icon-fill-volume-off:before {
+    .icon-line-close:before {
   content: "\f105";
   }
-    .icon-fill-play:before {
+    .icon-fill-volume-on:before {
   content: "\f106";
   }
-    .icon-fill-pause:before {
+    .icon-fill-volume-off:before {
   content: "\f107";
   }
-    .icon-fill-fullscreen-out:before {
+    .icon-fill-play:before {
   content: "\f108";
   }
-    .icon-fill-fullscreen-in:before {
+    .icon-fill-pause:before {
   content: "\f109";
+  }
+    .icon-fill-fullscreen-out:before {
+  content: "\f10a";
+  }
+    .icon-fill-fullscreen-in:before {
+  content: "\f10b";
   }
