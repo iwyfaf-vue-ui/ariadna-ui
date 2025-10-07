@@ -131,6 +131,7 @@
         v-for="menuItem in props.menu"
         :class="{
           [`${props.cssClass}__navbar-item`]: true,
+          [`${props.cssClass}__navbar-item--${menuItem.class}`]: menuItem.class,
           [`${props.cssClass}__navbar-item--active`]: currentMenuItem?.key === menuItem.key,
         }"
         :key="menuItem.key"

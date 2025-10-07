@@ -44,6 +44,14 @@ export type TMobileMenuItem = {
   icon?: string | null;
 
   /**
+   * Additional CSS class
+   *
+   * @type string
+   * @required
+   */
+  class?: string;
+
+  /**
    * Nested menu items for submenus
    *
    * @type {Array<TSharedMenu>}
