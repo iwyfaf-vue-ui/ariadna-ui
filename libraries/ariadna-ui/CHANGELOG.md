@@ -1,6 +1,37 @@
 # Changelog
 
 
+## v1.45.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.44.0...v1.45.0)
+
+### 🚀 Enhancements
+
+- Add custom class support for MobileMenu items ([9eb4c94](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/9eb4c94))
+- Add InputPassword component ([c570713](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/c570713))
+
+### 🩹 Fixes
+
+- Simplify fill condition in InputNumber component ([5cea79d](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/5cea79d))
+- Update import path for InputNumberEventsCore ([73e3f1c](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/73e3f1c))
+- Update import path for InputNumberElementCore ([3824300](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/3824300))
+- Simplify InputNumber core type imports and declarations ([586d22a](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/586d22a))
+
+### 💅 Refactors
+
+- Consolidate import paths in InputNumber component ([ef36030](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/ef36030))
+- Make IInputNumberElementCore a default export ([785f3ee](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/785f3ee))
+- Change `empty` prop type to `string ([ null`](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/ null`))
+
+### 🏡 Chore
+
+- Bump @iwyfaf-vue-ui/ariadna-ui dependency to v1.44.0 ([c67264c](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/c67264c))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+- 34d5acd ([@iWatchYouFromAfar](https://github.com/iWatchYouFromAfar))
+
 ## v1.44.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.43.0...v1.44.0)
