@@ -125,6 +125,10 @@ const data = ref<Array<TSidebarMenuItem>>([
             title: 'Timeline',
             href: '/components/data/timeline',
           },
+          {
+            title: 'VirtualScroller',
+            href: '/components/data/virtual-scroller',
+          },
         ],
       },
       {

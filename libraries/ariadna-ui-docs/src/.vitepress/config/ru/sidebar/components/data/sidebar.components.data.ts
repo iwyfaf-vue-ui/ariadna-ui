@@ -9,6 +9,10 @@ const sidebarComponentsData: DefaultTheme.SidebarItem = {
       text: 'Timeline',
       link: '/components/data/timeline/',
     },
+    {
+      text: 'VirtualScroller',
+      link: '/components/data/virtual-scroller/',
+    },
   ],
 };
 
