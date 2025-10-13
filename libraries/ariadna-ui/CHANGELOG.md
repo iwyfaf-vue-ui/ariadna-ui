@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.46.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.45.0...v1.46.0)
+
+### 🚀 Enhancements
+
+- Add VirtualScroller component ([71def7e](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/71def7e))
+
+### 🏡 Chore
+
+- Update ariadna-ui dependency to v1.45.0 ([f2f6e96](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/f2f6e96))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.45.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.44.0...v1.45.0)
