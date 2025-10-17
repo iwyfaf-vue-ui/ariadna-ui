@@ -309,6 +309,10 @@ const data = ref<Array<TSidebarMenuItem>>([
         title: 'Builders',
         children: [
           {
+            title: 'FilterBuilder',
+            href: '/utilities/builders/filter-builder',
+          },
+          {
             title: 'QueryBuilder',
             href: '/utilities/builders/query-builder',
           },

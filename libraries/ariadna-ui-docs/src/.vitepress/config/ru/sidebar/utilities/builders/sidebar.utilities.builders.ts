@@ -6,6 +6,10 @@ const sidebarUtilitiesBuilders: DefaultTheme.SidebarItem = {
   link: '/utilities/builders/',
   items: [
     {
+      text: 'FilterBuilder',
+      link: '/utilities/builders/filter-builder/',
+    },
+    {
       text: 'QueryBuilder',
       link: '/utilities/builders/query-builder/',
     },

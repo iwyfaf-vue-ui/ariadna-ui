@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.46.0",
+  "version": "1.46.1-beta.0",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -219,6 +219,10 @@
       "import": "./dist/lib/services/components/ViewerService/ViewerService.esm.js",
       "types": "./dist/lib/services/components/ViewerService/ViewerService.d.ts"
     },
+    "./FilterBuilder": {
+      "import": "./dist/lib/utilities/builders/FilterBuilder/FilterBuilder.esm.js",
+      "types": "./dist/lib/utilities/builders/FilterBuilder/FilterBuilder.d.ts"
+    },
     "./QueryBuilder": {
       "import": "./dist/lib/utilities/builders/QueryBuilder/QueryBuilder.esm.js",
       "types": "./dist/lib/utilities/builders/QueryBuilder/QueryBuilder.d.ts"
@@ -373,6 +377,9 @@
       ],
       "ViewerService": [
         "./dist/lib/services/components/ViewerService/ViewerService.d.ts"
+      ],
+      "FilterBuilder": [
+        "./dist/lib/utilities/builders/FilterBuilder/FilterBuilder.d.ts"
       ],
       "QueryBuilder": [
         "./dist/lib/utilities/builders/QueryBuilder/QueryBuilder.d.ts"
