@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v1.47.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.46.0...v1.47.0)
+
+### 🚀 Enhancements
+
+- Add FilterBuilder class utility ([63bb485](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/63bb485))
+
+### 📖 Documentation
+
+- Rename Timeline to VirtualScroller in documentation ([12cbf06](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/12cbf06))
+
+### 🏡 Chore
+
+- Update ariadna-ui dependency to v1.46.0 ([76e4484](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/76e4484))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.46.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.45.0...v1.46.0)
