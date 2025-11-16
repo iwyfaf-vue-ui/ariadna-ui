@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.48.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.47.0...v1.48.0)
+
+### 🚀 Enhancements
+
+- Add deep equality utilities and tests ([e57b94d](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/e57b94d))
+- Add SelectSingle component with full docs and tests ([5af9890](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/5af9890))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.47.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.46.0...v1.47.0)
