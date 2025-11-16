@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.47.0",
+  "version": "1.47.1-beta.0",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -92,8 +92,8 @@
       "types": "./dist/lib/components/controls/Rating/Rating.d.ts"
     },
     "./SelectSingle": {
-      "import": "./dist/lib/components/controls/SelectSingle/SelectSingle.esm.js",
-      "types": "./dist/lib/components/controls/SelectSingle/SelectSingle.d.ts"
+      "import": "./dist/lib/components/controls/Selects/SelectSingle/SelectSingle.esm.js",
+      "types": "./dist/lib/components/controls/Selects/SelectSingle/SelectSingle.d.ts"
     },
     "./Slider": {
       "import": "./dist/lib/components/controls/Slider/Slider.esm.js",
@@ -287,7 +287,7 @@
         "./dist/lib/components/controls/Rating/Rating.d.ts"
       ],
       "SelectSingle": [
-        "./dist/lib/components/controls/SelectSingle/SelectSingle.d.ts"
+        "./dist/lib/components/controls/Selects/SelectSingle/SelectSingle.d.ts"
       ],
       "Slider": [
         "./dist/lib/components/controls/Slider/Slider.d.ts"

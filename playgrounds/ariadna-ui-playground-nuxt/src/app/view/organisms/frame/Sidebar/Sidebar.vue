@@ -113,6 +113,10 @@ const data = ref<Array<TSidebarMenuItem>>([
             href: '/components/controls/rating',
           },
           {
+            title: 'SelectSingle',
+            href: '/components/controls/select-single',
+          },
+          {
             title: 'Slider',
             href: '/components/controls/slider',
           },

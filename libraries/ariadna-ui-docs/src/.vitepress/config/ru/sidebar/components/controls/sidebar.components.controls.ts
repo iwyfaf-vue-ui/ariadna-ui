@@ -34,6 +34,10 @@ const sidebarComponentsControls: DefaultTheme.SidebarItem = {
       link: '/components/controls/rating/',
     },
     {
+      text: 'SelectSingle',
+      link: '/components/controls/select-single/',
+    },
+    {
       text: 'Slider',
       link: '/components/controls/slider/',
     },
