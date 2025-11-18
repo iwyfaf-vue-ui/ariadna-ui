@@ -211,11 +211,11 @@ export type TSelectSingleSlots = {
   /**
    * Slot for rendering a custom filter input or UI.
    *
-   * @param {{onFilter: (filterState: string) => any[]}} props.onFilter - A callback to trigger filtering with the
+   * @param {{onFilter: (filterState: string) => Array<any>}} props.onFilter - A callback to trigger filtering with the
    * provided filter state.
    * @returns {VNode[]}
    */
-  filter?(props: { onFilter: (filterState: string) => any[] }): VNode[];
+  filter?(props: { onFilter: (filterState: string) => Array<any> }): VNode[];
 
   /**
    * Slot for rendering content when the filter yields no results.
