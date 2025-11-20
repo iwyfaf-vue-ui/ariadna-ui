@@ -30,7 +30,6 @@ const ViewerService: ObjectPlugin = {
     });
 
     viewerEventBus.on(EViewerApi.ON_UNMOUNTED, () => {
-      console.log(viewerEventBus);
       isMounted = false;
       callQueue = [];
     });
