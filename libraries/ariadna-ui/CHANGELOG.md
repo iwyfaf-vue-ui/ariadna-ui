@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.49.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.48.1...v1.49.0)
+
+### 🚀 Enhancements
+
+- Add SelectMultiple component ([c5a6161](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/c5a6161))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.48.1
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.48.0...v1.48.1)
