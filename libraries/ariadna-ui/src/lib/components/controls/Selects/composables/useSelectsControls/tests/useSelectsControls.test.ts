@@ -10,6 +10,7 @@ function mountWithComposable(
     selectOptionHandler = vi.fn(),
     optionsBodyRef = ref(null),
     optionsInList = ref([]),
+    filterElementRef = ref(null),
     virtualScrollerRef = ref(null),
     focusedOptionIndex = ref(0),
     filterOptions = ref([]),
@@ -18,6 +19,7 @@ function mountWithComposable(
     selectOptionHandler: (option: any) => void;
     optionsBodyRef: Ref<HTMLDivElement | null>;
     optionsInList: Ref<Array<HTMLElement>>;
+    filterElementRef: Ref<HTMLDivElement | null>;
     virtualScrollerRef: ReturnType<typeof ref<any>>;
     focusedOptionIndex: Ref<number>;
     filterOptions: Ref<Array<Record<string, any>>>;
@@ -34,6 +36,7 @@ function mountWithComposable(
           selectOptionHandler,
           optionsBodyRef,
           optionsInList,
+          filterElementRef,
           virtualScrollerRef,
           focusedOptionIndex,
           filterOptions,
@@ -45,6 +48,7 @@ function mountWithComposable(
           selectOptionHandler,
           optionsBodyRef,
           optionsInList,
+          filterElementRef,
           virtualScrollerRef,
           focusedOptionIndex,
           filterOptions,
@@ -63,6 +67,7 @@ describe('useSelectsControls', () => {
   let selectOptionHandler: ReturnType<typeof vi.fn>;
   let optionsBodyRef: Ref<HTMLDivElement | null>;
   let optionsInList: Ref<Array<HTMLElement>>;
+  let filterElementRef: Ref<HTMLDivElement | null>;
   let virtualScrollerRef: ReturnType<typeof ref<any>>;
   let focusedOptionIndex: Ref<number>;
   let filterOptions: Ref<Array<Record<string, any>>>;
@@ -98,6 +103,11 @@ describe('useSelectsControls', () => {
         return el;
       }),
     );
+
+    // Создание fake filterElementRef с clientHeight
+    const filterEl = document.createElement('div');
+    Object.defineProperty(filterEl, 'clientHeight', { value: 32, writable: true });
+    filterElementRef = ref(filterEl);
 
     virtualScrollerRef = ref(null);
     focusedOptionIndex = ref(0);
@@ -258,7 +268,7 @@ describe('useSelectsControls', () => {
     });
 
     it('Should handle virtual list navigation and call virtualScrollerRef.scrollTo.', async () => {
-      props.virtualList = true;
+      props.virtualScroller = true;
       const getVisibleIndexes = vi.fn(() => ({ start: 1, end: 3 }));
       const scrollTo = vi.fn();
       virtualScrollerRef.value = { getVisibleIndexes, scrollTo };
@@ -268,6 +278,7 @@ describe('useSelectsControls', () => {
         selectOptionHandler,
         optionsBodyRef,
         optionsInList,
+        filterElementRef,
         virtualScrollerRef,
         focusedOptionIndex,
         filterOptions,

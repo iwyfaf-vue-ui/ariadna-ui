@@ -215,7 +215,7 @@ export type TSelectSingleSlots = {
    * provided filter state.
    * @returns {VNode[]}
    */
-  filter?(props: { onFilter: (filterState: string) => Array<any> }): VNode[];
+  filterInput?(props: { onFilter: (filterState: string) => Array<any> }): VNode[];
 
   /**
    * Slot for rendering content when the filter yields no results.

@@ -50,7 +50,7 @@ export class SelectSingleSelectorTestData extends DataSelector {
   public readonly invalidModifier: string = '';
 
   public modelValueProp: TSelectSingleProps['modelValue'] = 'abc';
-  public filterValueProp: TSelectSingleProps['modelValue'] = 'filter';
+  public filterValueProp: TSelectSingleProps['filterValue'] = 'filter';
   public labelProp: TSelectSingleProps['label'] = 'label value';
   public idProp: TSelectSingleProps['id'] = 'custom-id';
   public placeholderProp: TSelectSingleProps['placeholder'] = 'custom placeholder';
@@ -188,18 +188,18 @@ export class SelectSingleSelectorTestData extends DataSelector {
     ).trim();
   }
 
-  static async getSelectSingleFilterSlotDefault(): Promise<string> {
+  static async getSelectSingleFilterInputSlotDefault(): Promise<string> {
     return (
       await this.readFile(
-        path.resolve(__dirname, 'components/SelectSingle/slot.filter.default.html'),
+        path.resolve(__dirname, 'components/SelectSingle/slot.filter-input.default.html'),
       )
     ).trim();
   }
 
-  static async getSelectSingleFilterSlotCustom(): Promise<string> {
+  static async getSelectSingleFilterInputSlotCustom(): Promise<string> {
     return (
       await this.readFile(
-        path.resolve(__dirname, 'components/SelectSingle/slot.filter.custom.html'),
+        path.resolve(__dirname, 'components/SelectSingle/slot.filter-input.custom.html'),
       )
     ).trim();
   }
@@ -300,7 +300,7 @@ export class SelectSingleSelectorTestData extends DataSelector {
     ).trim();
   }
 
-  static async getInputPasswordErrorsSlotDefault(): Promise<string> {
+  static async getSelectMultipleErrorsSlotDefault(): Promise<string> {
     return (
       await this.readFile(
         path.resolve(__dirname, 'components/SelectSingle/slot.errors.default.html'),
@@ -308,7 +308,7 @@ export class SelectSingleSelectorTestData extends DataSelector {
     ).trim();
   }
 
-  static async getInputPasswordErrorsSlotCustom(): Promise<string> {
+  static async getSelectMultipleErrorsSlotCustom(): Promise<string> {
     return (
       await this.readFile(
         path.resolve(__dirname, 'components/SelectSingle/slot.errors.custom.html'),

@@ -8,20 +8,20 @@ import type { TUseSelectsFilteredOptionsReturn } from './useSelectsFilteredOptio
 /**
  * Composable for filtering options in Selects components based on a filter state and configurable fields.
  *
- * @template Options - The type of the options array elements.
+ * @template <Options extends Array<any>> - The type of the options array elements.
  *
  * @param {() => void} onFilterCallback - Callback function invoked each time filtering occurs.
  * @param {Ref<string>} filterState - Reactive reference to the current filter string.
- * @param {Array<Options>} options - Array of selectable options to be filtered.
+ * @param {Options} options - Array of selectable options to be filtered.
  * @param {TFilterBuilderFullField<Options>[][]} filterLabel - Two-dimensional array specifying which fields of the
  * option objects should be used for filtering.
  *
  * @returns {TUseSelectsFilteredOptionsReturn<Options>}
  */
-export default function useSelectsFilteredOptions<Options>(
+export default function useSelectsFilteredOptions<Options extends Array<any>>(
   onFilterCallback: () => void,
   filterState: Ref<string>,
-  options: Array<Options>,
+  options: Options,
   filterLabel: TFilterBuilderFullField<Options>[][],
 ): TUseSelectsFilteredOptionsReturn<Options> {
   let filterBuilder = ref(new FilterBuilder(options));

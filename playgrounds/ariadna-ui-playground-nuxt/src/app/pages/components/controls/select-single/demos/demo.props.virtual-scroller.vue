@@ -5,7 +5,7 @@
     :options="optionsVs"
     label="Виртуальный скролл, в массиве 5000 объектов"
     :filter="{ filterLabel: [[{ field: 'label' }]] }"
-    :virtual-scroller="{ itemHeight: 40, height: 200 }"
+    :virtual-scroller="{ itemHeight: 42, height: 210 }"
   />
 </template>
 

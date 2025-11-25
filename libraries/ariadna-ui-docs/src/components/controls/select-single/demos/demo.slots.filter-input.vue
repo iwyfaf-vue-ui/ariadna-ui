@@ -6,7 +6,7 @@
     label="Реализация vModel"
     :filter="{ filterLabel: [[{ field: 'label' }]] }"
   >
-    <template #filter="{ onFilter }">
+    <template #filterInput="{ onFilter }">
       <InputText
         v-model="selectSingleValueFilter"
         label="Встроенная фильтрация"

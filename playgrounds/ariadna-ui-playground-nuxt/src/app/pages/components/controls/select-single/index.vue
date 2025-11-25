@@ -238,7 +238,7 @@
   <Previewer :component="DemoPropsFilter" :component-source="DemoPropsFilterSource">
     <template #header> Prop Filter </template>
     <template #description>
-      Активирует встроенную фильтрацию опций, выводит дефолтное содержимое слота `filter`.
+      Активирует встроенную фильтрацию опций, выводит дефолтное содержимое слота `filterInput`.
     </template>
 
     <template #showCodeToggle="{ toggle, isShown }">
@@ -449,8 +449,8 @@
     </template>
   </Previewer>
 
-  <Previewer :component="DemoSlotsFilter" :component-source="DemoSlotsFilterSource">
-    <template #header> Slot Filters </template>
+  <Previewer :component="DemoSlotsFilterInput" :component-source="DemoSlotsFilterInputSource">
+    <template #header> Slot FilterInput </template>
     <template #description>
       Слот для отображения кастомного input для фильтрации. Используется совместно с props filter и
       model-value-filter.
@@ -775,8 +775,8 @@ import DemoSlotsOptions from './demos/demo.slots.options.vue';
 import DemoSlotsOptionsSource from './demos/demo.slots.options.vue?raw';
 import DemoSlotsEmpty from './demos/demo.slots.empty.vue';
 import DemoSlotsEmptySource from './demos/demo.slots.empty.vue?raw';
-import DemoSlotsFilter from './demos/demo.slots.filter.vue';
-import DemoSlotsFilterSource from './demos/demo.slots.filter.vue?raw';
+import DemoSlotsFilterInput from './demos/demo.slots.filter-input.vue';
+import DemoSlotsFilterInputSource from './demos/demo.slots.filter-input.vue?raw';
 import DemoSlotsEmptyFilter from './demos/demo.slots.empty-filter.vue';
 import DemoSlotsEmptyFilterSource from './demos/demo.slots.empty-filter.vue?raw';
 import DemoSlotsFilterIcon from './demos/demo.slots.filter-icon.vue';

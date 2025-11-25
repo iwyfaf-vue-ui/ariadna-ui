@@ -32,31 +32,31 @@ import SelectSingle from '@iwyfaf-vue-ui/ariadna-ui/SelectSingle';
 
 ## Props
 
-| Prop              | Required | Type                           | Default                                                               | Description                                                                                                                                  |
-|-------------------|----------|--------------------------------|-----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `modelValue`      | ✓        | `Record<string, any> \| any`   | `null`                                                                | Значение компонента.                                                                                                                         |
-| `filterValue`     | -        | `string`                       | `''`                                                                  | Фильтрует данные при конфигурации prop `filter`.                                                                                             |
-| `options`         | ✓        | `Array<any>`                   | `[]`                                                                  | Массив элементов для отображения в качестве доступных опций компонента.                                                                      |
-| `optionLabel`     | -        | `string`                       | `ESelectSinglePropsDefault.OPTION_LABEL`                              | Имя свойства, которое будет использоваться в качестве label опции. Выдаст ошибку, если `optionLabel` не соответствует объектам в `options`.  |
-| `optionValue`     | -        | `string \| null`               | `null`                                                                | Имя свойства, используемое в качестве значения опции и компонента, по умолчанию равно самой опции, если не определен.                        |
-| `label`           | -        | `string`                       | `undefined`                                                           | Текст элемента `label`.                                                                                                                      |
-| `id`              | -        | `string`                       | Случайно сгенерированная строка с помощью помощника Vue 3.5 `useId()` | Значение нативного атрибута `id` элемента `input`.                                                                                           |
-| `placeholder`     | -        | `string`                       | `undefined`                                                           | Значение нативного атрибута `placeholder` элемента `input`.                                                                                  |
-| `disabled`        | -        | `boolean`                      | `false`                                                               | Значение нативного атрибута `disabled` элемента `input`.                                                                                     |
-| `loading`         | -        | `boolean`                      | `false`                                                               | Находится ли компонент в состоянии загрузки.                                                                                                 |
-| `size`            | -        | `TSharedPropsSize`             | `ESelectSinglePropsDefault.SIZE`                                      | Предопределенные варианты размеров компонента.                                                                                               |
-| `filter`          | -        | `TSelectSingleFilter`          | `undefined`                                                           | Активирует встроенную фильтрацию опций, выводит дефолтное содержимое слота `filter`.                                                         |
-| `virtualScroller` | -        | `TSelectSingleVirtualScroller` | `undefined`                                                           | Активирует использование VirtualScroller в списке опций.                                                                                     |
-| `valid`           | -        | `boolean`                      | `false`                                                               | Состояние компонента `valid`.                                                                                                                |
-| `invalid`         | -        | `boolean`                      | `false`                                                               | Состояние компонента `invalid`.                                                                                                              |
-| `errors`          | -        | `Array<string>`                | `[]`                                                                  | Массив ошибок. Используется в слоте `errors`.                                                                                                |
-| `cssClass`        | -        | `string`                       | `ESelectSinglePropsDefault.CSS_CLASS`                                 | Переопределяет структуру CSS классов.                                                                                                        |
-| `modifier`        | -        | `TSharedPropsModifier`         | `undefined`                                                           | Модификатор базового CSS-класса.                                                                                                             |
-| `ariaLabel`       | -        | `string`                       | `ESelectSinglePropsDefault.ARIA_LABEL`                                | Значение атрибута `aria-label`. Используется для улучшения доступности элементов компонента.                                                 |
+| Prop              | Required | Type                           | Default                                                               | Description                                                                                                                                 |
+|-------------------|----------|--------------------------------|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| `modelValue`      | ✓        | `Record<string, any> \| any`   | `null`                                                                | Значение компонента.                                                                                                                        |
+| `filterValue`     | -        | `string`                       | `''`                                                                  | Фильтрует данные при конфигурации prop `filter`.                                                                                            |
+| `options`         | ✓        | `Array<any>`                   | `[]`                                                                  | Массив элементов для отображения в качестве доступных опций компонента.                                                                     |
+| `optionLabel`     | -        | `string`                       | `ESelectSinglePropsDefault.OPTION_LABEL`                              | Имя свойства, которое будет использоваться в качестве label опции. Выдаст ошибку, если `optionLabel` не соответствует объектам в `options`. |
+| `optionValue`     | -        | `string \| null`               | `null`                                                                | Имя свойства, используемое в качестве значения опции и компонента, по умолчанию равно самой опции, если не определен.                       |
+| `label`           | -        | `string`                       | `undefined`                                                           | Текст элемента `label`.                                                                                                                     |
+| `id`              | -        | `string`                       | Случайно сгенерированная строка с помощью помощника Vue 3.5 `useId()` | Значение нативного атрибута `id` элемента `input`.                                                                                          |
+| `placeholder`     | -        | `string`                       | `undefined`                                                           | Значение нативного атрибута `placeholder` элемента `input`.                                                                                 |
+| `disabled`        | -        | `boolean`                      | `false`                                                               | Значение нативного атрибута `disabled` элемента `input`.                                                                                    |
+| `loading`         | -        | `boolean`                      | `false`                                                               | Находится ли компонент в состоянии загрузки.                                                                                                |
+| `size`            | -        | `TSharedPropsSize`             | `ESelectSinglePropsDefault.SIZE`                                      | Предопределенные варианты размеров компонента.                                                                                              |
+| `filter`          | -        | `TSelectSingleFilter`          | `undefined`                                                           | Активирует встроенную фильтрацию опций, выводит дефолтное содержимое слота `filterInput`.                                                   |
+| `virtualScroller` | -        | `TSelectSingleVirtualScroller` | `undefined`                                                           | Активирует использование VirtualScroller в списке опций.                                                                                    |
+| `valid`           | -        | `boolean`                      | `false`                                                               | Состояние компонента `valid`.                                                                                                               |
+| `invalid`         | -        | `boolean`                      | `false`                                                               | Состояние компонента `invalid`.                                                                                                             |
+| `errors`          | -        | `Array<string>`                | `[]`                                                                  | Массив ошибок. Используется в слоте `errors`.                                                                                               |
+| `cssClass`        | -        | `string`                       | `ESelectSinglePropsDefault.CSS_CLASS`                                 | Переопределяет структуру CSS классов.                                                                                                       |
+| `modifier`        | -        | `TSharedPropsModifier`         | `undefined`                                                           | Модификатор базового CSS-класса.                                                                                                            |
+| `ariaLabel`       | -        | `string`                       | `ESelectSinglePropsDefault.ARIA_LABEL`                                | Значение атрибута `aria-label`. Используется для улучшения доступности элементов компонента.                                                |
 
 ### `modelValue`
 
-- **Тип:** `Record<string, any> \| any`
+- **Тип:** `Record<string, any> | any`
 - **Значение по умолчанию:** `null`
 - **Описание**: Значение компонента.
 
@@ -126,6 +126,16 @@ import SelectSingle from '@iwyfaf-vue-ui/ariadna-ui/SelectSingle';
 <demo src="./demos/demo.props.id.vue"></demo>
 :::
 
+### `placeholder`
+
+- **Тип:** `string`
+- **Значение по умолчанию:** `undefined`
+- **Описание**: Значение нативного атрибута `placeholder` элемента `input`.
+
+::: details Пример
+<demo src="./demos/demo.props.placeholder.vue"></demo>
+:::
+
 ### `disabled`
 
 - **Тип:** `boolean`
@@ -160,7 +170,7 @@ import SelectSingle from '@iwyfaf-vue-ui/ariadna-ui/SelectSingle';
 
 - **Тип:** `TSelectSingleFilter`
 - **Значение по умолчанию:** `undefined`
-- **Описание**: Активирует встроенную фильтрацию опций, выводит дефолтное содержимое слота `filter`.
+- **Описание**: Активирует встроенную фильтрацию опций, выводит дефолтное содержимое слота `filterInput`. 
 
 ::: details Пример
 <demo src="./demos/demo.props.filter.vue"></demo>
@@ -245,7 +255,7 @@ import SelectSingle from '@iwyfaf-vue-ui/ariadna-ui/SelectSingle';
 |---------------|-------------------------------------------------------------------------------------------------------------------------|
 | `options`     | Слот для отображения списка выбираемых опций.                                                                           |
 | `empty`       | Слот для отображения контента при отсутствии доступных опций.                                                           |
-| `filter`      | Слот для отображения кастомного `input` для фильтрации. Используется совместно с props `filter` и `model-value-filter`. |
+| `filterInput` | Слот для отображения кастомного `input` для фильтрации. Используется совместно с props `filter` и `model-value-filter`. |
 | `emptyFilter` | Слот для отображения контента, когда фильтрация не дала результатов.                                                    |
 | `filterIcon`  | Слот для отображения иконки фильтра рядом с `input` полем фильтрации.                                                   |
 | `toggleIcon`  | Слот для отображения иконки раскрытия дроплиста. При выборе элемента - заменяется на содержимое слота `cleanIcon`.      |
@@ -272,14 +282,14 @@ import SelectSingle from '@iwyfaf-vue-ui/ariadna-ui/SelectSingle';
 <demo src="./demos/demo.slots.empty.vue"></demo>
 :::
 
-### `filter`
+### `filterInput`
 
 - **Описание:** Используется для отображения кастомного `input` для фильтрации. Используется совместно с props `filter`
 и `model-value-filter`.
 - **Тип:** `(props: { onFilter: (filterState: string) => any[] }) => VNode[]`
 
 ::: details Пример
-<demo src="./demos/demo.slots.filter.vue"></demo>
+<demo src="./demos/demo.slots.filter-input.vue"></demo>
 :::
 
 ### `emptyFilter`
@@ -367,7 +377,7 @@ import SelectSingle from '@iwyfaf-vue-ui/ariadna-ui/SelectSingle';
 ### update:filter-value
 
 - **Описание:** Событие срабатывает при обновлении значения `filterValue`.
-- **Тип:** `TSelectSingleProps['modelValue']`
+- **Тип:** `TSelectSingleProps['filterValue']`
 
 ::: details Пример
 <demo src="./demos/demo.emits.update-filter-value.vue"></demo>

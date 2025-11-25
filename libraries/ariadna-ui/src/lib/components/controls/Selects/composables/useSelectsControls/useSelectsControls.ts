@@ -7,13 +7,15 @@ import type { TVirtualScrollerExposes } from '@/lib/components/data/VirtualScrol
  * lists.
  *
  * @param {Record<string, any>} props - The properties object for the select component, including configuration flags
- * such as `disabled` and `virtualList`.
+ * such as `disabled` and `virtualScroller`.
  * @param {Ref<boolean>} opened - A ref indicating whether the select dropdown is currently open.
  * @param {(option: any) => void} selectOptionHandler - A callback function invoked when an option is selected.
- * @param {Ref<HTMLDivElement | null>} optionsBodyRef - A ref to the HTMLDivElement representing the container of the
+ * @param {Ref<HTMLDivElement | null>} optionsListRef - A ref to the HTMLDivElement representing the container of the
  * options list.
  * @param {Ref<Array<HTMLElement>>} optionsInList - A ref to an array of HTMLElements, each representing an option in
  * the list.
+ * @param {Ref<HTMLDivElement | null>} filterElementRef - A ref to the HTMLDivElement representing the container of the
+ * filter element.
  * @param {Ref<TVirtualScrollerExposes | null>} virtualScrollerRef - A ref to the VirtualScroller instance, if virtual
  * scrolling is enabled.
  * @param {Ref<number>} focusedOptionIndex - A ref holding the index of the currently focused option.
@@ -26,19 +28,24 @@ export default function useSelectsControls(
   props: Record<string, any>,
   opened: Ref<boolean>,
   selectOptionHandler: (option: any) => void,
-  optionsBodyRef: Ref<HTMLDivElement | null>,
+  optionsListRef: Ref<HTMLDivElement | null>,
   optionsInList: Ref<Array<HTMLElement>>,
+  filterElementRef: Ref<HTMLDivElement | null>,
   virtualScrollerRef: Ref<TVirtualScrollerExposes | null>,
   focusedOptionIndex: Ref<number>,
   filterOptions: Ref<Array<Record<string, any>>>,
 ): TUseSelectSingleControlsReturn {
+  function getFilterHeight(): number {
+    return filterElementRef.value?.clientHeight || 0;
+  }
+
   function scrollTo(index: number): void {
-    if (!optionsBodyRef.value) {
+    if (!optionsListRef.value) {
       return;
     }
-
-    optionsBodyRef.value.scrollTo({
-      top: optionsInList.value[index]?.offsetTop,
+    const filterHeight = getFilterHeight();
+    optionsListRef.value.scrollTo({
+      top: optionsInList.value[index].offsetTop - filterHeight,
     });
   }
 
@@ -58,16 +65,18 @@ export default function useSelectsControls(
         return;
       }
 
-      if (props.virtualList) {
+      if (props.virtualScroller) {
         virtualScrollerRef.value?.scrollTo?.(
           filterOptions.value.length -
             Math.abs((visibleIndexes?.end || 0) - (visibleIndexes?.start || 0)),
         );
+
         return;
       }
 
-      optionsBodyRef.value?.scrollTo({
-        top: optionsBodyRef.value?.scrollHeight,
+      const filterHeight = getFilterHeight();
+      optionsListRef.value?.scrollTo({
+        top: (optionsListRef.value?.scrollHeight || 0) - filterHeight,
       });
 
       return;
@@ -76,7 +85,7 @@ export default function useSelectsControls(
     if (isUp && focusedOptionIndex.value === 0) {
       focusedOptionIndex.value = filterOptions.value.length - 1;
 
-      if (props.virtualList) {
+      if (props.virtualScroller) {
         virtualScrollerRef.value?.scrollTo?.(
           filterOptions.value.length -
             Math.abs((visibleIndexes?.end || 0) - (visibleIndexes?.start || 0)),
@@ -92,7 +101,7 @@ export default function useSelectsControls(
     if (!isUp && focusedOptionIndex.value === filterOptions.value.length - 1) {
       focusedOptionIndex.value = 0;
 
-      if (props.virtualList) {
+      if (props.virtualScroller) {
         virtualScrollerRef.value?.scrollTo?.(0);
         return;
       }
@@ -104,37 +113,43 @@ export default function useSelectsControls(
     focusedOptionIndex.value = focusedOptionIndex.value + (isUp ? -1 : 1);
     const item = optionsInList.value[focusedOptionIndex.value];
 
-    const isOutsideVisibleZoneVirtualList =
+    const isOutsideVisibleZoneVirtualScroller =
       focusedOptionIndex.value > (visibleIndexes?.end || 0) - 1 ||
       focusedOptionIndex.value < (visibleIndexes?.start || 0);
 
-    if (props.virtualList && isUp && isOutsideVisibleZoneVirtualList) {
+    if (props.virtualScroller && isUp && isOutsideVisibleZoneVirtualScroller) {
       virtualScrollerRef.value?.scrollTo?.((visibleIndexes?.start || 0) - 1);
       focusedOptionIndex.value = (visibleIndexes?.start || 0) - 1;
     }
 
-    if (props.virtualList && !isUp && isOutsideVisibleZoneVirtualList) {
+    if (props.virtualScroller && !isUp && isOutsideVisibleZoneVirtualScroller) {
       virtualScrollerRef.value?.scrollTo?.((visibleIndexes?.start || 0) + 1);
       focusedOptionIndex.value = visibleIndexes?.end || 0;
     }
 
-    if (!optionsBodyRef.value) {
+    if (!optionsListRef.value) {
       return;
     }
 
-    if (!props.virtualList && isUp && item.offsetTop < optionsBodyRef.value.scrollTop) {
+    const filterHeight = getFilterHeight();
+
+    if (
+      !props.virtualScroller &&
+      isUp &&
+      item.offsetTop < optionsListRef.value.scrollTop + filterHeight
+    ) {
       scrollTo(focusedOptionIndex.value);
     }
 
     if (
-      !props.virtualList &&
+      !props.virtualScroller &&
       !isUp &&
       item &&
       item.offsetTop + item.clientHeight >
-        optionsBodyRef.value.scrollTop + optionsBodyRef.value.clientHeight
+        optionsListRef.value.scrollTop + optionsListRef.value.clientHeight + filterHeight
     ) {
-      optionsBodyRef.value?.scrollTo({
-        top: item.offsetTop + item.clientHeight - optionsBodyRef.value.clientHeight,
+      optionsListRef.value?.scrollTo({
+        top: item.offsetTop + item.clientHeight - optionsListRef.value.clientHeight - filterHeight,
       });
     }
   }

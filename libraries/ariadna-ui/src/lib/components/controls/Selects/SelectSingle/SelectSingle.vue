@@ -77,7 +77,6 @@
       </div>
 
       <div
-        ref="optionsBody"
         :class="{
           [`${props.cssClass}__body`]: true,
           [`${props.cssClass}__body--opened`]: opened,
@@ -88,11 +87,12 @@
         @touchend.stop
       >
         <div
-          v-if="!props.loading && (props.filter || slots.filter)"
+          v-if="!props.loading && (props.filter || slots.filterInput)"
+          ref="filterElement"
           :class="`${props.cssClass}__filter`"
         >
           <div :class="`${props.cssClass}__filter-input`">
-            <slot name="filter" :onFilter="onFilter">
+            <slot name="filterInput" :onFilter="onFilter">
               <label :for="`${uniqueID}_filter`"></label>
               <input
                 v-model="filterModel"
@@ -108,7 +108,7 @@
           </div>
         </div>
 
-        <div :class="`${props.cssClass}__list`">
+        <div ref="optionsList" :class="`${props.cssClass}__list`">
           <div
             v-if="!props.loading && props.options.length === 0"
             :class="`${props.cssClass}__empty-options`"
@@ -249,12 +249,13 @@ const filterModel = defineModel<NonNullable<TSelectSingleProps['filterValue']>>(
 });
 
 const selectSingleRef = useTemplateRef('selectSingle');
-const optionsBodyRef = useTemplateRef('optionsBody');
+const optionsListRef = useTemplateRef('optionsList');
+const filterElementRef = useTemplateRef('filterElement');
 const virtualScrollerRef = useTemplateRef<TVirtualScrollerExposes>('virtualScroller');
 
 const focusedOptionIndex = ref();
 
-const { calculate, top, left } = usePosition(selectSingleRef, optionsBodyRef, {
+const { calculate, top, left } = usePosition(selectSingleRef, optionsListRef, {
   ...usePositionDefaultOptions,
   positionOrder: [EUsePosition.BOTTOM, EUsePosition.TOP],
   indents: {
@@ -303,8 +304,9 @@ const { onKeyDownOrUpHandler, onKeySpaceOrEnterHandler } = useSelectsControls(
   props,
   opened,
   selectOptionHandler,
-  optionsBodyRef,
+  optionsListRef,
   optionsInList,
+  filterElementRef,
   virtualScrollerRef,
   focusedOptionIndex,
   filterOptions,

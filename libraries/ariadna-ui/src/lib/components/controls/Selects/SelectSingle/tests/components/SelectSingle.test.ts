@@ -658,7 +658,7 @@ describe('SelectSingle', () => {
       );
     });
 
-    it('filter: Should render filter empty slot.', async () => {
+    it('filterInput: Should render filterInput empty slot.', async () => {
       const wrapper = mount(SelectSingle, {
         props: {
           ...defaultMock.mockProps,
@@ -668,24 +668,24 @@ describe('SelectSingle', () => {
 
       expect(wrapper.find(defaultMock.filterEl).exists()).toBeTruthy();
       expect(wrapper.find(defaultMock.filterEl).element.innerHTML).toBe(
-        (await SelectSingleSelectorTestData.getSelectSingleFilterSlotDefault()).trim(),
+        (await SelectSingleSelectorTestData.getSelectSingleFilterInputSlotDefault()).trim(),
       );
     });
 
-    it('filter: Should render custom filter slot if provided.', async () => {
+    it('filterInput: Should render custom filterInput slot if provided.', async () => {
       const wrapper = mount(SelectSingle, {
         props: {
           ...defaultMock.mockProps,
           filter: defaultMock.filterProp,
         },
         slots: {
-          filter: '<input type="text" aria-label="Custom Filter Input">',
+          filterInput: '<input type="text" aria-label="Custom Filter Input">',
         },
       });
 
       expect(wrapper.find(defaultMock.filterEl).exists()).toBeTruthy();
       expect(wrapper.find(defaultMock.filterEl).element.innerHTML).toBe(
-        (await SelectSingleSelectorTestData.getSelectSingleFilterSlotCustom()).trim(),
+        (await SelectSingleSelectorTestData.getSelectSingleFilterInputSlotCustom()).trim(),
       );
     });
 
@@ -929,7 +929,7 @@ describe('SelectSingle', () => {
       await wrapper.setProps({ invalid: true, errors: defaultMock.errorsExample() });
 
       expect(wrapper.find(defaultMock.errorsEl).element.innerHTML).toBe(
-        (await SelectSingleSelectorTestData.getInputPasswordErrorsSlotDefault()).trim(),
+        (await SelectSingleSelectorTestData.getSelectMultipleErrorsSlotDefault()).trim(),
       );
     });
 
@@ -943,13 +943,13 @@ describe('SelectSingle', () => {
           errors,
         },
         slots: {
-          errors: await SelectSingleSelectorTestData.getInputPasswordErrorsSlotCustom(),
+          errors: await SelectSingleSelectorTestData.getSelectMultipleErrorsSlotCustom(),
         },
       });
 
       expect(wrapper.find(defaultMock.errorsEl).exists()).toBeTruthy();
       expect(wrapper.find(defaultMock.errorsEl).element.innerHTML).toBe(
-        (await SelectSingleSelectorTestData.getInputPasswordErrorsSlotCustom()).trim(),
+        (await SelectSingleSelectorTestData.getSelectMultipleErrorsSlotCustom()).trim(),
       );
     });
   });
@@ -975,7 +975,7 @@ describe('SelectSingle', () => {
         props: {
           ...defaultMock.mockProps,
           filter: defaultMock.filterProp,
-          'onUpdate:filterValue': (e: TSelectSingleProps['modelValue']) =>
+          'onUpdate:filterValue': (e: TSelectSingleProps['filterValue']) =>
             wrapper.setProps({ filterValue: e }),
         },
       });
@@ -1129,7 +1129,8 @@ describe('SelectSingle', () => {
       const wrapper = mount(SelectSingle, {
         props: {
           ...defaultMock.mockProps,
-          'onUpdate:modelValue': (e: Event) => wrapper.setProps({ modelValue: e }),
+          'onUpdate:modelValue': (e: TSelectSingleProps['modelValue']) =>
+            wrapper.setProps({ modelValue: e }),
         },
       });
 
@@ -1171,7 +1172,8 @@ describe('SelectSingle', () => {
       const wrapper = mount(SelectSingle, {
         props: {
           ...defaultMock.mockProps,
-          'onUpdate:modelValue': (e: Event) => wrapper.setProps({ modelValue: e }),
+          'onUpdate:modelValue': (e: TSelectSingleProps['modelValue']) =>
+            wrapper.setProps({ modelValue: e }),
         },
       });
 
@@ -1221,7 +1223,8 @@ describe('SelectSingle', () => {
       const wrapper = mount(SelectSingle, {
         props: {
           ...defaultMock.mockProps,
-          'onUpdate:modelValue': (e: Event) => wrapper.setProps({ modelValue: e }),
+          'onUpdate:modelValue': (e: TSelectSingleProps['modelValue']) =>
+            wrapper.setProps({ modelValue: e }),
         },
       });
 
