@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.48.0",
+  "version": "1.48.1",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -90,6 +90,10 @@
     "./Rating": {
       "import": "./dist/lib/components/controls/Rating/Rating.esm.js",
       "types": "./dist/lib/components/controls/Rating/Rating.d.ts"
+    },
+    "./SelectMultiple": {
+      "import": "./dist/lib/components/controls/Selects/SelectMultiple/SelectMultiple.esm.js",
+      "types": "./dist/lib/components/controls/Selects/SelectMultiple/SelectMultiple.d.ts"
     },
     "./SelectSingle": {
       "import": "./dist/lib/components/controls/Selects/SelectSingle/SelectSingle.esm.js",
@@ -285,6 +289,9 @@
       ],
       "Rating": [
         "./dist/lib/components/controls/Rating/Rating.d.ts"
+      ],
+      "SelectMultiple": [
+        "./dist/lib/components/controls/Selects/SelectMultiple/SelectMultiple.d.ts"
       ],
       "SelectSingle": [
         "./dist/lib/components/controls/Selects/SelectSingle/SelectSingle.d.ts"

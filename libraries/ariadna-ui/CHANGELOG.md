@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v1.48.1
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.48.0...v1.48.1)
+
+### 🩹 Fixes
+
+- Remove console.log from unmounted event handler ([c013dbd](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/c013dbd))
+
+### 📖 Documentation
+
+- Update library version ([dbf064f](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/dbf064f))
+
+### 🎨 Styles
+
+- Update JSDoc type hints for onFilter callback ([57d0971](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/57d0971))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.48.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.47.0...v1.48.0)
