@@ -356,7 +356,7 @@ import SelectSingle from '@iwyfaf-vue-ui/ariadna-ui/SelectSingle';
 <demo src="./demos/demo.slots.errors.vue"></demo>
 ::: 
 
-### Emits
+## Emits
 
 | Event                 | Payload                                       | Description                                                  |
 |-----------------------|-----------------------------------------------|--------------------------------------------------------------|

@@ -295,8 +295,7 @@ import SelectMultiple from '@iwyfaf-vue-ui/ariadna-ui/SelectMultiple';
 <demo src="./demos/demo.props.aria-label.vue"></demo>
 :::
 
-
-### Slots
+## Slots
 
 | Slot                  | Description                                                                                                             |
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------|
@@ -379,7 +378,6 @@ import SelectMultiple from '@iwyfaf-vue-ui/ariadna-ui/SelectMultiple';
 <demo src="./demos/demo.slots.filter-input.vue"></demo>
 :::
 
-
 ### `emptyFilter`
 
 - **Описание:** Используется для отображения контента, когда фильтрация не дала результатов.
@@ -450,6 +448,8 @@ import SelectMultiple from '@iwyfaf-vue-ui/ariadna-ui/SelectMultiple';
 | `update:filter-value` | `payload: TSelectMultipleProps['filterValue']` | Событие срабатывает при обновлении значения `filterValue`.   |
 | `focus`               | `event: Event`                                 | Событие срабатывает когда компонент получает фокусировку.    |
 | `blur`                | `event: Event`                                 | Событие срабатывает когда компонент теряет фокусировку.      |
+
+## Emits
 
 ### update:model-value
 
