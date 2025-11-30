@@ -1,9 +1,9 @@
 /**
  * @description
- * Return type for the `useSelectSingleControls` composable function.
+ * Return type for the `useSelectsControls` composable function.
  * Contains reactive properties and methods for SingleSelects components functionality.
  */
-export type TUseSelectSingleControlsReturn = {
+export type TUseSelectsControlsReturn = {
   /**
    * Handles keyboard events for "ArrowDown" and "ArrowUp" keys within the select component.
    *

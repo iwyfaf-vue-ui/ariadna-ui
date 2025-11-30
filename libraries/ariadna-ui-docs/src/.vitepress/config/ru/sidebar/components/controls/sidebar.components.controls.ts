@@ -38,6 +38,10 @@ const sidebarComponentsControls: DefaultTheme.SidebarItem = {
       link: '/components/controls/select-single/',
     },
     {
+      text: 'SelectSingleGroup',
+      link: '/components/controls/select-single-group/',
+    },
+    {
       text: 'SelectMultiple',
       link: '/components/controls/select-multiple/',
     },

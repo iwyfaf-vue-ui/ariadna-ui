@@ -1,5 +1,5 @@
 import type { Ref } from 'vue';
-import type { TUseSelectSingleControlsReturn } from './useSelectsControls.types';
+import type { TUseSelectsControlsReturn } from './useSelectsControls.types';
 import type { TVirtualScrollerExposes } from '@/lib/components/data/VirtualScroller/VirtualScroller';
 
 /**
@@ -22,7 +22,7 @@ import type { TVirtualScrollerExposes } from '@/lib/components/data/VirtualScrol
  * @param {Ref<Array<Record<string, any>>>} filterOptions - A ref to the filtered array of option objects currently
  * displayed.
  *
- * @returns {TUseSelectSingleControlsReturn} - An object containing handlers for keyboard navigation and selection.
+ * @returns {TUseSelectsControlsReturn} - An object containing handlers for keyboard navigation and selection.
  */
 export default function useSelectsControls(
   props: Record<string, any>,
@@ -34,7 +34,7 @@ export default function useSelectsControls(
   virtualScrollerRef: Ref<TVirtualScrollerExposes | null>,
   focusedOptionIndex: Ref<number>,
   filterOptions: Ref<Array<Record<string, any>>>,
-): TUseSelectSingleControlsReturn {
+): TUseSelectsControlsReturn {
   function getFilterHeight(): number {
     return filterElementRef.value?.clientHeight || 0;
   }
@@ -43,6 +43,7 @@ export default function useSelectsControls(
     if (!optionsListRef.value) {
       return;
     }
+
     const filterHeight = getFilterHeight();
     optionsListRef.value.scrollTo({
       top: optionsInList.value[index].offsetTop - filterHeight,

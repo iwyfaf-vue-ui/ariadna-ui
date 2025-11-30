@@ -121,6 +121,10 @@ const data = ref<Array<TSidebarMenuItem>>([
             href: '/components/controls/select-single',
           },
           {
+            title: 'SelectSingleGroup',
+            href: '/components/controls/select-single-group',
+          },
+          {
             title: 'Slider',
             href: '/components/controls/slider',
           },
