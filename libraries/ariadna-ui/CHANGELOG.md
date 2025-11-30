@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v1.50.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.49.0...v1.50.0)
+
+### 🚀 Enhancements
+
+- Add SelectSingleGroup component ([fd809b7](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/fd809b7))
+
+### 📖 Documentation
+
+- Update library version ([6092298](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/6092298))
+- Update markdown headings for consistency ([a53eacc](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/a53eacc))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.49.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.48.1...v1.49.0)
