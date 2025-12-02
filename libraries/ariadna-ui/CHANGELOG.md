@@ -1,6 +1,36 @@
 # Changelog
 
 
+## v1.51.1
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.51.0...v1.51.1)
+
+### 🩹 Fixes
+
+- Conditional rendering of select options ([8a71b25](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/8a71b25))
+- Conditionally render select options based on opened state ([6d8b2ad](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/6d8b2ad))
+- Ensure options are rendered only when opened ([d8a6755](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/d8a6755))
+
+### 💅 Refactors
+
+- Replace v-model with :model-value in SelectMultiple checkbox ([f8fd97b](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/f8fd97b))
+
+### 📖 Documentation
+
+- Update library version ([47ae996](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/47ae996))
+
+### 🏡 Chore
+
+- Add git reset and clean before pull ([366b982](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/366b982))
+
+### 🎨 Styles
+
+- Reformat checkbox props order in select components ([f1c69b4](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/f1c69b4))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.51.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.50.0...v1.51.0)
