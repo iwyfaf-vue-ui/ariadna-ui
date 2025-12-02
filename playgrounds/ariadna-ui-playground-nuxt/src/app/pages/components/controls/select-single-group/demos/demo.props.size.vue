@@ -4,21 +4,21 @@
     :options="options"
     label="Size is small"
     size="small"
-    :filter="{ filterLabel: [[{ field: 'label' }]] }"
+    :filter="{ filterLabel: [[{ field: 'children' }, { field: 'label' }]] }"
   />
   <SelectSingleGroup
     v-model="selectSingleGroupValue"
     :options="options"
     label="Size is medium"
     size="medium"
-    :filter="{ filterLabel: [[{ field: 'label' }]] }"
+    :filter="{ filterLabel: [[{ field: 'children' }, { field: 'label' }]] }"
   />
   <SelectSingleGroup
     v-model="selectSingleGroupValue"
     :options="options"
     label="Size is large"
     size="large"
-    :filter="{ filterLabel: [[{ field: 'label' }]] }"
+    :filter="{ filterLabel: [[{ field: 'children' }, { field: 'label' }]] }"
   />
 </template>
 

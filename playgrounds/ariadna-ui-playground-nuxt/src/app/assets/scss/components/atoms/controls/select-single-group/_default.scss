@@ -54,7 +54,7 @@ $select-single-group: '.ar-select-single-group';
         // .ar-select-single-group--theme .ar-select-single-group__options-group-label
         &-label {
           color: var(--color-text-default-weak);
-          background: var(--color-background-default-hover);
+          background: var(--color-background-default-active);
         }
       }
     }

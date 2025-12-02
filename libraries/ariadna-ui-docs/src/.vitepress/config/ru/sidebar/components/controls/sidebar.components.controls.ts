@@ -46,6 +46,10 @@ const sidebarComponentsControls: DefaultTheme.SidebarItem = {
       link: '/components/controls/select-multiple/',
     },
     {
+      text: 'SelectMultipleGroup',
+      link: '/components/controls/select-multiple-group/',
+    },
+    {
       text: 'Slider',
       link: '/components/controls/slider/',
     },
