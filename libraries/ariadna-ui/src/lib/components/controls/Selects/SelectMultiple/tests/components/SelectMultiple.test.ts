@@ -622,13 +622,14 @@ describe('SelectMultiple', () => {
           label: defaultMock.labelProp,
           size: defaultMock.sizeProp,
           loading: true,
-          disabled: true,
           valid: true,
           invalid: true,
           errors,
           cssClass: defaultMock.cssClassProp,
         },
       });
+
+      await wrapper.find(_defaultMock.headerEl).trigger('click');
 
       expect(wrapper.find(defaultMock.getSelectorWithDot(_defaultMock.rootEl)).exists()).toBe(true);
       expect(wrapper.find(defaultMock.getSelectorWithDot(_defaultMock.groupEl)).exists()).toBe(
@@ -737,6 +738,8 @@ describe('SelectMultiple', () => {
         },
       });
 
+      await wrapper.find(defaultMock.headerEl).trigger('click');
+
       expect(wrapper.find(defaultMock.optionsEl).exists()).toBeTruthy();
       expect(wrapper.find(defaultMock.optionsEl).element.innerHTML).toBe(
         (await SelectMultipleSelectorTestData.getSelectMultipleOptionsSlotDefault()).trim(),
@@ -753,6 +756,8 @@ describe('SelectMultiple', () => {
           options: '<template #options="{option}">{{ option.value }}</template>',
         },
       });
+
+      await wrapper.find(defaultMock.headerEl).trigger('click');
 
       expect(wrapper.find(defaultMock.optionsEl).exists()).toBeTruthy();
       expect(wrapper.find(defaultMock.optionsEl).element.innerHTML).toBe(
@@ -1168,6 +1173,7 @@ describe('SelectMultiple', () => {
         },
       });
 
+      await wrapper.find(defaultMock.headerEl).trigger('click');
       await wrapper.find(defaultMock.optionEl).trigger('click');
 
       expect(wrapper.props('modelValue')).toStrictEqual([defaultMock.optionsExample()[0]]);
@@ -1495,6 +1501,8 @@ describe('SelectMultiple', () => {
       });
 
       await wrapper.setProps({ filterValue: defaultMock.filterValueProp });
+
+      await wrapper.find(defaultMock.headerEl).trigger('click');
       await wrapper.find(defaultMock.optionEl).trigger('click');
 
       expect(wrapper.find(defaultMock.selectedLabelEl).element.textContent).toBe(
