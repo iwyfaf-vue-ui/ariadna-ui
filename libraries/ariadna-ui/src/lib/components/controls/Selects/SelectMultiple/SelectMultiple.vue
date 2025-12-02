@@ -137,7 +137,7 @@
               :checked="multiselectCheckboxChecked"
             >
               <Checkbox
-                v-model="multiselectCheckboxChecked"
+                :model-value="multiselectCheckboxChecked"
                 :aria-label="multiselectCheckboxChecked ? 'Unselect all' : 'Select all'"
                 @change="onChangeMultiselectCheckbox"
               />
