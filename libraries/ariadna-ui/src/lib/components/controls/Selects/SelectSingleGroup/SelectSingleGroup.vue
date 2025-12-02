@@ -129,7 +129,7 @@
             </slot>
           </div>
 
-          <div v-if="props.options" :class="`${props.cssClass}__options`" role="listbox">
+          <div v-if="opened && props.options" :class="`${props.cssClass}__options`" role="listbox">
             <template
               v-for="(option, groupIndex) in filterOptions"
               :key="`${option[props.optionGroupLabel]}-${groupIndex}`"

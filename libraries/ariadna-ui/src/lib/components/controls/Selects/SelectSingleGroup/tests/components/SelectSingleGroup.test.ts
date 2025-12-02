@@ -520,13 +520,14 @@ describe('SelectSingleGroup', () => {
           label: defaultMock.labelProp,
           size: defaultMock.sizeProp,
           loading: true,
-          disabled: true,
           valid: true,
           invalid: true,
           errors,
           cssClass: defaultMock.cssClassProp,
         },
       });
+
+      await wrapper.find(_defaultMock.headerEl).trigger('click');
 
       expect(wrapper.find(defaultMock.getSelectorWithDot(_defaultMock.rootEl)).exists()).toBe(true);
       expect(wrapper.find(defaultMock.getSelectorWithDot(_defaultMock.groupEl)).exists()).toBe(
@@ -608,6 +609,8 @@ describe('SelectSingleGroup', () => {
         },
       });
 
+      await wrapper.find(defaultMock.headerEl).trigger('click');
+
       expect(wrapper.find(defaultMock.optionsGroupEl).exists()).toBeTruthy();
       expect(wrapper.find(defaultMock.optionsGroupEl).element.innerHTML).toBe(
         (
@@ -627,6 +630,8 @@ describe('SelectSingleGroup', () => {
         },
       });
 
+      await wrapper.find(defaultMock.headerEl).trigger('click');
+
       expect(wrapper.find(defaultMock.optionsGroupEl).exists()).toBeTruthy();
       expect(wrapper.find(defaultMock.optionsGroupEl).element.innerHTML).toBe(
         (
@@ -642,6 +647,8 @@ describe('SelectSingleGroup', () => {
           options: defaultMock.optionsExample(),
         },
       });
+
+      await wrapper.find(defaultMock.headerEl).trigger('click');
 
       expect(wrapper.find(defaultMock.optionsEl).exists()).toBeTruthy();
       expect(wrapper.find(defaultMock.optionsEl).element.innerHTML).toBe(
@@ -659,6 +666,8 @@ describe('SelectSingleGroup', () => {
           options: '<template #options="{option}">{{ option.value }}</template>',
         },
       });
+
+      await wrapper.find(defaultMock.headerEl).trigger('click');
 
       expect(wrapper.find(defaultMock.optionsEl).exists()).toBeTruthy();
       expect(wrapper.find(defaultMock.optionsEl).element.innerHTML).toBe(
@@ -1021,6 +1030,7 @@ describe('SelectSingleGroup', () => {
         },
       });
 
+      await wrapper.find(defaultMock.headerEl).trigger('click');
       await wrapper.find(defaultMock.optionEl).trigger('click');
 
       expect(wrapper.props('modelValue')).toStrictEqual(
@@ -1100,11 +1110,12 @@ describe('SelectSingleGroup', () => {
       expect(header.attributes('aria-pressed')).toBe('true');
     });
 
-    it('role: Should set role="listbox" on options container.', () => {
+    it('role: Should set role="listbox" on options container.', async () => {
       const wrapper = mount(SelectSingleGroup, {
         props: defaultMock.mockProps,
       });
 
+      await wrapper.find(defaultMock.headerEl).trigger('click');
       expect(wrapper.find(defaultMock.optionsEl).attributes('role')).toBe('listbox');
     });
 
@@ -1359,7 +1370,10 @@ describe('SelectSingleGroup', () => {
       });
 
       await wrapper.setProps({ filterValue: defaultMock.filterValueProp });
+
+      await wrapper.find(defaultMock.headerEl).trigger('click');
       await wrapper.find(defaultMock.optionEl).trigger('click');
+      await wrapper.find(defaultMock.headerEl).trigger('click');
 
       expect(wrapper.find(defaultMock.selectedTextEl).element.textContent).toBe(
         defaultMock.optionsExample()[0].children[0].label,
