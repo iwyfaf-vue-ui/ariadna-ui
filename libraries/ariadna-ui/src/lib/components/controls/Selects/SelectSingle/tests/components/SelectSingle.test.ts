@@ -522,13 +522,14 @@ describe('SelectSingle', () => {
           label: defaultMock.labelProp,
           size: defaultMock.sizeProp,
           loading: true,
-          disabled: true,
           valid: true,
           invalid: true,
           errors,
           cssClass: defaultMock.cssClassProp,
         },
       });
+
+      await wrapper.find(_defaultMock.headerEl).trigger('click');
 
       expect(wrapper.find(defaultMock.getSelectorWithDot(_defaultMock.rootEl)).exists()).toBe(true);
       expect(wrapper.find(defaultMock.getSelectorWithDot(_defaultMock.groupEl)).exists()).toBe(
@@ -604,6 +605,8 @@ describe('SelectSingle', () => {
         },
       });
 
+      await wrapper.find(defaultMock.headerEl).trigger('click');
+
       expect(wrapper.find(defaultMock.optionsEl).exists()).toBeTruthy();
       expect(wrapper.find(defaultMock.optionsEl).element.innerHTML).toBe(
         (await SelectSingleSelectorTestData.getSelectSingleOptionsSlotDefault()).trim(),
@@ -620,6 +623,8 @@ describe('SelectSingle', () => {
           options: '<template #options="{option}">{{ option.value }}</template>',
         },
       });
+
+      await wrapper.find(defaultMock.headerEl).trigger('click');
 
       expect(wrapper.find(defaultMock.optionsEl).exists()).toBeTruthy();
       expect(wrapper.find(defaultMock.optionsEl).element.innerHTML).toBe(
@@ -964,6 +969,7 @@ describe('SelectSingle', () => {
         },
       });
 
+      await wrapper.find(defaultMock.headerEl).trigger('click');
       await wrapper.find(defaultMock.optionEl).trigger('click');
 
       expect(wrapper.props('modelValue')).toStrictEqual(defaultMock.optionsExample()[0]);
@@ -1041,10 +1047,12 @@ describe('SelectSingle', () => {
       expect(header.attributes('aria-pressed')).toBe('true');
     });
 
-    it('role: Should set role="listbox" on options container.', () => {
+    it('role: Should set role="listbox" on options container.', async () => {
       const wrapper = mount(SelectSingle, {
         props: defaultMock.mockProps,
       });
+
+      await wrapper.find(defaultMock.headerEl).trigger('click');
 
       expect(wrapper.find(defaultMock.optionsEl).attributes('role')).toBe('listbox');
     });
@@ -1297,7 +1305,10 @@ describe('SelectSingle', () => {
       });
 
       await wrapper.setProps({ filterValue: defaultMock.filterValueProp });
+
+      await wrapper.find(defaultMock.headerEl).trigger('click');
       await wrapper.find(defaultMock.optionEl).trigger('click');
+      await wrapper.find(defaultMock.headerEl).trigger('click');
 
       expect(wrapper.find(defaultMock.selectedTextEl).element.textContent).toBe(
         defaultMock.optionsExample()[0].label,

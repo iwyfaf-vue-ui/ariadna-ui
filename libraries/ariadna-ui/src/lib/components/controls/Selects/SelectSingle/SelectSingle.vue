@@ -129,7 +129,7 @@
             </slot>
           </div>
 
-          <div v-if="props.options" :class="`${props.cssClass}__options`" role="listbox">
+          <div v-if="opened && props.options" :class="`${props.cssClass}__options`" role="listbox">
             <VirtualScroller
               v-if="props.virtualScroller"
               ref="virtualScroller"
