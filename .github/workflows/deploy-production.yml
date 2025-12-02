@@ -23,6 +23,8 @@ jobs:
             npm -v
             cd /var/www/ui.iwyfaf.ru/ariadna-ui/libraries/ariadna-ui-docs
             eval $(ssh-agent -s) && ssh-add ~/.ssh/git-runner.ui@iwyfaf.ru
+            git reset --hard HEAD
+            git clean -fd
             git pull --no-edit -X theirs
             npm i
             npm run docs:build
