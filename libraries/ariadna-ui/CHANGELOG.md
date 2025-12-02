@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.51.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.50.0...v1.51.0)
+
+### 🚀 Enhancements
+
+- Add SelectMultipleGroup component ([92d1aba](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/92d1aba))
+
+### 📖 Documentation
+
+- Update library version ([0cb619c](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/0cb619c))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.50.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.49.0...v1.50.0)
