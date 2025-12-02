@@ -138,6 +138,7 @@
             >
               <Checkbox
                 :model-value="multiselectCheckboxChecked"
+                :modifier="props.modifier"
                 :aria-label="multiselectCheckboxChecked ? 'Unselect all' : 'Select all'"
                 @change="onChangeMultiselectCheckbox"
               />
@@ -237,6 +238,7 @@
                     <slot name="options" :option="option" :checked="isSelected(option)">
                       <Checkbox
                         :model-value="isSelected(option)"
+                        :modifier="props.modifier"
                         :aria-label="option[props.optionLabel as keyof typeof option]"
                       />
 

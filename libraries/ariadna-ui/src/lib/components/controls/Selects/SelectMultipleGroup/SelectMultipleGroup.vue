@@ -138,8 +138,8 @@
             >
               <Checkbox
                 :model-value="multiselectCheckboxChecked"
-                :aria-label="multiselectCheckboxChecked ? 'Unselect all' : 'Select all'"
                 :modifier="props.modifier"
+                :aria-label="multiselectCheckboxChecked ? 'Unselect all' : 'Select all'"
                 @change="onChangeMultiselectCheckbox"
               />
             </slot>
@@ -222,8 +222,8 @@
                     >
                       <Checkbox
                         :model-value="selectedOptionsMap.get(item) ?? false"
-                        :aria-label="item[props.optionLabel]"
                         :modifier="props.modifier"
+                        :aria-label="item[props.optionLabel]"
                       />
 
                       {{ item[props.optionLabel] }}
