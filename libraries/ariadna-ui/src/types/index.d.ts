@@ -38,3 +38,18 @@ export declare type Numberish = number | string;
  * name = undefined;
  */
 export declare type Nullable<T = void> = T | null | undefined;
+
+/**
+ * @description
+ * Represents a primitive value that can be a string, number, boolean, null, or undefined.
+ * Useful for indicating that a value is a primitive type.
+ *
+ * @example
+ * let value: Primitive;
+ * value = 'Alice';
+ * value = 42;
+ * value = true;
+ * value = null;
+ * value = undefined;
+ */
+export declare type Primitive = string | number | boolean | null | undefined;

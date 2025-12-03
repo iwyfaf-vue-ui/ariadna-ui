@@ -1,6 +1,7 @@
 import type { Ref } from 'vue';
 import type { TUseSelectsControlsReturn } from './useSelectsControls.types';
 import type { TVirtualScrollerExposes } from '@/lib/components/data/VirtualScroller/VirtualScroller';
+import type { Primitive } from '@/types';
 
 /**
  * Provides keyboard navigation and selection controls for Selects components, supporting both standard and virtualized
@@ -19,8 +20,8 @@ import type { TVirtualScrollerExposes } from '@/lib/components/data/VirtualScrol
  * @param {Ref<TVirtualScrollerExposes | null>} virtualScrollerRef - A ref to the VirtualScroller instance, if virtual
  * scrolling is enabled.
  * @param {Ref<number>} focusedOptionIndex - A ref holding the index of the currently focused option.
- * @param {Ref<Array<Record<string, any>>>} filterOptions - A ref to the filtered array of option objects currently
- * displayed.
+ * @param {Ref<Array<Record<string, any> | Primitive>>} filterOptions - A ref to the filtered array of option objects
+ * currently displayed.
  *
  * @returns {TUseSelectsControlsReturn} - An object containing handlers for keyboard navigation and selection.
  */
@@ -33,7 +34,7 @@ export default function useSelectsControls(
   filterElementRef: Ref<HTMLDivElement | null>,
   virtualScrollerRef: Ref<TVirtualScrollerExposes | null>,
   focusedOptionIndex: Ref<number>,
-  filterOptions: Ref<Array<Record<string, any>>>,
+  filterOptions: Ref<Array<Record<string, any> | Primitive>>,
 ): TUseSelectsControlsReturn {
   function getFilterHeight(): number {
     return filterElementRef.value?.clientHeight || 0;
