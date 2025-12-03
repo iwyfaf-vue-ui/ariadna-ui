@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.52.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.51.1...v1.52.0)
+
+### 🚀 Enhancements
+
+- Add SelectSingleFlat component ([e86165e](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/e86165e))
+
+### 📖 Documentation
+
+- Update library version' ([6ba5e65](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/6ba5e65))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.51.1
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.51.0...v1.51.1)
