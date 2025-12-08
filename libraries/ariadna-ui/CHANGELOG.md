@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.53.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.52.0...v1.53.0)
+
+### 🚀 Enhancements
+
+- Add selectMultipleFlat component ([3ae8c57](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/3ae8c57))
+
+### 📖 Documentation
+
+- Update library version ([4957a1f](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/4957a1f))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.52.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.51.1...v1.52.0)
