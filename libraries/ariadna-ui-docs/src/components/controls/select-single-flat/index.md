@@ -143,7 +143,6 @@ import SelectSingleFlat from '@iwyfaf-vue-ui/ariadna-ui/SelectSingleFlat';
 <demo src="./demos/demo.props.size.vue"></demo>
 :::
 
-
 ### `filter`
 
 - **Тип:** `boolean`
@@ -163,7 +162,6 @@ import SelectSingleFlat from '@iwyfaf-vue-ui/ariadna-ui/SelectSingleFlat';
 ::: details Пример
 <demo src="./demos/demo.props.virtual-scroller.vue"></demo>
 :::
-
 
 ### `valid`
 
@@ -227,7 +225,6 @@ import SelectSingleFlat from '@iwyfaf-vue-ui/ariadna-ui/SelectSingleFlat';
 ::: details Пример
 <demo src="./demos/demo.props.aria-label.vue"></demo>
 :::
-
 
 ## Slots
 
@@ -334,8 +331,7 @@ import SelectSingleFlat from '@iwyfaf-vue-ui/ariadna-ui/SelectSingleFlat';
 
 ::: details Пример
 <demo src="./demos/demo.slots.errors.vue"></demo>
-::: 
-
+:::
 
 ## Emits
 
