@@ -7,7 +7,7 @@ import ratingMathCeilToMultiple from '../../core/rating-math/rating-math.core';
 export default function useRating(
   props: TRatingProps,
   emits: TRatingEmits,
-  value: Ref<number, number>,
+  value: Ref<number | null, number | null>,
   hoverValue: Ref<number, number>,
 ): TUseRatingReturn {
   const id = useId();
@@ -90,7 +90,7 @@ export default function useRating(
     if (props.singleMode && props.readonly) {
       total = 100;
     } else {
-      const width = ratingMathCeilToMultiple(Math.round(value.value * 100), _fillStep.value);
+      const width = ratingMathCeilToMultiple(Math.round(value.value! * 100), _fillStep.value);
       total = hoverValue.value || width;
     }
 

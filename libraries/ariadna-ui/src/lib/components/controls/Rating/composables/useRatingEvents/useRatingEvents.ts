@@ -7,7 +7,7 @@ export default function useRatingEvents(
   props: TRatingProps,
   emits: TRatingEmits,
   ratingRef: Readonly<ShallowRef<HTMLDivElement | null>>,
-  value: Ref<number, number>,
+  value: Ref<number | null, number | null>,
   hoverValue: Ref<number, number>,
 ): void {
   const _starCount = ref(props.starCount!);
@@ -97,7 +97,7 @@ export default function useRatingEvents(
     () => props.modelValue,
     (newRate) => {
       value.value = newRate;
-      const maskWidth = props.readonly ? newRate * 100 : Math.round(newRate * 100);
+      const maskWidth = props.readonly ? newRate! * 100 : Math.round(newRate! * 100);
 
       hoverValue.value = ratingMathCeilToMultiple(maskWidth, _fillStep.value);
     },

@@ -7,7 +7,6 @@ import type {
 import type { VNode } from 'vue';
 import type { ERatingPropsDefault } from './types/Rating.enums';
 import type { TRatingPropsValuePosition } from './types/Rating.types';
-import type { Nullable } from '../../../../types';
 
 /**
  * Component props definition.
@@ -21,7 +20,7 @@ export type TRatingProps = {
    * @required
    * @example v-model="ratingValue"
    */
-  modelValue: Nullable<number>;
+  modelValue: number | null;
 
   /**
    * Rating label text.
