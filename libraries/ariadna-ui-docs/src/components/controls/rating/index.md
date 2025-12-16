@@ -31,28 +31,28 @@ import Rating from '@iwyfaf-vue-ui/ariadna-ui/Rating';
 
 ## Props
 
-| Prop            | Required | Type                         | Default                                                               | Description                                                                                                      |
-|-----------------|----------|------------------------------|-----------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| `modelValue`    | ✓        | `number`                     | `0`                                                                   | Значение компонента.                                                                                             |
-| `label`         | -        | `string`                     | `undefined`                                                           | Текст элемента `label`.                                                                                          |
-| `id`            | -        | `string`                     | Случайно сгенерированная строка с помощью помощника Vue 3.5 `useId()` | Значение для атрибутов `id` и `for`.                                                                             |
-| `starCount`     | -        | `number`                     | `ERatingPropsDefault.STAR_COUNT`                                      | Количество отображаемых звёзд.                                                                                   |
-| `fillStep`      | -        | `number`                     | `ERatingPropsDefault.FILL_STEP`                                       | Значение шага заполнения рейтинговой звездочки.                                                                  |
-| `singleMode`    | -        | `boolean`                    | `false`                                                               | Будет отображаться одна звездочка вместо общего количества звездочек. Работает только с prop `:readonly="true"`. |
-| `size`          | -        | `TSharedPropsSize`           | `ERatingPropsDefault.SIZE`                                            | Предопределенные варианты размеров компонента.                                                                   |
-| `showValue`     | -        | `boolean`                    | `false`                                                               | Отобразит текущий рейтинг в виде понятных значений. Например: `3.5/5`.                                           |
-| `valuePosition` | -        | `TRatingPropsValuePosition`  | `ERatingPropsDefault.VALUE_POSITION`                                  | Расположите значение относительно звезд.                                                                         |
-| `reset`         | -        | `boolean`                    | `false`                                                               | Включает или отключает возможность сброса рейтинга.                                                              |
-| `disabled`      | -        | `boolean`                    | `false`                                                               | Состояние компонента `disabled`.                                                                                 |
-| `readonly`      | -        | `boolean`                    | `false`                                                               | Отключение режима редактирования.                                                                                |
-| `valid`         | -        | `boolean`                    | `false`                                                               | Состояние компонента `valid`.                                                                                    |
-| `invalid`       | -        | `boolean`                    | `false`                                                               | Состояние компонента `invalid`.                                                                                  |
-| `cssClass`      | -        | `string`                     | `ERatingPropsDefault.CSS_CLASS`                                       | Переопределяет структуру CSS классов.                                                                            |
-| `modifier`      | -        | `TSharedPropsModifier`       | `undefined`                                                           | Модификатор базового CSS-класса.                                                                                 |
+| Prop            | Required | Type                        | Default                                                               | Description                                                                                                      |
+|-----------------|----------|-----------------------------|-----------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| `modelValue`    | ✓        | `Nullable<number>`          | `0`                                                                   | Значение компонента.                                                                                             |
+| `label`         | -        | `string`                    | `undefined`                                                           | Текст элемента `label`.                                                                                          |
+| `id`            | -        | `string`                    | Случайно сгенерированная строка с помощью помощника Vue 3.5 `useId()` | Значение для атрибутов `id` и `for`.                                                                             |
+| `starCount`     | -        | `number`                    | `ERatingPropsDefault.STAR_COUNT`                                      | Количество отображаемых звёзд.                                                                                   |
+| `fillStep`      | -        | `number`                    | `ERatingPropsDefault.FILL_STEP`                                       | Значение шага заполнения рейтинговой звездочки.                                                                  |
+| `singleMode`    | -        | `boolean`                   | `false`                                                               | Будет отображаться одна звездочка вместо общего количества звездочек. Работает только с prop `:readonly="true"`. |
+| `size`          | -        | `TSharedPropsSize`          | `ERatingPropsDefault.SIZE`                                            | Предопределенные варианты размеров компонента.                                                                   |
+| `showValue`     | -        | `boolean`                   | `false`                                                               | Отобразит текущий рейтинг в виде понятных значений. Например: `3.5/5`.                                           |
+| `valuePosition` | -        | `TRatingPropsValuePosition` | `ERatingPropsDefault.VALUE_POSITION`                                  | Расположите значение относительно звезд.                                                                         |
+| `reset`         | -        | `boolean`                   | `false`                                                               | Включает или отключает возможность сброса рейтинга.                                                              |
+| `disabled`      | -        | `boolean`                   | `false`                                                               | Состояние компонента `disabled`.                                                                                 |
+| `readonly`      | -        | `boolean`                   | `false`                                                               | Отключение режима редактирования.                                                                                |
+| `valid`         | -        | `boolean`                   | `false`                                                               | Состояние компонента `valid`.                                                                                    |
+| `invalid`       | -        | `boolean`                   | `false`                                                               | Состояние компонента `invalid`.                                                                                  |
+| `cssClass`      | -        | `string`                    | `ERatingPropsDefault.CSS_CLASS`                                       | Переопределяет структуру CSS классов.                                                                            |
+| `modifier`      | -        | `TSharedPropsModifier`      | `undefined`                                                           | Модификатор базового CSS-класса.                                                                                 |
 
 ### `modelValue`
 
-- **Тип:** `number`
+- **Тип:** `Nullable<number>`
 - **Значение по умолчанию:** `5`
 - **Описание**: Значение компонента.
 
@@ -277,7 +277,6 @@ import Rating from '@iwyfaf-vue-ui/ariadna-ui/Rating';
 ::: details Пример
 <demo src="./demos/demo.slots.errors.vue"></demo>
 ::: 
-
 
 ## Emits
 
