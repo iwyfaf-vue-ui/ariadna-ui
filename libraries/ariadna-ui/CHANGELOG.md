@@ -1,6 +1,29 @@
 # Changelog
 
 
+## v1.54.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.53.0...v1.54.0)
+
+### 🚀 Enhancements
+
+- Add new modifier variants to TSharedPropsModifier type ([8c7229a](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/8c7229a))
+- Make Rating modelValue nullable ([74e96ed](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/74e96ed))
+- Add Tag component ([0a0de05](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/0a0de05))
+
+### 💅 Refactors
+
+- Replace Nullable<number> with number ([ null in Rating component](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/ null in Rating component))
+
+### 📖 Documentation
+
+- Update library version ([1aed452](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/1aed452))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+- Ef1de0d ([@iWatchYouFromAfar](https://github.com/iWatchYouFromAfar))
+
 ## v1.53.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.52.0...v1.53.0)
