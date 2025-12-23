@@ -146,6 +146,10 @@ const data = ref<Array<TSidebarMenuItem>>([
         title: 'Data',
         children: [
           {
+            title: 'Tag',
+            href: '/components/data/tag',
+          },
+          {
             title: 'Timeline',
             href: '/components/data/timeline',
           },

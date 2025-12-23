@@ -6,6 +6,10 @@ const sidebarComponentsData: DefaultTheme.SidebarItem = {
   link: '/components/data/',
   items: [
     {
+      text: 'Tag',
+      link: '/components/data/tag/',
+    },
+    {
       text: 'Timeline',
       link: '/components/data/timeline/',
     },
