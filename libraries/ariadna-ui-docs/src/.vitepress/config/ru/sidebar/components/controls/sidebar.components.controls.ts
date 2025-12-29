@@ -61,6 +61,10 @@ const sidebarComponentsControls: DefaultTheme.SidebarItem = {
       text: 'Slider',
       link: '/components/controls/slider/',
     },
+    {
+      text: 'Chips',
+      link: '/components/controls/chips/',
+    },
   ],
 };
 

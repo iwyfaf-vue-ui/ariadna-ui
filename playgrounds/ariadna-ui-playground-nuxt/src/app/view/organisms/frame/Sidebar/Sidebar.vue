@@ -140,6 +140,10 @@ const data = ref<Array<TSidebarMenuItem>>([
             title: 'Slider',
             href: '/components/controls/slider',
           },
+          {
+            title: 'Chips',
+            href: '/components/controls/chips',
+          },
         ],
       },
       {

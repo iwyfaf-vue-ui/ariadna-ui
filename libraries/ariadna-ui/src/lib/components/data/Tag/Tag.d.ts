@@ -35,7 +35,7 @@ export type TTagProps = {
    * The tag displayed with the largest radius of curvature.
    *
    * @default false
-   * @example :text="true"
+   * @example :rounded="true"
    */
   rounded?: boolean;
 
