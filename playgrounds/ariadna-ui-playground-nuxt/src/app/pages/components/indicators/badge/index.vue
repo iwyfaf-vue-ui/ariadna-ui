@@ -1,4 +1,27 @@
 <template>
+  <Previewer :component="DemoPropsTag" :component-source="DemoPropsTagSource">
+    <template #header> Prop Tag </template>
+    <template #description>
+      HTML-тег, который будет отображаться как корневой элемент компонента.
+    </template>
+
+    <template #showCodeToggle="{ toggle, isShown }">
+      <Button @click="toggle">
+        {{ isShown ? 'Скрыть' : 'Показать' }}
+      </Button>
+    </template>
+
+    <template #copy="{ handler, isCopied }">
+      <Button @click="handler" :disabled="isCopied">
+        {{ isCopied ? 'Скопировано!' : 'Копировать' }}
+      </Button>
+    </template>
+
+    <template #source="{ source }">
+      <pre v-code-highlight><code>{{ source }}</code></pre>
+    </template>
+  </Previewer>
+
   <Previewer :component="DemoPropsSize" :component-source="DemoPropsSizeSource">
     <template #header> Prop Size </template>
 
@@ -86,6 +109,8 @@ import Previewer from '@iwyfaf-vue-ui/ariadna-ui/Previewer';
 import Button from '@iwyfaf-vue-ui/ariadna-ui/Button';
 
 // Demos
+import DemoPropsTag from './demos/demo.props.tag.vue';
+import DemoPropsTagSource from './demos/demo.props.tag.vue?raw';
 import DemoPropsSize from './demos/demo.props.size.vue';
 import DemoPropsSizeSource from './demos/demo.props.size.vue?raw';
 import DemoPropsRounded from './demos/demo.props.rounded.vue';

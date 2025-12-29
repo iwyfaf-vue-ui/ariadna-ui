@@ -31,6 +31,7 @@ export class BadgeSelectorTestData extends DataSelector {
   }
 
   public mockProps: TBadgeProps = {
+    tag: EBadgePropsDefault.TAG,
     size: 'medium',
     rounded: false,
     floating: false,

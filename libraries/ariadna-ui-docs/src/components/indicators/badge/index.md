@@ -6,7 +6,7 @@ layout: doc
 
 Badge - это небольшой индикатор состояния другого элемента.
 
-Вес <Badge type="info">~ 0.70 kB gzipped.</Badge>
+Вес <Badge type="info">~ 0.68 kB gzipped.</Badge>
 
 ## Описание
 
@@ -36,13 +36,24 @@ import Badge from '@iwyfaf-vue-ui/ariadna-ui/Badge';
 
 ## Props
 
-| Prop        | Required | Type                    | Default                         | Description                                                                                        |
-|-------------| -------- |-------------------------|---------------------------------|----------------------------------------------------------------------------------------------------|
-| `size`      | -        | `TSharedPropsSize`      | `EBadgePropsDefault.SIZE`       | Предопределенные варианты размеров для значка.                                                     |
-| `rounded`   | -        | `boolean`               | `false`                         | Значки отображаются с наибольшим радиусом закругления.                                             |
-| `floating`  | -        | `boolean`               | `false`                         | Должен ли значок перемещаться в правую верхнюю часть относительно родительского элемента или нет.  |
-| `cssClass`  | -        | `string`                | `EBadgePropsDefault.CSS_CLASS`  | Переопределяет структуру CSS классов.                                                              |
-| `modifier`  | -        | `TSharedPropsModifier`  | `undefined`                     | Модификатор базового CSS-класса.                                                                   |
+| Prop       | Required | Type                   | Default                        | Description                                                                                       |
+|------------|----------|------------------------|--------------------------------|---------------------------------------------------------------------------------------------------|
+| `tag`      | -        | `TBadgePropsTag`       | `EBadgePropsDefault.TAG`       | HTML-тег, который будет отображаться как корневой элемент компонента.                             |
+| `size`     | -        | `TSharedPropsSize`     | `EBadgePropsDefault.SIZE`      | Предопределенные варианты размеров для значка.                                                    |
+| `rounded`  | -        | `boolean`              | `false`                        | Значки отображаются с наибольшим радиусом закругления.                                            |
+| `floating` | -        | `boolean`              | `false`                        | Должен ли значок перемещаться в правую верхнюю часть относительно родительского элемента или нет. |
+| `cssClass` | -        | `string`               | `EBadgePropsDefault.CSS_CLASS` | Переопределяет структуру CSS классов.                                                             |
+| `modifier` | -        | `TSharedPropsModifier` | `undefined`                    | Модификатор базового CSS-класса.                                                                  |
+
+### `tag`
+
+- **Тип:** `TBadgePropsTag`
+- **Значение по умолчанию:** `EBadgePropsDefault.TAG`
+- **Описание**: HTML-тег, который будет отображаться как корневой элемент компонента.
+
+::: details Пример
+<demo src="./demos/demo.props.tag.vue"></demo>
+:::
 
 ### `size`
 

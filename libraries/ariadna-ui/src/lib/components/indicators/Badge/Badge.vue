@@ -1,7 +1,7 @@
 <template>
-  <span v-if="$slots.default" :class="componentClasses">
+  <component v-if="$slots.default" :is="props.tag" :class="componentClasses">
     <slot />
-  </span>
+  </component>
 </template>
 
 <script setup lang="ts">
@@ -13,6 +13,7 @@ import { EBadgePropsDefault } from './types/Badge.enums';
 import useBadge from './composables/useBadge/useBadge';
 
 const props = withDefaults(defineProps<TBadgeProps>(), {
+  tag: EBadgePropsDefault.TAG,
   size: EBadgePropsDefault.SIZE,
   cssClass: EBadgePropsDefault.CSS_CLASS,
 });

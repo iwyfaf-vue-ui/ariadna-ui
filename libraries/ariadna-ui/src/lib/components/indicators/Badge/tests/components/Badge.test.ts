@@ -12,7 +12,6 @@ describe('Badge.vue', () => {
       slots: {
         default: 'Test Badge',
       },
-      props: {},
     });
 
     it('Should mount without errors.', () => {
@@ -38,13 +37,27 @@ describe('Badge.vue', () => {
   });
 
   describe('Props.', () => {
-    it('size: Should apply small size modifier class when size="small".', () => {
+    it('tag: Should render as div element.', () => {
       const wrapper = mount(Badge, {
+        props: {
+          ...defaultMock.mockProps,
+          tag: 'div',
+        },
         slots: {
           default: 'Test Badge',
         },
+      });
+
+      expect(wrapper.find(defaultMock.rootEl).element.tagName).toEqual('DIV');
+    });
+
+    it('size: Should apply small size modifier class when size="small".', () => {
+      const wrapper = mount(Badge, {
         props: {
           size: defaultMock.sizeProp,
+        },
+        slots: {
+          default: 'Test Badge',
         },
       });
 
@@ -53,11 +66,11 @@ describe('Badge.vue', () => {
 
     it('size: Should apply medium size modifier class when size="medium".', () => {
       const wrapper = mount(Badge, {
-        slots: {
-          default: 'Test Badge',
-        },
         props: {
           size: (defaultMock.sizeProp = 'medium'),
+        },
+        slots: {
+          default: 'Test Badge',
         },
       });
 
@@ -66,11 +79,11 @@ describe('Badge.vue', () => {
 
     it('size: Should apply large size modifier class when size="large".', () => {
       const wrapper = mount(Badge, {
-        slots: {
-          default: 'Test Badge',
-        },
         props: {
           size: (defaultMock.sizeProp = 'large'),
+        },
+        slots: {
+          default: 'Test Badge',
         },
       });
 
@@ -79,11 +92,11 @@ describe('Badge.vue', () => {
 
     it('rounded: Should apply rounded modifier class when rounded="true".', () => {
       const wrapper = mount(Badge, {
-        slots: {
-          default: 'Test Badge',
-        },
         props: {
           rounded: true,
+        },
+        slots: {
+          default: 'Test Badge',
         },
       });
 
@@ -92,11 +105,11 @@ describe('Badge.vue', () => {
 
     it('floating: Should apply floating modifier class when floating="true".', () => {
       const wrapper = mount(Badge, {
-        slots: {
-          default: 'Test Badge',
-        },
         props: {
           floating: true,
+        },
+        slots: {
+          default: 'Test Badge',
         },
       });
 
@@ -107,11 +120,11 @@ describe('Badge.vue', () => {
       const _defaultMock = new BadgeSelectorTestData(defaultMock.cssClassProp);
 
       const wrapper = mount(Badge, {
-        slots: {
-          default: 'Test Badge',
-        },
         props: {
           cssClass: defaultMock.cssClassProp,
+        },
+        slots: {
+          default: 'Test Badge',
         },
       });
 
@@ -120,11 +133,11 @@ describe('Badge.vue', () => {
 
     it('modifier: Should apply modifier class.', async () => {
       const wrapper = mount(Badge, {
-        slots: {
-          default: 'Test Badge',
-        },
         props: {
           modifier: defaultMock.modifierProp,
+        },
+        slots: {
+          default: 'Test Badge',
         },
       });
 

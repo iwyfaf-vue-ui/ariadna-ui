@@ -5,12 +5,22 @@ import type {
   TSharedPropsSize,
 } from '../../../../types/component';
 import type { VNode } from 'vue';
+import type { TBadgePropsTag } from './types/Badge.types';
 import type { EBadgePropsDefault } from './types/Badge.enums';
 
 /**
  * Component props definition.
  */
 export type TBadgeProps = {
+  /**
+   * The HTML tag to be rendered as the badge component.
+   *
+   * @type TBadgePropsTag
+   * @default {@link EButtonPropsDefault.TAG}
+   * @example tag="div"
+   */
+  tag?: TBadgePropsTag;
+
   /**
    * Predefined size variants for the badge component.
    *
