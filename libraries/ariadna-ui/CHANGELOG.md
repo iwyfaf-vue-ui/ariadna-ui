@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.56.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.55.0...v1.56.0)
+
+### 🚀 Enhancements
+
+- Add tag prop to Badge component for flexible root element ([27268db](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/27268db))
+
+### 📖 Documentation
+
+- Update library version ([0fe4468](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/0fe4468))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.55.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.54.0...v1.55.0)
