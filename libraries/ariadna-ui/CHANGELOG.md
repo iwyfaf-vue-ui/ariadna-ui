@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.55.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.54.0...v1.55.0)
+
+### 🚀 Enhancements
+
+- Add Chips component ([e4be198](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/e4be198))
+
+### 📖 Documentation
+
+- Update library version ([a501c88](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/a501c88))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.54.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.53.0...v1.54.0)
