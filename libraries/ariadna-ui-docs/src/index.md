@@ -16,6 +16,10 @@ features:
     details: Все элементы библиотеки покрыты модульными тестами.
 
 sections:
+  - title: Темы
+    details: Набор готовых тем для визуализации UI компонентов.
+    icon: '../icons/sections/themes.svg'
+    link: /themes/
   - title: Компоненты
     details: Набор готовых Vue.js компонентов для организации UI.
     icon: '../icons/sections/components.svg'
