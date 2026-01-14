@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.57.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.56.0...v1.57.0)
+
+### 🚀 Enhancements
+
+- Add theme configuration and exports ([f0a37fe](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/f0a37fe))
+
+### 📖 Documentation
+
+- Update library version ([38b729e](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/38b729e))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.56.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.55.0...v1.56.0)
