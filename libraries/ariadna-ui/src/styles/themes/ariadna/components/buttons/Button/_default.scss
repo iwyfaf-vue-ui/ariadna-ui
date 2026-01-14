@@ -1,0 +1,288 @@
+@use '../../../ariadna' as theme;
+
+$button: '.ar-button';
+
+#{$button} {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid;
+  border-radius: var(--radius-default-medium);
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+
+  // .ar-button:hover
+  &:hover {
+    text-decoration: none;
+  }
+
+  // .ar-button--theme
+  &--theme {
+    color: var(--color-text-default);
+    background: var(--color-background-default-medium);
+    border-color: var(--color-border-default);
+
+    // .ar-button--theme:hover
+    &:hover {
+      background: var(--color-background-default-hover);
+      border-color: var(--color-border-default-strong);
+    }
+
+    // .ar-button--theme:active
+    &:active {
+      border-color: var(--color-border-default-active);
+    }
+  }
+
+  // .ar-button--small
+  &--small {
+    @include theme.text-style-helper(t4);
+
+    #{$button}__group {
+      padding: var(--indent-margin-small) var(--indent-margin-medium);
+    }
+  }
+
+  // .ar-button--medium
+  &--medium {
+    @include theme.text-style-helper(t3);
+
+    #{$button}__group {
+      padding: var(--indent-margin-medium) var(--indent-margin-large);
+    }
+  }
+
+  // .ar-button--large
+  &--large {
+    @include theme.text-style-helper(t3);
+
+    #{$button}__group {
+      padding: var(--indent-margin-large) var(--indent-margin-xlarge);
+    }
+  }
+
+  // .ar-button--icon-top, .ar-button--icon-bottom
+  &--icon-top,
+  &--icon-bottom {
+    // .ar-button--icon-top .ar-button__group, .ar-button--icon-bottom .ar-button__group
+    #{$button}__group {
+      flex-direction: column;
+    }
+  }
+
+  // .ar-button--icon-top, .ar-button--icon-left
+  &--icon-top,
+  &--icon-left {
+    // .ar-button--icon-top .ar-button__icon, .ar-button--icon-left .ar-button__icon
+    #{$button}__icon {
+      order: -1;
+    }
+  }
+
+  &--icon-bottom,
+  &--icon-right {
+    // .ar-button--icon-bottom .ar-button__icon, .ar-button--icon-right .ar-button__icon
+    #{$button}__icon {
+      order: 100;
+    }
+  }
+
+  // .ar-button--selected
+  &--selected {
+    border-color: var(--color-border-default-active);
+  }
+
+  // .ar-button--loading
+  &--loading {
+    pointer-events: none;
+
+    // .ar-button--loading .ar-button__group
+    #{$button}__group {
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    // .ar-button--loading .ar-button__loading
+    #{$button}__loading {
+      display: block;
+    }
+  }
+
+  // .ar-button--disabled
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.7;
+  }
+
+  // .ar-button--primary
+  &--primary {
+    // .ar-button--primary.ar-button--theme
+    &#{$button}--theme {
+      color: var(--color-text-default-foreground);
+      background: var(--color-background-primary);
+      border-color: var(--color-border-primary);
+
+      // .ar-button--primary.ar-button--theme:hover
+      &:hover {
+        background: var(--color-background-primary-strong-hover);
+        border-color: var(--color-text-default-foreground);
+      }
+
+      // .ar-button--primary.ar-button--theme:active
+      &:active {
+        border-color: var(--color-text-default-weak);
+      }
+    }
+  }
+
+  // .ar-button--secondary
+  &--secondary {
+    // .ar-button--secondary.ar-button--theme
+    &#{$button}--theme {
+      color: var(--color-text-secondary);
+      background: var(--color-background-secondary);
+      border-color: var(--color-border-secondary);
+
+      // .ar-button--secondary.ar-button--theme:hover
+      &:hover {
+        background: var(--color-background-secondary-hover);
+        border-color: var(--color-border-secondary-hover);
+      }
+
+      // .ar-button--secondary.ar-button--theme:active
+      &:active {
+        border-color: var(--color-border-secondary);
+      }
+    }
+  }
+
+  // .ar-button--success
+  &--success {
+    // .ar-button--success.ar-button--theme
+    &#{$button}--theme {
+      color: var(--color-text-success);
+      background: var(--color-background-success);
+      border-color: var(--color-border-success);
+
+      // .ar-button--success.ar-button--theme:hover
+      &:hover {
+        background: var(--color-background-success-hover);
+        border-color: var(--color-border-success-hover);
+      }
+
+      // .ar-button--success.ar-button--theme:active
+      &:active {
+        border-color: var(--color-border-success);
+      }
+    }
+  }
+
+  // .ar-button--warning
+  &--warning {
+    // .ar-button--warning.ar-button--theme
+    &#{$button}--theme {
+      color: var(--color-text-warning);
+      background: var(--color-background-warning);
+      border-color: var(--color-border-warning);
+
+      // .ar-button--warning.ar-button--theme:hover
+      &:hover {
+        background: var(--color-background-warning-hover);
+        border-color: var(--color-border-warning-hover);
+      }
+
+      // .ar-button--warning.ar-button--theme:active
+      &:active {
+        border-color: var(--color-border-warning);
+      }
+    }
+  }
+
+  // .ar-button--danger
+  &--danger {
+    // .ar-button--danger.ar-button--theme
+    &#{$button}--theme {
+      color: var(--color-text-danger);
+      background: var(--color-background-danger);
+      border-color: var(--color-border-danger);
+
+      // .ar-button--danger.ar-button--theme:hover
+      &:hover {
+        background: var(--color-background-danger-hover);
+        border-color: var(--color-border-danger-hover);
+      }
+
+      // .ar-button--danger.ar-button--theme:active
+      &:active {
+        border-color: var(--color-border-danger);
+      }
+    }
+  }
+
+  // .ar-button--rounded
+  &--rounded {
+    border-radius: 2rem;
+  }
+
+  // .ar-button--textual
+  &--textual {
+    background: transparent;
+    border-color: transparent;
+
+    // .ar-button--textual.ar-button--primary, .ar-button--textual.ar-button--secondary, .ar-button--textual.ar-button--success, .ar-button--textual.ar-button--warning, .ar-button--textual.ar-button--danger
+    &#{$button}--primary,
+    &#{$button}--secondary,
+    &#{$button}--success,
+    &#{$button}--warning,
+    &#{$button}--danger {
+      background: transparent;
+      border-color: transparent;
+    }
+  }
+
+  // .ar-button--outlined
+  &--outlined {
+    background: transparent;
+
+    // .ar-button--text.ar-button--primary, .ar-button--text.ar-button--secondary, .ar-button--text.ar-button--success, .ar-button--text.ar-button--warning, .ar-button--text.ar-button--danger
+    &#{$button}--primary,
+    &#{$button}--secondary,
+    &#{$button}--success,
+    &#{$button}--warning,
+    &#{$button}--danger {
+      background: transparent;
+    }
+  }
+
+  // .ar-button__group
+  &__group {
+    display: inline-flex;
+    flex-direction: row;
+  }
+
+  // .ar-button__text
+  &__text {
+    // .ar-button__text i[class^="icon-"]
+    i[class^='icon-'] {
+      display: flex;
+    }
+  }
+
+  // .ar-button__loading
+  &__loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    line-height: initial;
+    transform: translate3d(-50%, -50%, 0);
+  }
+}

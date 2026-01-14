@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.56.0",
+  "version": "1.56.1-beta.1",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -30,6 +30,7 @@
     "build": "npm run prettier && npm run update-package && vue-tsc --noEmit && vite build --out-dir dist",
     "build-dev": "npm run prettier && npm run update-package && vue-tsc --noEmit && vite build --out-dir dist --mode development",
     "build-dev-light": "vite build --out-dir dist --mode development",
+    "theme": "node theme.config.js",
     "release": "npm run build && changelogen --release --push --publish --no-github",
     "release-notes": "changelogen gh release",
     "pre-release": "npm run test && npm run build && changelogen --release --no-github --no-commit --no-output --no-tag --prerelease beta --push --publish --publishTag beta"
@@ -60,6 +61,12 @@
     "vue-tsc": "^2.2.8"
   },
   "exports": {
+    "./theme/Ariadna": {
+      "import": "./dist/styles/themes/ariadna/ariadna.scss"
+    },
+    "./components/Ariadna": {
+      "import": "./dist/styles/themes/ariadna/components/index.scss"
+    },
     "./types": {
       "types": "./dist/types/index.d.ts"
     },

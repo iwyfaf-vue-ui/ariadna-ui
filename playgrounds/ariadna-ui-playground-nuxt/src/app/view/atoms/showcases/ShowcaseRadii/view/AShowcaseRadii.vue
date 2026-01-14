@@ -19,7 +19,7 @@
 </template>
 
 <script setup>
-import radius from '~/theme/asana/utilities/radius.js';
+import radius from '~/../../node_modules/@iwyfaf-vue-ui/ariadna-ui/dist/styles/themes/ariadna/theme-settings/utilities/radius.js';
 
 const radiiCount = computed(() => {
   return Object.keys(radius.default).length;
@@ -45,7 +45,7 @@ const componentClasses = computed(() => {
 </script>
 
 <style lang="scss">
-@use '../../../../../assets/scss/themes/asana/asana' as theme;
+@use '@iwyfaf-vue-ui/ariadna-ui/theme/Ariadna' as theme;
 
 .showcase-radii {
   &__title {

@@ -1,10 +1,9 @@
 @use 'reset-css/reset.css';
-@use 'themes/asana/asana' as theme;
 @use 'root';
 @use 'grid';
 @use 'layout';
-@use 'components';
 @use 'preview';
+@use '@iwyfaf-vue-ui/ariadna-ui/theme/Ariadna' as theme;
 
 :root {
   text-size-adjust: none; /* Disables automatic text resizing */

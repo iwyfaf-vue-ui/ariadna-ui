@@ -1,0 +1,212 @@
+@use '../../../ariadna' as theme;
+
+$spinner: '.ar-spinner-atom';
+
+#{$spinner} {
+  display: inline-block;
+
+  // .ar-spinner-atom__loader
+  &__loader {
+    display: block;
+    border-radius: 50%;
+    transform: rotateZ(45deg);
+    perspective: 1000px;
+
+    // .ar-spinner-atom__loader::before, .ar-spinner-atom__loader::after
+    &::before,
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: inherit;
+      height: inherit;
+      content: '';
+      border-radius: 50%;
+      animation: 1s spin linear infinite;
+    }
+
+    // .ar-spinner-atom__loader::before
+    &::before {
+      transform: rotateX(70deg);
+      animation: 1s spin linear infinite;
+    }
+
+    // .ar-spinner-atom__loader::after
+    &::after {
+      transform: rotateY(70deg);
+      animation: 1s spin-reverse linear infinite;
+    }
+  }
+
+  // .ar-spinner-atom--theme
+  &--theme {
+    color: var(--color-text-default);
+
+    // .ar-spinner-atom--small .ar-spinner-atom__loader
+    #{$spinner}__loader {
+      // .ar-spinner-atom--theme .ar-spinner-atom__loader::after
+      &::after {
+        color: var(--color-text-default);
+      }
+    }
+  }
+
+  // .ar-spinner-atom--small
+  &--small {
+    #{$spinner}__loader {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  // .ar-spinner-atom--medium
+  &--medium {
+    // .ar-spinner-atom--medium .ar-spinner-atom__loader
+    #{$spinner}__loader {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  // .ar-spinner-atom--large
+  &--large {
+    // .ar-spinner-atom--large .ar-spinner-atom__loader
+    #{$spinner}__loader {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  // .ar-spinner-atom--primary
+  &--primary {
+    color: var(--color-background-primary);
+
+    // .ar-spinner-atom--primary .ar-spinner-atom__loader
+    #{$spinner}__loader {
+      // .ar-spinner-atom--primary .ar-spinner-atom__loader::after
+      &::after {
+        color: var(--color-background-primary-strong);
+      }
+    }
+  }
+
+  // .ar-spinner-atom--secondary
+  &--secondary {
+    color: var(--color-background-secondary-strong);
+
+    // .ar-spinner-atom--secondary .ar-spinner-atom__loader
+    #{$spinner}__loader {
+      // .ar-spinner-atom--secondary .ar-spinner-atom__loader::after
+      &::after {
+        color: var(--color-background-secondary-strong);
+      }
+    }
+  }
+
+  // .ar-spinner-atom--success
+  &--success {
+    color: var(--color-background-success-strong);
+
+    // .ar-spinner-atom--success .ar-spinner-atom__loader
+    #{$spinner}__loader {
+      // .ar-spinner-atom--success .ar-spinner-atom__loader::after
+      &::after {
+        color: var(--color-background-success-strong);
+      }
+    }
+  }
+
+  // .ar-spinner-atom--warning
+  &--warning {
+    color: var(--color-background-warning-strong);
+
+    // .ar-spinner-atom--warning .ar-spinner-atom__loader
+    #{$spinner}__loader {
+      // .ar-spinner-atom--warning .ar-spinner-atom__loader::after
+      &::after {
+        color: var(--color-background-warning-strong);
+      }
+    }
+  }
+
+  // .ar-spinner-atom--danger
+  &--danger {
+    color: var(--color-background-danger-strong);
+
+    // .ar-spinner-atom--danger .ar-spinner-atom__loader
+    #{$spinner}__loader {
+      // .ar-spinner-atom--danger .ar-spinner-atom__loader::after
+      &::after {
+        color: var(--color-background-danger-strong);
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotateZ(360deg);
+  }
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    box-shadow: 0.2em 0 0 0 currentcolor;
+  }
+
+  12% {
+    box-shadow: 0.2em 0.2em 0 0 currentcolor;
+  }
+
+  25% {
+    box-shadow: 0 0.2em 0 0 currentcolor;
+  }
+
+  37% {
+    box-shadow: -0.2em 0.2em 0 0 currentcolor;
+  }
+
+  50% {
+    box-shadow: -0.2em 0 0 0 currentcolor;
+  }
+
+  62% {
+    box-shadow: -0.2em -0.2em 0 0 currentcolor;
+  }
+
+  75% {
+    box-shadow: 0 -0.2em 0 0 currentcolor;
+  }
+
+  87% {
+    box-shadow: 0.2em -0.2em 0 0 currentcolor;
+  }
+}
+
+@keyframes spin-reverse {
+  0% {
+    box-shadow: -0.2em 0 0 0 currentcolor;
+  }
+
+  25% {
+    box-shadow: 0 -0.2em 0 0 currentcolor;
+  }
+
+  50% {
+    box-shadow: 0.2em 0 0 0 currentcolor;
+  }
+
+  75% {
+    box-shadow: 0 0.2em 0 0 currentcolor;
+  }
+
+  100% {
+    box-shadow: -0.2em 0 0 0 currentcolor;
+  }
+}

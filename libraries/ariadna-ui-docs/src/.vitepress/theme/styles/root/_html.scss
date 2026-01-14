@@ -1,9 +1,9 @@
-@use '../themes/asana/asana' as theme;
+@use '@iwyfaf-vue-ui/ariadna-ui/theme/Ariadna' as theme;
 
 html {
-  @include theme.theme-light;
+  @include theme.theme-default;
 }
 
 html.dark {
-  @include theme.theme-dark;
+  @include theme.theme-default;
 }

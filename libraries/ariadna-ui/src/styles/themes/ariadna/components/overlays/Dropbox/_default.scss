@@ -1,0 +1,158 @@
+@use '../../../ariadna' as theme;
+
+$dropbox: '.ar-dropbox';
+
+#{$dropbox} {
+  position: relative;
+  display: inline-flex;
+
+  // .ar-dropbox--theme
+  &--theme {
+    // .ar-dropbox--theme .ar-dropbox__input
+    #{$dropbox}__content {
+      background: var(--color-background-default-strong);
+      border-color: var(--color-border-default);
+
+      // .ar-dropbox--theme .ar-dropbox__content-header, .ar-dropbox--theme .ar-dropbox__content-main
+      &-header,
+      &-main {
+        border-color: var(--color-border-default);
+      }
+    }
+  }
+
+  // .ar-dropbox--opened
+  &--opened {
+    // ar-dropbox--opened .ar-dropbox__content
+    #{$dropbox}__content {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+      transition:
+        transform 0.4s cubic-bezier(0.5, 0, 0, 1),
+        opacity 0.4s cubic-bezier(0.5, 0, 0, 1),
+        visibility 0.4s cubic-bezier(0.5, 0, 0, 1);
+
+      // .ar-dropbox--opened .ar-dropbox__content--vertical-bottom-right,
+      // .ar-dropbox--opened .ar-dropbox__content--vertical-bottom-left
+      &--vertical-bottom-right,
+      &--vertical-bottom-left,
+      &--vertical-bottom-center {
+        transform: translateY(10px);
+      }
+
+      // .ar-dropbox--opened .ar-dropbox__content--vertical-top-right,
+      // .ar-dropbox--opened .ar-dropbox__content--vertical-top-left
+      &--vertical-top-left,
+      &--vertical-top-right {
+        transform: translateY(-10px);
+      }
+
+      // .ar-dropbox--opened .ar-dropbox__content--horizontal-right-center
+      &--horizontal-right-center {
+        transform: translate(10px, -50%);
+      }
+
+      // .ar-dropbox--opened  .ar-dropbox__content--vertical-top-center, .ar-dropbox--opened  .ar-dropbox__content--vertical-bottom-center
+      &--vertical-top-center,
+      &--vertical-bottom-center {
+        transform: translate(-50%, 10px);
+      }
+    }
+  }
+
+  // .ar-dropbox--primary
+  &--primary {
+    // .ar-dropbox--primary.ar-dropbox--theme
+    &#{$dropbox}--theme {
+      // .ar-dropbox--primary.ar-dropbox--theme ar-dropbox__content
+      #{$dropbox}__content {
+        background: var(--color-background-primary);
+
+        // .ar-dropbox--primary.ar-dropbox--theme .ar-dropbox__content-header, .ar-dropbox--primary.ar-dropbox--theme .ar-dropbox__content-main
+        &-header,
+        &-main {
+          border-color: var(--color-border-primary);
+        }
+      }
+    }
+  }
+
+  // .ar-dropbox__content
+  &__content {
+    position: absolute;
+    bottom: auto;
+    left: auto;
+    z-index: 50;
+    visibility: hidden;
+    width: auto;
+    min-width: 280px;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--radius-default-medium);
+    box-shadow: 0 10px 30px 0 rgb(98 81 81 / 15%);
+    opacity: 0;
+    transform: translateY(0);
+    transition:
+      transform 0s 0.2s cubic-bezier(0.5, 0, 0.5, 1),
+      opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1),
+      visibility 0.2s cubic-bezier(0.5, 0, 0.5, 1);
+
+    @include theme.md {
+      min-width: 400px;
+    }
+
+    // .e-dropbox__content-header
+    &-header {
+      padding: var(--indent-padding-xlarge);
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+    }
+
+    // .e-dropbox__content-main
+    &-main {
+      max-height: 300px;
+      padding: var(--indent-padding-xlarge);
+      overflow-y: auto;
+    }
+
+    // .ar-dropbox__content--vertical-bottom-right
+    &--vertical-bottom-right {
+      top: 100%;
+      left: 0;
+    }
+
+    // .ar-dropbox__content--vertical-top-right
+    &--vertical-top-right {
+      bottom: 100%;
+      left: 0;
+    }
+
+    // .ar-dropbox__content--vertical-bottom-left
+    &--vertical-bottom-left {
+      top: 100%;
+      right: 0;
+    }
+
+    // .ar-dropbox__content--vertical-top-left
+    &--vertical-top-left {
+      right: 0;
+      bottom: 100%;
+    }
+
+    // .ar-dropbox__content--horizontal-right-center
+    &--horizontal-right-center {
+      top: 50%;
+      left: 100%;
+      transform: translateY(-50%);
+    }
+
+    // .ar-dropbox__content--vertical-top-center, .ar-dropbox__content--vertical-bottom-center
+    &--vertical-top-center,
+    &--vertical-bottom-center {
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+}

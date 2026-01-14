@@ -37,13 +37,17 @@ export default defineNuxtConfig({
       ],
     ],
   },
-  css: ['@/assets/scss/app.scss', '@/assets/fonts/icons/icons.css'],
+  css: [
+    '@iwyfaf-vue-ui/ariadna-ui/components/Ariadna',
+    '@/assets/scss/app.scss',
+    '@/assets/fonts/icons/icons.css',
+  ],
   vite: {
     css: {
       preprocessorOptions: {
         scss: {
           additionalData: `
-            @use "assets/scss/themes/asana/asana" as *;
+            @use "@iwyfaf-vue-ui/ariadna-ui/theme/Ariadna" as *;
           `,
         },
       },

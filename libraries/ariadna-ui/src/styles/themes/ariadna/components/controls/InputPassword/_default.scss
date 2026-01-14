@@ -1,0 +1,323 @@
+@use '../../../ariadna' as theme;
+
+@mixin color-by-inline-width(
+  $danger: var(--color-background-danger-strong),
+  $warning: var(--color-background-warning-strong),
+  $success: var(--color-background-success-strong)
+) {
+  // 0–50
+  @for $i from 0 through 50 {
+    &-item[style*='width: #{$i}%;'],
+    &-item[style*='width:#{$i}%;'] {
+      background-color: $danger;
+    }
+  }
+
+  // 51–70
+  @for $i from 51 through 70 {
+    &-item[style*='width: #{$i}%;'],
+    &-item[style*='width:#{$i}%;'] {
+      background-color: $warning;
+    }
+  }
+
+  // 71–100
+  @for $i from 71 through 100 {
+    &-item[style*='width: #{$i}%;'],
+    &-item[style*='width:#{$i}%;'] {
+      background-color: $success;
+    }
+  }
+}
+
+$input-password: '.ar-input-password';
+
+#{$input-password} {
+  position: relative;
+  width: 100%;
+
+  // .ar-input-password--theme
+  &--theme {
+    // .ar-input-password--theme .ar-input-password__input
+    #{$input-password}__input {
+      color: var(--color-text-default-weak);
+      background: var(--color-background-default-weak);
+      border-color: var(--color-border-default);
+      box-shadow: 0 0 0 1000px var(--color-background-default-weak) inset;
+      -webkit-text-fill-color: var(--color-text-default-weak);
+
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        box-shadow: 0 0 0 1000px var(--color-background-default-weak) inset;
+        -webkit-text-fill-color: var(--color-text-default-weak);
+      }
+    }
+
+    // .ar-input-password--theme .ar-input-password__progress-bar
+    #{$input-password}__progress-bar {
+      background-color: grey;
+
+      // .ar-input-password--theme .ar-input-password__progress-bar-item
+      @include color-by-inline-width;
+    }
+
+    // .ar-input-password--theme .ar-input-password__meter-panel
+    #{$input-password}__meter-panel {
+      background-color: var(--color-text-default-contrast);
+      border-color: var(--color-border-default);
+    }
+  }
+
+  // .ar-input-password--focused
+  &--focused {
+    // .ar-input-password--focused.ar-input-password--theme
+    &#{$input-password}--theme {
+      // .ar-input-password--focused.ar-input-password--theme .ar-input-password__input
+      #{$input-password}__input {
+        border-color: var(--color-border-default-active);
+      }
+    }
+  }
+
+  // .ar-input-password--hovered
+  &--hovered {
+    // .ar-input-password--hover.ar-input-password--theme
+    &#{$input-password}--theme {
+      // .ar-input-password--hover.ar-input-password--theme .ar-input-password__input
+      #{$input-password}__input {
+        border-color: var(--color-border-default-hover);
+      }
+    }
+  }
+
+  // .ar-input-password--disabled
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+
+  // .ar-input-password--readonly
+  &--readonly {
+    #{$input-password}__input {
+      font-size: 16px;
+      border: 0;
+    }
+  }
+
+  // .ar-input-password--filled
+  &--filled {
+    // .ar-input-password--filled .ar-input-password__placeholder
+    #{$input-password}__placeholder {
+      display: none;
+    }
+  }
+
+  // .ar-input-password--valid
+  &--valid {
+    // .ar-input-password--valid.ar-input-password--theme
+    &#{$input-password}--theme {
+      // .ar-input-password--valid.ar-input-password--theme .ar-input-password__input
+      #{$input-password}__input {
+        border-color: var(--color-border-success);
+
+        // .ar-input-password--valid.ar-input-password--theme .ar-input-password__input:hover
+        &:hover {
+          border-color: var(--color-border-success-hover);
+        }
+
+        // .ar-input-password--valid.ar-input-password--theme .ar-input-password__input:focus
+        &:focus {
+          border-color: var(--color-border-success-active);
+        }
+      }
+    }
+  }
+
+  // .ar-input-password--invalid
+  &--invalid {
+    color: var(--color-text-danger);
+
+    // .ar-input-password--invalid.ar-input-password--theme
+    &#{$input-password}--theme {
+      // .ar-input-password--invalid.ar-input-password--theme .ar-input-password__input
+      #{$input-password}__input {
+        border-color: var(--color-border-danger);
+
+        // .ar-input-password--invalid.ar-input-password--theme .ar-input-password__input:hover
+        &:hover {
+          border-color: var(--color-border-danger-hover);
+        }
+
+        // .ar-input-password--invalid.ar-input-password--theme .ar-input-password__input:focus
+        &:focus {
+          border-color: var(--color-border-danger-active);
+        }
+      }
+    }
+  }
+
+  // .ar-input-password--small
+  &--small {
+    #{$input-password}__input {
+      @include theme.text-style-helper(t3);
+
+      padding: var(--indent-margin-small) var(--indent-margin-medium);
+    }
+  }
+
+  // .ar-input-password--medium
+  &--medium {
+    #{$input-password}__input {
+      @include theme.text-style-helper(t3);
+
+      padding: var(--indent-margin-medium) var(--indent-margin-large);
+    }
+  }
+
+  // .ar-input-password--large
+  &--large {
+    #{$input-password}__input {
+      @include theme.text-style-helper(t3);
+
+      padding: var(--indent-margin-large) var(--indent-margin-xlarge);
+    }
+  }
+
+  // .ar-input-password--primary
+  &--primary {
+    // .ar-input-password--primary.ar-input-password__input
+    #{$input-password}__input {
+      color: var(--color-text-default-foreground);
+      background: var(--color-background-primary);
+      border-color: var(--color-border-primary);
+    }
+
+    // .ar-input-password--primary.ar-input-password--hovered
+    &#{$input-password}--hovered {
+      // .ar-input-password--primary.ar-input-password--hovered .ar-input-password__input
+      #{$input-password}__input {
+        border-color: var(--color-text-default-foreground);
+      }
+    }
+  }
+
+  // .ar-input-password:has(.ar-input-password__toggle-button) .ar-input-password__input
+  &:has(#{$input-password}__toggle-button) #{$input-password}__input {
+    padding-inline-end: 30px;
+  }
+
+  // .ar-input-password__label
+  &__label {
+    position: relative;
+    display: block;
+  }
+
+  // .ar-input-password__input
+  &__input {
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    outline: 0;
+    background-color: inherit;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--radius-default-medium);
+  }
+
+  // .ar-input-password__toggle-button
+  &__toggle-button {
+    position: absolute;
+    inset-inline-end: var(--indent-padding-medium);
+    top: 50%;
+    margin-top: 4px;
+    cursor: pointer;
+
+    i[class^='icon-'] {
+      display: block;
+      width: 22px;
+      height: 22px;
+      font-size: 22px;
+    }
+  }
+
+  // .ar-input-password__progress-bar
+  &__progress-bar {
+    width: 100%;
+    height: 10px;
+    border-radius: var(--radius-default-medium);
+
+    // .ar-input-password__progress-bar-item
+    &-item {
+      height: 10px;
+      border-radius: var(--radius-default-medium);
+      transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  // .ar-input-password__meter-panel
+  &__meter-panel {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    padding: var(--indent-padding-large);
+    pointer-events: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--radius-default-medium);
+    opacity: 0;
+    transition: opacity var(--transition-default-easeinout);
+
+    // .ar-input-password__meter-panel--visible
+    &--visible {
+      opacity: 1;
+    }
+
+    // .ar-input-password__meter-panel--bottom
+    &--bottom {
+      top: 100%;
+      transform: translateY(10px);
+    }
+
+    // .ar-input-password__meter-panel--top
+    &--top {
+      bottom: 100%;
+    }
+  }
+
+  // .ar-input-password__placeholder
+  &__placeholder {
+    @include theme.text-style-helper(t3);
+
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    pointer-events: none;
+    opacity: 0.3;
+  }
+
+  // .ar-input-password__errors
+  &__errors {
+    @include theme.text-style-helper(t3);
+
+    // .ar-input-password__errors-expand-enter-active, .ar-input-password__errors--expand-leave-active
+    &-expand-enter-active,
+    &-expand-leave-active {
+      overflow: hidden;
+      transition:
+        height 0.2s ease,
+        padding-top 0.2s ease;
+    }
+
+    // .ar-input-password__errors--expand-enter-from, .ar-input-password__errors---expand-leave-to
+    &-expand-enter-from,
+    &-expand-leave-to {
+      height: 0 !important;
+      padding-top: 0 !important;
+    }
+  }
+}

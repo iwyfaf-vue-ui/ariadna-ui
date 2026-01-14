@@ -91,6 +91,8 @@ export default defineConfig(({ mode }) => {
       vue({}),
       viteStaticCopy({
         targets: [
+          { src: 'src/styles/_mixins', dest: 'styles/' },
+          { src: 'src/styles/themes', dest: 'styles/' },
           { src: 'src/types/index.d.ts', dest: 'types/' },
           { src: 'src/types/component.d.ts', dest: 'types/' },
           { src: 'src/types/locales/bcp-language-tags.types.d.ts', dest: 'types/locales' },

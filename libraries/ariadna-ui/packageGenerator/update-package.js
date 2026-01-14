@@ -14,6 +14,12 @@ import scanFiles from './scan-files.js';
  * @type {Object}
  */
 const exportsByDefault = {
+  './theme/Ariadna': {
+    import: './dist/styles/themes/ariadna/ariadna.scss',
+  },
+  './components/Ariadna': {
+    import: './dist/styles/themes/ariadna/components/index.scss',
+  },
   './types': {
     types: './dist/types/index.d.ts',
   },

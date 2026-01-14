@@ -3,9 +3,9 @@
 @use 'item-grid';
 @use 'card-link';
 @use 'vite-plugin-vitepress-demo';
-@use 'themes/asana/asana' as theme;
+@use '@iwyfaf-vue-ui/ariadna-ui/theme/Ariadna' as theme;
+@use '@iwyfaf-vue-ui/ariadna-ui/components/Ariadna';
 @use 'root';
-@use 'components';
 
 :root {
   @include theme.grid-settings;

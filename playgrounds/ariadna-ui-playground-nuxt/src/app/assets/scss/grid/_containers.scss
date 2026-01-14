@@ -1,4 +1,4 @@
-@use '../themes/asana/asana' as theme;
+@use '@iwyfaf-vue-ui/ariadna-ui/theme/Ariadna' as theme;
 
 .container-fluid {
   @include theme.grid-container-fluid;

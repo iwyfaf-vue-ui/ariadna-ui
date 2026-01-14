@@ -27,7 +27,7 @@
 </template>
 
 <script setup>
-import originalFonts from '~/theme/asana/utilities/fonts.js';
+import originalFonts from '~/../../node_modules/@iwyfaf-vue-ui/ariadna-ui/dist/styles/themes/ariadna/theme-settings/utilities/fonts.js';
 
 const componentClasses = computed(() => {
   const CLASS_PREFIX = 'showcase-fonts';
@@ -57,7 +57,7 @@ const fonts = Object.keys(originalFonts.size).map((key) => ({
 </script>
 
 <style lang="scss">
-@use '../../../../../assets/scss/themes/asana/asana' as theme;
+@use '@iwyfaf-vue-ui/ariadna-ui/theme/Ariadna' as theme;
 
 .showcase-fonts {
   &__title {
@@ -118,7 +118,7 @@ const fonts = Object.keys(originalFonts.size).map((key) => ({
 </style>
 
 <style lang="scss" scoped>
-@use '../../../../../assets/scss/themes/asana/asana' as theme;
+@use '@iwyfaf-vue-ui/ariadna-ui/theme/Ariadna' as theme;
 
 .t1 {
   @include theme.text-style-helper(t1);

@@ -42,7 +42,7 @@
 </template>
 
 <script setup lang="ts">
-import indents from '~/theme/asana/utilities/indents.js';
+import indents from '~/../../node_modules/@iwyfaf-vue-ui/ariadna-ui/dist/styles/themes/ariadna/theme-settings/utilities/indents.js';
 
 const componentClasses = computed(() => {
   const CLASS_PREFIX = 'showcase-indents';
@@ -62,7 +62,7 @@ const componentClasses = computed(() => {
 </script>
 
 <style lang="scss">
-@use '../../../../../assets/scss/themes/asana/asana' as theme;
+@use '@iwyfaf-vue-ui/ariadna-ui/theme/Ariadna' as theme;
 
 .showcase-indents {
   &__title {

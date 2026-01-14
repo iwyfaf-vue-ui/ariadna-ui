@@ -1,0 +1,105 @@
+@use '../../../ariadna' as theme;
+
+$spinner: '.ar-spinner';
+
+#{$spinner} {
+  display: inline-block;
+
+  // .ar-spinner__loader
+  &__loader {
+    display: block;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    mask: radial-gradient(farthest-side, #0000 calc(100% - 3px), #000 0);
+    animation: ar-spinner 1s infinite linear;
+  }
+
+  // .ar-spinner--theme
+  &--theme {
+    // .ar-spinner--theme .ar-spinner__loader
+    #{$spinner}__loader {
+      background:
+        radial-gradient(farthest-side, var(--color-text-default) 94%, #0000) top/3px 3px no-repeat,
+        conic-gradient(#0000 30%, var(--color-text-default));
+    }
+  }
+
+  // .ar-spinner--small
+  &--small {
+    width: 25px;
+    height: 25px;
+  }
+
+  // .ar-spinner--medium
+  &--medium {
+    width: 45px;
+    height: 45px;
+  }
+
+  // .ar-spinner--large
+  &--large {
+    width: 60px;
+    height: 60px;
+  }
+
+  // .ar-spinner--primary
+  &--primary {
+    // .ar-spinner--primary .ar-spinner__loader
+    #{$spinner}__loader {
+      background:
+        radial-gradient(farthest-side, var(--color-background-primary) 94%, #0000) top/3px 3px
+          no-repeat,
+        conic-gradient(#0000 30%, var(--color-background-primary));
+    }
+  }
+
+  // .ar-spinner--secondary
+  &--secondary {
+    // .ar-spinner--secondary .ar-spinner__loader
+    #{$spinner}__loader {
+      background:
+        radial-gradient(farthest-side, var(--color-background-secondary-strong) 94%, #0000) top/3px
+          3px no-repeat,
+        conic-gradient(#0000 30%, var(--color-background-secondary-strong));
+    }
+  }
+
+  // .ar-spinner--success
+  &--success {
+    // .ar-spinner--success .ar-spinner__loader
+    #{$spinner}__loader {
+      background:
+        radial-gradient(farthest-side, var(--color-background-success-strong) 94%, #0000) top/3px
+          3px no-repeat,
+        conic-gradient(#0000 30%, var(--color-background-success-strong));
+    }
+  }
+
+  // .ar-spinner--warning
+  &--warning {
+    // .ar-spinner--warning .ar-spinner__loader
+    #{$spinner}__loader {
+      background:
+        radial-gradient(farthest-side, var(--color-background-warning-strong) 94%, #0000) top/3px
+          3px no-repeat,
+        conic-gradient(#0000 30%, var(--color-background-warning-strong));
+    }
+  }
+
+  // .ar-spinner--danger
+  &--danger {
+    // .ar-spinner--danger .ar-spinner__loader
+    #{$spinner}__loader {
+      background:
+        radial-gradient(farthest-side, var(--color-background-danger-strong) 94%, #0000) top/3px 3px
+          no-repeat,
+        conic-gradient(#0000 30%, var(--color-background-danger-strong));
+    }
+  }
+}
+
+@keyframes ar-spinner {
+  100% {
+    transform: rotate(1turn);
+  }
+}

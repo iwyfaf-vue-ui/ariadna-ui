@@ -35,7 +35,7 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
-import transition from '~/theme/asana/utilities/transition.js';
+import transition from '~/../../node_modules/@iwyfaf-vue-ui/ariadna-ui/dist/styles/themes/ariadna/theme-settings/utilities/transition.js';
 
 const componentClasses = computed(() => {
   const CLASS_PREFIX = 'showcase-transitions';
@@ -73,7 +73,7 @@ onBeforeUnmount(() => {
 </script>
 
 <style lang="scss">
-@use '../../../../../assets/scss/themes/asana/asana' as theme;
+@use '@iwyfaf-vue-ui/ariadna-ui/theme/Ariadna' as theme;
 
 .showcase-transitions {
   &__title {

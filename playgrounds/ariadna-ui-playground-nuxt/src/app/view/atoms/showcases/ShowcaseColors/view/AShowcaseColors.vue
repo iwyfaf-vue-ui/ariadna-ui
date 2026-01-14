@@ -1,44 +1,43 @@
 <template>
-  <div
-    v-for="(themeMainGroup, themeMainGroupName) in themes['light']"
-    :class="componentClasses.main"
-  >
-    <h2>UIKit Цвета</h2>
-    <div
-      v-for="(themeSubgroup, themeSubgroupName) in themeMainGroup"
-      :class="componentClasses.subgroup"
-    >
-      <div :class="componentClasses.subgroupTitle">{{ themeSubgroupName }}</div>
+  <div v-for="(theme, themeName) in themes">
+    <div v-for="(themeMainGroup, themeMainGroupName) in theme" :class="componentClasses.main">
+      <h2>UI Kit темы {{ themeName }}</h2>
       <div
-        v-for="(themeGroupUtilities, themeGroupUtilityName) in themeSubgroup"
-        :class="componentClasses.utility"
+        v-for="(themeSubgroup, themeSubgroupName) in themeMainGroup"
+        :class="componentClasses.subgroup"
       >
-        <div :class="componentClasses.utilityTitle">{{ themeGroupUtilityName }}</div>
-        <div :class="componentClasses.category">
-          <div
-            v-for="(themePropertyValue, themeGroupPropertiesName) in themeGroupUtilities"
-            :class="componentClasses.properties"
-          >
-            <div :class="componentClasses.propertyItem">
-              {{
-                themeCssVar(
+        <div :class="componentClasses.subgroupTitle">{{ themeSubgroupName }}</div>
+        <div
+          v-for="(themeGroupUtilities, themeGroupUtilityName) in themeSubgroup"
+          :class="componentClasses.utility"
+        >
+          <div :class="componentClasses.utilityTitle">{{ themeGroupUtilityName }}</div>
+          <div :class="componentClasses.category">
+            <div
+              v-for="(themePropertyValue, themeGroupPropertiesName) in themeGroupUtilities"
+              :class="componentClasses.properties"
+            >
+              <div :class="componentClasses.propertyItem">
+                {{
+                  themeCssVar(
+                    themeMainGroupName,
+                    themeSubgroupName,
+                    themeGroupUtilityName,
+                    themeGroupPropertiesName,
+                  )
+                }}
+              </div>
+
+              <div
+                :style="`background-color: var(--${themeCssVar(
                   themeMainGroupName,
                   themeSubgroupName,
                   themeGroupUtilityName,
                   themeGroupPropertiesName,
-                )
-              }}
+                )}`"
+                :class="componentClasses.propertyValue"
+              ></div>
             </div>
-
-            <div
-              :style="`background-color: var(--${themeCssVar(
-                themeMainGroupName,
-                themeSubgroupName,
-                themeGroupUtilityName,
-                themeGroupPropertiesName,
-              )}`"
-              :class="componentClasses.propertyValue"
-            ></div>
           </div>
         </div>
       </div>
@@ -47,7 +46,7 @@
 </template>
 
 <script setup lang="ts">
-import themes from '~/theme/asana/theme/theme';
+import themes from '~/../../node_modules/@iwyfaf-vue-ui/ariadna-ui/dist/styles/themes/ariadna/theme-settings/theme/theme';
 
 const themeCssVar = computed(
   () =>
@@ -87,7 +86,7 @@ const componentClasses = computed(() => {
 </script>
 
 <style lang="scss">
-@use '../../../../../assets/scss/themes/asana/asana' as theme;
+@use '@iwyfaf-vue-ui/ariadna-ui/theme/Ariadna' as theme;
 
 .showcase-colors {
   h2 {
