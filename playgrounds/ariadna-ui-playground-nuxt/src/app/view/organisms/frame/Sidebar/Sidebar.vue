@@ -192,6 +192,10 @@ const data = ref<Array<TSidebarMenuItem>>([
             href: '/components/panels/card',
           },
           {
+            title: 'Header',
+            href: '/components/panels/header',
+          },
+          {
             title: 'Tabs',
             href: '/components/panels/tabs',
           },

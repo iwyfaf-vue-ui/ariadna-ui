@@ -1,0 +1,108 @@
+@use '../../../ariadna' as theme;
+
+$header: '.ar-header';
+
+#{$header} {
+  position: fixed;
+  z-index: 9000;
+  display: flex;
+  column-gap: var(--indent-margin-large);
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 320px;
+  height: var(--header-height);
+  padding: var(--indent-margin-medium) var(--indent-margin-xlarge);
+  transition: all var(--transition-default-easein);
+
+  // .ar-header--theme
+  &--theme {
+    background-color: var(--color-background-default-strong);
+    border-bottom: 1px solid var(--color-border-default);
+  }
+
+  // .ar-header--scrolled
+  &--scrolled {
+    // .ar-header--scrolled.ar-header--theme
+    &#{$header}--theme {
+      background-color: var(--color-background-default-strong);
+      border-bottom-color: transparent;
+      box-shadow: 0 4px 12px rgb(15 23 42 / 58%);
+    }
+  }
+
+  // .ar-header--primary
+  &--primary {
+    // .ar-header--primary.ar-header--theme
+    &#{$header}--theme {
+      background-color: var(--color-background-primary);
+      border-bottom: 1px solid var(--color-border-primary);
+    }
+  }
+
+  // .ar-header__head
+  &__head {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto 1fr;
+    column-gap: var(--indent-margin-small);
+    align-items: center;
+
+    // .ar-header__head-logo
+    &-logo {
+      display: flex;
+      grid-row: 1 / 3;
+      grid-column: 1;
+      align-items: center;
+      align-self: center;
+
+      // .ar-header__head-logo a
+      a {
+        display: flex;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      // .ar-header__head-logo img
+      img {
+        width: auto;
+        height: 100%;
+        max-height: 40px;
+        padding-left: var(--indent-margin-large);
+      }
+    }
+
+    // .ar-header__head-title
+    &-title {
+      @include theme.text-style-helper(h5);
+
+      grid-row: 1;
+      grid-column: 2;
+      align-self: baseline;
+      margin-left: var(--indent-margin-medium);
+    }
+
+    // .ar-header__head-subtitle
+    &-subtitle {
+      @include theme.text-style-helper(t4);
+
+      grid-row: 2;
+      grid-column: 2;
+      margin-left: var(--indent-margin-medium);
+      text-align: center;
+    }
+  }
+
+  // .ar-header__content
+  &__content {
+    display: flex;
+  }
+
+  // .ar-header__right
+  &__right {
+    display: flex;
+  }
+}
