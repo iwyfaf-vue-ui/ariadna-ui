@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v1.58.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.57.0...v1.58.0)
+
+### 🚀 Enhancements
+
+- Add Ariadna theme documentation ([e4ee71b](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/e4ee71b))
+- Add Header panel component ([5142fed](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/5142fed))
+
+### 🏡 Chore
+
+- Update ariadna-ui dependency to v1.57.0 ([90be05d](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/90be05d))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.57.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.56.0...v1.57.0)
