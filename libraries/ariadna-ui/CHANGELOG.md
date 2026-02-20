@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.59.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.58.0...v1.59.0)
+
+### 🚀 Enhancements
+
+- Add icon-only button modifier ([7608d1d](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/7608d1d))
+
+### 📖 Documentation
+
+- Update library version ([18240df](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/18240df))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.58.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.57.0...v1.58.0)
