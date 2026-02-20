@@ -1,8 +1,12 @@
 import type { TUseButtonReturn } from './useButton.types';
-import type { TButtonEmits, TButtonProps } from '../../Button';
+import type { TButtonEmits, TButtonProps, TButtonSlots } from '../../Button';
 import { computed } from 'vue';
 
-export default function useButton(props: TButtonProps, emits: TButtonEmits): TUseButtonReturn {
+export default function useButton(
+  props: TButtonProps,
+  emits: TButtonEmits,
+  slots: TButtonSlots,
+): TUseButtonReturn {
   const isDisabled = computed(() => props.disabled || props.loading);
 
   const componentClasses = computed(() => {
@@ -18,6 +22,7 @@ export default function useButton(props: TButtonProps, emits: TButtonEmits): TUs
     const disabled = isDisabled.value ? `${base}--disabled` : undefined;
     const loading = props.loading ? `${base}--loading` : undefined;
     const modifier = props.modifier ? `${base}--${props.modifier}` : undefined;
+    const iconOnly = slots?.icon && !slots?.default ? `${base}--icon-only` : undefined;
 
     return [
       base,
@@ -31,6 +36,7 @@ export default function useButton(props: TButtonProps, emits: TButtonEmits): TUs
       disabled,
       loading,
       modifier,
+      iconOnly,
     ]
       .filter(Boolean)
       .join(' ');

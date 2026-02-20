@@ -6,25 +6,11 @@ layout: doc
 
 Button - легко настраиваемый компонент кнопки для пользовательского интерфейса.
 
-Вес <Badge type="info">~ 1.20 kB gzipped.</Badge>
+Вес <Badge type="info">~ 1.22 kB gzipped.</Badge>
 
 ## Описание
 
-Button - Vue компонент представляет собой универсальную кнопку, которая поддерживает:
-
-* Разные HTML-теги для рендера (`button`, `span`, `a`);
-* Иконки и текст с возможностью кастомизации через слоты;
-* Гибкое позиционирование иконки;
-* Модификации внешнего вида через props:
-  - `size`
-  - `rounded`
-  - `textual`
-  - `outlined`
-* Поддержка состояний через props:
-  - `disabled`
-  - `loading`
-  - `selected`
-* ARIA-атрибуты для доступности.
+Компонент Button представляет собой расширение стандартного HTML элемента `button`.
 
 ## Установка
 
@@ -73,8 +59,8 @@ import Button from '@iwyfaf-vue-ui/ariadna-ui/Button';
 
 - **Тип:** `'button' | 'submit' | 'reset'`
 - **Значение по умолчанию:** `button`
-- **Описание**: Определяет тип кнопки, если кнопка рендерится как `<button>` элемент. Определяет поведение кнопки по 
-умолчанию в формах и взаимодействиях.
+- **Описание**: Определяет тип кнопки, если кнопка рендерится как `<button>` элемент. Определяет поведение кнопки по
+  умолчанию в формах и взаимодействиях.
 
 ::: details Пример
 <demo src="./demos/demo.props.type.vue"></demo>
@@ -85,7 +71,7 @@ import Button from '@iwyfaf-vue-ui/ariadna-ui/Button';
 - **Тип:** `'left' | 'right' | 'top' | 'bottom'`
 - **Значение по умолчанию:** `left`
 - **Описание**: Положение иконки относительно текста кнопки. Добавляет модификаторы `--icon-left`, `--icon-right`,
-`--icon-top` и `--icon-bottom`.
+  `--icon-top` и `--icon-bottom`.
 
 ::: details Пример
 <demo src="./demos/demo.props.icon-position.vue"></demo>
@@ -95,8 +81,8 @@ import Button from '@iwyfaf-vue-ui/ariadna-ui/Button';
 
 - **Тип:** `TSharedPropsSize`
 - **Значение по умолчанию:** `EButtonPropsDefault.SIZE`
-- **Описание**: Предопределенные варианты размеров для кнопки. Добавляет модификаторы `--small`, `--medium` и 
-`--large`.
+- **Описание**: Предопределенные варианты размеров для кнопки. Добавляет модификаторы `--small`, `--medium` и
+  `--large`.
 
 ::: details Пример
 <demo src="./demos/demo.props.size.vue"></demo>
@@ -136,8 +122,8 @@ import Button from '@iwyfaf-vue-ui/ariadna-ui/Button';
 
 - **Тип:** `boolean`
 - **Значение по умолчанию:** `false`
-- **Описание**: Состояние `selected`. Например, когда необходимо отобразить выбранный элемент. Добавляет модификатор 
-`--selected`.
+- **Описание**: Состояние `selected`. Например, когда необходимо отобразить выбранный элемент. Добавляет модификатор
+  `--selected`.
 
 ::: details Пример
 <demo src="./demos/demo.props.selected.vue"></demo>
@@ -167,8 +153,8 @@ import Button from '@iwyfaf-vue-ui/ariadna-ui/Button';
 
 - **Тип:** `string`
 - **Значение по умолчанию:** `EButtonPropsDefault.CSS_CLASS`
-- **Описание**: Переопределяет CSS-класс корневого элемента и его потомков. Полезен, при необходимости создавать более 
-одного вида компонента.
+- **Описание**: Переопределяет CSS-класс корневого элемента и его потомков. Полезен, при необходимости создавать более
+  одного вида компонента.
 
 ::: details Пример
 <demo src="./demos/demo.props.css-class.vue"></demo>
@@ -204,8 +190,9 @@ import Button from '@iwyfaf-vue-ui/ariadna-ui/Button';
 
 ### `icon`
 
-- **Описание:** Используется для отображения иконки кнопки. Имеет атрибут `aria-hidden` со значением `true` по 
-умолчанию. Положение иконки можно задать через props [`iconPosition`](#iconposition).
+- **Описание:** Используется для отображения иконки кнопки. Имеет атрибут `aria-hidden` со значением `true` по
+  умолчанию. Положение иконки можно задать через props [`iconPosition`](#iconposition). При наличии слота [icon](#icon) и
+  отсутствия слота [default](#default), добавляется модификатор `--icon-only`.
 - **Тип:** `() => VNode[]`
 
 ::: details Пример
@@ -229,8 +216,8 @@ import Button from '@iwyfaf-vue-ui/ariadna-ui/Button';
 
 ### click
 
-- **Описание:** Событие срабатывает при клике мышкой по кнопке. Если кнопка в состоянии `disabled` или `loading` - 
-событие не сработает.
+- **Описание:** Событие срабатывает при клике мышкой по кнопке. Если кнопка в состоянии `disabled` или `loading` -
+  событие не сработает.
 - **Тип:** `event: MouseEvent`
 
 ## Accessibility

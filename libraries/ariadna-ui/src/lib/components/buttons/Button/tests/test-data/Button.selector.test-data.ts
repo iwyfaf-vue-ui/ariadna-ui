@@ -24,6 +24,7 @@ export class ButtonSelectorTestData extends DataSelector {
   public readonly disabledModifier: string = '';
   public readonly loadingModifier: string = '';
   public readonly selectedModifier: string = '';
+  public readonly iconOnlyModifier: string = '';
   public sizeProp: TButtonProps['size'] = 'small';
   public cssClassProp: TButtonProps['cssClass'] = 'newCssClass';
   public modifierProp: TButtonProps['modifier'] = 'primary';
@@ -52,6 +53,7 @@ export class ButtonSelectorTestData extends DataSelector {
     this.disabledModifier = `${className}--disabled`;
     this.loadingModifier = `${className}--loading`;
     this.selectedModifier = `${className}--selected`;
+    this.iconOnlyModifier = `${className}--icon-only`;
   }
 
   public mockProps: TButtonProps = {

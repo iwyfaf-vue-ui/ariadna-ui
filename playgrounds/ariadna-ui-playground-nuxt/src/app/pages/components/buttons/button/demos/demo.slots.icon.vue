@@ -2,6 +2,10 @@
   <Button>
     <template #icon> 💩 </template>
   </Button>
+
+  <Button rounded>
+    <template #icon> 💩 </template>
+  </Button>
 </template>
 
 <script setup lang="ts">

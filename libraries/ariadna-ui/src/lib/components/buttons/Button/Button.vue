@@ -43,5 +43,5 @@ const props = withDefaults(defineProps<TButtonProps>(), {
 const slots = defineSlots<TButtonSlots>();
 const emits = defineEmits<TButtonEmits>();
 
-const { isDisabled, componentClasses, clickHandler } = useButton(props, emits);
+const { isDisabled, componentClasses, clickHandler } = useButton(props, emits, slots);
 </script>
