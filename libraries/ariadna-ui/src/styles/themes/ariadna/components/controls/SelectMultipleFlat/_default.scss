@@ -280,6 +280,7 @@ $select-multiple-flat: '.ar-select-multiple-flat';
   &__label {
     position: relative;
     display: block;
+    margin-bottom: var(--indent-margin-medium);
   }
 
   // .ar-select-multiple-flat__header

@@ -280,6 +280,7 @@ $select-single-group: '.ar-select-single-group';
   &__label {
     position: relative;
     display: block;
+    margin-bottom: var(--indent-margin-medium);
   }
 
   // .ar-select-single-group__header

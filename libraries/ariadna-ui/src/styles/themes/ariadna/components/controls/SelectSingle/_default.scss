@@ -269,6 +269,7 @@ $select-single: '.ar-select-single';
   &__label {
     position: relative;
     display: block;
+    margin-bottom: var(--indent-margin-medium);
   }
 
   // .ar-select-single__header

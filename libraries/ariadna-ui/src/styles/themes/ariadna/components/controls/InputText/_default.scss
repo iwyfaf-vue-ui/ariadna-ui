@@ -153,6 +153,7 @@ $input-text: '.ar-input-text';
   &__label {
     position: relative;
     display: block;
+    margin-bottom: var(--indent-margin-medium);
   }
 
   // .ar-input-text__input

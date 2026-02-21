@@ -167,6 +167,7 @@ $input-number: '.ar-input-number';
   &__label {
     position: relative;
     display: block;
+    margin-bottom: var(--indent-margin-medium);
   }
 
   // .ar-input-number__addon-wrapper

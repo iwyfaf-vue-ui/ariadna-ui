@@ -291,6 +291,7 @@ $select-multiple-group: '.ar-select-multiple-group';
   &__label {
     position: relative;
     display: block;
+    margin-bottom: var(--indent-margin-medium);
   }
 
   // .ar-select-multiple-group__header
