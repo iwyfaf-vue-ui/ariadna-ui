@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.59.1
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.59.0...v1.59.1)
+
+### 📖 Documentation
+
+- Update library version ([bd10f65](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/bd10f65))
+
+### 🎨 Styles
+
+- Add spacing below control labels ([dd7a308](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/dd7a308))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.59.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.58.0...v1.59.0)
