@@ -459,6 +459,9 @@ $select-single: '.ar-select-single';
     // .ar-select-single--theme .ar-select-single__header
     #{$select-single}__header {}
 
+    // .ar-select-single--theme .ar-select-single__placeholder
+    #{$select-single}__placeholder {}
+
     // .ar-select-single--theme .ar-select-single__body
     #{$select-single}__body {}
 

@@ -1,4 +1,5 @@
 @use '../../../ariadna' as theme;
+@use '../../../../../_mixins/placeholder' as mixins;
 
 $textarea: '.ar-textarea';
 
@@ -10,6 +11,11 @@ $textarea: '.ar-textarea';
   &--theme {
     // .ar-textarea--theme .ar-textarea__textarea
     #{$textarea}__textarea {
+      @include mixins.placeholder {
+        color: var(--color-text-default-weak);
+        opacity: 0.4;
+      }
+
       color: var(--color-text-default-weak);
       background: var(--color-background-default-weak);
       border-color: var(--color-border-default);
@@ -154,7 +160,7 @@ $textarea: '.ar-textarea';
     @include theme.text-style-helper(t3);
 
     position: absolute;
-    top: 30px;
+    top: 32px;
     left: 10px;
     pointer-events: none;
     opacity: 0.3;

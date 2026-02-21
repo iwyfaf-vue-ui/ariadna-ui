@@ -54,7 +54,7 @@ describe('SelectSingle', () => {
         },
       });
 
-      expect(wrapper.find(defaultMock.selectedTextEl).text()).toBe(defaultMock.placeholderProp);
+      expect(wrapper.find(defaultMock.placeholderEl).text()).toBe(defaultMock.placeholderProp);
     });
 
     it('Should render selected label if value selected.', async () => {
@@ -314,7 +314,7 @@ describe('SelectSingle', () => {
         },
       });
 
-      expect(wrapper.find(defaultMock.selectedTextEl).text()).toBe(defaultMock.placeholderProp);
+      expect(wrapper.find(defaultMock.placeholderEl).text()).toBe(defaultMock.placeholderProp);
     });
 
     it('disabled: Should set input disabled from prop.', () => {

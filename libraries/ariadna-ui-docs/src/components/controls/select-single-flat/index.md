@@ -436,6 +436,9 @@ $select-single-flat: '.ar-select-single-flat';
     // .ar-select-single-flat--theme .ar-select-single-flat__header
     #{$select-single-flat}__header {}
 
+    // .ar-select-single-flat--theme .ar-select-single-flat__placeholder
+    #{$select-single-flat}__placeholder {}
+
     // .ar-select-single-flat--theme .ar-select-single-flat__body
     #{$select-single-flat}__body {}
 

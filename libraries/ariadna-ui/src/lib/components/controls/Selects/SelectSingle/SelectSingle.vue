@@ -39,8 +39,15 @@
               :disabled="props.disabled"
             />
 
-            <span :class="`${props.cssClass}__selected-text`">
-              {{ selectedLabel || props.placeholder }}
+            <span
+              v-if="selectedLabel.length === 0 && props.placeholder"
+              :class="`${props.cssClass}__placeholder`"
+            >
+              {{ props.placeholder }}
+            </span>
+
+            <span v-else :class="`${props.cssClass}__selected-text`">
+              {{ selectedLabel }}
             </span>
           </div>
         </div>

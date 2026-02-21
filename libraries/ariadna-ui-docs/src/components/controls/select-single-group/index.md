@@ -484,6 +484,9 @@ $select-single-group: '.ar-select-single-group';
     // .ar-select-single-group--theme .ar-select-single-group__header
     #{$select-single-group}__header {}
 
+    // .ar-select-single-group--theme .ar-select-single-group__placeholder
+    #{$select-single-group}__placeholder {}
+
     // .ar-select-single-group--theme .ar-select-single-group__body
     #{$select-single-group}__body {}
 

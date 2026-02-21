@@ -15,6 +15,12 @@ $select-multiple-flat: '.ar-select-multiple-flat';
       border-color: var(--color-border-default);
     }
 
+    // .ar-select-multiple-flat--theme .ar-select-multiple-flat__placeholder
+    #{$select-multiple-flat}__placeholder {
+      color: var(--color-text-default-weak);
+      opacity: 0.4;
+    }
+
     // .ar-select-multiple-flat--theme .ar-select-multiple-flat__tile
     #{$select-multiple-flat}__tile {
       border-color: var(--color-border-default);

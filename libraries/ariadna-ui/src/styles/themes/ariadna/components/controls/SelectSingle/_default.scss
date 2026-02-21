@@ -15,6 +15,12 @@ $select-single: '.ar-select-single';
       border-color: var(--color-border-default);
     }
 
+    // .ar-select-single--theme .ar-select-single__placeholder
+    #{$select-single}__placeholder {
+      color: var(--color-text-default-weak);
+      opacity: 0.4;
+    }
+
     // .ar-select-single--theme .ar-select-single__body
     #{$select-single}__body {
       background: var(--color-background-default-weak);

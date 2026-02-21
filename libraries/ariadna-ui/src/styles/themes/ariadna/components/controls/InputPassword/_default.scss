@@ -1,4 +1,5 @@
 @use '../../../ariadna' as theme;
+@use '../../../../../_mixins/placeholder' as mixins;
 
 @mixin color-by-inline-width(
   $danger: var(--color-background-danger-strong),
@@ -40,6 +41,11 @@ $input-password: '.ar-input-password';
   &--theme {
     // .ar-input-password--theme .ar-input-password__input
     #{$input-password}__input {
+      @include mixins.placeholder {
+        color: var(--color-text-default-weak);
+        opacity: 0.4;
+      }
+
       color: var(--color-text-default-weak);
       background: var(--color-background-default-weak);
       border-color: var(--color-border-default);
@@ -295,10 +301,10 @@ $input-password: '.ar-input-password';
     @include theme.text-style-helper(t3);
 
     position: absolute;
-    top: 30px;
+    top: 32px;
     left: 10px;
     pointer-events: none;
-    opacity: 0.3;
+    opacity: 0.4;
   }
 
   // .ar-input-password__errors

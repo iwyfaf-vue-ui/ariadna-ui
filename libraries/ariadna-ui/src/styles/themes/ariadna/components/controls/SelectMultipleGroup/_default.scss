@@ -15,6 +15,12 @@ $select-multiple-group: '.ar-select-multiple-group';
       border-color: var(--color-border-default);
     }
 
+    // .ar-select-multiple-group--theme .ar-select-multiple-group__placeholder
+    #{$select-multiple-group}__placeholder {
+      color: var(--color-text-default-weak);
+      opacity: 0.4;
+    }
+
     // .ar-select-multiple-group--theme .ar-select-multiple-group__tile
     #{$select-multiple-group}__tile {
       border-color: var(--color-border-default);

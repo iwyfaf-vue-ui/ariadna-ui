@@ -12,6 +12,7 @@ export class SelectSingleSelectorTestData extends DataSelector {
   public readonly headerGroupEl: string = '';
   public readonly textEl: string = '';
   public readonly inputEl: string = '';
+  public readonly placeholderEl: string = '';
   public readonly selectedTextEl: string = '';
   public readonly animationEl: string = '';
   public readonly loadingEl: string = '';
@@ -71,6 +72,7 @@ export class SelectSingleSelectorTestData extends DataSelector {
     this.headerGroupEl = `.${className}__header-group`;
     this.textEl = `.${className}__text`;
     this.inputEl = `.${className}__input`;
+    this.placeholderEl = `.${className}__placeholder`;
     this.selectedTextEl = `.${className}__selected-text`;
     this.animationEl = `.${className}__animation`;
     this.loadingEl = `.${className}__loading`;
