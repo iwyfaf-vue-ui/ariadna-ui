@@ -4,17 +4,17 @@ import useSelectsFilteredOptions from '../useSelectsFilteredOptions';
 import type { TFilterBuilderFullField } from '@/lib/utilities/builders/FilterBuilder/types/FilterBuilder.types';
 
 describe('useSelectsFilteredOptions', () => {
-  let options: Array<{ label: string; value: number }>;
+  let options: Ref<Array<{ label: string; value: number }>>;
   let filterLabel: TFilterBuilderFullField<any>[][];
   let filterState: Ref<string>;
   let onFilterCallback: ReturnType<typeof vi.fn>;
 
   beforeEach(() => {
-    options = [
+    options = ref([
       { label: 'Apple', value: 1 },
       { label: 'Banana', value: 2 },
       { label: 'Orange', value: 3 },
-    ];
+    ]);
     filterLabel = [[{ field: 'label' }]];
     filterState = ref('');
     onFilterCallback = vi.fn();
@@ -31,7 +31,7 @@ describe('useSelectsFilteredOptions', () => {
       const { onFilter } = wrapper;
       const result = onFilter('');
 
-      expect(result).toStrictEqual(options);
+      expect(result).toStrictEqual(options.value);
       expect(onFilterCallback).not.toHaveBeenCalled();
     });
 
@@ -62,7 +62,7 @@ describe('useSelectsFilteredOptions', () => {
       const { onFilter } = wrapper;
       const result = onFilter('an');
 
-      expect(result).toStrictEqual(options);
+      expect(result).toStrictEqual(options.value);
       expect(onFilterCallback).toHaveBeenCalled();
     });
 
@@ -81,12 +81,15 @@ describe('useSelectsFilteredOptions', () => {
     });
 
     it('Should return empty array if options is empty.', () => {
+      const options = ref<Array<{ label: string; value: number }>>([]);
+
       const wrapper = useSelectsFilteredOptions(
         onFilterCallback,
         filterState,
-        (options = []),
+        options,
         filterLabel,
       );
+
       const { onFilter } = wrapper;
       const result = onFilter('Apple');
 
@@ -103,7 +106,7 @@ describe('useSelectsFilteredOptions', () => {
         options,
         filterLabel,
       );
-      expect(wrapper.filterOptions.value).toStrictEqual(options);
+      expect(wrapper.filterOptions.value).toStrictEqual(options.value);
 
       filterState.value = 'App';
       await nextTick();
@@ -111,15 +114,16 @@ describe('useSelectsFilteredOptions', () => {
     });
 
     it('Should update filterOptions when options change.', async () => {
-      const localOptions = ref([...options]);
+      const localOptions = ref(options);
+
       const wrapper = useSelectsFilteredOptions(
         onFilterCallback,
         filterState,
-        (options = localOptions.value),
+        localOptions,
         filterLabel,
       );
 
-      expect(wrapper.filterOptions.value).toStrictEqual(options);
+      expect(wrapper.filterOptions.value).toStrictEqual(options.value);
 
       // Изменяем options
       localOptions.value = [{ label: 'Kiwi', value: 4 }];
@@ -144,7 +148,7 @@ describe('useSelectsFilteredOptions', () => {
 
       filterState.value = '';
       await nextTick();
-      expect(wrapper.filterOptions.value).toStrictEqual(options);
+      expect(wrapper.filterOptions.value).toStrictEqual(options.value);
     });
   });
 
@@ -186,7 +190,7 @@ describe('useSelectsFilteredOptions', () => {
       const { onFilter } = wrapper;
       const result = onFilter('Apple');
 
-      expect(result).toStrictEqual(options);
+      expect(result).toStrictEqual(options.value);
     });
 
     it('Should handle empty filterState gracefully.', () => {
@@ -199,7 +203,7 @@ describe('useSelectsFilteredOptions', () => {
       const { onFilter } = wrapper;
       const result = onFilter('');
 
-      expect(result).toStrictEqual(options);
+      expect(result).toStrictEqual(options.value);
     });
   });
 });

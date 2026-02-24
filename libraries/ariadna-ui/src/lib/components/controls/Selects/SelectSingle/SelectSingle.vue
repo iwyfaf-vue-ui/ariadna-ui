@@ -214,7 +214,7 @@
 
 <script setup lang="ts">
 // Vue
-import { ref, useTemplateRef } from 'vue';
+import { computed, ref, useTemplateRef } from 'vue';
 
 // Types
 import type { TSelectSingleEmits, TSelectSingleProps, TSelectSingleSlots } from './SelectSingle';
@@ -283,7 +283,7 @@ const { elements: optionsInList, fillElements } = useOrderedElements();
 const { filterOptions, onFilter } = useSelectsFilteredOptions<TSelectSingleProps['options']>(
   () => (focusedOptionIndex.value = undefined),
   filterModel,
-  props.options,
+  computed(() => props.options),
   props.filter?.filterLabel || [],
 );
 

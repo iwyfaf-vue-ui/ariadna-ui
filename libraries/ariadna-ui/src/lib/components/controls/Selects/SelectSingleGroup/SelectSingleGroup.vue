@@ -199,7 +199,7 @@
 
 <script setup lang="ts">
 // Vue
-import { ref, useTemplateRef } from 'vue';
+import { computed, ref, useTemplateRef } from 'vue';
 
 // Types
 import type {
@@ -280,7 +280,7 @@ const { filterOptions, onFilter } = useSelectsFilteredOptions(
     focusedGroupOptionIndex.value = undefined;
   },
   filterModel,
-  props.options,
+  computed(() => props.options),
   props.filter?.filterLabel || [],
 );
 

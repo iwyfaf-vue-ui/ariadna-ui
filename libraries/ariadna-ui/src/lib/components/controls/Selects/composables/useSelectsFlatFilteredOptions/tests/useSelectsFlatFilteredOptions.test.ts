@@ -10,7 +10,7 @@ type TestOption = string;
 function mountWithComposable(
   onFilterCallback: () => void,
   filterState: Ref<string>,
-  options: TestOption[],
+  options: Ref<TestOption[]>,
 ) {
   const emits = vi.fn();
 
@@ -35,12 +35,12 @@ describe('useSelectsFlatFilteredOptions', () => {
   // Тестовые переменные верхнего уровня
   let onFilterCallback: ReturnType<typeof vi.fn>;
   let filterState: Ref<string>;
-  let options: TestOption[];
+  let options: Ref<TestOption[]>;
 
   beforeEach(() => {
     onFilterCallback = vi.fn();
     filterState = ref('');
-    options = ['apple', 'banana', 'cherry', 'date'];
+    options = ref(['apple', 'banana', 'cherry', 'date']);
   });
 
   afterAll(() => {
@@ -53,7 +53,7 @@ describe('useSelectsFlatFilteredOptions', () => {
       const vm = wrapper.vm as any;
 
       expect(vm.filterOptions).toBeDefined();
-      expect(vm.filterOptions).toEqual(options);
+      expect(vm.filterOptions).toEqual(options.value);
       expect(onFilterCallback).not.toHaveBeenCalled();
     });
 
@@ -74,7 +74,7 @@ describe('useSelectsFlatFilteredOptions', () => {
       const vm = wrapper.vm as any;
 
       const result = vm.onFilter('');
-      expect(result).toEqual(options);
+      expect(result).toEqual(options.value);
       expect(onFilterCallback).not.toHaveBeenCalled();
     });
 
@@ -118,7 +118,7 @@ describe('useSelectsFlatFilteredOptions', () => {
       const wrapper = mountWithComposable(onFilterCallback, filterState, options);
       const vm = wrapper.vm as any;
 
-      expect(vm.filterOptions).toEqual(options);
+      expect(vm.filterOptions).toEqual(options.value);
 
       filterState.value = 'an';
       await wrapper.vm.$nextTick();
@@ -137,14 +137,14 @@ describe('useSelectsFlatFilteredOptions', () => {
       filterState.value = '';
       await wrapper.vm.$nextTick();
 
-      expect(vm.filterOptions).toEqual(options);
+      expect(vm.filterOptions).toEqual(options.value);
       expect(onFilterCallback).toHaveBeenCalled();
     });
   });
 
   describe('edge cases', () => {
     it('Should handle empty options array', async () => {
-      const emptyOptions: TestOption[] = [];
+      const emptyOptions: Ref<TestOption[]> = ref([]);
       const wrapper = mountWithComposable(onFilterCallback, filterState, emptyOptions);
       const vm = wrapper.vm as any;
 
@@ -155,7 +155,7 @@ describe('useSelectsFlatFilteredOptions', () => {
     });
 
     it('Should handle special characters in filter', async () => {
-      const specialCharOptions = ['a*b', 'c+d', 'e?f'];
+      const specialCharOptions = ref(['a*b', 'c+d', 'e?f']);
       const wrapper = mountWithComposable(onFilterCallback, filterState, specialCharOptions);
       const vm = wrapper.vm as any;
 

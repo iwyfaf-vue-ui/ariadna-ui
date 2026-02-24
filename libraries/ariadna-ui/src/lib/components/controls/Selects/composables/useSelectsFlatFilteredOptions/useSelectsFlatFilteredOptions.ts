@@ -1,4 +1,4 @@
-import type { Ref } from 'vue';
+import { type Ref, unref } from 'vue';
 import { ref, watch } from 'vue';
 import type { TUseSelectsFlatFilteredOptionsReturn } from './useSelectsFlatFilteredOptions.types';
 
@@ -8,24 +8,28 @@ import type { TUseSelectsFlatFilteredOptionsReturn } from './useSelectsFlatFilte
  *
  * @param {() => void} onFilterCallback - Callback function that is executed when filtering occurs
  * @param {Ref<string>} filterState - Reactive reference to the current filter string
- * @param {Options} options - Array of options to be filtered
+ * @param {Ref<Options>} options - Reactive array of selectable options to be filtered.
  *
  * @returns {<Options>} - Object containing the filtered options and the filter function
  */
 export default function useSelectsFlatFilteredOptionsTypes<Options extends Array<any>>(
   onFilterCallback: () => void,
   filterState: Ref<string>,
-  options: Options,
+  options: Ref<Options>,
 ): TUseSelectsFlatFilteredOptionsReturn<Options> {
-  function onFilter(filterState: string): Options {
-    if (!filterState) {
-      return options;
+  const getOptionsClone = (): Options => [...unref(options)] as unknown as Options;
+
+  function onFilter(nextFilterState: string): Options {
+    const currentOptions = getOptionsClone();
+
+    if (!nextFilterState) {
+      return currentOptions;
     }
 
     onFilterCallback();
 
-    return options.filter((item) =>
-      item.toLowerCase().includes(filterState.toLowerCase()),
+    return currentOptions.filter((item) =>
+      item.toLowerCase().includes(nextFilterState.toLowerCase()),
     ) as Options;
   }
 
@@ -36,10 +40,11 @@ export default function useSelectsFlatFilteredOptionsTypes<Options extends Array
   });
 
   watch(
-    () => options,
+    options,
     () => {
       filterOptions.value = onFilter(filterState.value);
     },
+    { deep: true },
   );
 
   return { filterOptions, onFilter };

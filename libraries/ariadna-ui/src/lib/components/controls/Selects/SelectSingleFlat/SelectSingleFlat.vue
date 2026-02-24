@@ -211,7 +211,7 @@
 
 <script setup lang="ts">
 // Vue
-import { ref, useTemplateRef } from 'vue';
+import { computed, ref, useTemplateRef } from 'vue';
 
 // Types
 import type {
@@ -280,7 +280,11 @@ const { elements: optionsInList, fillElements } = useOrderedElements();
 
 const { filterOptions, onFilter } = useSelectsFlatFilteredOptions<
   TSelectSingleFlatProps['options']
->(() => (focusedOptionIndex.value = undefined), filterModel, props.options);
+>(
+  () => (focusedOptionIndex.value = undefined),
+  filterModel,
+  computed(() => props.options),
+);
 
 const {
   opened,

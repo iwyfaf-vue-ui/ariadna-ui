@@ -1,5 +1,5 @@
 import type { Ref } from 'vue';
-import { ref, watch } from 'vue';
+import { ref, unref, watch } from 'vue';
 import type { TFilterBuilderFullField } from '@/lib/utilities/builders/FilterBuilder/types/FilterBuilder.types';
 import FilterBuilder from '@/lib/utilities/builders/FilterBuilder/FilterBuilder';
 import { EFilterBuilderLogicOperator } from '@/lib/utilities/builders/FilterBuilder/types/FilterBuilder.enum';
@@ -12,7 +12,7 @@ import type { TUseSelectsFilteredOptionsReturn } from './useSelectsFilteredOptio
  *
  * @param {() => void} onFilterCallback - Callback function invoked each time filtering occurs.
  * @param {Ref<string>} filterState - Reactive reference to the current filter string.
- * @param {Options} options - Array of selectable options to be filtered.
+ * @param {Ref<Options>} options - Reactive array of selectable options to be filtered.
  * @param {TFilterBuilderFullField<Options>[][]} filterLabel - Two-dimensional array specifying which fields of the
  * option objects should be used for filtering.
  *
@@ -21,37 +21,44 @@ import type { TUseSelectsFilteredOptionsReturn } from './useSelectsFilteredOptio
 export default function useSelectsFilteredOptions<Options extends Array<any>>(
   onFilterCallback: () => void,
   filterState: Ref<string>,
-  options: Options,
+  options: Ref<Options>,
   filterLabel: TFilterBuilderFullField<Options>[][],
 ): TUseSelectsFilteredOptionsReturn<Options> {
-  let filterBuilder = ref(new FilterBuilder(options));
+  const getOptionsClone = (): Options => [...unref(options)] as unknown as Options;
 
-  function onFilter(filterState: string): Array<Options> {
-    if (!filterState) {
-      return options;
+  const filterBuilder = ref(new FilterBuilder(getOptionsClone()));
+
+  function onFilter(nextFilterState: string): Options {
+    const currentOptions = getOptionsClone();
+
+    if (!nextFilterState) {
+      return currentOptions;
     }
 
     onFilterCallback();
 
     return filterLabel.length
-      ? filterBuilder.value
+      ? (filterBuilder.value
           .configureFields(filterLabel, EFilterBuilderLogicOperator.OR)
-          .filter((item) => item.toLowerCase().includes(filterState.toLowerCase()))
-      : options;
+          .filter((item) =>
+            item.toLowerCase().includes(nextFilterState.toLowerCase()),
+          ) as unknown as Options)
+      : currentOptions;
   }
 
-  const filterOptions = ref(onFilter(filterState.value)) as Ref<Array<Options>>;
+  const filterOptions = ref(onFilter(filterState.value)) as Ref<Options>;
 
   watch(filterState, (newFilterState) => {
     filterOptions.value = onFilter(newFilterState);
   });
 
   watch(
-    () => options,
-    (newOptions) => {
-      filterBuilder.value = new FilterBuilder<Options>(newOptions);
+    options,
+    () => {
+      filterBuilder.value = new FilterBuilder<Options>(getOptionsClone());
       filterOptions.value = onFilter(filterState.value);
     },
+    { deep: true },
   );
 
   return { filterOptions, onFilter };
