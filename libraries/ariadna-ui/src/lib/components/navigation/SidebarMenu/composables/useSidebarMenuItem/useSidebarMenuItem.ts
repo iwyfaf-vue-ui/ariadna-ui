@@ -60,10 +60,15 @@ export default function useSidebarMenuItem(
   }
 
   function onToggle(event: MouseEvent) {
-    if (props.item.disabled || !props.item.href) {
+    if (!props.item.children || props.item.disabled) {
+      return;
+    }
+
+    if (!props.item.href) {
       event.preventDefault();
     }
 
+    console.log('onToggle');
     isOpen.value = !isOpen.value;
 
     if (rememberExpanded) {

@@ -633,7 +633,36 @@ describe('useSidebarMenuItem', () => {
       vi.clearAllMocks();
     });
 
-    it('Should toggle isOpen from false to true.', () => {
+    it('Should not toggle isOpen from false to true due to not have children.', () => {
+      mount({
+        template: '<div></div>',
+        setup() {
+          const { isOpen, onToggle } = useSidebarMenuItem(mockProps);
+
+          isOpen.value = false;
+          onToggle(mockEvent);
+
+          expect(isOpen.value).toBe(false);
+        },
+      });
+    });
+
+    it('Should toggle isOpen from false to true due to have children.', () => {
+      const mockProps: TSidebarMenuItemProps = {
+        item: {
+          title: 'Test',
+          href: '/test',
+          children: [
+            {
+              title: 'Test',
+              href: '/test',
+              children: [],
+            },
+          ],
+        },
+        level: 1,
+      };
+
       mount({
         template: '<div></div>',
         setup() {
@@ -647,7 +676,7 @@ describe('useSidebarMenuItem', () => {
       });
     });
 
-    it('Should toggle isOpen from true to false.', () => {
+    it('Should not toggle isOpen from true to false due to not have children.', () => {
       mount({
         template: '<div></div>',
         setup() {
@@ -656,7 +685,36 @@ describe('useSidebarMenuItem', () => {
           isOpen.value = true;
           onToggle(mockEvent);
 
-          expect(isOpen.value).toBe(false);
+          expect(isOpen.value).toBe(true);
+        },
+      });
+    });
+
+    it('Should toggle isOpen from true to false due to have children.', () => {
+      const mockProps: TSidebarMenuItemProps = {
+        item: {
+          title: 'Test',
+          href: '/test',
+          children: [
+            {
+              title: 'Test',
+              href: '/test',
+              children: [],
+            },
+          ],
+        },
+        level: 1,
+      };
+
+      mount({
+        template: '<div></div>',
+        setup() {
+          const { isOpen, onToggle } = useSidebarMenuItem(mockProps);
+
+          isOpen.value = false;
+          onToggle(mockEvent);
+
+          expect(isOpen.value).toBe(true);
         },
       });
     });

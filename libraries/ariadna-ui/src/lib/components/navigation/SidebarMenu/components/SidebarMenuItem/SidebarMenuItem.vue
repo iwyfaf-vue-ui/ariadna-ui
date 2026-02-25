@@ -5,17 +5,16 @@
     @mouseenter="onMouseEnter"
     @mouseleave="onMouseLeave"
   >
-    <div :class="`${cssClass}__item-wrapper`">
+    <div :class="`${cssClass}__item-wrapper`" @click="onToggle">
       <span
         v-show="hasChildren"
         :class="[`${cssClass}__item-dropdown`, { [`${cssClass}__item-dropdown--open`]: isOpen }]"
         :aria-expanded="isOpen"
-        @click="onToggle"
       >
         <slot name="dropdownIcon" v-bind="{ isOpen: isOpen }" />
       </span>
 
-      <SidebarMenuItemLink :item="props.item" @click="onToggle">
+      <SidebarMenuItemLink :item="props.item">
         <SidebarMenuItemIcon v-if="props.item.icon" :icon="props.item.icon" />
 
         <span :class="`${cssClass}__item-title`">{{ props.item.title }}</span>
