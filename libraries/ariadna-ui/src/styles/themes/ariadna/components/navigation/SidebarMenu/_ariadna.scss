@@ -212,6 +212,7 @@ $sidebar-menu: '.ariadna-sidebar-menu';
     &-weblink {
       display: flex;
       align-items: center;
+      width: 100%;
       padding: var(--indent-padding-medium) var(--indent-padding-xlarge);
       cursor: pointer;
 
