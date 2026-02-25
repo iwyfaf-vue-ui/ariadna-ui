@@ -77,7 +77,7 @@ describe('useSidebarMenuItemIcon', () => {
           const { componentClasses } = useSidebarMenuItemIcon(mockProps);
 
           expect(componentClasses.value).toBe(
-            `mdi-home ${defaultMock.getSelectorWithoutDot(defaultMock.iconEl)}`,
+            `${defaultMock.getSelectorWithoutDot(defaultMock.iconEl)}`,
           );
         },
       });

@@ -1,6 +1,6 @@
 <template>
   <span :class="componentClasses" aria-hidden="true">
-    <i v-if="isIconString" />
+    <i v-if="isIconString" :class="props.icon" />
     <component v-else :is="props.icon" />
   </span>
 </template>

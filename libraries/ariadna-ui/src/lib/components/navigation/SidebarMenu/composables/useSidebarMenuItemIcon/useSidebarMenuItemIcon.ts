@@ -14,10 +14,9 @@ export default function useSidebarMenuItemIcon(
   const componentClasses = computed(() => {
     const base = cssClass;
 
-    const icon_custom = isIconString.value ? props.icon : undefined;
     const icon = `${base}__icon`;
 
-    return [icon_custom, icon].filter(Boolean).join(' ');
+    return [icon].filter(Boolean).join(' ');
   });
 
   return {
