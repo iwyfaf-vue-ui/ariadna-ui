@@ -1,5 +1,5 @@
 <template>
-  <div :class="componentClasses">
+  <nav :class="componentClasses">
     <div :class="`${props.cssClass}__wrapper`">
       <div v-if="!!slots.header" :class="`${props.cssClass}__header`">
         <template v-if="!!slots.header">
@@ -29,7 +29,7 @@
         <slot name="footer" />
       </div>
     </div>
-  </div>
+  </nav>
 </template>
 
 <script setup lang="ts">
