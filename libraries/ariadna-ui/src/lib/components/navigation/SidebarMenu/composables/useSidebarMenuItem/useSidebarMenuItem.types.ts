@@ -41,6 +41,11 @@ export type TUseSidebarMenuItemReturn = {
   children: ComputedRef<TSidebarMenuItem[]>;
 
   /**
+   * Reactive computed property indicating whether the link is currently active.
+   */
+  isLinkActive: ComputedRef<boolean>;
+
+  /**
    * Reactive computed property generating CSS class string based on component props (modifier, size, states, etc.).
    */
   componentClasses: ComputedRef<string>;

@@ -177,6 +177,12 @@ $sidebar-menu: '.ar-sidebar-menu';
     // .ar-sidebar-menu--theme .ar-sidebar-menu__item
     & #{$sidebar-menu}__item {}
 
+    // .ar-sidebar-menu--theme .ar-sidebar-menu__item-wrapper
+    & #{$sidebar-menu}__item-wrapper {
+      // .ar-sidebar-menu--theme .ar-sidebar-menu__item-wrapper--active
+      &--active {}
+    }
+
     // .ar-sidebar-menu--theme .ar-sidebar-menu__link
     & #{$sidebar-menu}__link {}
 
@@ -247,7 +253,10 @@ $sidebar-menu: '.ar-sidebar-menu';
     &--level-1 {}
 
     // .ar-sidebar-menu__item-wrapper
-    &-wrapper {}
+    &-wrapper {
+      // .ar-sidebar-menu__item--active
+      &--active {}
+    }
 
     // .ar-sidebar-menu__item-dropdown
     &-dropdown {

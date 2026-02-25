@@ -11,6 +11,7 @@ export default function useSidebarMenuItem(
 ): TUseSidebarMenuItemReturn {
   // SSR-safe access to route
   const instance = getCurrentInstance();
+  const hasRouter = computed(() => !!instance?.appContext.config.globalProperties.$route);
   const route = computed(() => instance?.appContext.config.globalProperties.$route);
   const { cssClass, collapsed, rememberExpanded } = injectStrict(SidebarMenuProviderKey);
 
@@ -30,6 +31,13 @@ export default function useSidebarMenuItem(
   const children = computed<TSidebarMenuItem[]>(() =>
     hasChildren.value ? props.item.children! : [],
   );
+
+  const isLinkActive = computed(() => {
+    if (hasRouter.value && route && typeof props.item.href === 'string') {
+      return route.value.path === props.item.href;
+    }
+    return false;
+  });
 
   const componentClasses = computed(() => {
     const base = cssClass;
@@ -68,7 +76,6 @@ export default function useSidebarMenuItem(
       event.preventDefault();
     }
 
-    console.log('onToggle');
     isOpen.value = !isOpen.value;
 
     if (rememberExpanded) {
@@ -133,6 +140,7 @@ export default function useSidebarMenuItem(
     isMenuItemActiveComputed,
     hasChildren,
     children,
+    isLinkActive,
     componentClasses,
     onMouseEnter,
     onMouseLeave,

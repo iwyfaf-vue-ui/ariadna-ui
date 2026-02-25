@@ -5,7 +5,13 @@
     @mouseenter="onMouseEnter"
     @mouseleave="onMouseLeave"
   >
-    <div :class="`${cssClass}__item-wrapper`" @click="onToggle">
+    <div
+      :class="[
+        `${cssClass}__item-wrapper`,
+        { [`${cssClass}__item-wrapper--active`]: isLinkActive },
+      ]"
+      @click="onToggle"
+    >
       <span
         v-show="hasChildren"
         :class="[`${cssClass}__item-dropdown`, { [`${cssClass}__item-dropdown--open`]: isOpen }]"
@@ -18,15 +24,15 @@
         <SidebarMenuItemIcon v-if="props.item.icon" :icon="props.item.icon" />
 
         <span :class="`${cssClass}__item-title`">{{ props.item.title }}</span>
-
-        <SidebarMenuItemBadge v-if="props.item.badge" :badge="props.item.badge" />
-
-        <SidebarMenuItemAction
-          v-if="props.item.action"
-          :action="props.item.action"
-          :action-icon="props.item.actionIcon"
-        />
       </SidebarMenuItemLink>
+
+      <SidebarMenuItemBadge v-if="props.item.badge" :badge="props.item.badge" />
+
+      <SidebarMenuItemAction
+        v-if="props.item.action"
+        :action="props.item.action"
+        :action-icon="props.item.actionIcon"
+      />
     </div>
 
     <Transition
@@ -77,6 +83,7 @@ const {
   isMenuItemActiveComputed,
   hasChildren,
   children,
+  isLinkActive,
   componentClasses,
   onMouseEnter,
   onMouseLeave,
