@@ -295,6 +295,10 @@ $sidebar-menu: '.ar-sidebar-menu';
       &--active {
       }
     }
+
+    // .ar-sidebar-menu__link-category
+    &-category {
+    }
   }
 
   // .ar-sidebar-menu__icon

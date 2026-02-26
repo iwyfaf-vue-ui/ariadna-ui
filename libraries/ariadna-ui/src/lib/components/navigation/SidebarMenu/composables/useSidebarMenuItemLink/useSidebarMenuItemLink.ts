@@ -44,8 +44,10 @@ export default function useSidebarMenuItemLink(
     const textual = !props.item.href ? `${link}-textual` : undefined;
     const weblink = props.item.href ? `${link}-weblink` : undefined;
     const weblinkActive = isLinkActive.value ? `${link}--active` : undefined;
+    const category =
+      props.item.children && props.item.children.length ? `${link}-category` : undefined;
 
-    return [link, textual, weblink, weblinkActive].filter(Boolean).join(' ');
+    return [link, textual, weblink, category, weblinkActive].filter(Boolean).join(' ');
   });
 
   return {

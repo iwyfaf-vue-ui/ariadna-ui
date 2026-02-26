@@ -36,6 +36,7 @@ export class SidebarMenuSelectorTestData extends DataSelector {
   public readonly linkEl: string = '';
   public readonly linkTextualEl: string = '';
   public readonly linkWeblinkEl: string = '';
+  public readonly linkCategoryEl: string = '';
   public readonly linkActiveModifier: string = '';
 
   public readonly iconEl: string = '';
@@ -81,6 +82,7 @@ export class SidebarMenuSelectorTestData extends DataSelector {
     this.linkEl = `.${className}__link`;
     this.linkTextualEl = `.${className}__link-textual`;
     this.linkWeblinkEl = `.${className}__link-weblink`;
+    this.linkCategoryEl = `.${className}__link-category`;
     this.linkActiveModifier = `.${className}__link--active`;
 
     this.iconEl = `.${className}__icon`;

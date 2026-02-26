@@ -155,6 +155,7 @@ $sidebar-menu: '.ariadna-sidebar-menu';
       display: flex;
       align-items: center;
       margin-right: var(--indent-margin-xlarge);
+      cursor: pointer;
       border-radius: var(--radius-default-medium);
       transition: background-color 0.2s;
     }
@@ -214,10 +215,17 @@ $sidebar-menu: '.ariadna-sidebar-menu';
       align-items: center;
       width: 100%;
       padding: var(--indent-padding-medium) var(--indent-padding-xlarge);
-      cursor: pointer;
 
       &:hover {
         text-decoration: none;
+      }
+    }
+
+    // .ariadna-sidebar-menu__link-category
+    &-category {
+      // .ariadna-sidebar-menu__link--category.ariadna-sidebar-menu__link-weblink
+      &#{$sidebar-menu}__link-weblink {
+        width: auto;
       }
     }
 

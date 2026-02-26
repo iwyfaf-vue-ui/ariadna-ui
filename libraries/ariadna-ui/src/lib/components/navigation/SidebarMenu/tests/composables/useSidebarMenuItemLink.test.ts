@@ -272,5 +272,49 @@ describe('useSidebarMenuItemLink.ts: Basic functionality.', () => {
         },
       });
     });
+
+    it('Should not return category class modifier item.', () => {
+      mount({
+        template: '<div></div>',
+        setup() {
+          const props: TSidebarMenuItemLinkProps = {
+            item: {
+              title: 'Test',
+              href: '/test',
+            },
+          };
+          const { componentClasses } = useSidebarMenuItemLink(props);
+
+          expect(componentClasses.value).not.toBe(
+            `${defaultMock.getSelectorWithoutDot(defaultMock.linkEl)} ${defaultMock.getSelectorWithoutDot(defaultMock.linkCategoryEl)}`,
+          );
+        },
+      });
+    });
+
+    it('Should not return category class modifier item.', () => {
+      mount({
+        template: '<div></div>',
+        setup() {
+          const props: TSidebarMenuItemLinkProps = {
+            item: {
+              title: 'Test',
+              href: '/test',
+              children: [
+                {
+                  title: 'Test',
+                  href: '/test',
+                },
+              ],
+            },
+          };
+          const { componentClasses } = useSidebarMenuItemLink(props);
+
+          expect(componentClasses.value).toBe(
+            `${defaultMock.getSelectorWithoutDot(defaultMock.linkEl)} ${defaultMock.getSelectorWithoutDot(defaultMock.linkWeblinkEl)} ${defaultMock.getSelectorWithoutDot(defaultMock.linkCategoryEl)}`,
+          );
+        },
+      });
+    });
   });
 });
