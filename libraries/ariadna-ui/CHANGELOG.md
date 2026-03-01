@@ -1,6 +1,35 @@
 # Changelog
 
 
+## v1.60.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.59.2...v1.60.0)
+
+### 🚀 Enhancements
+
+- Highlight active SidebarMenu item ([8900429](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/8900429))
+- Add category modifier for sidebar links ([a78bf79](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/a78bf79))
+- Add Panel component ([7c9c0b4](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/7c9c0b4))
+
+### 🩹 Fixes
+
+- Reactively update filtered select options ([4c48010](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/4c48010))
+- Apply icon class to inner <i> element ([aaf3af5](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/aaf3af5))
+- Toggle sidebar only for items with children ([a9404e9](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/a9404e9))
+- Make SidebarMenu weblink full width ([e012eff](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/e012eff))
+
+### 💅 Refactors
+
+- Use nav element for SidebarMenu ([974d952](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/974d952))
+
+### 📖 Documentation
+
+- Update library version ([70e0fb9](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/70e0fb9))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.59.2
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.59.1...v1.59.2)
