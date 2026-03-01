@@ -1,0 +1,121 @@
+@use '../../../ariadna' as theme;
+
+$panel: '.ar-panel';
+
+#{$panel} {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  word-wrap: break-word;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--radius-default-medium);
+
+  // .ar-panel--theme
+  &--theme {
+    background-color: var(--color-background-default-medium);
+    border-color: var(--color-border-default);
+
+    // .ar-panel--theme.ar-panel__header
+    #{$panel}__header {
+      border-bottom-color: var(--color-border-default);
+    }
+
+    // .ar-panel--theme.ar-panel__footer
+    #{$panel}__footer {
+      border-top-color: var(--color-border-default);
+    }
+  }
+
+  // .ar-panel--primary
+  &--primary {
+    background-color: var(--color-background-primary-strong-active);
+    border-color: var(--color-border-primary);
+
+    // .ar-panel--primary.ar-panel--theme
+    #{$panel}__header {
+      border-bottom-color: var(--color-border-primary);
+    }
+
+    // .ar-panel--primary.ar-panel--theme
+    #{$panel}__footer {
+      border-top-color: var(--color-border-primary);
+    }
+  }
+
+  // .ar-panel--collapsed
+  &--collapsed {
+    // .ar-panel--collapsed.ar-panel--theme
+    &#{$panel}--theme {
+      // .ar-panel--collapsed.ar-panel--theme .ar-panel__header
+      #{$panel}__header {
+        border-bottom-color: transparent;
+      }
+    }
+  }
+
+  // .ar-panel__header
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+    padding: var(--indent-margin-medium) var(--indent-margin-xlarge);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+  }
+
+  // .ar-panel__inner
+  &__inner {
+    overflow: hidden;
+
+    // .ar-panel__inner img, .ar-panel__inner svg, .ar-panel__inner video, .ar-panel__inner canvas, .ar-panel__inner iframe
+    img,
+    svg,
+    video,
+    canvas,
+    iframe {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    // .ar-panel__inner--collapse
+    &--collapse {
+      // .ar-panel__inner--collapse-enter-active, .ar-panel__inner--collapse-leave-active
+      &-enter-active,
+      &-leave-active {
+        transition:
+          height var(--transition-default-easein),
+          opacity var(--transition-default-easein);
+      }
+
+      // .ar-panel__inner--collapse-enter-from, .ar-panel__inner--collapse-leave-to
+      &-enter-from,
+      &-leave-to {
+        height: 0 !important;
+        opacity: 0;
+        transition:
+          opacity var(--transition-default-easeinout),
+          height var(--transition-default-easeinout);
+      }
+    }
+  }
+
+  // .ar-panel__content
+  &__content {
+    width: 100%;
+    padding: var(--indent-margin-medium) var(--indent-margin-xlarge);
+    overflow: hidden;
+  }
+
+  // .ar-panel__footer
+  &__footer {
+    padding: var(--indent-margin-medium) var(--indent-margin-xlarge);
+    border-top-style: solid;
+    border-top-width: 1px;
+  }
+}

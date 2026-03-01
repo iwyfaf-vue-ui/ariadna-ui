@@ -4,7 +4,7 @@
       v-model:collapsed="sidebarCollapsed"
       :data="data"
       remember-expanded
-      css-class="playground-sidebar-menu"
+      css-class="ariadna-sidebar-menu"
     >
       <template #footer> FOOTER </template>
     </SidebarMenu>
@@ -194,6 +194,10 @@ const data = ref<Array<TSidebarMenuItem>>([
           {
             title: 'Header',
             href: '/components/panels/header',
+          },
+          {
+            title: 'Panel',
+            href: '/components/panels/panel',
           },
           {
             title: 'Tabs',

@@ -298,7 +298,7 @@ describe('Header.vue', () => {
   });
 
   describe('Emits', () => {
-    it('Should not emit "scrolled" when scrollThreshold prop is not provided.', async () => {
+    it('scrolled: Should not emit "scrolled" when scrollThreshold prop is not provided.', async () => {
       const wrapper = mount(Header, {
         props: {},
       });
@@ -310,7 +310,7 @@ describe('Header.vue', () => {
       expect(wrapper.emitted('scrolled')).toBeUndefined();
     });
 
-    it('Should emit "scrolled" with true on mount when scroll is already above threshold.', async () => {
+    it('scrolled: Should emit "scrolled" with true on mount when scroll is already above threshold.', async () => {
       Object.defineProperty(window, 'scrollY', {
         value: defaultMock.scrollThresholdProp! + 50,
         writable: true,
@@ -330,7 +330,7 @@ describe('Header.vue', () => {
       expect(events![0]).toEqual([true]);
     });
 
-    it('Should not emit on mount when scroll is below threshold.', async () => {
+    it('scrolled: Should not emit on mount when scroll is below threshold.', async () => {
       Object.defineProperty(window, 'scrollY', {
         value: 0,
         writable: true,
@@ -348,7 +348,7 @@ describe('Header.vue', () => {
       expect(wrapper.emitted('scrolled')).toBeUndefined();
     });
 
-    it('Should emit "scrolled" with true when crossing threshold upwards.', async () => {
+    it('scrolled: Should emit "scrolled" with true when crossing threshold upwards.', async () => {
       Object.defineProperty(window, 'scrollY', {
         value: 0,
         writable: true,
@@ -374,7 +374,7 @@ describe('Header.vue', () => {
       expect(events![0]).toEqual([true]);
     });
 
-    it('Should emit "scrolled" with false when crossing threshold downwards.', async () => {
+    it('scrolled: Should emit "scrolled" with false when crossing threshold downwards.', async () => {
       Object.defineProperty(window, 'scrollY', {
         value: defaultMock.scrollThresholdProp! + 10,
         writable: true,
@@ -404,7 +404,7 @@ describe('Header.vue', () => {
       expect(events![1]).toEqual([false]);
     });
 
-    it('Should not emit multiple times when staying below threshold.', async () => {
+    it('scrolled: Should not emit multiple times when staying below threshold.', async () => {
       Object.defineProperty(window, 'scrollY', {
         value: 0,
         writable: true,
@@ -431,7 +431,7 @@ describe('Header.vue', () => {
       expect(wrapper.emitted('scrolled')).toBeUndefined();
     });
 
-    it('Should not emit multiple times when staying above threshold.', async () => {
+    it('scrolled: Should not emit multiple times when staying above threshold.', async () => {
       Object.defineProperty(window, 'scrollY', {
         value: defaultMock.scrollThresholdProp! + 10,
         writable: true,

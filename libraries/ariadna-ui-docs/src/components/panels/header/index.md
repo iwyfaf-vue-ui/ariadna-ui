@@ -174,8 +174,6 @@ import Header from '@iwyfaf-vue-ui/ariadna-ui/Header';
 
 ::: details Пример расстановки стилей
 ```scss
-@use '../../../ariadna' as theme;
-
 $header: '.ar-header';
 
 #{$header} {

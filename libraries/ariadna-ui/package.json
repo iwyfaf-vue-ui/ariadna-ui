@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.59.2",
+  "version": "1.59.3-beta.0",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -201,6 +201,10 @@
     "./Header": {
       "import": "./dist/lib/components/panels/Header/Header.esm.js",
       "types": "./dist/lib/components/panels/Header/Header.d.ts"
+    },
+    "./Panel": {
+      "import": "./dist/lib/components/panels/Panel/Panel.esm.js",
+      "types": "./dist/lib/components/panels/Panel/Panel.d.ts"
     },
     "./Tabs": {
       "import": "./dist/lib/components/panels/Tabs/Tabs.esm.js",
@@ -402,6 +406,9 @@
       ],
       "Header": [
         "./dist/lib/components/panels/Header/Header.d.ts"
+      ],
+      "Panel": [
+        "./dist/lib/components/panels/Panel/Panel.d.ts"
       ],
       "Tabs": [
         "./dist/lib/components/panels/Tabs/Tabs.d.ts"

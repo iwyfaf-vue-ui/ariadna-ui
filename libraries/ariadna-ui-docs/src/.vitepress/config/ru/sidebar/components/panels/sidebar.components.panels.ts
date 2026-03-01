@@ -18,6 +18,10 @@ const sidebarComponentsPanels: DefaultTheme.SidebarItem = {
       link: '/components/panels/header/',
     },
     {
+      text: 'Panel',
+      link: '/components/panels/panel/',
+    },
+    {
       text: 'Tabs',
       link: '/components/panels/tabs/',
     },
