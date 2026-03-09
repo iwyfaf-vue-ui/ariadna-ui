@@ -313,3 +313,20 @@ CSS переменные миксина `transition-default`:
 --transition-default-easeinout: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
 ```
+### Box-shadow
+Объект `box-shadow` содержит следующие миксины:
+
+#### Box-shadow Default
+```
+@include box-shadow-default;
+```
+
+CSS переменные миксина `box-shadow-default`:
+
+```
+--box-shadow-default-small: 0px 0px 20px rgba(0, 0, 0, 0.15);
+--box-shadow-default-medium: 0px 4px 40px rgba(0, 0, 0, 0.25);
+--box-shadow-default-large: 0px 8px 50px rgba(0, 0, 0, 0.45);
+--box-shadow-default-xlarge: 0px 0px 30px rgba(80, 120, 255, 0.3);
+
+```

@@ -16,6 +16,7 @@
   @include theme.indent-margin;
   @include theme.radius-default;
   @include theme.transition-default;
+  @include theme.box-shadow-default;
 }
 
 * {

@@ -1,7 +1,7 @@
 {
   "name": "@iwyfaf-vue-ui/ariadna-ui",
   "description": "Vue 3 UI library.",
-  "version": "1.60.0",
+  "version": "1.60.1-beta.1",
   "license": "proprietary",
   "author": {
     "name": "iWatchYouFromAfar",
@@ -186,6 +186,10 @@
       "import": "./dist/lib/components/overlays/Dropbox/Dropbox.esm.js",
       "types": "./dist/lib/components/overlays/Dropbox/Dropbox.d.ts"
     },
+    "./Toast": {
+      "import": "./dist/lib/components/overlays/Toast/Toast.esm.js",
+      "types": "./dist/lib/components/overlays/Toast/Toast.d.ts"
+    },
     "./Accordion": {
       "import": "./dist/lib/components/panels/Accordion/Accordion/Accordion.esm.js",
       "types": "./dist/lib/components/panels/Accordion/Accordion/Accordion.d.ts"
@@ -209,6 +213,10 @@
     "./Tabs": {
       "import": "./dist/lib/components/panels/Tabs/Tabs.esm.js",
       "types": "./dist/lib/components/panels/Tabs/Tabs.d.ts"
+    },
+    "./useToast": {
+      "import": "./dist/lib/composables/components/useToast/useToast.esm.js",
+      "types": "./dist/lib/composables/components/useToast/useToast.d.ts"
     },
     "./useViewer": {
       "import": "./dist/lib/composables/components/useViewer/useViewer.esm.js",
@@ -261,6 +269,10 @@
     "./OnClickOutside": {
       "import": "./dist/lib/directives/sensors/OnClickOutside/OnClickOutside.esm.js",
       "types": "./dist/lib/directives/sensors/OnClickOutside/OnClickOutside.d.ts"
+    },
+    "./ToastService": {
+      "import": "./dist/lib/services/components/ToastService/ToastService.esm.js",
+      "types": "./dist/lib/services/components/ToastService/ToastService.d.ts"
     },
     "./ViewerService": {
       "import": "./dist/lib/services/components/ViewerService/ViewerService.esm.js",
@@ -395,6 +407,9 @@
       "Dropbox": [
         "./dist/lib/components/overlays/Dropbox/Dropbox.d.ts"
       ],
+      "Toast": [
+        "./dist/lib/components/overlays/Toast/Toast.d.ts"
+      ],
       "Accordion": [
         "./dist/lib/components/panels/Accordion/Accordion/Accordion.d.ts"
       ],
@@ -412,6 +427,9 @@
       ],
       "Tabs": [
         "./dist/lib/components/panels/Tabs/Tabs.d.ts"
+      ],
+      "useToast": [
+        "./dist/lib/composables/components/useToast/useToast.d.ts"
       ],
       "useViewer": [
         "./dist/lib/composables/components/useViewer/useViewer.d.ts"
@@ -451,6 +469,9 @@
       ],
       "OnClickOutside": [
         "./dist/lib/directives/sensors/OnClickOutside/OnClickOutside.d.ts"
+      ],
+      "ToastService": [
+        "./dist/lib/services/components/ToastService/ToastService.d.ts"
       ],
       "ViewerService": [
         "./dist/lib/services/components/ViewerService/ViewerService.d.ts"

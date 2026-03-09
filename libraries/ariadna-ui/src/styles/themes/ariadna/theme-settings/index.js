@@ -6,6 +6,7 @@ import fonts from './utilities/fonts.js';
 import indents from './utilities/indents.js';
 import radius from './utilities/radius.js';
 import transition from './utilities/transition.js';
+import boxShadow from './utilities/box-shadow.js';
 
 const ariadna = {
   options: options,
@@ -18,6 +19,7 @@ const ariadna = {
       indent: indents,
       radius,
       transition,
+      'box-shadow': boxShadow,
     },
     helpers: {
       textStyle: true,

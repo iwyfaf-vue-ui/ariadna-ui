@@ -13,6 +13,10 @@ const sidebarComponentsOverlays: DefaultTheme.SidebarItem = {
       text: 'Dropbox',
       link: '/components/overlays/dropbox/',
     },
+    {
+      text: 'Toast',
+      link: '/components/overlays/toast/',
+    },
   ],
 };
 

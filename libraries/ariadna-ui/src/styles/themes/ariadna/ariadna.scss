@@ -390,6 +390,15 @@ $break-xl: 1280px;
   }
 }
 
+@mixin box-shadow-default() {
+  & {
+    --box-shadow-default-small: 0px 0px 20px rgb(0 0 0 / 15%);
+    --box-shadow-default-medium: 0px 4px 40px rgb(0 0 0 / 25%);
+    --box-shadow-default-large: 0px 8px 50px rgb(0 0 0 / 45%);
+    --box-shadow-default-xlarge: 0px 0px 30px rgb(80 120 255 / 30%);
+  }
+}
+
 @mixin text-style-helper($name) {
   font-size: var(--font-size-#{$name});
   font-weight: var(--font-weight-#{$name});
