@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.61.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.60.0...v1.61.0)
+
+### 🚀 Enhancements
+
+- Add Toast component ([d3064f8](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/d3064f8))
+
+### 📖 Documentation
+
+- Update library version ([0454fb9](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/0454fb9))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.60.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.59.2...v1.60.0)
