@@ -16,6 +16,9 @@
 │   │   ├── useSelectSingleActions                         # Каталог с composable useSelectSingleActions
 │   │   │   ├── useSelectSingleActions.ts                  # Composable useSelectSingleActions
 │   │   │   ├── useSelectSingleActions.types.ts            # Типы composable useSelectSingleActions
+│   │   ├── useSelectSingleScroll                          # Каталог с composable useSelectSingleScroll
+│   │   │   ├── useSelectSingleScroll.ts                   # Composable useSelectSingleScroll
+│   │   │   ├── useSelectSingleScroll.types.ts             # Типы composable useSelectSingleScroll
 │   ├── tests                                              # Каталог с Unit-тестами компонента
 │   │   ├── components                                     # Каталог с Unit-тестами для компонентов
 │   │   │   ├── SelectSingle.test.ts                       # Unit-тесты главного компонента
