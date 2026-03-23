@@ -285,6 +285,7 @@ $button: '.ar-button';
   &__group {
     display: inline-flex;
     flex-direction: row;
+    gap: var(--indent-padding-medium);
   }
 
   // .ar-button__text
