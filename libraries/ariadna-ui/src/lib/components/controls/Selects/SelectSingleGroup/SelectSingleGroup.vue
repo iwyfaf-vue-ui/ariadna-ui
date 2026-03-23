@@ -223,6 +223,7 @@ import useOrderedElements from '@/lib/composables/elements/useOrderedElements/us
 import useSelectsFilteredOptions from '../composables/useSelectsFilteredOptions/useSelectsFilteredOptions';
 import useSelectsGroupControls from '../composables/useSelectsGroupControls/useSelectsGroupControls';
 import useSelectsCatchErrors from '../composables/useSelectsCatchErrors/useSelectsCatchErrors';
+import useSelectSingleGroupScroll from './composables/useSelectSingleGroupScroll/useSelectSingleGroupScroll';
 
 // Directives
 import vOnClickOutside from '@/lib/directives/sensors/OnClickOutside/OnClickOutside';
@@ -315,6 +316,17 @@ const { onKeyDownOrUpHandler, onKeySpaceOrEnterHandler } = useSelectsGroupContro
   optionsInGroup,
   focusedGroupIndex,
   focusedGroupOptionIndex,
+);
+
+useSelectSingleGroupScroll(
+  props,
+  vModel,
+  opened,
+  filterOptions,
+  isSelected,
+  groupsInList,
+  optionsListRef,
+  filterElementRef,
 );
 
 useSelectsCatchErrors(props, ESelectSingleGroupConfig.NAME, true);
