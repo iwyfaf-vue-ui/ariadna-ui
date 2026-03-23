@@ -232,6 +232,7 @@ import useOrderedElements from '@/lib/composables/elements/useOrderedElements/us
 import useSelectsFilteredOptions from '../composables/useSelectsFilteredOptions/useSelectsFilteredOptions';
 import useSelectsControls from '../composables/useSelectsControls/useSelectsControls';
 import useSelectsCatchErrors from '../composables/useSelectsCatchErrors/useSelectsCatchErrors';
+import useSelectSingleScroll from './composables/useSelectSingleScroll/useSelectSingleScroll';
 
 // Directives
 import vOnClickOutside from '@/lib/directives/sensors/OnClickOutside/OnClickOutside';
@@ -317,6 +318,18 @@ const { onKeyDownOrUpHandler, onKeySpaceOrEnterHandler } = useSelectsControls(
   virtualScrollerRef,
   focusedOptionIndex,
   filterOptions,
+);
+
+useSelectSingleScroll(
+  props,
+  vModel,
+  opened,
+  filterOptions,
+  isSelected,
+  optionsInList,
+  optionsListRef,
+  filterElementRef,
+  virtualScrollerRef,
 );
 
 useSelectsCatchErrors(props, ESelectSingleNumberConfig.NAME);
