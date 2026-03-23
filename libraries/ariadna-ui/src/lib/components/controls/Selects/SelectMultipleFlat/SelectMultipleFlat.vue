@@ -287,6 +287,7 @@ import usePosition, {
 import { EUsePosition } from '@/lib/composables/elements/usePosition/types/usePosition.enums';
 import useOrderedElements from '@/lib/composables/elements/useOrderedElements/useOrderedElements';
 import useSelectMultipleFlat from './composables/useSelectMultipleFlat/useSelectMultipleFlat';
+import useSelectMultipleScroll from './composables/useSelectMultipleFlatScroll/useSelectMultipleFlatScroll';
 import useSelectMultipleFlatCheckbox from './composables/useSelectMultipleFlatCheckbox/useSelectMultipleFlatCheckbox';
 import useSelectMultipleFlatActions from './composables/useSelectMultipleFlatActions/useSelectMultipleFlatActions';
 import useSelectsFlatFilteredOptions from '../composables/useSelectsFlatFilteredOptions/useSelectsFlatFilteredOptions';
@@ -390,5 +391,17 @@ const { onKeyDownOrUpHandler, onKeySpaceOrEnterHandler } = useSelectsControls(
   virtualScrollerRef,
   focusedOptionIndex,
   filterOptions,
+);
+
+useSelectMultipleScroll(
+  props,
+  vModel,
+  opened,
+  filterOptions,
+  isSelected,
+  optionsInList,
+  optionsListRef,
+  filterElementRef,
+  virtualScrollerRef,
 );
 </script>
