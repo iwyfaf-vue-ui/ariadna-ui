@@ -215,6 +215,7 @@ import {
 // Composables
 import useSelectSingleGroup from './composables/useSelectSingleGroup/useSelectSingleGroup';
 import useSelectSingleGroupActions from './composables/useSelectSingleGroupActions/useSelectSingleGroupActions';
+import useSelectSingleGroupScroll from './composables/useSelectSingleGroupScroll/useSelectSingleGroupScroll';
 import usePosition, {
   usePositionDefaultOptions,
 } from '@/lib/composables/elements/usePosition/usePosition';
@@ -223,7 +224,6 @@ import useOrderedElements from '@/lib/composables/elements/useOrderedElements/us
 import useSelectsFilteredOptions from '../composables/useSelectsFilteredOptions/useSelectsFilteredOptions';
 import useSelectsGroupControls from '../composables/useSelectsGroupControls/useSelectsGroupControls';
 import useSelectsCatchErrors from '../composables/useSelectsCatchErrors/useSelectsCatchErrors';
-import useSelectSingleGroupScroll from './composables/useSelectSingleGroupScroll/useSelectSingleGroupScroll';
 
 // Directives
 import vOnClickOutside from '@/lib/directives/sensors/OnClickOutside/OnClickOutside';
