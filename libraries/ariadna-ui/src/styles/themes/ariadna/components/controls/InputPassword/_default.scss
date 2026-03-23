@@ -214,6 +214,11 @@ $input-password: '.ar-input-password';
     padding-inline-end: 30px;
   }
 
+  // .ar-input-password__group
+  &__group {
+    position: relative;
+  }
+
   // .ar-input-password__label
   &__label {
     position: relative;
@@ -239,7 +244,7 @@ $input-password: '.ar-input-password';
   // .ar-input-password__toggle-button
   &__toggle-button {
     position: absolute;
-    inset-inline-end: var(--indent-padding-medium);
+    inset-inline-end: var(--indent-padding-large);
     top: 50%;
     margin-top: 4px;
     cursor: pointer;
