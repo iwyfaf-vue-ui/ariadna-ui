@@ -1,13 +1,14 @@
 import { nextTick, watch, type ModelRef, type Ref } from 'vue';
 import type { TSelectSingleFlatProps } from '../../SelectSingleFlat';
 import type { TVirtualScrollerExposes } from '@/lib/components/data/VirtualScroller/VirtualScroller';
+import type { Primitive } from '@/types';
 
 export default function useSelectSingleFlatScroll(
   props: TSelectSingleFlatProps,
   vModel: ModelRef<any, string, any, any> | Ref<any>,
   opened: Ref<boolean>,
-  filterOptions: Ref<any[][], any[][]>,
-  isSelected: (option: Record<string, any>) => boolean,
+  filterOptions: Ref<Array<Primitive>, Array<Primitive>>,
+  isSelected: (option: Primitive) => boolean,
   optionsInList: Ref<(HTMLElement | null)[]>,
   optionsListRef: Ref<HTMLElement | null>,
   filterElementRef: Ref<HTMLElement | null>,
