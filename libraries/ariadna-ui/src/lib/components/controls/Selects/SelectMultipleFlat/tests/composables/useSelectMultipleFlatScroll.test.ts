@@ -5,6 +5,7 @@ import useSelectMultipleFlatScroll from '../../composables/useSelectMultipleFlat
 import type { TSelectMultipleFlatProps } from '../../SelectMultipleFlat';
 import { SelectMultipleFlatSelectorTestData } from '../test-data/SelectMultipleFlat.selector.test-data';
 import type { TVirtualScrollerExposes } from '@/lib/components/data/VirtualScroller/VirtualScroller';
+import type { Primitive } from '@/types';
 
 const defaultMock = new SelectMultipleFlatSelectorTestData();
 
@@ -63,9 +64,7 @@ function mountWithComposable(params: MountParams = {}) {
   const filterOptions = computed(() => options);
 
   const isSelectedFn = vi.fn((option: any) => option === selectedOption);
-  const isSelected: ComputedRef<(option: Record<string, any>) => boolean> = computed(
-    () => isSelectedFn,
-  );
+  const isSelected: ComputedRef<(option: Primitive) => boolean> = computed(() => isSelectedFn);
 
   const optionsInList = ref(optionsInListElements) as Ref<(HTMLElement | null)[]>;
   const optionsListRef = ref(optionsListElement) as Ref<
