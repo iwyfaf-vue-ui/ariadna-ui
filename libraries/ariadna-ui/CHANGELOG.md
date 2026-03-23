@@ -1,6 +1,41 @@
 # Changelog
 
 
+## v1.62.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.61.0...v1.62.0)
+
+### 🚀 Enhancements
+
+- **SelectSingle:** Auto-scroll to selected option on open ([dd98365](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/dd98365))
+- Scroll to selected option in SelectSingleFlat ([522d829](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/522d829))
+- Scroll to selected option in SelectSingleGroup ([4158354](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/4158354))
+- Add auto-scroll to selected option in SelectMultiple ([75934ed](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/75934ed))
+- Add auto-scroll to selected options in SelectMultipleFlat ([a1b6ed1](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/a1b6ed1))
+- Add scroll to selected item in SelectMultipleGroup ([725f143](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/725f143))
+
+### 💅 Refactors
+
+- Reorganize imports in SelectSingle component ([995b7ba](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/995b7ba))
+- Improve type safety in SelectSingleFlatScroll ([4b3223c](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/4b3223c))
+- Adjust imports order ([bf9166f](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/bf9166f))
+
+### 📖 Documentation
+
+- Update library version ([ec4d713](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/ec4d713))
+- Add useSelectSingleScroll to component structure ([5960219](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/5960219))
+- Add documentation for new useSelectSingleFlatScroll composable ([cf62be1](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/cf62be1))
+- Update component structure documentation ([e6769d8](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/e6769d8))
+- Update SelectSingleGroup structure ([07e4938](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/07e4938))
+
+### ✅ Tests
+
+- Update isSelected type to Primitive in test ([e90d2ad](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/e90d2ad))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.61.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.60.0...v1.61.0)
