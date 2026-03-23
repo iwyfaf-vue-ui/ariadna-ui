@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.62.1
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.62.0...v1.62.1)
+
+### 🩹 Fixes
+
+- Increase max-height for toast leave animations ([59a6de0](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/59a6de0))
+
+### 📖 Documentation
+
+- Update library version ([72a7878](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/72a7878))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.62.0
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.61.0...v1.62.0)
