@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v1.62.3
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.62.2...v1.62.3)
+
+### 🩹 Fixes
+
+- Update InputPassword group and toggle button ([e8d2817](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/e8d2817))
+- **input-password:** Adjust hint top position ([e8c895f](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/e8c895f))
+
+### 📖 Documentation
+
+- Update library version ([7464ddd](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/7464ddd))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.62.2
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.62.1...v1.62.2)
