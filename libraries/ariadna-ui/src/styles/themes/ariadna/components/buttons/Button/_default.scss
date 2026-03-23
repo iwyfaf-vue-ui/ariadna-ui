@@ -288,6 +288,12 @@ $button: '.ar-button';
     gap: var(--indent-padding-medium);
   }
 
+  // .ar-button__icon
+  &__icon {
+    display: flex;
+    justify-content: center;
+  }
+
   // .ar-button__text
   &__text {
     // .ar-button__text i[class^="icon-"]
