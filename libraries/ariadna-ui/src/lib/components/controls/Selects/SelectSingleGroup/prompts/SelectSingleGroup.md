@@ -16,12 +16,16 @@
 │   │   ├── useSelectSingleGroupActions                    # Каталог с composable useSelectSingleGroupActions
 │   │   │   ├── useSelectSingleGroupActions.ts             # Composable useSelectSingleGroupActions
 │   │   │   ├── useSelectSingleGroupActions.types.ts       # Типы composable useSelectSingleGroupActions
+│   │   ├── useSelectSingleGroupScroll                     # Каталог с composable useSelectSingleGroupScroll
+│   │   │   ├── useSelectSingleGroupScroll.ts              # Composable useSelectSingleGroupScroll
+│   │   │   ├── useSelectSingleGroupScroll.types.ts        # Типы composable useSelectSingleGroupScroll
 │   ├── tests                                              # Каталог с Unit-тестами компонента
 │   │   ├── components                                     # Каталог с Unit-тестами для компонентов
 │   │   │   ├── SelectSingleGroup.test.ts                  # Unit-тесты главного компонента
 │   │   ├── composables                                    # Каталог с Unit-тестами для composables
 │   │   │   ├── SelectSingleGroup.test.ts                  # Unit-тесты composable SelectSingleGroup
 │   │   │   ├── SelectSingleGroupActions.test.ts           # Unit-тесты composable SelectSingleGroupActions
+│   │   │   ├── useSelectSingleGroupScroll.test.ts         # Unit-тесты composable useSelectSingleGroupScroll
 │   ├── types                                              # Каталог с типами компонента
 │   │   ├── SelectSingleGroup.enums.ts                     # Enums компонента
 │   │   ├── SelectSingleGroup.types.ts                     # Типы компонента
