@@ -184,6 +184,7 @@ $toast: '.ar-toast';
 
     // .ar-toast__message-icon
     &-icon {
+      display: flex;
       margin-right: var(--indent-margin-medium);
     }
 
