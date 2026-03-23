@@ -25,6 +25,7 @@
 │   │   ├── composables                                    # Каталог с Unit-тестами для composables
 │   │   │   ├── useSelectSingle.test.ts                    # Unit-тесты composable useSelectSingle
 │   │   │   ├── useSelectSingleActions.test.ts             # Unit-тесты composable useSelectSingleActions
+│   │   │   ├── useSelectSingleScroll.test.ts              # Unit-тесты composable useSelectSingleScroll
 │   ├── types                                              # Каталог с типами компонента
 │   │   ├── SelectSingle.enums.ts                          # Enums компонента
 │   │   ├── SelectSingle.types.ts                          # Типы компонента
