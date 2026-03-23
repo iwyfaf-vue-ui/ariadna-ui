@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.62.5
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.62.4...v1.62.5)
+
+### 📖 Documentation
+
+- Update library version ([48aa33b](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/48aa33b))
+
+### 🎨 Styles
+
+- Add icon alignment styles for Button component ([9a05145](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/9a05145))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.62.4
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.62.3...v1.62.4)
