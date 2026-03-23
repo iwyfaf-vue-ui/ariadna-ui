@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.62.2
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.62.1...v1.62.2)
+
+### 🩹 Fixes
+
+- **ui:** Add display flex to toast message icon ([0c7f963](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/0c7f963))
+
+### 📖 Documentation
+
+- Update library version ([c716c4f](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/c716c4f))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.62.1
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.62.0...v1.62.1)
