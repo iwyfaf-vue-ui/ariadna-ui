@@ -1,9 +1,9 @@
 import { nextTick, watch, type ModelRef, type Ref } from 'vue';
-import type { TSelectSingleProps } from '../../SelectSingle';
+import type { TSelectSingleFlatProps } from '../../SelectSingleFlat';
 import type { TVirtualScrollerExposes } from '@/lib/components/data/VirtualScroller/VirtualScroller';
 
-export default function useSelectSingleScroll(
-  props: TSelectSingleProps,
+export default function useSelectSingleFlatScroll(
+  props: TSelectSingleFlatProps,
   vModel: ModelRef<any, string, any, any> | Ref<any>,
   opened: Ref<boolean>,
   filterOptions: Ref<any[][], any[][]>,

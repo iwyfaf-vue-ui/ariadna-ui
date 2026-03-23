@@ -225,6 +225,7 @@ import type { TVirtualScrollerExposes } from '@/lib/components/data/VirtualScrol
 // Composables
 import useSelectSingleFlat from './composables/useSelectSingleFlat/useSelectSingleFlat';
 import useSelectSingleFlatActions from './composables/useSelectSingleFlatActions/useSelectSingleFlatActions';
+import useSelectSingleFlatScroll from './composables/useSelectSingleFlatScroll/useSelectSingleFlatScroll';
 import usePosition, {
   usePositionDefaultOptions,
 } from '@/lib/composables/elements/usePosition/usePosition';
@@ -316,5 +317,17 @@ const { onKeyDownOrUpHandler, onKeySpaceOrEnterHandler } = useSelectsControls(
   virtualScrollerRef,
   focusedOptionIndex,
   filterOptions,
+);
+
+useSelectSingleFlatScroll(
+  props,
+  vModel,
+  opened,
+  filterOptions,
+  isSelected,
+  optionsInList,
+  optionsListRef,
+  filterElementRef,
+  virtualScrollerRef,
 );
 </script>
