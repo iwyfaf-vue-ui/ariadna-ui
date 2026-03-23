@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.62.4
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.62.3...v1.62.4)
+
+### 📖 Documentation
+
+- Update library version ([664ae3a](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/664ae3a))
+
+### 🎨 Styles
+
+- **Button:** Add gap to button group ([f88e444](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/f88e444))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.62.3
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.62.2...v1.62.3)
