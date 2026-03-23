@@ -16,12 +16,16 @@
 │   │   ├── useSelectSingleFlatActions                     # Каталог с composable useSelectSingleFlatActions
 │   │   │   ├── useSelectSingleFlatActions.ts              # Composable useSelectSingleFlatActions
 │   │   │   ├── useSelectSingleFlatActions.types.ts        # Типы composable useSelectSingleFlatActions
+│   │   ├── useSelectSingleFlatScroll                      # Каталог с composable useSelectSingleFlatScroll
+│   │   │   ├── useSelectSingleFlatScroll.ts               # Composable useSelectSingleFlatScroll
+│   │   │   ├── useSelectSingleFlatScroll.types.ts         # Типы composable useSelectSingleFlatScroll
 │   ├── tests                                              # Каталог с Unit-тестами компонента
 │   │   ├── components                                     # Каталог с Unit-тестами для компонентов
 │   │   │   ├── SelectSingleFlat.test.ts                   # Unit-тесты главного компонента
 │   │   ├── composables                                    # Каталог с Unit-тестами для composables
 │   │   │   ├── useSelectSingleFlat.test.ts                # Unit-тесты composable useSelectSingleFlat
 │   │   │   ├── useSelectSingleFlatActions.test.ts         # Unit-тесты composable useSelectSingleFlatActions
+│   │   │   ├── useSelectSingleFlatScroll.test.ts          # Unit-тесты composable useSelectSingleFlatScroll
 │   ├── types                                              # Каталог с типами компонента
 │   │   ├── SelectSingleFlat.enums.ts                      # Enums компонента
 │   │   ├── SelectSingleFlat.types.ts                      # Типы компонента
