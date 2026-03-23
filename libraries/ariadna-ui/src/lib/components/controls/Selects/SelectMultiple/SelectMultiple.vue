@@ -298,6 +298,7 @@ import { EUsePosition } from '@/lib/composables/elements/usePosition/types/usePo
 import useOrderedElements from '@/lib/composables/elements/useOrderedElements/useOrderedElements';
 import useSelectMultiple from './composables/useSelectMultiple/useSelectMultiple';
 import useSelectMultipleCheckbox from './composables/useSelectMultipleCheckbox/useSelectMultipleCheckbox';
+import useSelectMultipleScroll from './composables/useSelectMultipleScroll/useSelectMultipleScroll';
 import useSelectMultipleActions from './composables/useSelectMultipleActions/useSelectMultipleActions';
 import useSelectsFilteredOptions from '../composables/useSelectsFilteredOptions/useSelectsFilteredOptions';
 import useSelectsControls from '../composables/useSelectsControls/useSelectsControls';
@@ -399,6 +400,18 @@ const { onKeyDownOrUpHandler, onKeySpaceOrEnterHandler } = useSelectsControls(
   virtualScrollerRef,
   focusedOptionIndex,
   filterOptions,
+);
+
+useSelectMultipleScroll(
+  props,
+  vModel,
+  opened,
+  filterOptions,
+  isSelected,
+  optionsInList,
+  optionsListRef,
+  filterElementRef,
+  virtualScrollerRef,
 );
 
 useSelectsCatchErrors(props, ESelectMultipleNumberConfig.NAME);

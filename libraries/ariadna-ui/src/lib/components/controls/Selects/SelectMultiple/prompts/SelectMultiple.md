@@ -19,6 +19,9 @@
 │   │   ├── useSelectMultipleCheckbox                      # Каталог с composable useSelectMultipleCheckbox
 │   │   │   ├── useSelectMultipleCheckbox.ts               # Composable useSelectMultipleCheckbox
 │   │   │   ├── useSelectMultipleCheckbox.types.ts         # Типы composable useSelectMultipleCheckbox
+│   │   ├── useSelectMultipleScroll                        # Каталог с composable useSelectMultipleScroll
+│   │   │   ├── useSelectMultipleScroll.ts                 # Composable useSelectMultipleScroll
+│   │   │   ├── useSelectMultipleScroll.types.ts           # Типы composable useSelectMultipleScroll
 │   ├── tests                                              # Каталог с Unit-тестами компонента
 │   │   ├── components                                     # Каталог с Unit-тестами для компонентов
 │   │   │   ├── SelectMultiple.test.ts                     # Unit-тесты главного компонента
@@ -26,6 +29,7 @@
 │   │   │   ├── useSelectMultiple.test.ts                  # Unit-тесты composable useSelectMultiple
 │   │   │   ├── useSelectMultipleActions.test.ts           # Unit-тесты composable useSelectMultipleActions
 │   │   │   ├── useSelectMultipleCheckbox.test.ts          # Unit-тесты composable useSelectMultipleCheckbox
+│   │   │   ├── useSelectMultipleScroll.test.ts            # Unit-тесты composable useSelectMultipleScroll
 │   ├── types                                              # Каталог с типами компонента
 │   │   ├── SelectMultiple.enums.ts                        # Enums компонента
 │   │   ├── SelectMultiple.types.ts                        # Типы компонента
