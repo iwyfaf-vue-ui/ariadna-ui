@@ -277,6 +277,7 @@ import {
 import useSelectMultipleGroup from './composables/useSelectMultipleGroup/useSelectMultipleGroup';
 import useSelectMultipleGroupCheckbox from './composables/useSelectMultipleGroupCheckbox/useSelectMultipleGroupCheckbox';
 import useSelectMultipleGroupActions from './composables/useSelectMultipleGroupActions/useSelectMultipleGroupActions';
+import useSelectMultipleGroupScroll from './composables/useSelectMultipleGroupScroll/useSelectMultipleGroupScroll';
 import usePosition, {
   usePositionDefaultOptions,
 } from '@/lib/composables/elements/usePosition/usePosition';
@@ -391,6 +392,17 @@ const { onKeyDownOrUpHandler, onKeySpaceOrEnterHandler } = useSelectsGroupContro
   optionsInGroup,
   focusedGroupIndex,
   focusedGroupOptionIndex,
+);
+
+useSelectMultipleGroupScroll(
+  props,
+  vModel,
+  opened,
+  filterOptions,
+  selectedOptionsMap,
+  groupsInList,
+  optionsListRef,
+  filterElementRef,
 );
 
 useSelectsCatchErrors(props, ESelectMultipleGroupNumberConfig.NAME, true);
