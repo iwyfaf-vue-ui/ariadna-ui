@@ -224,6 +224,7 @@ import type { TVirtualScrollerExposes } from '@/lib/components/data/VirtualScrol
 // Composables
 import useSelectSingle from './composables/useSelectSingle/useSelectSingle';
 import useSelectSingleActions from './composables/useSelectSingleActions/useSelectSingleActions';
+import useSelectSingleScroll from './composables/useSelectSingleScroll/useSelectSingleScroll';
 import usePosition, {
   usePositionDefaultOptions,
 } from '@/lib/composables/elements/usePosition/usePosition';
@@ -232,7 +233,6 @@ import useOrderedElements from '@/lib/composables/elements/useOrderedElements/us
 import useSelectsFilteredOptions from '../composables/useSelectsFilteredOptions/useSelectsFilteredOptions';
 import useSelectsControls from '../composables/useSelectsControls/useSelectsControls';
 import useSelectsCatchErrors from '../composables/useSelectsCatchErrors/useSelectsCatchErrors';
-import useSelectSingleScroll from './composables/useSelectSingleScroll/useSelectSingleScroll';
 
 // Directives
 import vOnClickOutside from '@/lib/directives/sensors/OnClickOutside/OnClickOutside';
