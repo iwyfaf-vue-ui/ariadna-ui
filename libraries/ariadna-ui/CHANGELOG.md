@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.62.6
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.62.5...v1.62.6)
+
+### 📖 Documentation
+
+- Update library version ([f862b22](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/f862b22))
+
+### 🎨 Styles
+
+- Align button content vertically ([a363bc0](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/a363bc0))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.62.5
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.62.4...v1.62.5)
