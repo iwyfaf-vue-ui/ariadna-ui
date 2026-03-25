@@ -286,6 +286,7 @@ $button: '.ar-button';
     display: inline-flex;
     flex-direction: row;
     gap: var(--indent-padding-medium);
+    align-items: center;
   }
 
   // .ar-button__icon
