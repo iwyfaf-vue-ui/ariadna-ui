@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.62.7
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.62.6...v1.62.7)
+
+### 📖 Documentation
+
+- Update library version ([3c66159](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/3c66159))
+
+### 🎨 Styles
+
+- Adjust toggle button sizing and alignment in password input ([8b8a899](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/8b8a899))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.62.6
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.62.5...v1.62.6)
