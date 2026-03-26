@@ -166,28 +166,46 @@ $input-password: '.ar-input-password';
 
   // .ar-input-password--small
   &--small {
+    // .ar-input-password--small .ar-input-password__input
     #{$input-password}__input {
       @include theme.text-style-helper(t3);
 
       padding: var(--indent-margin-small) var(--indent-margin-medium);
     }
+
+    // .ar-input-password--small .ar-input-password__toggle-button
+    #{$input-password}__toggle-button {
+      height: 32px;
+    }
   }
 
   // .ar-input-password--medium
   &--medium {
+    // .ar-input-password--medium .ar-input-password__input
     #{$input-password}__input {
       @include theme.text-style-helper(t3);
 
       padding: var(--indent-margin-medium) var(--indent-margin-large);
     }
+
+    // .ar-input-password--medium .ar-input-password__toggle-button
+    #{$input-password}__toggle-button {
+      height: 40px;
+    }
   }
 
   // .ar-input-password--large
   &--large {
+    // .ar-input-password--large .ar-input-password__input
     #{$input-password}__input {
       @include theme.text-style-helper(t3);
 
       padding: var(--indent-margin-large) var(--indent-margin-xlarge);
+    }
+
+    // .ar-input-password--large .ar-input-password__toggle-button
+    #{$input-password}__toggle-button {
+      height: 48px;
     }
   }
 
@@ -245,8 +263,9 @@ $input-password: '.ar-input-password';
   &__toggle-button {
     position: absolute;
     inset-inline-end: var(--indent-padding-large);
-    top: 50%;
-    margin-top: 4px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
     cursor: pointer;
 
     i[class^='icon-'] {
