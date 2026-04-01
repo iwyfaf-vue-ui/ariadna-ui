@@ -215,6 +215,7 @@ $sidebar-menu: '.ariadna-sidebar-menu';
       align-items: center;
       width: 100%;
       padding: var(--indent-padding-medium) var(--indent-padding-xlarge);
+      text-decoration: inherit;
 
       &:hover {
         text-decoration: none;
@@ -243,6 +244,8 @@ $sidebar-menu: '.ariadna-sidebar-menu';
 
   // .ariadna-sidebar-menu__icon
   &__icon {
+    display: flex;
+    align-items: center;
     margin-right: var(--indent-padding-medium);
   }
 
