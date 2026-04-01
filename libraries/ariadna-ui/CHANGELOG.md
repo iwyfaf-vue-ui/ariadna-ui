@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.62.8
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.62.7...v1.62.8)
+
+### 📖 Documentation
+
+- Update library version ([b192b24](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/b192b24))
+
+### 🎨 Styles
+
+- Improve SidebarMenu link and icon styles ([971f10f](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/971f10f))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.62.7
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.62.6...v1.62.7)
