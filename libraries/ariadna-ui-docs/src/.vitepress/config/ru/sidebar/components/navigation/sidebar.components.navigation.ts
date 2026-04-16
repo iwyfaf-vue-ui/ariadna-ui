@@ -17,6 +17,10 @@ const sidebarComponentsNavigation: DefaultTheme.SidebarItem = {
       text: 'SidebarMenu',
       link: '/components/navigation/sidebar-menu/',
     },
+    {
+      text: 'DropdownMenu',
+      link: '/components/navigation/dropdown-menu/',
+    },
   ],
 };
 

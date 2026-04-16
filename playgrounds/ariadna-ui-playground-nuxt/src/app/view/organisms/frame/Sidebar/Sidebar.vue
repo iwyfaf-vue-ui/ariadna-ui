@@ -178,6 +178,10 @@ const data = ref<Array<TSidebarMenuItem>>([
             title: 'SidebarMenu',
             href: '/components/navigation/sidebar-menu',
           },
+          {
+            title: 'DropdownMenu',
+            href: '/components/navigation/dropdown-menu',
+          },
         ],
       },
       {
