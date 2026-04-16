@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v1.63.0
+
+[compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.62.8...v1.63.0)
+
+### 🚀 Enhancements
+
+- Add DropdownMenu  component ([f6ce07e](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/f6ce07e))
+
+### 📖 Documentation
+
+- Update library version ([95148e1](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/95148e1))
+- Update testing guidelines and coverage requirements ([15ab53d](https://github.com/iwyfaf-vue-ui/ariadna-ui/commit/15ab53d))
+
+### ❤️ Contributors
+
+- Iwatchyoufromafar <skip1209@yahoo.com>
+
 ## v1.62.8
 
 [compare changes](https://github.com/iwyfaf-vue-ui/ariadna-ui/compare/v1.62.7...v1.62.8)
